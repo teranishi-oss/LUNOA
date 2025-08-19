@@ -4,11 +4,19 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/LUNOA/',   // ← これが重要（リポジトリ名に合わせる）
-
   plugins: [react()],
   resolve: {
-    alias: { '@': path.resolve(__dirname, './src') },
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
   },
-  optimizeDeps: { exclude: ['lucide-react'] },
+  optimizeDeps: {
+    exclude: ['lucide-react'],
+  },
+  build: {
+    outDir: 'docs',
+    assetsDir: 'assets',
+    emptyOutDir: true,
+  },
+  base: './',
 });
