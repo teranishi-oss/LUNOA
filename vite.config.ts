@@ -4,7 +4,7 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/LUNOA/',   // 👈 GitHub Pages用に追加（リポジトリ名と同じにする）
+  base: '/LUNOA/',   // ← これが肝
 
   plugins: [react()],
   resolve: {
