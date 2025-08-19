@@ -34,9 +34,11 @@ export function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">L</span>
-            </div>
+            <img 
+              src="/LINE_ALBUM_ロゴ_250817_1 copy copy.jpg" 
+              alt="LUNOA Logo" 
+              className="w-10 h-10 object-contain"
+            />
             <h1 className="text-2xl font-bold bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent">
               美容整体 LUNOA
             </h1>
