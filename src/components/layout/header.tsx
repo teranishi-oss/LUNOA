@@ -4,7 +4,6 @@ import { Menu, X, Phone, MapPin } from 'lucide-react';
 const navigation = [
   { name: "ホーム", href: "#home" },
   { name: "施術メニュー", href: "#services" },
-  { name: "サロンについて", href: "#about" },
   { name: "施術者紹介", href: "#therapists" },
   { name: "お客様の声", href: "#testimonials" },
   { name: "ご予約・お問い合わせ", href: "#contact" },
