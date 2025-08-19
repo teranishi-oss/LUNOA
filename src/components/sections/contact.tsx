@@ -55,27 +55,6 @@ export function Contact() {
               ))}
             </div>
 
-            <div className="bg-white rounded-3xl shadow-lg p-8 animate-appear delay-700">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">特別キャンペーン</h3>
-              <div className="space-y-4">
-                <div className="p-4 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-2xl">
-                  <h4 className="font-semibold text-amber-800 mb-2">初回限定</h4>
-                  <p className="text-amber-700">初回施術料金 20%OFF</p>
-                </div>
-                <div className="p-4 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl">
-                  <h4 className="font-semibold text-orange-800 mb-2">学割</h4>
-                  <p className="text-orange-700">学生証提示で全メニュー10%OFF</p>
-                </div>
-                <div className="p-4 bg-gradient-to-r from-pink-50 to-rose-50 rounded-2xl">
-                  <h4 className="font-semibold text-pink-800 mb-2">Instagram</h4>
-                  <p className="text-pink-700">
-                    <a href="https://www.instagram.com/seitai_lunoa/" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                      @seitai_lunoa をフォロー
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div className="bg-white rounded-3xl shadow-lg p-8 animate-appear delay-300">
