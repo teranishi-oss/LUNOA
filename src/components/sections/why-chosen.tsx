@@ -33,14 +33,7 @@ export function WhyChosen() {
   return (
     <section 
       className="py-16 md:py-24 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 relative"
-      style={{
-        backgroundImage: `url('/S__374874130_0.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
     >
-      <div className="absolute inset-0 bg-white/80"></div>
       <div className="container mx-auto px-4">
         <div className="relative z-10">
           <div className="space-y-8 animate-appear text-center max-w-4xl mx-auto">
