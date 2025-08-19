@@ -63,7 +63,7 @@ export function Hero() {
           <div className="relative animate-appear delay-300">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="./S__374874114 copy copy.jpg"
+                src="/LUNOA/S__374874114 copy copy.jpg"
                 alt="美容整体施術の様子"
                 className="w-full h-96 lg:h-[500px] object-cover"
                 loading="eager"

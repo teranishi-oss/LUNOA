@@ -18,5 +18,5 @@ export default defineConfig({
     assetsDir: 'assets',
     emptyOutDir: true,
   },
-  base: './',
+  base: '/LUNOA/',
 });
