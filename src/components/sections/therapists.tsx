@@ -69,7 +69,7 @@ export function Therapists() {
                 {therapist.name === "郡山 京梧（こおりやま けいご）" ? (
                   <div className="w-32 h-32 mx-auto mb-4 shadow-lg rounded-full overflow-hidden">
                     <img 
-                      src="/LINE_ALBUM_宣材写真_250817_1.jpg" 
+                      src="/LINE_ALBUM_宣材写真_250817_2 copy.jpg" 
                       alt="郡山 京梧" 
                       className="w-full h-full object-cover"
                     />
