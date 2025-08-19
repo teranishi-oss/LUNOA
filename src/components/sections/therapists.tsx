@@ -72,6 +72,11 @@ export function Therapists() {
                       src="/LINE_ALBUM_宣材写真_250817_2 copy.jpg" 
                       alt="郡山 京梧" 
                       className="w-full h-full object-cover"
+                      onError={(e) => {
+                        console.log('Image failed to load:', e.target.src);
+                        e.target.style.display = 'none';
+                        e.target.parentElement.innerHTML = '<div class="w-full h-full bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">郡</div>';
+                      }}
                     />
                   </div>
                 ) : therapist.name === "宮川 竜太（みやがわ りゅうた）" ? (
@@ -80,6 +85,11 @@ export function Therapists() {
                       src="/LINE_ALBUM_宣材写真_250817_2.jpg" 
                       alt="宮川 竜太" 
                       className="w-full h-full object-cover"
+                      onError={(e) => {
+                        console.log('Image failed to load:', e.target.src);
+                        e.target.style.display = 'none';
+                        e.target.parentElement.innerHTML = '<div class="w-full h-full bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">宮</div>';
+                      }}
                     />
                   </div>
                 ) : therapist.name === "佐藤 まりな（さとう まりな）" ? (
@@ -88,6 +98,11 @@ export function Therapists() {
                       src="/LINE_ALBUM_宣材写真_250817_3.jpg" 
                       alt="佐藤 まりな" 
                       className="w-full h-full object-cover"
+                      onError={(e) => {
+                        console.log('Image failed to load:', e.target.src);
+                        e.target.style.display = 'none';
+                        e.target.parentElement.innerHTML = '<div class="w-full h-full bg-gradient-to-r from-pink-400 to-rose-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">佐</div>';
+                      }}
                     />
                   </div>
                 ) : therapist.name === "鈴木 響（すずき きょう）" ? (
@@ -96,6 +111,11 @@ export function Therapists() {
                       src="/LINE_ALBUM_宣材写真_250817_4.jpg" 
                       alt="鈴木 響" 
                       className="w-full h-full object-cover"
+                      onError={(e) => {
+                        console.log('Image failed to load:', e.target.src);
+                        e.target.style.display = 'none';
+                        e.target.parentElement.innerHTML = '<div class="w-full h-full bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">鈴</div>';
+                      }}
                     />
                   </div>
                 ) : therapist.name === "高梨 美優（たかなし みゆう）" ? (
@@ -104,6 +124,11 @@ export function Therapists() {
                       src="/LINE_ALBUM_宣材写真_250817_5.jpg" 
                       alt="高梨 美優" 
                       className="w-full h-full object-cover"
+                      onError={(e) => {
+                        console.log('Image failed to load:', e.target.src);
+                        e.target.style.display = 'none';
+                        e.target.parentElement.innerHTML = '<div class="w-full h-full bg-gradient-to-r from-purple-400 to-violet-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">高</div>';
+                      }}
                     />
                   </div>
                 ) : (
