@@ -35,7 +35,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
-              src="/LINE_ALBUM_ロゴ_250817_1 copy copy.jpg" 
+              src="./LINE_ALBUM_ロゴ_250817_1 copy copy.jpg" 
               alt="LUNOA Logo" 
               className="w-10 h-10 object-contain"
             />

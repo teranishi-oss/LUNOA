@@ -4,7 +4,7 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/LUNOA/',   // ← これが肝
+  base: '/',   // ローカル開発用にベースパスを修正
 
   plugins: [react()],
   resolve: {
