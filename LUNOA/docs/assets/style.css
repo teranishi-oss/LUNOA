@@ -115,7 +115,10 @@ body {
 /* Hero Section */
 .hero {
   padding: 8rem 0 4rem;
-  background: linear-gradient(135deg, #fef3c7, #fde68a, #fed7aa);
+  background: linear-gradient(135deg, #fef3c7, #fde68a, #fed7aa),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="%23f59e0b" opacity="0.1"/><circle cx="200" cy="200" r="100" fill="%23eab308" opacity="0.2"/><circle cx="1000" cy="600" r="150" fill="%23f59e0b" opacity="0.15"/></svg>');
+  background-size: cover, cover;
+  background-position: center, center;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -264,6 +267,43 @@ section h2 {
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  position: relative;
+}
+
+.therapist-card::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #f59e0b, #eab308);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+}
+
+.therapist-card[data-name="郡山"]::before {
+  content: '院';
+}
+
+.therapist-card[data-name="佐藤"] ::before {
+  content: '佐';
+}
+
+.therapist-card[data-name="高梨"] ::before {
+  content: '高';
+}
+
+.therapist-card[data-name="宮川"] ::before {
+  content: '宮';
+}
+
+.therapist-card[data-name="鈴木"] ::before {
+  content: '鈴';
 }
 
 .therapist-card:hover {
