@@ -26,7 +26,7 @@ export function Footer() {
           <div className="space-y-4 animate-appear">
             <div className="flex items-center space-x-3">
               <img 
-                src="/LUNOA/LINE_ALBUM_ロゴ_250817_1 copy copy.jpg" 
+                src="./LINE_ALBUM_ロゴ_250817_1 copy copy.jpg" 
                 alt="LUNOA Logo" 
                 className="w-10 h-10 object-contain"
               />
