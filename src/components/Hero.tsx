@@ -65,12 +65,16 @@ export function Hero() {
 
           <div className="relative animate-appear delay-300">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-amber-100 to-yellow-100 h-96 lg:h-[500px] flex items-center justify-center">
-              <div className="text-center p-8">
-                src="/src/assets/555.jpg"
-                  <span className="text-white text-4xl font-bold">L</span>
+              <img 
+                src="/src/assets/555.jpg" 
+                alt="美容整体 LUNOA 施術風景" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end">
+                <div className="text-center p-8 w-full">
+                  <h3 className="text-2xl font-bold text-white mb-2">美容整体 LUNOA</h3>
+                  <p className="text-white/90">あなたの美と健康をサポート</p>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">美容整体 LUNOA</h3>
-                <p className="text-gray-600">あなたの美と健康をサポート</p>
               </div>
             </div>
 
