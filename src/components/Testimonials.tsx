@@ -24,7 +24,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="py-16 md:py-24 bg-white">
+    <section id="testimonials" className="py-16 md:py-24 bg-gradient-to-br from-blue-25 to-indigo-25">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 font-handwriting">
@@ -72,7 +72,6 @@ export function Testimonials() {
         <div className="text-center mt-12 animate-appear delay-1000">
           <div className="bg-gradient-to-r from-amber-50 to-yellow-50 rounded-3xl p-8 shadow-lg max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">お客様満足度</h3>
-            <h3 className="text-2xl font-bold text-gray-800 mb-4 font-heading">お客様満足度</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="text-4xl font-bold text-amber-600 mb-2">96.7%</div>

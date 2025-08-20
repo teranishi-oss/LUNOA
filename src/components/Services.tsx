@@ -2,7 +2,7 @@ import React from 'react';
 
 export function Services() {
   return (
-    <section id="services" className="py-16 md:py-24 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50">
+    <section id="services" className="py-16 md:py-24 bg-gradient-to-br from-amber-25 via-yellow-25 to-orange-25">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 font-handwriting">
@@ -199,6 +199,7 @@ export function Services() {
                 </div>
                 <div className="border-t pt-3">
                   <div className="text-lg font-semibold text-gray-700">Quickむき価格</div>
+                  <div className="text-lg font-semibold text-gray-700">Quick付き価格</div>
                   <div className="text-3xl font-bold text-amber-600">¥15,400</div>
                   <div className="text-sm text-gray-500">¥15,400×1回</div>
                 </div>
@@ -244,6 +245,7 @@ export function Services() {
                 </div>
                 <div className="border-t pt-3">
                   <div className="text-lg font-semibold text-gray-700">Quickむき価格</div>
+                  <div className="text-lg font-semibold text-gray-700">Quick付き価格</div>
                   <div className="text-3xl font-bold text-amber-600">¥29,260</div>
                   <div className="text-sm text-gray-500">¥14,630×2回</div>
                 </div>
@@ -286,6 +288,7 @@ export function Services() {
                 </div>
                 <div className="border-t pt-3">
                   <div className="text-lg font-semibold text-gray-700">Quickむき価格</div>
+                  <div className="text-lg font-semibold text-gray-700">Quick付き価格</div>
                   <div className="text-3xl font-bold text-amber-600">¥52,360</div>
                   <div className="text-sm text-gray-500">¥13,090×4回</div>
                 </div>
@@ -320,7 +323,6 @@ export function Services() {
         <div className="text-center mt-16 animate-appear delay-1000">
           <div className="bg-white rounded-3xl p-8 shadow-lg max-w-4xl mx-auto">
             <h3 className="text-3xl font-bold text-gray-800 mb-6">期待できる効果</h3>
-            <h3 className="text-3xl font-bold text-gray-800 mb-6 font-heading">期待できる効果</h3>
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div>
                 <h4 className="text-xl font-semibold text-amber-600 mb-3">美容効果</h4>

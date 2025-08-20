@@ -9,6 +9,12 @@ export default {
         'sans': ['Noto Sans JP', 'sans-serif'],
       },
       colors: {
+        'amber-25': '#fefbf3',
+        'yellow-25': '#fefdf8',
+        'orange-25': '#fefaf6',
+        'blue-25': '#f8faff',
+        'indigo-25': '#f6f8ff',
+        'gray-25': '#fafafa',
         brand: "hsl(var(--brand))",
         "brand-foreground": "hsl(var(--brand-foreground))",
         border: "hsl(var(--border))",
