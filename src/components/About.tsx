@@ -35,7 +35,7 @@ export function About() {
       id="about" 
       className="py-16 md:py-24 bg-white relative"
       style={{
-        backgroundImage: `url('/images/555.jpg')`,
+        backgroundImage: `url('/images/1212.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
