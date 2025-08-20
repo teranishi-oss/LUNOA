@@ -143,6 +143,106 @@ export function Services() {
           </div>
         </div>
 
+        {/* 定期プラン */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-bold text-gray-800 text-center mb-12">定期プラン</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            
+            {/* 月2回プラン */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">月2回プラン</h4>
+              <div className="text-4xl font-bold text-amber-600 mb-2">¥30,800</div>
+              <div className="text-gray-600 mb-2">税込 / 月</div>
+              <div className="text-sm text-gray-500 mb-6">¥15,400 × 2回</div>
+              <ul className="text-left space-y-2 text-gray-600 mb-6">
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  月2回の定期施術
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  継続的な体調管理
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  予約優先権
+                </li>
+              </ul>
+              <a 
+                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block w-full bg-gray-100 hover:bg-gradient-to-r hover:from-amber-500 hover:to-yellow-600 hover:text-white text-gray-700 font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+              >
+                予約する
+              </a>
+            </div>
+
+            {/* 月3回プラン - おすすめ */}
+            <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border-2 border-amber-200">
+              <div className="bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
+                おすすめ
+              </div>
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">月3回プラン</h4>
+              <div className="text-4xl font-bold text-amber-600 mb-2">¥46,200</div>
+              <div className="text-gray-600 mb-2">税込 / 月</div>
+              <div className="text-sm text-gray-500 mb-6">¥15,400 × 3回</div>
+              <ul className="text-left space-y-2 text-gray-600 mb-6">
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  月3回の定期施術
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  最適な改善ペース
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  予約優先権
+                </li>
+              </ul>
+              <a 
+                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block w-full bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+              >
+                予約する
+              </a>
+            </div>
+
+            {/* 月4回プラン */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">月4回プラン</h4>
+              <div className="text-4xl font-bold text-amber-600 mb-2">¥61,600</div>
+              <div className="text-gray-600 mb-2">税込 / 月</div>
+              <div className="text-sm text-gray-500 mb-6">¥15,400 × 4回</div>
+              <ul className="text-left space-y-2 text-gray-600 mb-6">
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  月4回の集中施術
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  短期集中改善
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  予約優先権
+                </li>
+              </ul>
+              <a 
+                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block w-full bg-gray-100 hover:bg-gradient-to-r hover:from-amber-500 hover:to-yellow-600 hover:text-white text-gray-700 font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+              >
+                予約する
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* 期待できる効果 */}
         <div className="text-center mt-16 animate-appear delay-1000">
           <div className="bg-white rounded-3xl p-8 shadow-lg max-w-4xl mx-auto">
