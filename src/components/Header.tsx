@@ -28,14 +28,9 @@ export function Header() {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">L</span>
-            </div>
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent">
-              美容整体 LUNOA
-            </h1>
-          </div>
+          <h1 className="text-2xl font-bold bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent">
+            美容整体 LUNOA
+          </h1>
 
           <nav className="hidden lg:flex items-center space-x-8">
             {navigation.map((item) => (
