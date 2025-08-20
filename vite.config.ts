@@ -17,6 +17,11 @@ export default defineConfig({
     outDir: 'docs',
     assetsDir: 'assets',
     emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   },
   base: './',
 });
