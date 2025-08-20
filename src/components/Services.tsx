@@ -145,23 +145,72 @@ export function Services() {
 
         {/* 定期プラン */}
         <div className="mb-16">
-          <h3 className="text-3xl font-bold text-gray-800 text-center mb-12 font-heading">定期プラン</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <h3 className="text-3xl font-bold text-gray-800 text-center mb-6 font-heading">会員 月々払い</h3>
+          <h4 className="text-xl font-bold text-gray-800 text-center mb-8 font-handwriting">MONTHLY COURSE PRICE LIST</h4>
+          
+          {/* 特典セクション */}
+          <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-3xl p-8 shadow-lg max-w-4xl mx-auto mb-8">
+            <h4 className="text-2xl font-bold text-gray-800 text-center mb-6 font-heading">特典</h4>
+            <div className="grid md:grid-cols-3 gap-6 text-center">
+              <div className="bg-white rounded-2xl p-6 shadow-md">
+                <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-lg">無料</span>
+                </div>
+                <h5 className="font-bold text-gray-800 mb-2">入会金無料</h5>
+                <p className="text-gray-600 text-sm">初期費用なしで始められます</p>
+              </div>
+              <div className="bg-white rounded-2xl p-6 shadow-md">
+                <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-lg">🎂</span>
+                </div>
+                <h5 className="font-bold text-gray-800 mb-2">誕生日月＋1回無料</h5>
+                <p className="text-gray-600 text-sm">お誕生日月は追加施術1回プレゼント</p>
+              </div>
+              <div className="bg-white rounded-2xl p-6 shadow-md">
+                <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-lg">✨</span>
+                </div>
+                <h5 className="font-bold text-gray-800 mb-2">4ヶ月毎オプション無料</h5>
+                <p className="text-gray-600 text-sm">継続特典でオプション施術が無料</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 案内文 */}
+          <div className="text-center mb-8">
+            <p className="text-lg text-gray-700 bg-white rounded-2xl p-6 shadow-md max-w-2xl mx-auto">
+              会員の方は都度コースと同額で受けられます。
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             
-            {/* 月2回プラン */}
+            {/* COURSE 01 */}
             <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
-              <h4 className="text-2xl font-bold text-gray-800 mb-4">月2回プラン</h4>
-              <div className="text-4xl font-bold text-amber-600 mb-2">¥30,800</div>
-              <div className="text-gray-600 mb-2">税込 / 月</div>
-              <div className="text-sm text-gray-500 mb-6">¥15,400 × 2回</div>
+              <div className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
+                COURSE 01
+              </div>
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">月1回（月々払い）</h4>
+              <div className="space-y-3 mb-6">
+                <div>
+                  <div className="text-lg font-semibold text-gray-700">1メニュー通常価格</div>
+                  <div className="text-3xl font-bold text-amber-600">¥11,000</div>
+                  <div className="text-sm text-gray-500">¥11,000×1回</div>
+                </div>
+                <div className="border-t pt-3">
+                  <div className="text-lg font-semibold text-gray-700">Quickむき価格</div>
+                  <div className="text-3xl font-bold text-amber-600">¥15,400</div>
+                  <div className="text-sm text-gray-500">¥15,400×1回</div>
+                </div>
+              </div>
               <ul className="text-left space-y-2 text-gray-600 mb-6">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
-                  月2回の定期施術
+                  月1回の定期施術
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
-                  継続的な体調管理
+                  会員特典適用
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
@@ -178,23 +227,35 @@ export function Services() {
               </a>
             </div>
 
-            {/* 月3回プラン - おすすめ */}
+            {/* COURSE 02 - おすすめ */}
             <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border-2 border-amber-200">
               <div className="bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
                 おすすめ
               </div>
-              <h4 className="text-2xl font-bold text-gray-800 mb-4">月3回プラン</h4>
-              <div className="text-4xl font-bold text-amber-600 mb-2">¥46,200</div>
-              <div className="text-gray-600 mb-2">税込 / 月</div>
-              <div className="text-sm text-gray-500 mb-6">¥15,400 × 3回</div>
+              <div className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
+                COURSE 02
+              </div>
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">月2回（月々払い）</h4>
+              <div className="space-y-3 mb-6">
+                <div>
+                  <div className="text-lg font-semibold text-gray-700">1メニュー通常価格</div>
+                  <div className="text-3xl font-bold text-amber-600">¥20,900</div>
+                  <div className="text-sm text-gray-500">¥10,450×2回</div>
+                </div>
+                <div className="border-t pt-3">
+                  <div className="text-lg font-semibold text-gray-700">Quickむき価格</div>
+                  <div className="text-3xl font-bold text-amber-600">¥29,260</div>
+                  <div className="text-sm text-gray-500">¥14,630×2回</div>
+                </div>
+              </div>
               <ul className="text-left space-y-2 text-gray-600 mb-6">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
-                  月3回の定期施術
+                  月2回の定期施術
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
-                  最適な改善ペース
+                  会員特典適用
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
@@ -211,20 +272,32 @@ export function Services() {
               </a>
             </div>
 
-            {/* 月4回プラン */}
+            {/* COURSE 03 */}
             <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
-              <h4 className="text-2xl font-bold text-gray-800 mb-4">月4回プラン</h4>
-              <div className="text-4xl font-bold text-amber-600 mb-2">¥61,600</div>
-              <div className="text-gray-600 mb-2">税込 / 月</div>
-              <div className="text-sm text-gray-500 mb-6">¥15,400 × 4回</div>
+              <div className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
+                COURSE 03
+              </div>
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">月4回（月々払い）</h4>
+              <div className="space-y-3 mb-6">
+                <div>
+                  <div className="text-lg font-semibold text-gray-700">1メニュー通常価格</div>
+                  <div className="text-3xl font-bold text-amber-600">¥37,400</div>
+                  <div className="text-sm text-gray-500">¥9,350×4回</div>
+                </div>
+                <div className="border-t pt-3">
+                  <div className="text-lg font-semibold text-gray-700">Quickむき価格</div>
+                  <div className="text-3xl font-bold text-amber-600">¥52,360</div>
+                  <div className="text-sm text-gray-500">¥13,090×4回</div>
+                </div>
+              </div>
               <ul className="text-left space-y-2 text-gray-600 mb-6">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
-                  月4回の集中施術
+                  月4回の定期施術
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
-                  短期集中改善
+                  会員特典適用
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
