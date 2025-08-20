@@ -3,48 +3,46 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: "Sarah Chen",
-    role: "Marketing Executive",
-    image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150",
+    name: "M.T様",
+    role: "30代 会社員",
     rating: 5,
-    text: "The holistic approach here is truly transformative. Not only do I look radiant, but I feel completely renewed from within. The staff's expertise and genuine care make every visit exceptional."
+    text: "1回目で長年悩まされている肩と首筋の痛みに変化を感じ、半年ほど通院しました。先生は勉強熱心で、相談した内容もしっかり覚えていてくださって安心してお任せできました。"
   },
   {
-    name: "Emily Rodriguez",
-    role: "Yoga Instructor",
-    image: "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=150",
+    name: "Y.S様",
+    role: "40代 主婦",
     rating: 5,
-    text: "I've never experienced such a perfect blend of beauty and wellness treatments. The natural products and energy healing sessions have become an essential part of my self-care routine."
+    text: "カラダの悩みに合ったストレッチも教えてもらえるのでセルフケアができたりと生活改善もできました。症状が良くなり半年で卒業しましたが、困ったときはまたお世話になるつもりです！"
   },
   {
-    name: "Jessica Thompson",
-    role: "Interior Designer",
-    image: "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=150",
+    name: "H.K様",
+    role: "30代 会社員",
     rating: 5,
-    text: "Beauty Holistic has redefined my understanding of beauty treatments. The personalized approach and attention to both physical and emotional wellbeing is simply unmatched."
+    text: "初回で首が回るようになったり、かなり体を軽くして頂きました。院内は清潔感があり、皆様フレンドリーな対応でありながらも、しっかり施術してもらい、施術直後の体の軽さには驚いております。"
   }
 ];
 
-const Testimonials = () => {
+export function Testimonials() {
   return (
-    <section id="testimonials" className="py-20 bg-white">
+    <section id="testimonials" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-appear">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-            What Our Clients Say
+            お客様の声
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Discover why hundreds of clients trust us with their beauty and wellness journey.
+            多くのお客様に愛され続ける理由を、実際の体験談でご確認ください。
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div 
+            <div
               key={index}
-              className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 relative"
+              className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-appear"
+              style={{ animationDelay: `${index * 200}ms` }}
             >
-              <Quote className="w-8 h-8 text-rose-400 mb-4" />
+              <Quote className="w-8 h-8 text-amber-500 mb-4" />
               
               <p className="text-gray-700 leading-relaxed mb-6 text-lg">
                 "{testimonial.text}"
@@ -57,24 +55,40 @@ const Testimonials = () => {
               </div>
 
               <div className="flex items-center space-x-4">
-                <img 
-                  src={testimonial.image} 
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover"
-                />
+                <div className="w-12 h-12 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">
+                    {testimonial.name.charAt(0)}
+                  </span>
+                </div>
                 <div>
                   <div className="font-semibold text-gray-800">{testimonial.name}</div>
                   <div className="text-sm text-gray-600">{testimonial.role}</div>
                 </div>
               </div>
-
-              <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-rose-200 to-pink-200 rounded-full opacity-20"></div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center mt-12 animate-appear delay-1000">
+          <div className="bg-gradient-to-r from-amber-50 to-yellow-50 rounded-3xl p-8 shadow-lg max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">お客様満足度</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="text-4xl font-bold text-amber-600 mb-2">96.7%</div>
+                <div className="text-gray-600">改善実感率</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-amber-600 mb-2">96.7%</div>
+                <div className="text-gray-600">満足度</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-amber-600 mb-2">88%</div>
+                <div className="text-gray-600">リピート率</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default Testimonials;
+}

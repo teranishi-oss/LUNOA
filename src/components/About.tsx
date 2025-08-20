@@ -1,79 +1,78 @@
 import React from 'react';
-import { Award, Users, Clock, Shield } from 'lucide-react';
+import { Target, Heart, Shield, Award, Users, Clock } from 'lucide-react';
 
 const stats = [
-  { icon: <Award className="w-6 h-6" />, value: "15+", label: "Years Experience" },
-  { icon: <Users className="w-6 h-6" />, value: "500+", label: "Happy Clients" },
-  { icon: <Clock className="w-6 h-6" />, value: "5000+", label: "Treatments Completed" },
-  { icon: <Shield className="w-6 h-6" />, value: "100%", label: "Natural Products" }
+  { icon: <Award className="w-6 h-6" />, value: "1年3ヶ月", label: "の実績" },
+  { icon: <Users className="w-6 h-6" />, value: "1400名", label: "以上の実績" },
+  { icon: <Clock className="w-6 h-6" />, value: "96.7%", label: "の改善実感率" },
+  { icon: <Shield className="w-6 h-6" />, value: "完全", label: "個室対応" }
 ];
 
-const About = () => {
+const features = [
+  {
+    icon: <Target className="w-8 h-8" />,
+    title: "根本改善へのアプローチ",
+    description: "表面的な症状だけでなく、体の歪みの根本原因を見つけ出し改善します。症状の再発を防ぎ、根本的な美しさと健康を追求します。",
+    gradient: "from-amber-400 to-yellow-500"
+  },
+  {
+    icon: <Heart className="w-8 h-8" />,
+    title: "オーダーメイド施術",
+    description: "お客様の体の状態に合わせた完全個別対応の施術プランをご提案。一人ひとりのライフスタイルや目標に合わせて最適な施術を行います。",
+    gradient: "from-yellow-400 to-orange-500"
+  },
+  {
+    icon: <Shield className="w-8 h-8" />,
+    title: "美容と健康の両立",
+    description: "見た目の美しさだけでなく、体の内側からの健康も重視した総合的なケア。豊富な経験と確かな技術で安心・安全な施術をご提供します。",
+    gradient: "from-orange-400 to-red-500"
+  }
+];
+
+export function About() {
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50">
+    <section id="about" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
-            <div>
-              <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-                Your Wellness Journey
-                <span className="block text-rose-500">Starts Here</span>
-              </h2>
-              <p className="text-xl text-gray-600 leading-relaxed mb-6">
-                At Beauty Holistic, we believe true beauty radiates from within. Our approach combines time-tested holistic practices with cutting-edge beauty treatments to create transformative experiences that nurture both body and soul.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Founded by certified wellness practitioners and beauty experts, we've created a sanctuary where you can escape the stresses of daily life and reconnect with your natural radiance.
-              </p>
-            </div>
+        <div className="text-center mb-16 animate-appear">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+            LUNOAが選ばれる理由
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            当院では、ただ症状を改善するだけでなく、根本的な原因にアプローチします。
+            豊富な経験と確かな技術で、お客様一人ひとりに最適な施術をご提供。
+            美しさと健康を同時に手に入れることができます。
+          </p>
+        </div>
 
-            <div className="grid grid-cols-2 gap-6">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center p-6 bg-white rounded-2xl shadow-md">
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-rose-500 to-pink-600 text-white rounded-xl mb-3">
-                    {stat.icon}
-                  </div>
-                  <div className="text-3xl font-bold text-gray-800 mb-1">{stat.value}</div>
-                  <div className="text-sm text-gray-600 font-medium">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="relative">
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
-                <img 
-                  src="https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=400" 
-                  alt="Spa treatment" 
-                  className="w-full h-48 object-cover rounded-3xl shadow-lg"
-                />
-                <img 
-                  src="https://images.pexels.com/photos/3985163/pexels-photo-3985163.jpeg?auto=compress&cs=tinysrgb&w=400" 
-                  alt="Natural products" 
-                  className="w-full h-32 object-cover rounded-3xl shadow-lg"
-                />
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-16">
+          {stats.map((stat, index) => (
+            <div key={index} className="text-center p-6 bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl shadow-md hover:shadow-lg transition-shadow animate-appear">
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-amber-500 to-yellow-600 text-white rounded-xl mb-3">
+                {stat.icon}
               </div>
-              <div className="space-y-4 pt-8">
-                <img 
-                  src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=400" 
-                  alt="Relaxing environment" 
-                  className="w-full h-32 object-cover rounded-3xl shadow-lg"
-                />
-                <img 
-                  src="https://images.pexels.com/photos/3997380/pexels-photo-3997380.jpeg?auto=compress&cs=tinysrgb&w=400" 
-                  alt="Professional care" 
-                  className="w-full h-48 object-cover rounded-3xl shadow-lg"
-                />
-              </div>
+              <div className="text-3xl font-bold text-gray-800 mb-1">{stat.value}</div>
+              <div className="text-sm text-gray-600 font-medium">{stat.label}</div>
             </div>
+          ))}
+        </div>
 
-            <div className="absolute inset-0 bg-gradient-to-r from-rose-500/10 to-pink-500/10 rounded-3xl -z-10 transform rotate-3"></div>
-          </div>
+        <div className="grid md:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="bg-gradient-to-br from-gray-50 to-amber-50 rounded-3xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-appear"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <div className={`w-16 h-16 bg-gradient-to-r ${feature.gradient} rounded-2xl flex items-center justify-center text-white mb-6`}>
+                {feature.icon}
+              </div>
+              
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">{feature.title}</h3>
+              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default About;
+}

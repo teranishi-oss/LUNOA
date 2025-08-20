@@ -5,7 +5,6 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/LUNOA/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -15,7 +14,7 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   build: {
-    outDir: 'docs',
+    outDir: 'dist',
     assetsDir: 'assets',
     emptyOutDir: true,
     sourcemap: false,

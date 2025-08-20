@@ -1,98 +1,175 @@
 import React from 'react';
-import { Flower2, Heart, Sparkles, Leaf, Sun, Moon } from 'lucide-react';
 
-const services = [
-  {
-    icon: <Flower2 className="w-8 h-8" />,
-    title: "Facial Rejuvenation",
-    description: "Advanced facial treatments combining traditional techniques with modern technology for radiant, youthful skin.",
-    price: "From $120",
-    duration: "60-90 min",
-    gradient: "from-rose-400 to-pink-500"
-  },
-  {
-    icon: <Heart className="w-8 h-8" />,
-    title: "Body Wellness Therapy",
-    description: "Holistic body treatments focusing on relaxation, detoxification, and overall wellness enhancement.",
-    price: "From $150",
-    duration: "90-120 min",
-    gradient: "from-purple-400 to-pink-500"
-  },
-  {
-    icon: <Sparkles className="w-8 h-8" />,
-    title: "Anti-Aging Solutions",
-    description: "Comprehensive anti-aging programs tailored to your specific needs and skin concerns.",
-    price: "From $200",
-    duration: "120 min",
-    gradient: "from-indigo-400 to-purple-500"
-  },
-  {
-    icon: <Leaf className="w-8 h-8" />,
-    title: "Natural Skincare",
-    description: "Organic and natural treatments using pure botanical ingredients for sensitive and conscious clients.",
-    price: "From $100",
-    duration: "75 min",
-    gradient: "from-green-400 to-teal-500"
-  },
-  {
-    icon: <Sun className="w-8 h-8" />,
-    title: "Energy Healing",
-    description: "Combine beauty treatments with energy work to harmonize your inner and outer radiance.",
-    price: "From $180",
-    duration: "90 min",
-    gradient: "from-yellow-400 to-orange-500"
-  },
-  {
-    icon: <Moon className="w-8 h-8" />,
-    title: "Relaxation Rituals",
-    description: "Evening wellness sessions designed to help you unwind and restore your natural glow.",
-    price: "From $160",
-    duration: "120 min",
-    gradient: "from-blue-400 to-indigo-500"
-  }
-];
-
-const Services = () => {
+export function Services() {
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-16 md:py-24 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-appear">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-            Our Holistic Services
+            施術メニュー・料金
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Each treatment is carefully designed to address your unique needs, combining ancient wisdom with modern techniques for comprehensive beauty and wellness.
+            姿勢矯正(猫背、巻き肩、反り腰)、骨格矯正、内臓調整、足首矯正、自律神経整体、小顔矯正。
+            お客様の状態に合わせた最適な施術をご提供いたします。
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div 
-              key={index}
-              className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border border-gray-100"
-            >
-              <div className={`w-16 h-16 bg-gradient-to-r ${service.gradient} rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                {service.icon}
+        {/* 都度払い料金 */}
+        <div className="mb-16">
+          <h3 className="text-3xl font-bold text-gray-800 text-center mb-12">都度払い料金</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            
+            {/* 通常価格 */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">通常価格</h4>
+              <div className="text-4xl font-bold text-amber-600 mb-2">¥15,400</div>
+              <div className="text-gray-600 mb-6">税込（約50分）</div>
+              <ul className="text-left space-y-2 text-gray-600 mb-6">
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  初回カウンセリング込み
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  全メニュー対応
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  完全個室対応
+                </li>
+              </ul>
+              <a 
+                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block w-full bg-gray-100 hover:bg-gradient-to-r hover:from-amber-500 hover:to-yellow-600 hover:text-white text-gray-700 font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+              >
+                予約する
+              </a>
+            </div>
+
+            {/* 3回券 */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">3回券</h4>
+              <div className="text-4xl font-bold text-amber-600 mb-2">¥46,200</div>
+              <div className="text-gray-600 mb-2">税込</div>
+              <div className="text-sm text-gray-500 mb-6">¥15,400 × 3回</div>
+              <ul className="text-left space-y-2 text-gray-600 mb-6">
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  短期集中コース
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  有効期限6ヶ月
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  初期改善に最適
+                </li>
+              </ul>
+              <a 
+                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block w-full bg-gray-100 hover:bg-gradient-to-r hover:from-amber-500 hover:to-yellow-600 hover:text-white text-gray-700 font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+              >
+                予約する
+              </a>
+            </div>
+
+            {/* 6回券 - おすすめ */}
+            <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border-2 border-amber-200">
+              <div className="bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
+                おすすめ
               </div>
-              
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">{service.title}</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
-              
-              <div className="flex justify-between items-center pt-4 border-t border-gray-100">
-                <div>
-                  <div className="text-2xl font-bold text-gray-800">{service.price}</div>
-                  <div className="text-sm text-gray-500">{service.duration}</div>
-                </div>
-                <button className="bg-gray-100 hover:bg-gradient-to-r hover:from-rose-500 hover:to-pink-600 hover:text-white px-6 py-2 rounded-full font-semibold transition-all duration-300">
-                  Book Now
-                </button>
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">6回券</h4>
+              <div className="text-4xl font-bold text-amber-600 mb-2">¥92,400</div>
+              <div className="text-gray-600 mb-2">税込</div>
+              <div className="text-sm text-gray-500 mb-6">¥15,400 × 6回</div>
+              <ul className="text-left space-y-2 text-gray-600 mb-6">
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  継続改善コース
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  有効期限6ヶ月
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  根本改善に最適
+                </li>
+              </ul>
+              <a 
+                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block w-full bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+              >
+                予約する
+              </a>
+            </div>
+
+            {/* 9回券 */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">9回券</h4>
+              <div className="text-4xl font-bold text-amber-600 mb-2">¥138,600</div>
+              <div className="text-gray-600 mb-2">税込</div>
+              <div className="text-sm text-gray-500 mb-6">¥15,400 × 9回</div>
+              <ul className="text-left space-y-2 text-gray-600 mb-6">
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  長期改善コース
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  有効期限6ヶ月
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  完全改善に最適
+                </li>
+              </ul>
+              <a 
+                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block w-full bg-gray-100 hover:bg-gradient-to-r hover:from-amber-500 hover:to-yellow-600 hover:text-white text-gray-700 font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+              >
+                予約する
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* 期待できる効果 */}
+        <div className="text-center mt-16 animate-appear delay-1000">
+          <div className="bg-white rounded-3xl p-8 shadow-lg max-w-4xl mx-auto">
+            <h3 className="text-3xl font-bold text-gray-800 mb-6">期待できる効果</h3>
+            <div className="grid md:grid-cols-2 gap-6 text-left">
+              <div>
+                <h4 className="text-xl font-semibold text-amber-600 mb-3">美容効果</h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• くびれ・下っ腹改善</li>
+                  <li>• 肩の盛り上がり改善</li>
+                  <li>• 太もも痩せ・ダイエット</li>
+                  <li>• 二の腕痩せ・代謝UP</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold text-amber-600 mb-3">健康効果</h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• 首肩こり・腰痛の改善</li>
+                  <li>• 頭痛の改善</li>
+                  <li>• 痺れ・眼精疲労の改善</li>
+                  <li>• 睡眠の質向上</li>
+                </ul>
               </div>
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default Services;
+}

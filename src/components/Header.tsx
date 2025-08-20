@@ -1,46 +1,107 @@
-import React from 'react';
-import { Menu, Phone, MapPin } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Menu, X, Phone, MapPin } from 'lucide-react';
 
-const Header = () => {
+const navigation = [
+  { name: "ホーム", href: "#home" },
+  { name: "当院について", href: "#about" },
+  { name: "施術メニュー", href: "#services" },
+  { name: "お客様の声", href: "#testimonials" },
+  { name: "お問い合わせ", href: "#contact" },
+];
+
+export function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="bg-white/95 backdrop-blur-sm fixed w-full top-0 z-50 shadow-sm">
+    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white/95 backdrop-blur-sm shadow-lg" : "bg-white/90 backdrop-blur-sm"
+      }`}
+    >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-rose-400 to-pink-500 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">B</span>
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-lg">L</span>
             </div>
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-rose-500 to-pink-600 bg-clip-text text-transparent">
-              Beauty Holistic
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent">
+              美容整体 LUNOA
             </h1>
           </div>
-          
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-rose-500 transition-colors font-medium">Home</a>
-            <a href="#services" className="text-gray-700 hover:text-rose-500 transition-colors font-medium">Services</a>
-            <a href="#about" className="text-gray-700 hover:text-rose-500 transition-colors font-medium">About</a>
-            <a href="#testimonials" className="text-gray-700 hover:text-rose-500 transition-colors font-medium">Reviews</a>
-            <a href="#contact" className="text-gray-700 hover:text-rose-500 transition-colors font-medium">Contact</a>
+
+          <nav className="hidden lg:flex items-center space-x-8">
+            {navigation.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-gray-700 hover:text-amber-600 transition-colors font-medium"
+              >
+                {item.name}
+              </a>
+            ))}
+            <a
+              href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-amber-500 to-yellow-600 text-white px-6 py-2 rounded-full hover:from-amber-600 hover:to-yellow-700 transition-all duration-200 font-semibold"
+            >
+              ご予約
+            </a>
           </nav>
 
-          <div className="hidden lg:flex items-center space-x-4 text-sm">
-            <div className="flex items-center space-x-1 text-gray-600">
+          <div className="hidden xl:flex items-center space-x-6 text-sm">
+            <div className="flex items-center space-x-2 text-gray-600">
               <Phone className="w-4 h-4" />
-              <span>(555) 123-4567</span>
+              <span>090-3543-0588</span>
             </div>
-            <div className="flex items-center space-x-1 text-gray-600">
+            <div className="flex items-center space-x-2 text-gray-600">
               <MapPin className="w-4 h-4" />
-              <span>Downtown Spa District</span>
+              <span>渋谷区道玄坂</span>
             </div>
           </div>
 
-          <button className="md:hidden">
-            <Menu className="w-6 h-6 text-gray-700" />
+          <button
+            className="lg:hidden p-2"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
+
+        {isOpen && (
+          <div className="lg:hidden mt-4 pb-4">
+            <nav className="flex flex-col space-y-4">
+              {navigation.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-700 hover:text-amber-600 transition-colors font-medium"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </a>
+              ))}
+              <a
+                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-amber-500 to-yellow-600 text-white px-6 py-2 rounded-full text-center"
+                onClick={() => setIsOpen(false)}
+              >
+                ご予約
+              </a>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );
-};
-
-export default Header;
+}

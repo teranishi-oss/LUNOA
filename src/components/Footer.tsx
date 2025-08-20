@@ -1,86 +1,79 @@
 import React from 'react';
 import { Heart, Instagram, Facebook, Twitter, Mail } from 'lucide-react';
 
-const Footer = () => {
+const socialLinks = [
+  { icon: <Instagram className="w-5 h-5" />, href: "https://www.instagram.com/seitai_lunoa/", label: "Instagram" },
+  { icon: <Facebook className="w-5 h-5" />, href: "#", label: "Facebook" },
+  { icon: <Twitter className="w-5 h-5" />, href: "#", label: "Twitter" },
+  { icon: <Mail className="w-5 h-5" />, href: "#", label: "Email" }
+];
+
+export function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-rose-400 to-pink-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">B</span>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+          <div className="space-y-4 animate-appear">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-lg">L</span>
               </div>
-              <h3 className="text-xl font-bold">Beauty Holistic</h3>
+              <h3 className="text-xl font-bold">美容整体 LUNOA</h3>
             </div>
             <p className="text-gray-400 leading-relaxed">
-              Your sanctuary for holistic beauty and wellness treatments that nurture both body and soul.
+              骨格・筋肉・内臓の歪みを根本から改善し、美しさと健康を同時に実現する整体サロンです。
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-rose-500 transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-rose-500 transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-rose-500 transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-rose-500 transition-colors">
-                <Mail className="w-5 h-5" />
-              </a>
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-500 transition-colors"
+                  aria-label={social.label}
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
 
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
+          <div className="animate-appear delay-100">
+            <h4 className="text-lg font-semibold mb-4">サービス</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-rose-400 transition-colors">Facial Rejuvenation</a></li>
-              <li><a href="#" className="hover:text-rose-400 transition-colors">Body Wellness</a></li>
-              <li><a href="#" className="hover:text-rose-400 transition-colors">Anti-Aging</a></li>
-              <li><a href="#" className="hover:text-rose-400 transition-colors">Natural Skincare</a></li>
-              <li><a href="#" className="hover:text-rose-400 transition-colors">Energy Healing</a></li>
+              <li>姿勢矯正（猫背・巻き肩・反り腰）</li>
+              <li>骨格矯正</li>
+              <li>内臓調整</li>
+              <li>足首矯正</li>
+              <li>自律神経整体</li>
+              <li>小顔矯正</li>
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Company</h4>
+          <div className="animate-appear delay-300">
+            <h4 className="text-lg font-semibold mb-4">アクセス</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-rose-400 transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-rose-400 transition-colors">Our Team</a></li>
-              <li><a href="#" className="hover:text-rose-400 transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-rose-400 transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-rose-400 transition-colors">Contact</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li>123 Wellness Avenue</li>
-              <li>Downtown Spa District</li>
-              <li>(555) 123-4567</li>
-              <li>hello@beautyholistic.com</li>
-              <li>Mon-Sat: 9AM-7PM</li>
+              <li>〒150-0043</li>
+              <li>東京都渋谷区道玄坂１丁目１９−１３</li>
+              <li>トップヒル並木 5階</li>
+              <li>090-3543-0588</li>
+              <li>平日: 10:00-21:00</li>
+              <li>土日: 10:00-19:00（定休日なし）</li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8">
+        <div className="border-t border-gray-800 pt-8 animate-appear delay-700">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2025 Beauty Holistic. All rights reserved.
+              © 2025 美容整体 LUNOA. All rights reserved.
             </p>
             <div className="flex items-center space-x-1 text-gray-400 text-sm mt-4 md:mt-0">
-              <span>Made with</span>
-              <Heart className="w-4 h-4 text-rose-500 fill-current" />
-              <span>for your wellness</span>
+              <span>美と健康への想いを込めて</span>
+              <Heart className="w-4 h-4 text-amber-500 fill-current" />
             </div>
           </div>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
