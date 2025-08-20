@@ -5,6 +5,7 @@ const navigation = [
   { name: "ホーム", href: "#home" },
   { name: "当院について", href: "#about" },
   { name: "施術メニュー", href: "#services" },
+  { name: "施術者紹介", href: "#therapists" },
   { name: "お客様の声", href: "#testimonials" },
   { name: "お問い合わせ", href: "#contact" },
 ];
