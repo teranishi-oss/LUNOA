@@ -31,9 +31,19 @@ const features = [
 
 export function About() {
   return (
-    <section id="about" className="py-16 md:py-24 bg-white">
+    <section 
+      id="about" 
+      className="py-16 md:py-24 bg-white relative"
+      style={{
+        backgroundImage: `url('/src/assets/555.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <div className="absolute inset-0 bg-white/85"></div>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-appear">
+        <div className="text-center mb-16 animate-appear relative z-10">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
             LUNOAが選ばれる理由
           </h2>
@@ -44,7 +54,7 @@ export function About() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-16 relative z-10">
           {stats.map((stat, index) => (
             <div key={index} className="text-center p-6 bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl shadow-md hover:shadow-lg transition-shadow animate-appear">
               <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-amber-500 to-yellow-600 text-white rounded-xl mb-3">
@@ -56,7 +66,7 @@ export function About() {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 relative z-10">
           {features.map((feature, index) => (
             <div
               key={index}
