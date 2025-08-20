@@ -69,7 +69,7 @@ export function Therapists() {
                 {therapist.name === "郡山 京梧（こおりやま けいご）" ? (
                   <div className="w-32 h-32 mx-auto mb-4 shadow-lg rounded-full overflow-hidden">
                     <img 
-                      src="/LUNOA/LINE_ALBUM_宣材写真_250817_2 copy.jpg" 
+                      src="/LUNOA/therapist-1.jpg" 
                       alt="郡山 京梧" 
                       className="w-full h-full object-cover"
                     />
@@ -77,7 +77,7 @@ export function Therapists() {
                 ) : therapist.name === "宮川 竜太（みやがわ りゅうた）" ? (
                   <div className="w-32 h-32 mx-auto mb-4 shadow-lg rounded-full overflow-hidden">
                     <img 
-                      src="/LUNOA/LINE_ALBUM_宣材写真_250817_2.jpg" 
+                      src="/LUNOA/therapist-2.jpg" 
                       alt="宮川 竜太" 
                       className="w-full h-full object-cover"
                     />
@@ -85,7 +85,7 @@ export function Therapists() {
                 ) : therapist.name === "佐藤 まりな（さとう まりな）" ? (
                   <div className="w-32 h-32 mx-auto mb-4 shadow-lg rounded-full overflow-hidden">
                     <img 
-                      src="/LUNOA/LINE_ALBUM_宣材写真_250817_3.jpg" 
+                      src="/LUNOA/therapist-3.jpg" 
                       alt="佐藤 まりな" 
                       className="w-full h-full object-cover"
                     />
@@ -93,7 +93,7 @@ export function Therapists() {
                 ) : therapist.name === "鈴木 響（すずき きょう）" ? (
                   <div className="w-32 h-32 mx-auto mb-4 shadow-lg rounded-full overflow-hidden">
                     <img 
-                      src="/LUNOA/LINE_ALBUM_宣材写真_250817_4.jpg" 
+                      src="/LUNOA/therapist-4.jpg" 
                       alt="鈴木 響" 
                       className="w-full h-full object-cover"
                     />
@@ -101,7 +101,7 @@ export function Therapists() {
                 ) : therapist.name === "高梨 美優（たかなし みゆう）" ? (
                   <div className="w-32 h-32 mx-auto mb-4 shadow-lg rounded-full overflow-hidden">
                     <img 
-                      src="/LUNOA/LINE_ALBUM_宣材写真_250817_5.jpg" 
+                      src="/LUNOA/therapist-5.jpg" 
                       alt="高梨 美優" 
                       className="w-full h-full object-cover"
                     />
