@@ -81,6 +81,11 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  
+  /* フォント強制適用 */
+  body, * {
     font-family: 'Noto Sans JP', sans-serif !important;
   }
   
@@ -88,11 +93,28 @@
     font-family: 'Yomogi', cursive !important;
   }
   
+  .font-handwriting, .font-handwriting * {
+    font-family: 'Yomogi', cursive !important;
+  }
+  
   .font-heading {
+    font-family: 'Zen Maru Gothic', sans-serif !important;
+  }
+  
+  .font-heading, .font-heading * {
     font-family: 'Zen Maru Gothic', sans-serif !important;
   }
   
   .font-sans {
     font-family: 'Noto Sans JP', sans-serif !important;
+  }
+  
+  .font-sans, .font-sans * {
+    font-family: 'Noto Sans JP', sans-serif !important;
+  }
+  
+  /* 特定要素への強制適用 */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: inherit !important;
   }
 }
