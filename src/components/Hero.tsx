@@ -13,7 +13,7 @@ export function Hero() {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="absolute inset-0 bg-white/90"></div>
+      <div className="absolute inset-0 bg-white/95"></div>
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-8 animate-appear">
