@@ -5,7 +5,7 @@ export function Services() {
     <section id="services" className="py-16 md:py-24 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 font-handwriting">
             施術メニュー・料金
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -16,7 +16,7 @@ export function Services() {
 
         {/* 都度払い料金 */}
         <div className="mb-16">
-          <h3 className="text-3xl font-bold text-gray-800 text-center mb-12">都度払い料金</h3>
+          <h3 className="text-3xl font-bold text-gray-800 text-center mb-12 font-heading">都度払い料金</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             
             {/* 通常価格 */}
@@ -145,7 +145,7 @@ export function Services() {
 
         {/* 定期プラン */}
         <div className="mb-16">
-          <h3 className="text-3xl font-bold text-gray-800 text-center mb-12">定期プラン</h3>
+          <h3 className="text-3xl font-bold text-gray-800 text-center mb-12 font-heading">定期プラン</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             
             {/* 月2回プラン */}
@@ -247,6 +247,7 @@ export function Services() {
         <div className="text-center mt-16 animate-appear delay-1000">
           <div className="bg-white rounded-3xl p-8 shadow-lg max-w-4xl mx-auto">
             <h3 className="text-3xl font-bold text-gray-800 mb-6">期待できる効果</h3>
+            <h3 className="text-3xl font-bold text-gray-800 mb-6 font-heading">期待できる効果</h3>
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div>
                 <h4 className="text-xl font-semibold text-amber-600 mb-3">美容効果</h4>

@@ -44,7 +44,7 @@ export function About() {
       <div className="absolute inset-0 bg-white/98"></div>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear relative z-10">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 font-handwriting">
             LUNOAが選ばれる理由
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">

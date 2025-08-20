@@ -81,6 +81,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Noto Serif JP', serif;
+    font-family: 'Noto Sans JP', sans-serif;
   }
 }

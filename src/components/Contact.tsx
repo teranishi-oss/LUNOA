@@ -27,7 +27,7 @@ export function Contact() {
     <section id="contact" className="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-amber-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 font-handwriting">
             ご予約・お問い合わせ
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -69,6 +69,7 @@ export function Contact() {
 
           <div className="bg-white rounded-3xl shadow-lg p-8 animate-appear delay-300">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">お問い合わせフォーム</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-6 font-heading">お問い合わせフォーム</h3>
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>

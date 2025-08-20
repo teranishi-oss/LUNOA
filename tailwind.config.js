@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'serif': ['Noto Serif JP', 'serif'],
-        'sans': ['Noto Serif JP', 'serif'],
+        'handwriting': ['Yomogi', 'cursive'],
+        'heading': ['Zen Maru Gothic', 'sans-serif'],
+        'sans': ['Noto Sans JP', 'sans-serif'],
       },
       colors: {
         brand: "hsl(var(--brand))",
