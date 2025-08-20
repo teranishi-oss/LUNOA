@@ -5,10 +5,17 @@ export function Hero() {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50"
+      className="min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 relative"
+      style={{
+        backgroundImage: `url('/src/assets/374874116.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
+      <div className="absolute inset-0 bg-white/80"></div>
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-8 animate-appear">
             <div className="space-y-6">
               <h2 className="text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
