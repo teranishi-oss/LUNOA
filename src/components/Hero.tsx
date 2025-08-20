@@ -7,7 +7,7 @@ export function Hero() {
       id="home" 
       className="min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 relative"
       style={{
-        backgroundImage: `url('/src/assets/374874116.jpg')`,
+        backgroundImage: `url('/images/374874116.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
