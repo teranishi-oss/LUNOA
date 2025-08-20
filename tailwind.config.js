@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'handwriting': ['Yomogi', 'cursive'],
-        'heading': ['Zen Maru Gothic', 'sans-serif'],
-        'sans': ['Noto Sans JP', 'sans-serif'],
+        'handwriting': ['"Yomogi"', 'cursive'],
+        'heading': ['"Zen Maru Gothic"', 'sans-serif'],
+        'sans': ['"Noto Sans JP"', 'sans-serif'],
       },
       colors: {
         'amber-25': '#fefbf3',

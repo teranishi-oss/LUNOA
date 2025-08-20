@@ -81,6 +81,18 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif !important;
+  }
+  
+  .font-handwriting {
+    font-family: 'Yomogi', cursive !important;
+  }
+  
+  .font-heading {
+    font-family: 'Zen Maru Gothic', sans-serif !important;
+  }
+  
+  .font-sans {
+    font-family: 'Noto Sans JP', sans-serif !important;
   }
 }
