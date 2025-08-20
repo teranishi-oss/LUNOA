@@ -66,6 +66,18 @@ export function About() {
           ))}
         </div>
 
+        <div className="text-center mb-16 animate-appear delay-300">
+          <div className="bg-gradient-to-r from-amber-100 to-yellow-100 rounded-3xl p-8 shadow-lg max-w-2xl mx-auto">
+            <h3 className="text-3xl font-bold text-amber-700 mb-4 font-handwriting">
+              最短5分で変化を体感！
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              初回施術から体の変化を実感していただけます。
+              多くのお客様が施術直後に「軽くなった」「楽になった」と驚かれます。
+            </p>
+          </div>
+        </div>
+
         <div className="grid md:grid-cols-3 gap-8 relative z-10">
           {features.map((feature, index) => (
             <div

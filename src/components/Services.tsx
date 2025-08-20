@@ -192,17 +192,9 @@ export function Services() {
               </div>
               <h4 className="text-2xl font-bold text-gray-800 mb-4">月1回（月々払い）</h4>
               <div className="space-y-3 mb-6">
-                <div>
-                  <div className="text-lg font-semibold text-gray-700">1メニュー通常価格</div>
-                  <div className="text-3xl font-bold text-amber-600">¥11,000</div>
-                  <div className="text-sm text-gray-500">¥11,000×1回</div>
-                </div>
-                <div className="border-t pt-3">
-                  <div className="text-lg font-semibold text-gray-700">Quickむき価格</div>
-                  <div className="text-lg font-semibold text-gray-700">Quick付き価格</div>
-                  <div className="text-3xl font-bold text-amber-600">¥15,400</div>
-                  <div className="text-sm text-gray-500">¥15,400×1回</div>
-                </div>
+                <div className="text-lg font-semibold text-gray-700">Quick付き価格</div>
+                <div className="text-3xl font-bold text-amber-600">¥15,400</div>
+                <div className="text-sm text-gray-500">¥15,400×1回</div>
               </div>
               <ul className="text-left space-y-2 text-gray-600 mb-6">
                 <li className="flex items-center">
@@ -238,17 +230,9 @@ export function Services() {
               </div>
               <h4 className="text-2xl font-bold text-gray-800 mb-4">月2回（月々払い）</h4>
               <div className="space-y-3 mb-6">
-                <div>
-                  <div className="text-lg font-semibold text-gray-700">1メニュー通常価格</div>
-                  <div className="text-3xl font-bold text-amber-600">¥20,900</div>
-                  <div className="text-sm text-gray-500">¥10,450×2回</div>
-                </div>
-                <div className="border-t pt-3">
-                  <div className="text-lg font-semibold text-gray-700">Quickむき価格</div>
-                  <div className="text-lg font-semibold text-gray-700">Quick付き価格</div>
-                  <div className="text-3xl font-bold text-amber-600">¥29,260</div>
-                  <div className="text-sm text-gray-500">¥14,630×2回</div>
-                </div>
+                <div className="text-lg font-semibold text-gray-700">Quick付き価格</div>
+                <div className="text-3xl font-bold text-amber-600">¥29,260</div>
+                <div className="text-sm text-gray-500">¥14,630×2回</div>
               </div>
               <ul className="text-left space-y-2 text-gray-600 mb-6">
                 <li className="flex items-center">
@@ -281,17 +265,9 @@ export function Services() {
               </div>
               <h4 className="text-2xl font-bold text-gray-800 mb-4">月4回（月々払い）</h4>
               <div className="space-y-3 mb-6">
-                <div>
-                  <div className="text-lg font-semibold text-gray-700">1メニュー通常価格</div>
-                  <div className="text-3xl font-bold text-amber-600">¥37,400</div>
-                  <div className="text-sm text-gray-500">¥9,350×4回</div>
-                </div>
-                <div className="border-t pt-3">
-                  <div className="text-lg font-semibold text-gray-700">Quickむき価格</div>
-                  <div className="text-lg font-semibold text-gray-700">Quick付き価格</div>
-                  <div className="text-3xl font-bold text-amber-600">¥52,360</div>
-                  <div className="text-sm text-gray-500">¥13,090×4回</div>
-                </div>
+                <div className="text-lg font-semibold text-gray-700">Quick付き価格</div>
+                <div className="text-3xl font-bold text-amber-600">¥52,360</div>
+                <div className="text-sm text-gray-500">¥13,090×4回</div>
               </div>
               <ul className="text-left space-y-2 text-gray-600 mb-6">
                 <li className="flex items-center">
