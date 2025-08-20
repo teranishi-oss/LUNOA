@@ -66,7 +66,7 @@ export function Hero() {
           <div className="relative animate-appear delay-300">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-amber-100 to-yellow-100 h-96 lg:h-[500px] flex items-center justify-center">
               <img 
-                src="/src/assets/555.jpg" 
+                src="/images/555.jpg" 
                 alt="美容整体 LUNOA 施術風景" 
                 className="w-full h-full object-cover"
               />

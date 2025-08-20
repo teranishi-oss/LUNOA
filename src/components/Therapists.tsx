@@ -9,7 +9,7 @@ const therapists = [
     experience: "3年（4年目）",
     description: "豊富な経験と確かな技術で、お客様の体の歪みを根本から改善します。",
     initial: "郡",
-    image: "/src/assets/111.jpg",
+    image: "/images/111.jpg",
     specialties: ["骨格矯正", "姿勢改善", "根本治療"]
   },
   {
@@ -19,7 +19,7 @@ const therapists = [
     experience: "11年",
     description: "長年の経験を活かし、現代人に多い巻き肩の問題を根本から改善します。",
     initial: "佐",
-    image: "/src/assets/222.jpg",
+    image: "/images/222.jpg",
     specialties: ["巻き肩改善", "肩こり治療", "姿勢矯正"]
   },
   {
@@ -29,7 +29,7 @@ const therapists = [
     experience: "3年（4年目）",
     description: "自律神経の乱れや内臓の不調にアプローチし、体の内側から健康をサポートします。",
     initial: "高",
-    image: "/src/assets/333.jpg",
+    image: "/images/333.jpg",
     specialties: ["自律神経整体", "内臓調整", "ホルモンバランス"]
   },
   {
@@ -39,7 +39,7 @@ const therapists = [
     experience: "8ヶ月", 
     description: "肩こりの根本原因にアプローチし、自律神経のバランスも整えます。",
     initial: "宮",
-    image: "/src/assets/444.jpg",
+    image: "/images/444.jpg",
     specialties: ["肩こり改善", "自律神経調整", "筋膜リリース"]
   },
   {
@@ -49,7 +49,7 @@ const therapists = [
     experience: "4年（5年目）",
     description: "美容と癒しを融合した施術で、お客様の内面から輝く美しさを引き出します。",
     initial: "鈴",
-    image: "/src/assets/888.jpg",
+    image: "/images/888.jpg",
     specialties: ["美容整体", "小顔矯正", "リラクゼーション"]
   }
 ];
