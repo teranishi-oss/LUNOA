@@ -66,7 +66,7 @@ export function Hero() {
           <div className="relative animate-appear delay-300">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-amber-100 to-yellow-100 h-96 lg:h-[500px] flex items-center justify-center">
               <div className="text-center p-8">
-                <div className="w-32 h-32 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                src="/src/assets/555.jpg"
                   <span className="text-white text-4xl font-bold">L</span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-2">美容整体 LUNOA</h3>
