@@ -41,7 +41,7 @@ export function About() {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="absolute inset-0 bg-white/96"></div>
+      <div className="absolute inset-0 bg-white/98"></div>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear relative z-10">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
