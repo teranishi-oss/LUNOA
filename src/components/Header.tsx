@@ -32,9 +32,22 @@ export function Header() {
       <div className="container mx-auto px-4 py-4">
         {/* ロゴセクション - 完全中央配置 */}
         <div className="flex justify-center items-center mb-4">
-          <h1 className="text-2xl font-bold text-orange-300">
-            美容整体 LUNOA
-          </h1>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/images/rogo.png" 
+              alt="LUNOA ロゴ" 
+              className="h-8 w-auto"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.style.display = 'none';
+                const fallback = target.nextElementSibling as HTMLElement;
+                if (fallback) fallback.style.display = 'block';
+              }}
+            />
+            <h1 className="text-2xl font-bold text-orange-300" style={{ display: 'none' }}>
+              美容整体 LUNOA
+            </h1>
+          </div>
         </div>
 
         {/* デスクトップナビゲーション */}

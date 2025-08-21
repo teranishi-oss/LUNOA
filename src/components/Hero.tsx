@@ -45,11 +45,18 @@ export function Hero() {
           </div>
 
           <div className="relative animate-appear delay-300">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-orange-100 to-orange-200 h-96 lg:h-[500px] flex items-center justify-center">
-              <div className="text-center p-8">
-                <h3 className="text-4xl font-bold text-orange-600 mb-4">美容整体</h3>
-                <p className="text-2xl text-orange-500 mb-6">LUNOA</p>
-                <p className="text-orange-400">あなたの美と健康をサポート</p>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl h-96 lg:h-[500px]">
+              <img 
+                src="/images/374874116.jpg" 
+                alt="美容整体 LUNOA - 施術の様子" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                <div className="text-center text-white p-8">
+                  <h3 className="text-4xl font-bold mb-4">美容整体</h3>
+                  <p className="text-2xl mb-6">LUNOA</p>
+                  <p className="text-lg">あなたの美と健康をサポート</p>
+                </div>
               </div>
             </div>
 

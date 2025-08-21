@@ -76,8 +76,21 @@ export function Therapists() {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="text-center mb-6">
-                <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden shadow-lg bg-gradient-to-br from-orange-300 to-orange-400 flex items-center justify-center">
-                  <span className="text-2xl font-bold text-white">{therapist.initial}</span>
+                <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden shadow-lg">
+                  <img 
+                    src={therapist.image} 
+                    alt={therapist.name} 
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const fallback = target.nextElementSibling as HTMLElement;
+                      if (fallback) fallback.style.display = 'flex';
+                    }}
+                  />
+                  <div className="w-full h-full bg-gradient-to-br from-orange-300 to-orange-400 flex items-center justify-center" style={{ display: 'none' }}>
+                    <span className="text-2xl font-bold text-white">{therapist.initial}</span>
+                  </div>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-1">
                   {therapist.name}
