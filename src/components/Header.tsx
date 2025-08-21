@@ -4,35 +4,14 @@ import { Menu, X, Phone } from 'lucide-react';
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isScrolling, setIsScrolling] = useState(false);
-  const [scrollTimeout, setScrollTimeout] = useState<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-      setIsScrolling(true);
-      
-      // 既存のタイムアウトをクリア
-      if (scrollTimeout) {
-        clearTimeout(scrollTimeout);
-      }
-      
-      // 150ms後にスクロール停止とみなす
-      const timeout = setTimeout(() => {
-        setIsScrolling(false);
-      }, 150);
-      
-      setScrollTimeout(timeout);
     };
-    
     window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      if (scrollTimeout) {
-        clearTimeout(scrollTimeout);
-      }
-    };
-  }, [scrollTimeout]);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleNavClick = (href: string) => {
     setIsMenuOpen(false);
@@ -46,10 +25,15 @@ export function Header() {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled && isScrolling
+      isScrolled 
         ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gold-100' 
-          <div className="flex items-center flex-shrink-0">
-            <div className="flex items-center">
+        : 'bg-transparent'
+    }`}>
+      <div className="container mx-auto px-4 py-4">
+        <div className="flex flex-col space-y-3">
+          {/* ロゴと連絡先情報 */}
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-3 flex-shrink-0">
               <img 
                 src="/images/rogo.png" 
                 alt="LUNOA ロゴ" 
@@ -145,25 +129,8 @@ export function Header() {
 
         {/* モバイルナビゲーション */}
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 bg-white rounded-lg shadow-lg">
+          <div className="lg:hidden mt-4 pb-4 bg-white/95 backdrop-blur-md rounded-lg shadow-lg">
             <nav className="flex flex-col items-center space-y-4">
-              <button 
-                onClick={() => handleNavClick('#home')}
-        )
-        }
-      {/* モバイルナビゲーション */}
-      {isMenuOpen && (
-        <div className="lg:hidden mt-4 pb-4 bg-white rounded-lg shadow-lg mx-4">
-          <nav className="flex flex-col items-center space-y-4 py-4">
-      )}
-
-      {/* モバイルナビゲーション */}
-      {isMenuOpen && (
-        )
-        }
-        <div className="lg:hidden fixed top-32 left-0 right-0 z-40">
-          <div className="bg-white rounded-lg shadow-lg mx-4">
-            <nav className="flex flex-col items-center space-y-4 py-4">
               <button 
                 onClick={() => handleNavClick('#home')}
                 className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
@@ -212,11 +179,8 @@ export function Header() {
               </a>
             </nav>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </header>
   );
-}
-    }
-  )
 }
