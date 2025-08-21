@@ -19,13 +19,13 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-8 animate-appear">
             <div className="space-y-6">
-              <h2 className="text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
+              <h2 className="text-5xl lg:text-6xl font-bold text-gray-600 leading-tight">
                 美しさと健康を
-                <span className="block text-amber-600">
+                <span className="block text-amber-500">
                   根本から整える
                 </span>
               </h2>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-xl text-gray-500 leading-relaxed">
                 骨格・筋肉・内臓の歪みを整え、根本的な美しさと健康を追求する美容整体サロンです。
                 一人ひとりの体の状態に合わせたオーダーメイドの施術で、理想の美しさを実現します。
               </p>
@@ -38,10 +38,10 @@ export function Hero() {
                     <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <span className="text-gray-600 font-medium">5.0評価</span>
+                <span className="text-gray-500 font-medium">5.0評価</span>
               </div>
-              <div className="text-gray-500">•</div>
-              <span className="text-gray-600 font-medium">500名以上のお客様</span>
+              <div className="text-gray-400">•</div>
+              <span className="text-gray-500 font-medium">500名以上のお客様</span>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -57,7 +57,7 @@ export function Hero() {
               </a>
               <a
                 href="#services"
-                className="border-2 border-amber-300 text-amber-600 hover:bg-amber-50 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 no-underline"
+                className="border-2 border-amber-200 text-amber-500 hover:bg-amber-50 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 no-underline"
               >
                 <span>サービス詳細</span>
                 <ArrowRight className="w-5 h-5" />
@@ -82,15 +82,15 @@ export function Hero() {
 
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl animate-appear delay-1000">
               <div className="text-center">
-                <div className="text-3xl font-bold text-gray-800">1年3ヶ月</div>
-                <div className="text-sm text-gray-600">の実績</div>
+                <div className="text-3xl font-bold text-gray-600">1年3ヶ月</div>
+                <div className="text-sm text-gray-500">の実績</div>
               </div>
             </div>
 
             <div className="absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-xl animate-appear delay-700">
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-amber-400 rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium text-gray-700">営業中</span>
+                <span className="text-sm font-medium text-gray-600">営業中</span>
               </div>
             </div>
           </div>
