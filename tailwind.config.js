@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'handwriting': ['"Yomogi"', 'cursive'],
-        'heading': ['"Zen Maru Gothic"', 'sans-serif'],
-        'sans': ['"Noto Sans JP"', 'sans-serif'],
+        'handwriting': ['"Dancing Script"', 'cursive'],
+        'heading': ['"Playfair Display"', 'serif'],
+        'sans': ['"Inter"', 'sans-serif'],
       },
       colors: {
         'gold': {
