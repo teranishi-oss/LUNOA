@@ -71,7 +71,6 @@ export function About() {
 
         <div className="text-center mb-16 animate-appear delay-300">
           <div className="bg-white rounded-3xl p-8 shadow-sm max-w-2xl mx-auto border border-gold-200">
-            <h3 className="text-3xl font-bold mb-4 font-handwriting" style={{ color: '#b45309' }}>
             <h3 className="text-3xl font-bold mb-4 font-handwriting" style={{ color: '#f59e0b' }}>
               最短5分で変化を体感！
             </h3>
