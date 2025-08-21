@@ -48,7 +48,6 @@ export function Header() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled && isScrolling
         ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gold-100' 
-    }`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* ロゴセクション */}
@@ -149,15 +148,10 @@ export function Header() {
 
         {/* モバイルナビゲーション */}
         {isMenuOpen && (
-            )
-            }
           <div className="lg:hidden mt-4 pb-4 bg-white rounded-lg shadow-lg">
             <nav className="flex flex-col items-center space-y-4">
               <button 
                 onClick={() => handleNavClick('#home')}
-                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
-      </div>
-      
       {/* モバイルナビゲーション */}
       {isMenuOpen && (
         <div className="lg:hidden mt-4 pb-4 bg-white rounded-lg shadow-lg mx-4">
@@ -212,6 +206,5 @@ export function Header() {
         </div>
       )}
     </header>
-  )
   );
 }
