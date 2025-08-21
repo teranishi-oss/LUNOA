@@ -36,7 +36,7 @@ export function Header() {
             <img 
               src="/images/rogo.png" 
               alt="LUNOA ロゴ" 
-              className="h-8 w-auto"
+             className="h-10 w-auto"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.style.display = 'none';
@@ -44,7 +44,7 @@ export function Header() {
                 if (fallback) fallback.style.display = 'block';
               }}
             />
-            <h1 className="text-2xl font-bold text-orange-300" style={{ display: 'none' }}>
+           <h1 className="text-3xl font-bold text-orange-300" style={{ display: 'none' }}>
               美容整体 LUNOA
             </h1>
           </div>
