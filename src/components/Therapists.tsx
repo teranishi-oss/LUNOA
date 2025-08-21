@@ -161,6 +161,9 @@ export function Therapists() {
           </div>
         </div>
       </div>
+    )
+    )
+    }
     </section>
   );
 }
