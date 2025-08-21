@@ -51,13 +51,13 @@ export function Header() {
             </div>
             
             {/* 連絡先情報 */}
-            <div className="hidden lg:flex flex-col text-right flex-1 ml-6 justify-center">
-              <div className="text-sm text-gray-600 mb-1 font-medium">
-                <span className="font-medium">所在地：</span>
+            <div className="hidden lg:flex flex-col text-right flex-1 ml-6 justify-center pr-2">
+              <div className="text-base text-gray-600 mb-1 font-medium">
+                <span className="font-semibold">所在地：</span>
                 〒150-0043 東京都渋谷区道玄坂１丁目１９−１３ トップヒル並木 5階
               </div>
-              <div className="text-sm text-gray-600 font-medium">
-                <span className="font-medium">電話番号：</span>
+              <div className="text-base text-gray-600 font-medium">
+                <span className="font-semibold">電話番号：</span>
                 090-3543-0588
               </div>
             </div>
