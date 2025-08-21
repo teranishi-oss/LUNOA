@@ -56,7 +56,7 @@ const therapists = [
 
 export function Therapists() {
   return (
-    <section id="therapists" className="py-16 md:py-24" style={{ backgroundColor: '#F8F4E9' }}>
+    <section id="therapists" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-600 mb-6 font-handwriting">
@@ -154,6 +154,8 @@ export function Therapists() {
                   <Clock className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-3xl font-bold mb-2 text-orange-300">総合31年</div>
+                <div className="text-gray-400">総合経験年数</div>
+                <div className="text-3xl font-bold mb-2 text-orange-300">27年</div>
                 <div className="text-gray-400">総合経験年数</div>
               </div>
             </div>

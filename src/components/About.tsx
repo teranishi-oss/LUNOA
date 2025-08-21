@@ -33,16 +33,8 @@ export function About() {
   return (
     <section 
       id="about" 
-      className="py-16 md:py-24 relative"
-      style={{
-        backgroundImage: `url('/images/1212.png')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundColor: '#F8F4E9'
-      }}
+      className="py-16 md:py-24"
     >
-      <div className="absolute inset-0" style={{ backgroundColor: 'rgba(248, 244, 233, 0.92)' }}></div>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear relative z-10">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-600 mb-6 font-handwriting">
