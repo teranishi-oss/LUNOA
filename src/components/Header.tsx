@@ -33,7 +33,7 @@ export function Header() {
             <img 
               src="/images/rogo.png" 
               alt="LUNOA Logo" 
-              className="w-10 h-10 object-contain"
+              className="w-12 h-12 object-contain"
             />
             <h1 className="text-2xl font-bold bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent">
               美容整体 LUNOA
