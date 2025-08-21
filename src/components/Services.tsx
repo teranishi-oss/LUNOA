@@ -79,8 +79,8 @@ export function Services() {
             </div>
 
             {/* 6回券 - おすすめ */}
-            <div className="bg-gradient-to-br from-gold-50 to-white rounded-3xl p-8 shadow-md hover:shadow-lg transition-all duration-300 text-center border-2 border-gold-300">
-              <div className="bg-gold-500 text-white px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
+            <div className="bg-gradient-to-br from-amber-50 to-white rounded-3xl p-8 shadow-md hover:shadow-lg transition-all duration-300 text-center border-2 border-amber-200 relative">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-amber-600 text-white px-4 py-1 rounded-full text-sm font-medium">
                 おすすめ
               </div>
               <h4 className="text-2xl font-bold text-gray-800 mb-4">6回券</h4>
@@ -89,15 +89,15 @@ export function Services() {
               <div className="text-sm text-gray-500 mb-6">¥15,400 × 6回</div>
               <ul className="text-left space-y-2 text-gray-600 mb-6">
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
                   継続改善コース
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
                   有効期限6ヶ月
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
                   根本改善に最適
                 </li>
               </ul>
@@ -106,10 +106,7 @@ export function Services() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block w-full font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
-                style={{ 
-                  background: 'linear-gradient(135deg, #f59e0b, #eab308)',
-                  color: 'white'
-                }}
+                style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)', color: 'white' }}
               >
                 予約する
               </a>
@@ -239,8 +236,8 @@ export function Services() {
             </div>
 
             {/* COURSE 02 - おすすめ */}
-            <div className="bg-gradient-to-br from-gold-50 to-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border-2 border-gold-200">
-              <div className="bg-gold-500 text-white px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
+            <div className="bg-gradient-to-br from-amber-50 to-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border-2 border-amber-200 relative">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-amber-600 text-white px-4 py-1 rounded-full text-sm font-medium">
                 おすすめ
               </div>
               <div className="bg-gold-100 text-gold-700 px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
@@ -259,15 +256,15 @@ export function Services() {
               </div>
               <ul className="text-left space-y-2 text-gray-600 mb-6">
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
                   月2回の定期施術
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
                   会員特典適用
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
                   予約優先権
                 </li>
               </ul>
@@ -276,10 +273,7 @@ export function Services() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block w-full font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
-                style={{ 
-                  background: 'linear-gradient(135deg, #f59e0b, #eab308)',
-                  color: 'white'
-                }}
+                style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)', color: 'white' }}
               >
                 予約する
               </a>
