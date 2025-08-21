@@ -27,7 +27,7 @@ export function Testimonials() {
     <section id="testimonials" className="py-16 md:py-24" style={{ backgroundColor: '#F8F4E9' }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-400 mb-6 font-handwriting">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-600 mb-6 font-handwriting">
             お客様の声
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
@@ -61,7 +61,7 @@ export function Testimonials() {
                   </span>
                 </div>
                 <div>
-                  <div className="font-semibold text-slate-400">{testimonial.name}</div>
+                  <div className="font-semibold text-gray-600">{testimonial.name}</div>
                   <div className="text-sm text-gray-400">{testimonial.role}</div>
                 </div>
               </div>
@@ -71,7 +71,7 @@ export function Testimonials() {
 
         <div className="text-center mt-12 animate-appear delay-1000">
           <div className="bg-white rounded-3xl p-8 shadow-sm max-w-4xl mx-auto border border-gold-100">
-            <h3 className="text-2xl font-bold text-slate-400 mb-4">お客様満足度</h3>
+            <h3 className="text-2xl font-bold text-gray-600 mb-4">お客様満足度</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2 text-orange-300">96.7%</div>

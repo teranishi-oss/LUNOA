@@ -19,7 +19,7 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-8 animate-appear">
             <div className="space-y-6">
-              <h2 className="text-5xl lg:text-6xl font-bold text-gray-400 leading-tight font-handwriting">
+              <h2 className="text-5xl lg:text-6xl font-bold text-gray-600 leading-tight font-handwriting">
                 美しさと健康を
                 <span className="block text-orange-300">
                   根本から整える

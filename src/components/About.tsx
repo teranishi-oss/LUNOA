@@ -45,7 +45,7 @@ export function About() {
       <div className="absolute inset-0" style={{ backgroundColor: 'rgba(248, 244, 233, 0.92)' }}></div>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear relative z-10">
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-400 mb-6 font-handwriting">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-600 mb-6 font-handwriting">
             LUNOAが選ばれる理由
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
@@ -95,7 +95,7 @@ export function About() {
               >
                 {feature.icon}
               </div>
-              <h3 className="text-2xl font-bold text-slate-400 mb-4">{feature.title}</h3>
+              <h3 className="text-2xl font-bold text-gray-600 mb-4">{feature.title}</h3>
               <p className="text-gray-400 leading-relaxed">{feature.description}</p>
             </div>
           ))}

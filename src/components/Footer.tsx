@@ -40,7 +40,7 @@ export function Footer() {
           </div>
 
           <div className="animate-appear delay-100">
-            <h4 className="text-lg font-semibold mb-4">サービス</h4>
+            <h4 className="text-lg font-semibold mb-4 text-gray-600">サービス</h4>
             <ul className="space-y-2 text-gray-400">
               <li>姿勢矯正（猫背・巻き肩・反り腰）</li>
               <li>骨格矯正</li>
@@ -52,7 +52,7 @@ export function Footer() {
           </div>
 
           <div className="animate-appear delay-300">
-            <h4 className="text-lg font-semibold mb-4">アクセス</h4>
+            <h4 className="text-lg font-semibold mb-4 text-gray-600">アクセス</h4>
             <ul className="space-y-2 text-gray-400">
               <li>〒150-0043</li>
               <li>東京都渋谷区道玄坂１丁目１９−１３</li>

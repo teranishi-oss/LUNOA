@@ -59,7 +59,7 @@ export function Therapists() {
     <section id="therapists" className="py-16 md:py-24" style={{ backgroundColor: '#F8F4E9' }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-400 mb-6 font-handwriting">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-600 mb-6 font-handwriting">
             施術者紹介
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
@@ -104,6 +104,7 @@ export function Therapists() {
 
               <div className="space-y-3">
                 <h4 className="text-sm font-semibold text-slate-400 flex items-center">
+                <h4 className="text-sm font-semibold text-gray-600 flex items-center">
                   <Star className="w-4 h-4 text-orange-300 mr-2" />
                   専門分野
                 </h4>
@@ -124,7 +125,7 @@ export function Therapists() {
 
         <div className="text-center mt-16 animate-appear delay-1000">
           <div className="bg-white rounded-3xl p-8 shadow-sm max-w-4xl mx-auto border border-gold-100">
-            <h3 className="text-3xl font-bold text-slate-400 mb-6">チーム実績</h3>
+            <h3 className="text-3xl font-bold text-gray-600 mb-6">チーム実績</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div 

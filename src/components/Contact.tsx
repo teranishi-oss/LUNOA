@@ -27,7 +27,7 @@ export function Contact() {
     <section id="contact" className="py-16 md:py-24" style={{ backgroundColor: '#F8F4E9' }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-400 mb-6 font-handwriting">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-600 mb-6 font-handwriting">
             ご予約・お問い合わせ
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
@@ -47,7 +47,7 @@ export function Contact() {
                     {info.icon}
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-400 mb-1">{info.title}</h4>
+                    <h4 className="font-semibold text-gray-600 mb-1">{info.title}</h4>
                     <p className="text-gray-400">{info.content}</p>
                   </div>
                 </div>
@@ -69,11 +69,11 @@ export function Contact() {
           </div>
 
           <div className="bg-white rounded-3xl shadow-sm p-8 animate-appear delay-300 border border-gold-100">
-            <h3 className="text-2xl font-bold text-slate-400 mb-6 font-heading">お問い合わせフォーム</h3>
+            <h3 className="text-2xl font-bold text-gray-600 mb-6 font-heading">お問い合わせフォーム</h3>
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-slate-400 mb-2">お名前</label>
+                  <label className="block text-sm font-medium text-gray-600 mb-2">お名前</label>
                   <input 
                     type="text"
                     className="w-full px-4 py-3 border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
@@ -81,7 +81,7 @@ export function Contact() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-slate-400 mb-2">フリガナ</label>
+                  <label className="block text-sm font-medium text-gray-600 mb-2">フリガナ</label>
                   <input 
                     type="text"
                     className="w-full px-4 py-3 border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
@@ -91,7 +91,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-slate-400 mb-2">メールアドレス</label>
+                <label className="block text-sm font-medium text-gray-600 mb-2">メールアドレス</label>
                 <input 
                   type="email"
                   className="w-full px-4 py-3 border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
@@ -100,7 +100,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-slate-400 mb-2">電話番号</label>
+                <label className="block text-sm font-medium text-gray-600 mb-2">電話番号</label>
                 <input 
                   type="tel"
                   className="w-full px-4 py-3 border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
@@ -109,7 +109,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-slate-400 mb-2">メッセージ</label>
+                <label className="block text-sm font-medium text-gray-600 mb-2">メッセージ</label>
                 <textarea 
                   rows={4}
                   className="w-full px-4 py-3 border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors resize-none"
