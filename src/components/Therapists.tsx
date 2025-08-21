@@ -127,24 +127,33 @@ export function Therapists() {
             <h3 className="text-3xl font-bold text-gray-800 mb-6">チーム実績</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div 
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                  style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
+                >
                   <Award className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold text-gold-600 mb-2">1400名+</div>
+                <div className="text-3xl font-bold mb-2" style={{ color: '#d97706' }}>1400名+</div>
                 <div className="text-gray-600">施術実績</div>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div 
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                  style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
+                >
                   <Heart className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold text-gold-600 mb-2">96.7%</div>
+                <div className="text-3xl font-bold mb-2" style={{ color: '#d97706' }}>96.7%</div>
                 <div className="text-gray-600">お客様満足度</div>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div 
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                  style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
+                >
                   <Clock className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold text-gold-600 mb-2">平均27年</div>
+                <div className="text-3xl font-bold mb-2" style={{ color: '#d97706' }}>平均27年</div>
                 <div className="text-gray-600">総合経験年数</div>
               </div>
             </div>

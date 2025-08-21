@@ -85,6 +85,7 @@ export function Services() {
               </div>
               <h4 className="text-2xl font-bold text-gray-800 mb-4">6回券</h4>
               <div className="text-4xl font-bold text-gold-600 mb-2">¥92,400</div>
+              <div className="text-4xl font-bold mb-2" style={{ color: '#d97706' }}>¥92,400</div>
               <div className="text-gray-600 mb-2">税込</div>
               <div className="text-sm text-gray-500 mb-6">¥15,400 × 6回</div>
               <ul className="text-left space-y-2 text-gray-600 mb-6">
@@ -158,6 +159,10 @@ export function Services() {
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div className="bg-white rounded-2xl p-6 shadow-md">
                 <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div 
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                  style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
+                >
                   <span className="text-white font-bold text-lg">無料</span>
                 </div>
                 <h5 className="font-bold text-gray-800 mb-2">入会金無料</h5>
@@ -165,6 +170,10 @@ export function Services() {
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-md">
                 <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div 
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                  style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
+                >
                   <span className="text-white font-bold text-lg">🎂</span>
                 </div>
                 <h5 className="font-bold text-gray-800 mb-2">誕生日月＋1回無料</h5>
@@ -172,6 +181,10 @@ export function Services() {
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-md">
                 <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div 
+                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
+                  style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
+                >
                   <span className="text-white font-bold text-lg">✨</span>
                 </div>
                 <h5 className="font-bold text-gray-800 mb-2">4ヶ月毎オプション無料</h5>
@@ -241,10 +254,12 @@ export function Services() {
               <div className="space-y-3 mb-6">
                 <div className="text-lg font-semibold text-gray-700">1メニュー通常価格</div>
                 <div className="text-3xl font-bold text-gold-600">¥20,900</div>
+                <div className="text-3xl font-bold" style={{ color: '#d97706' }}>¥20,900</div>
                 <div className="text-sm text-gray-500">¥10,450×2回</div>
                 <div className="border-t border-gray-200 pt-3 mt-3">
                 <div className="text-lg font-semibold text-gray-700">Quick付き価格</div>
                 <div className="text-3xl font-bold text-gold-600">¥29,260</div>
+                <div className="text-3xl font-bold" style={{ color: '#d97706' }}>¥29,260</div>
                 <div className="text-sm text-gray-500">¥14,630×2回</div>
                 </div>
               </div>
@@ -267,6 +282,16 @@ export function Services() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+                className="inline-block w-full font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+                style={{ 
+                  background: 'linear-gradient(135deg, #f59e0b, #eab308)',
+                  color: 'white'
+                }}
+                className="inline-block w-full font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+                style={{ 
+                  background: 'linear-gradient(135deg, #f59e0b, #eab308)',
+                  color: 'white'
+                }}
               >
                 予約する
               </a>
@@ -321,6 +346,7 @@ export function Services() {
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div>
                 <h4 className="text-xl font-semibold text-gold-600 mb-3">美容効果</h4>
+                <h4 className="text-xl font-semibold mb-3" style={{ color: '#d97706' }}>美容効果</h4>
                 <ul className="space-y-2 text-gray-600">
                   <li>• くびれ・下っ腹改善</li>
                   <li>• 肩の盛り上がり改善</li>
@@ -330,6 +356,7 @@ export function Services() {
               </div>
               <div>
                 <h4 className="text-xl font-semibold text-gold-600 mb-3">健康効果</h4>
+                <h4 className="text-xl font-semibold mb-3" style={{ color: '#d97706' }}>健康効果</h4>
                 <ul className="space-y-2 text-gray-600">
                   <li>• 首肩こり・腰痛の改善</li>
                   <li>• 頭痛の改善</li>

@@ -21,6 +21,7 @@ export function Footer() {
                 className="w-12 h-12 object-contain"
               />
               <h3 className="text-xl font-bold text-amber-600" style={{ color: '#d97706' }}>美容整体 LUNOA</h3>
+              <h3 className="text-xl font-bold" style={{ color: '#d97706' }}>美容整体 LUNOA</h3>
             </div>
             <p className="text-gray-400 leading-relaxed">
               骨格・筋肉・内臓の歪みを根本から改善し、美しさと健康を同時に実現する整体サロンです。
@@ -31,6 +32,12 @@ export function Footer() {
                   key={index}
                   href={social.href}
                   className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gold-500 transition-colors"
+                  className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center transition-colors"
+                  style={{ 
+                    ':hover': { 
+                      background: 'linear-gradient(135deg, #f59e0b, #eab308)' 
+                    } 
+                  }}
                   aria-label={social.label}
                 >
                   {social.icon}
@@ -72,6 +79,7 @@ export function Footer() {
             <div className="flex items-center space-x-1 text-gray-400 text-sm mt-4 md:mt-0">
               <span>美と健康への想いを込めて</span>
               <Heart className="w-4 h-4 text-gold-500 fill-current" />
+              <Heart className="w-4 h-4 fill-current" style={{ color: '#f59e0b' }} />
             </div>
           </div>
         </div>
