@@ -32,7 +32,7 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-3">
             <img 
-              src="/スクリーンショット 2025-08-10 20.06.29 copy copy.png" 
+              src="/images/rogo.png" 
               alt="LUNOA Logo" 
               className="w-10 h-10 object-contain"
             />
