@@ -67,9 +67,7 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="bg-white rounded-3xl shadow-lg p-8 animate-appear delay-300">
-         <div className="bg-white rounded-3xl shadow-sm p-8 animate-appear delay-300 border border-gold-100">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">お問い合わせフォーム</h3>
+          <div className="bg-white rounded-3xl shadow-sm p-8 animate-appear delay-300 border border-gold-100">
             <h3 className="text-2xl font-bold text-gray-800 mb-6 font-heading">お問い合わせフォーム</h3>
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
@@ -126,7 +124,6 @@ export function Contact() {
                 <span>送信する</span>
               </button>
             </form>
-          </div>
           </div>
         </div>
       </div>
