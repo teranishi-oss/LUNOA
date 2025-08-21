@@ -1,22 +1,44 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-      /* ゴシック体フォント即座適用 */
-      body { font-family: 'Inter', sans-serif !important; }
-      .font-handwriting { font-family: 'Roboto', sans-serif !important; }
-      .font-heading { font-family: 'Open Sans', sans-serif !important; }
-      /* 背景色強制適用 */
+      /* 即座にスタイル適用 */
       html, body, #root { 
         background-color: #F8F4E9 !important; 
         min-height: 100vh !important;
+        font-family: 'Inter', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif !important;
+      }
+      
+      /* フォント強制適用 */
+      * {
+        font-family: 'Inter', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif !important;
+      }
+      
+      .font-handwriting {
+        font-family: 'Roboto', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif !important;
+      }
+      
+      .font-heading {
+        font-family: 'Open Sans', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif !important;
+      }
+      
+      /* 色の強制適用 */
+      .text-orange-300 {
+        color: #fdba74 !important;
+      }
+      
+      .text-gray-400 {
+        color: #9ca3af !important;
+      }
+      
+      .text-gray-600 {
+        color: #4b5563 !important;
       }
     </style>
     <title>美容整体 LUNOA</title>

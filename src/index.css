@@ -79,80 +79,73 @@
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
-    background-color: #F8F4E9 !important;
-  }
   
   html {
     background-color: #F8F4E9 !important;
+    min-height: 100vh !important;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif !important;
+    background-color: #F8F4E9 !important;
+    min-height: 100vh !important;
   }
   
   #root {
     background-color: #F8F4E9 !important;
-    min-height: 100vh;
+    min-height: 100vh !important;
   }
   
-  /* 確実にゴールドカラーを表示 - 本番環境対応 */
-  .text-gold-600,
-  .text-amber-600,
-  .bg-gradient-to-r.from-gold-500.to-gold-600,
+  /* フォント強制適用 */
+  body, * {
+    font-family: 'Inter', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif !important;
+  }
+  
+  .font-handwriting {
+    font-family: 'Roboto', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif !important;
+  }
+  
+  .font-heading {
+    font-family: 'Open Sans', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif !important;
+  }
+  
+  .font-sans {
+    font-family: 'Inter', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif !important;
+  }
+  
+  /* 色の強制適用 */
+  .text-orange-300 {
+    color: #fdba74 !important;
+  }
+  
+  .text-gray-400 {
+    color: #9ca3af !important;
+  }
+  
+  .text-gray-600 {
+    color: #4b5563 !important;
+  }
+  
   .bg-gradient-to-r.from-amber-500.to-yellow-600,
-  .bg-gradient-to-r.from-gold-600.to-gold-700 {
-    color: #f59e0b !important;
-  }
-  
-  /* ボタンの背景色強制適用 */
-  .bg-gradient-to-r.from-amber-500.to-yellow-600 {
+  .bg-gradient-to-r.from-amber-600.to-yellow-700 {
     background: linear-gradient(135deg, #d2b48c, #deb887) !important;
     color: white !important;
   }
   
-  .bg-gradient-to-r.from-amber-600.to-amber-700:hover {
+  /* ボタンスタイル強制適用 */
+  .btn-primary {
     background: linear-gradient(135deg, #d2b48c, #deb887) !important;
+    color: white !important;
   }
   
-  /* 統計カードの背景色 */
-  .bg-gradient-to-r.from-amber-500.to-amber-600 {
-    background: linear-gradient(135deg, #d2b48c, #deb887) !important;
+  /* 背景色強制適用 */
+  section {
+    background-color: transparent !important;
   }
   
-  /* テキストグラデーション強制適用 */
-  .bg-gradient-to-r.from-amber-600.to-yellow-600.bg-clip-text.text-transparent {
-    background: linear-gradient(135deg, #d2b48c, #deb887) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
-  }
-  
-  /* ゴシック体フォント強制適用 */
-  body, * {
-    font-family: 'Inter', sans-serif !important;
-  }
-  
-  .font-handwriting {
-    font-family: 'Roboto', sans-serif !important;
-  }
-  
-  .font-handwriting, .font-handwriting * {
-    font-family: 'Roboto', sans-serif !important;
-  }
-  
-  .font-heading {
-    font-family: 'Open Sans', sans-serif !important;
-  }
-  
-  .font-heading, .font-heading * {
-    font-family: 'Open Sans', sans-serif !important;
-  }
-  
-  .font-sans {
-    font-family: 'Inter', sans-serif !important;
-  }
-  
-  .font-sans, .font-sans * {
-    font-family: 'Inter', sans-serif !important;
+  .bg-white {
+    background-color: white !important;
   }
   
   /* 特定要素への強制適用 */
