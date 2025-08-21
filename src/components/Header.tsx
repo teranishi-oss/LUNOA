@@ -60,6 +60,13 @@ export function Header() {
                 <span className="font-semibold">電話番号：</span>
                 090-3543-0588
               </div>
+             <div className="text-sm text-gray-600 mt-1">
+               <div className="font-semibold mb-1">営業時間：</div>
+               <div className="grid grid-cols-2 gap-x-4 text-xs">
+                 <div>月〜金: 10:00-21:00</div>
+                 <div>土日: 10:00-19:00</div>
+               </div>
+             </div>
             </div>
           </div>
 
