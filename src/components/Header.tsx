@@ -37,7 +37,7 @@ export function Header() {
               <img 
                 src="/images/rogo.png" 
                 alt="LUNOA ロゴ" 
-                className="h-20 w-auto"
+                className="h-22 w-auto"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.style.display = 'none';
