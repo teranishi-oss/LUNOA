@@ -56,17 +56,14 @@ export function Header() {
                 <span className="font-semibold">所在地：</span>
                 〒150-0043 東京都渋谷区道玄坂１丁目１９−１３ トップヒル並木 5階
               </div>
-              <div className="text-base text-gray-600 font-medium">
+              <div className="text-base text-gray-600 font-medium mb-1">
                 <span className="font-semibold">電話番号：</span>
                 090-3543-0588
               </div>
-             <div className="text-sm text-gray-600 mt-1">
-               <div className="font-semibold mb-1">営業時間：</div>
-               <div className="grid grid-cols-2 gap-x-4 text-xs">
-                 <div>月〜金: 10:00-21:00</div>
-                 <div>土日: 10:00-19:00</div>
-               </div>
-             </div>
+              <div className="text-base text-gray-600 font-medium">
+                <span className="font-semibold">営業時間：</span>
+                月〜金: 10:00-21:00 / 土日: 10:00-19:00
+              </div>
             </div>
           </div>
 

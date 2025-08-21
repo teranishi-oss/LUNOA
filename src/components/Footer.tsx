@@ -1,12 +1,5 @@
 import React from 'react';
-import { Heart, Instagram, Facebook, Twitter, Mail } from 'lucide-react';
-
-const socialLinks = [
-  { icon: <Instagram className="w-5 h-5" />, href: "https://www.instagram.com/seitai_lunoa/", label: "Instagram" },
-  { icon: <Facebook className="w-5 h-5" />, href: "#", label: "Facebook" },
-  { icon: <Twitter className="w-5 h-5" />, href: "#", label: "Twitter" },
-  { icon: <Mail className="w-5 h-5" />, href: "#", label: "Email" }
-];
+import { Heart } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -18,18 +11,6 @@ export function Footer() {
             <p className="text-gray-400 leading-relaxed">
               骨格・筋肉・内臓の歪みを根本から改善し、美しさと健康を同時に実現する整体サロンです。
             </p>
-            <div className="flex space-x-4">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  className="w-10 h-10 bg-gray-100 text-gray-400 rounded-full flex items-center justify-center hover:bg-gradient-to-r hover:from-orange-300 hover:to-orange-400 hover:text-white transition-all duration-300"
-                  aria-label={social.label}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
           </div>
 
           <div className="animate-appear delay-100">
