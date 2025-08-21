@@ -60,7 +60,7 @@ export function About() {
               <div 
                 className="inline-flex items-center justify-center w-12 h-12 text-white rounded-xl mb-3"
                 style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
-              ></div>
+              >
                 {stat.icon}
               </div>
               <div className="text-3xl font-bold text-gray-800 mb-1">{stat.value}</div>
