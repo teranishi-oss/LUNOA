@@ -33,7 +33,7 @@ export function About() {
   return (
     <section 
       id="about" 
-      className="py-16 md:py-24 bg-gradient-to-br from-amber-25 to-yellow-25 relative"
+      className="py-16 md:py-24 bg-gradient-to-br from-white via-pearl-100 to-gold-50 relative"
       style={{
         backgroundImage: `url('/images/1212.png')`,
         backgroundSize: 'cover',
@@ -41,7 +41,7 @@ export function About() {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="absolute inset-0 bg-white/95"></div>
+      <div className="absolute inset-0 bg-white/85"></div>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear relative z-10">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 font-handwriting">
@@ -56,8 +56,8 @@ export function About() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-16 relative z-10">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center p-6 bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl shadow-md hover:shadow-lg transition-shadow animate-appear">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-amber-500 to-yellow-600 text-white rounded-xl mb-3">
+            <div key={index} className="text-center p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow animate-appear border border-gold-100">
+              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-gold-500 to-gold-600 text-white rounded-xl mb-3">
                 {stat.icon}
               </div>
               <div className="text-3xl font-bold text-gray-800 mb-1">{stat.value}</div>
@@ -67,8 +67,8 @@ export function About() {
         </div>
 
         <div className="text-center mb-16 animate-appear delay-300">
-          <div className="bg-gradient-to-r from-amber-100 to-yellow-100 rounded-3xl p-8 shadow-lg max-w-2xl mx-auto">
-            <h3 className="text-3xl font-bold text-amber-700 mb-4 font-handwriting">
+          <div className="bg-gradient-to-r from-white to-gold-50 rounded-3xl p-8 shadow-lg max-w-2xl mx-auto border border-gold-200">
+            <h3 className="text-3xl font-bold text-gold-700 mb-4 font-handwriting">
               最短5分で変化を体感！
             </h3>
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -82,10 +82,10 @@ export function About() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-gray-50 to-amber-50 rounded-3xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-appear"
+              className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 animate-appear border border-gold-100"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className={`w-16 h-16 bg-gradient-to-r ${feature.gradient} rounded-2xl flex items-center justify-center text-white mb-6`}>
+              <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-gold-600 rounded-2xl flex items-center justify-center text-white mb-6">
                 {feature.icon}
               </div>
               

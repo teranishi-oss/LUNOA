@@ -10,7 +10,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           <div className="space-y-4 animate-appear">
@@ -30,7 +30,7 @@ export function Footer() {
                 <a
                   key={index}
                   href={social.href}
-                  className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-500 transition-colors"
+                  className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gold-500 transition-colors"
                   aria-label={social.label}
                 >
                   {social.icon}
@@ -71,7 +71,7 @@ export function Footer() {
             </p>
             <div className="flex items-center space-x-1 text-gray-400 text-sm mt-4 md:mt-0">
               <span>美と健康への想いを込めて</span>
-              <Heart className="w-4 h-4 text-amber-500 fill-current" />
+              <Heart className="w-4 h-4 text-gold-500 fill-current" />
             </div>
           </div>
         </div>

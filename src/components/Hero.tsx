@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 relative"
+      className="min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-white via-pearl-100 to-gold-50 relative"
       style={{
         backgroundImage: `url('/images/374874116.jpg')`,
         backgroundSize: 'cover',
@@ -13,14 +13,14 @@ export function Hero() {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="absolute inset-0 bg-white/95"></div>
+      <div className="absolute inset-0 bg-white/90"></div>
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-8 animate-appear">
             <div className="space-y-6">
               <h2 className="text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
                 美しさと健康を
-                <span className="block bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-r from-gold-600 to-gold-500 bg-clip-text text-transparent">
                   根本から整える
                 </span>
               </h2>
@@ -48,14 +48,14 @@ export function Hero() {
                 href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center no-underline"
+                className="inline-block bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center no-underline"
               >
                 <Calendar className="w-5 h-5 inline mr-2" />
                 ご予約はこちら
               </a>
               <a
                 href="#services"
-                className="border-2 border-amber-300 text-amber-600 hover:bg-amber-50 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 no-underline"
+                className="border-2 border-gold-300 text-gold-600 hover:bg-gold-50 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-200 flex items-center justify-center space-x-2 no-underline"
               >
                 <span>サービス詳細</span>
                 <ArrowRight className="w-5 h-5" />
@@ -64,13 +64,13 @@ export function Hero() {
           </div>
 
           <div className="relative animate-appear delay-300">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-amber-100 to-yellow-100 h-96 lg:h-[500px] flex items-center justify-center">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-white to-gold-50 h-96 lg:h-[500px] flex items-center justify-center">
               <img 
                 src="/images/555.jpg" 
                 alt="美容整体 LUNOA 施術風景" 
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent flex items-end">
                 <div className="text-center p-8 w-full">
                   <h3 className="text-2xl font-bold text-white mb-2">美容整体 LUNOA</h3>
                   <p className="text-white/90">あなたの美と健康をサポート</p>
@@ -87,7 +87,7 @@ export function Hero() {
 
             <div className="absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-xl animate-appear delay-700">
               <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                <div className="w-3 h-3 bg-gold-400 rounded-full animate-pulse"></div>
                 <span className="text-sm font-medium text-gray-700">営業中</span>
               </div>
             </div>

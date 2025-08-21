@@ -2,7 +2,7 @@ import React from 'react';
 
 export function Services() {
   return (
-    <section id="services" className="py-16 md:py-24 bg-gradient-to-br from-amber-25 via-yellow-25 to-orange-25">
+    <section id="services" className="py-16 md:py-24 bg-gradient-to-br from-pearl-50 via-white to-gold-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 font-handwriting">
@@ -20,21 +20,21 @@ export function Services() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             
             {/* 通常価格 */}
-            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border border-gold-100">
               <h4 className="text-2xl font-bold text-gray-800 mb-4">通常価格</h4>
-              <div className="text-4xl font-bold text-amber-600 mb-2">¥15,400</div>
+              <div className="text-4xl font-bold text-gold-600 mb-2">¥15,400</div>
               <div className="text-gray-600 mb-6">税込（約50分）</div>
               <ul className="text-left space-y-2 text-gray-600 mb-6">
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
                   初回カウンセリング込み
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
                   全メニュー対応
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
                   完全個室対応
                 </li>
               </ul>
@@ -42,7 +42,7 @@ export function Services() {
                 href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block w-full bg-gray-100 hover:bg-gradient-to-r hover:from-amber-500 hover:to-yellow-600 hover:text-white text-gray-700 font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+                className="inline-block w-full bg-gray-100 hover:bg-gradient-to-r hover:from-gold-500 hover:to-gold-600 hover:text-white text-gray-700 font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
               >
                 予約する
               </a>
@@ -79,25 +79,25 @@ export function Services() {
             </div>
 
             {/* 6回券 - おすすめ */}
-            <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border-2 border-amber-200">
-              <div className="bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
+            <div className="bg-gradient-to-br from-gold-50 to-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border-2 border-gold-200">
+              <div className="bg-gold-500 text-white px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
                 おすすめ
               </div>
               <h4 className="text-2xl font-bold text-gray-800 mb-4">6回券</h4>
-              <div className="text-4xl font-bold text-amber-600 mb-2">¥92,400</div>
+              <div className="text-4xl font-bold text-gold-600 mb-2">¥92,400</div>
               <div className="text-gray-600 mb-2">税込</div>
               <div className="text-sm text-gray-500 mb-6">¥15,400 × 6回</div>
               <ul className="text-left space-y-2 text-gray-600 mb-6">
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
                   継続改善コース
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
                   有効期限6ヶ月
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
                   根本改善に最適
                 </li>
               </ul>
@@ -105,7 +105,7 @@ export function Services() {
                 href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block w-full bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+                className="inline-block w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
               >
                 予約する
               </a>
@@ -149,25 +149,25 @@ export function Services() {
           <h4 className="text-xl font-bold text-gray-800 text-center mb-8 font-handwriting">MONTHLY COURSE PRICE LIST</h4>
           
           {/* 特典セクション */}
-          <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-3xl p-8 shadow-lg max-w-4xl mx-auto mb-8">
+          <div className="bg-gradient-to-br from-white to-gold-50 rounded-3xl p-8 shadow-lg max-w-4xl mx-auto mb-8 border border-gold-200">
             <h4 className="text-2xl font-bold text-gray-800 text-center mb-6 font-heading">特典</h4>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div className="bg-white rounded-2xl p-6 shadow-md">
-                <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold text-lg">無料</span>
                 </div>
                 <h5 className="font-bold text-gray-800 mb-2">入会金無料</h5>
                 <p className="text-gray-600 text-sm">初期費用なしで始められます</p>
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-md">
-                <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold text-lg">🎂</span>
                 </div>
                 <h5 className="font-bold text-gray-800 mb-2">誕生日月＋1回無料</h5>
                 <p className="text-gray-600 text-sm">お誕生日月は追加施術1回プレゼント</p>
               </div>
               <div className="bg-white rounded-2xl p-6 shadow-md">
-                <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold text-lg">✨</span>
                 </div>
                 <h5 className="font-bold text-gray-800 mb-2">4ヶ月毎オプション無料</h5>
@@ -221,30 +221,30 @@ export function Services() {
             </div>
 
             {/* COURSE 02 - おすすめ */}
-            <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border-2 border-amber-200">
-              <div className="bg-amber-500 text-white px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
+            <div className="bg-gradient-to-br from-gold-50 to-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border-2 border-gold-200">
+              <div className="bg-gold-500 text-white px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
                 おすすめ
               </div>
-              <div className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
+              <div className="bg-gold-100 text-gold-700 px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
                 COURSE 02
               </div>
               <h4 className="text-2xl font-bold text-gray-800 mb-4">月2回（月々払い）</h4>
               <div className="space-y-3 mb-6">
                 <div className="text-lg font-semibold text-gray-700">Quick付き価格</div>
-                <div className="text-3xl font-bold text-amber-600">¥29,260</div>
+                <div className="text-3xl font-bold text-gold-600">¥29,260</div>
                 <div className="text-sm text-gray-500">¥14,630×2回</div>
               </div>
               <ul className="text-left space-y-2 text-gray-600 mb-6">
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
                   月2回の定期施術
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
                   会員特典適用
                 </li>
                 <li className="flex items-center">
-                  <div className="w-2 h-2 bg-amber-400 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-gold-400 rounded-full mr-3"></div>
                   予約優先権
                 </li>
               </ul>
@@ -252,7 +252,7 @@ export function Services() {
                 href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block w-full bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+                className="inline-block w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
               >
                 予約する
               </a>
@@ -301,7 +301,7 @@ export function Services() {
             <h3 className="text-3xl font-bold text-gray-800 mb-6">期待できる効果</h3>
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div>
-                <h4 className="text-xl font-semibold text-amber-600 mb-3">美容効果</h4>
+                <h4 className="text-xl font-semibold text-gold-600 mb-3">美容効果</h4>
                 <ul className="space-y-2 text-gray-600">
                   <li>• くびれ・下っ腹改善</li>
                   <li>• 肩の盛り上がり改善</li>
@@ -310,7 +310,7 @@ export function Services() {
                 </ul>
               </div>
               <div>
-                <h4 className="text-xl font-semibold text-amber-600 mb-3">健康効果</h4>
+                <h4 className="text-xl font-semibold text-gold-600 mb-3">健康効果</h4>
                 <ul className="space-y-2 text-gray-600">
                   <li>• 首肩こり・腰痛の改善</li>
                   <li>• 頭痛の改善</li>
