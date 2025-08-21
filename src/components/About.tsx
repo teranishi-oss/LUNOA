@@ -45,10 +45,10 @@ export function About() {
       <div className="absolute inset-0" style={{ backgroundColor: 'rgba(248, 244, 233, 0.92)' }}></div>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear relative z-10">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-600 mb-6 font-handwriting">
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-400 mb-6 font-handwriting">
             LUNOAが選ばれる理由
           </h2>
-          <p className="text-xl text-gray-500 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
             当院では、ただ症状を改善するだけでなく、根本的な原因にアプローチします。
             豊富な経験と確かな技術で、お客様一人ひとりに最適な施術をご提供。
             美しさと健康を同時に手に入れることができます。
@@ -64,18 +64,18 @@ export function About() {
               >
                 {stat.icon}
               </div>
-              <div className="text-3xl font-bold text-gray-600 mb-1">{stat.value}</div>
-              <div className="text-sm text-gray-500 font-medium">{stat.label}</div>
+              <div className="text-3xl font-bold text-gray-400 mb-1">{stat.value}</div>
+              <div className="text-sm text-gray-400 font-medium">{stat.label}</div>
             </div>
           ))}
         </div>
 
         <div className="text-center mb-16 animate-appear delay-300">
           <div className="bg-white rounded-3xl p-8 shadow-sm max-w-2xl mx-auto border border-gold-200">
-            <h3 className="text-3xl font-bold mb-4 font-handwriting" style={{ color: '#f59e0b' }}>
+            <h3 className="text-3xl font-bold mb-4 font-handwriting text-orange-300">
               最短5分で変化を体感！
             </h3>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-400 leading-relaxed">
               初回施術から体の変化を実感していただけます。
               多くのお客様が施術直後に「軽くなった」「楽になった」と驚かれます。
             </p>
@@ -95,8 +95,8 @@ export function About() {
               >
                 {feature.icon}
               </div>
-              <h3 className="text-2xl font-bold text-gray-600 mb-4">{feature.title}</h3>
-              <p className="text-gray-500 leading-relaxed">{feature.description}</p>
+              <h3 className="text-2xl font-bold text-slate-400 mb-4">{feature.title}</h3>
+              <p className="text-gray-400 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

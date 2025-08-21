@@ -27,10 +27,10 @@ export function Testimonials() {
     <section id="testimonials" className="py-16 md:py-24" style={{ backgroundColor: '#F8F4E9' }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-600 mb-6 font-handwriting">
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-400 mb-6 font-handwriting">
             お客様の声
           </h2>
-          <p className="text-xl text-gray-500 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             多くのお客様に愛され続ける理由を、実際の体験談でご確認ください。
           </p>
         </div>
@@ -42,9 +42,9 @@ export function Testimonials() {
               className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-300 animate-appear border border-gold-100"
               style={{ animationDelay: `${index * 200}ms` }}
             >
-              <Quote className="w-8 h-8 text-gold-500 mb-4" />
+              <Quote className="w-8 h-8 text-orange-300 mb-4" />
               
-              <p className="text-gray-600 leading-relaxed mb-6 text-lg">
+              <p className="text-gray-400 leading-relaxed mb-6 text-lg">
                 "{testimonial.text}"
               </p>
 
@@ -55,14 +55,14 @@ export function Testimonials() {
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-gold-400 to-gold-500 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-orange-300 to-orange-400 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold text-lg">
                     {testimonial.name.charAt(0)}
                   </span>
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-600">{testimonial.name}</div>
-                  <div className="text-sm text-gray-500">{testimonial.role}</div>
+                  <div className="font-semibold text-slate-400">{testimonial.name}</div>
+                  <div className="text-sm text-gray-400">{testimonial.role}</div>
                 </div>
               </div>
             </div>
@@ -71,19 +71,19 @@ export function Testimonials() {
 
         <div className="text-center mt-12 animate-appear delay-1000">
           <div className="bg-white rounded-3xl p-8 shadow-sm max-w-4xl mx-auto border border-gold-100">
-            <h3 className="text-2xl font-bold text-gray-600 mb-4">お客様満足度</h3>
+            <h3 className="text-2xl font-bold text-slate-400 mb-4">お客様満足度</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2" style={{ color: '#f59e0b' }}>96.7%</div>
-                <div className="text-gray-500">改善実感率</div>
+                <div className="text-4xl font-bold mb-2 text-orange-300">96.7%</div>
+                <div className="text-gray-400">改善実感率</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2" style={{ color: '#f59e0b' }}>95.2%</div>
-                <div className="text-gray-500">お客様満足度</div>
+                <div className="text-4xl font-bold mb-2 text-orange-300">95.2%</div>
+                <div className="text-gray-400">お客様満足度</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2" style={{ color: '#f59e0b' }}>88%</div>
-                <div className="text-gray-500">リピート率</div>
+                <div className="text-4xl font-bold mb-2 text-orange-300">88%</div>
+                <div className="text-gray-400">リピート率</div>
               </div>
             </div>
           </div>
