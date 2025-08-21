@@ -55,13 +55,10 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
+            src="/スクリーンショット 2025-08-10 20.06.29 copy copy.png" 
           <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="w-20 h-20 object-contain"
             className="lg:hidden p-2 text-gray-700 hover:text-gold-600 transition-colors"
-          >
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
         </div>
 
         {/* Mobile Navigation */}
