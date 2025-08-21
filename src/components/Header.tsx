@@ -5,22 +5,6 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const navItems = [
-    { href: '#home', label: 'ホーム' },
-    { href: '#about', label: 'サロンについて' },
-    { href: '#services', label: 'サービス' },
-    { href: '#therapists', label: 'セラピスト' },
-    { href: '#testimonials', label: 'お客様の声' },
-    { href: '#contact', label: 'お問い合わせ' }
-  ];
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -40,16 +24,30 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="text-gray-700 hover:text-gold-600 font-medium transition-colors duration-200 relative group"
-              >
-                {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold-600 transition-all duration-200 group-hover:w-full"></span>
-              </a>
-            ))}
+            <a href="#home" className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200 relative group">
+              ホーム
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
+            </a>
+            <a href="#about" className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200 relative group">
+              サロンについて
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
+            </a>
+            <a href="#services" className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200 relative group">
+              サービス
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
+            </a>
+            <a href="#therapists" className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200 relative group">
+              セラピスト
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
+            </a>
+            <a href="#testimonials" className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200 relative group">
+              お客様の声
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
+            </a>
+            <a href="#contact" className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200 relative group">
+              お問い合わせ
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
+            </a>
           </nav>
 
           <button
@@ -64,16 +62,24 @@ export function Header() {
         {isMenuOpen && (
           <div className="lg:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md border-b border-gold-100 shadow-lg">
             <nav className="py-4">
-              {navItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block px-4 py-3 text-gray-700 hover:text-gold-600 hover:bg-gold-50 transition-colors duration-200"
-                >
-                  {item.label}
-                </a>
-              ))}
+              <a href="#home" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition-colors duration-200">
+                ホーム
+              </a>
+              <a href="#about" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition-colors duration-200">
+                サロンについて
+              </a>
+              <a href="#services" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition-colors duration-200">
+                サービス
+              </a>
+              <a href="#therapists" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition-colors duration-200">
+                セラピスト
+              </a>
+              <a href="#testimonials" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition-colors duration-200">
+                お客様の声
+              </a>
+              <a href="#contact" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition-colors duration-200">
+                お問い合わせ
+              </a>
             </nav>
           </div>
         )}
