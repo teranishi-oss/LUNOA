@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'handwriting': ['"Dancing Script"', 'cursive'],
-        'heading': ['"Playfair Display"', 'serif'],
+        'handwriting': ['"Roboto"', 'sans-serif'],
+        'heading': ['"Open Sans"', 'sans-serif'],
         'sans': ['"Inter"', 'sans-serif'],
       },
       colors: {
