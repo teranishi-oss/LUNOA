@@ -33,7 +33,7 @@ export function Header() {
         <div className="flex flex-col space-y-4">
           {/* ロゴと連絡先情報 */}
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 flex-shrink-0">
               <img 
                 src="/images/rogo.png" 
                 alt="LUNOA ロゴ" 
@@ -51,20 +51,8 @@ export function Header() {
             </div>
             
             {/* 連絡先情報 */}
-            <div className="hidden md:block text-right">
-              <div className="text-sm text-gray-600 mb-1">
-                <span className="font-medium">所在地：</span>
-                〒150-0043 東京都渋谷区道玄坂１丁目１９−１３ トップヒル並木 5階
-              </div>
-              <div className="text-sm text-gray-600">
-                <span className="font-medium">電話番号：</span>
-                090-3543-0588
-              </div>
-            </div>
-            
-            {/* 連絡先情報 */}
-            <div className="hidden md:block text-right">
-              <div className="text-sm text-gray-600 mb-1">
+            <div className="hidden md:block text-right flex-1 ml-8">
+              <div className="text-sm text-gray-600 mb-2">
                 <span className="font-medium">所在地：</span>
                 〒150-0043 東京都渋谷区道玄坂１丁目１９−１３ トップヒル並木 5階
               </div>
