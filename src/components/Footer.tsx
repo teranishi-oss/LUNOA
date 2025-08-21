@@ -32,7 +32,6 @@ export function Footer() {
                   key={index}
                   href={social.href}
                   className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gold-500 transition-colors"
-                  className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center transition-colors"
                   style={{ 
                     ':hover': { 
                       background: 'linear-gradient(135deg, #f59e0b, #eab308)' 
