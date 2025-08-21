@@ -24,7 +24,7 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section id="testimonials" className="py-16 md:py-24 bg-gradient-to-br from-blue-25 to-indigo-25">
+    <section id="testimonials" className="py-16 md:py-24 bg-gradient-to-br from-pearl-50 via-white to-pearl-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 font-handwriting">
@@ -39,10 +39,10 @@ export function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-appear"
+              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-300 animate-appear border border-gold-100"
               style={{ animationDelay: `${index * 200}ms` }}
             >
-              <Quote className="w-8 h-8 text-amber-500 mb-4" />
+              <Quote className="w-8 h-8 text-gold-500 mb-4" />
               
               <p className="text-gray-700 leading-relaxed mb-6 text-lg">
                 "{testimonial.text}"
@@ -55,7 +55,7 @@ export function Testimonials() {
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-gold-400 to-gold-500 rounded-full flex items-center justify-center">
                   <span className="text-white font-bold text-lg">
                     {testimonial.name.charAt(0)}
                   </span>
@@ -70,19 +70,19 @@ export function Testimonials() {
         </div>
 
         <div className="text-center mt-12 animate-appear delay-1000">
-          <div className="bg-gradient-to-r from-amber-50 to-yellow-50 rounded-3xl p-8 shadow-lg max-w-4xl mx-auto">
+          <div className="bg-white rounded-3xl p-8 shadow-sm max-w-4xl mx-auto border border-gold-100">
             <h3 className="text-2xl font-bold text-gray-800 mb-4">お客様満足度</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="text-4xl font-bold text-amber-600 mb-2">96.7%</div>
+                <div className="text-4xl font-bold text-gold-600 mb-2">96.7%</div>
                 <div className="text-gray-600">改善実感率</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-amber-600 mb-2">96.7%</div>
+                <div className="text-4xl font-bold text-gold-600 mb-2">96.7%</div>
                 <div className="text-gray-600">満足度</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-amber-600 mb-2">88%</div>
+                <div className="text-4xl font-bold text-gold-600 mb-2">88%</div>
                 <div className="text-gray-600">リピート率</div>
               </div>
             </div>

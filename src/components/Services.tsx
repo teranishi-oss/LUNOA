@@ -2,7 +2,7 @@ import React from 'react';
 
 export function Services() {
   return (
-    <section id="services" className="py-16 md:py-24 bg-gradient-to-br from-pearl-50 via-white to-gold-50">
+    <section id="services" className="py-16 md:py-24 bg-gradient-to-br from-white via-pearl-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 font-handwriting">
@@ -20,7 +20,7 @@ export function Services() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             
             {/* 通常価格 */}
-            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border border-gold-100">
+            <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-300 text-center border border-gold-200">
               <h4 className="text-2xl font-bold text-gray-800 mb-4">通常価格</h4>
               <div className="text-4xl font-bold text-gold-600 mb-2">¥15,400</div>
               <div className="text-gray-600 mb-6">税込（約50分）</div>
@@ -49,7 +49,7 @@ export function Services() {
             </div>
 
             {/* 3回券 */}
-            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+            <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-300 text-center border border-gold-100">
               <h4 className="text-2xl font-bold text-gray-800 mb-4">3回券</h4>
               <div className="text-4xl font-bold text-amber-600 mb-2">¥46,200</div>
               <div className="text-gray-600 mb-2">税込</div>
@@ -79,7 +79,7 @@ export function Services() {
             </div>
 
             {/* 6回券 - おすすめ */}
-            <div className="bg-gradient-to-br from-gold-50 to-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border-2 border-gold-200">
+            <div className="bg-gradient-to-br from-gold-50 to-white rounded-3xl p-8 shadow-md hover:shadow-lg transition-all duration-300 text-center border-2 border-gold-300">
               <div className="bg-gold-500 text-white px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
                 おすすめ
               </div>
@@ -112,7 +112,7 @@ export function Services() {
             </div>
 
             {/* 9回券 */}
-            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+            <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-300 text-center border border-gold-100">
               <h4 className="text-2xl font-bold text-gray-800 mb-4">9回券</h4>
               <div className="text-4xl font-bold text-amber-600 mb-2">¥138,600</div>
               <div className="text-gray-600 mb-2">税込</div>

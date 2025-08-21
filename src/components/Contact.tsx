@@ -24,7 +24,7 @@ const contactInfo = [
 
 export function Contact() {
   return (
-    <section id="contact" className="py-16 md:py-24 bg-gradient-to-br from-gray-25 to-amber-25">
+    <section id="contact" className="py-16 md:py-24 bg-gradient-to-br from-white via-pearl-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 font-handwriting">
@@ -41,9 +41,9 @@ export function Contact() {
               {contactInfo.map((info, index) => (
                 <div
                   key={index}
-                  className="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+                  className="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gold-100"
                 >
-                  <div className={`w-12 h-12 bg-gradient-to-r ${info.gradient} rounded-xl flex items-center justify-center text-white`}>
+                  <div className="w-12 h-12 bg-gradient-to-r from-gold-500 to-gold-600 rounded-xl flex items-center justify-center text-white">
                     {info.icon}
                   </div>
                   <div>
@@ -59,7 +59,7 @@ export function Contact() {
                 href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 no-underline"
+                className="inline-block bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 no-underline"
               >
                 <Phone className="w-5 h-5 inline mr-2" />
                 オンライン予約システム
@@ -68,6 +68,7 @@ export function Contact() {
           </div>
 
           <div className="bg-white rounded-3xl shadow-lg p-8 animate-appear delay-300">
+         <div className="bg-white rounded-3xl shadow-sm p-8 animate-appear delay-300 border border-gold-100">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">お問い合わせフォーム</h3>
             <h3 className="text-2xl font-bold text-gray-800 mb-6 font-heading">お問い合わせフォーム</h3>
             <form className="space-y-6">
@@ -76,7 +77,7 @@ export function Contact() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">お名前</label>
                   <input 
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
                     placeholder="山田 太郎"
                   />
                 </div>
@@ -84,7 +85,7 @@ export function Contact() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">フリガナ</label>
                   <input 
                     type="text"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
                     placeholder="ヤマダ タロウ"
                   />
                 </div>
@@ -94,7 +95,7 @@ export function Contact() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">メールアドレス</label>
                 <input 
                   type="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
+                  className="w-full px-4 py-3 border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
                   placeholder="example@email.com"
                 />
               </div>
@@ -103,7 +104,7 @@ export function Contact() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">電話番号</label>
                 <input 
                   type="tel"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors"
+                  className="w-full px-4 py-3 border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
                   placeholder="090-1234-5678"
                 />
               </div>
@@ -112,14 +113,14 @@ export function Contact() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">メッセージ</label>
                 <textarea 
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition-colors resize-none"
+                  className="w-full px-4 py-3 border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors resize-none"
                   placeholder="お体の状態やお悩み、ご希望などをお聞かせください。"
                 ></textarea>
               </div>
 
               <button 
                 type="submit"
-                className="w-full bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 flex items-center justify-center space-x-2"
+                className="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 flex items-center justify-center space-x-2"
               >
                 <Send className="w-5 h-5" />
                 <span>送信する</span>

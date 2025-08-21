@@ -56,7 +56,7 @@ const therapists = [
 
 export function Therapists() {
   return (
-    <section id="therapists" className="py-16 md:py-24 bg-gradient-to-br from-amber-25 via-yellow-25 to-orange-25">
+    <section id="therapists" className="py-16 md:py-24 bg-gradient-to-br from-white via-pearl-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 font-handwriting">
@@ -72,7 +72,7 @@ export function Therapists() {
           {therapists.map((therapist, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-appear"
+              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-2 animate-appear border border-gold-100"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="text-center mb-6">
@@ -111,7 +111,7 @@ export function Therapists() {
                   {therapist.specialties.map((specialty, idx) => (
                     <span
                       key={idx}
-                      className="bg-gradient-to-r from-amber-100 to-yellow-100 text-amber-700 px-3 py-1 rounded-full text-xs font-medium"
+                      className="bg-gradient-to-r from-gold-100 to-gold-200 text-gold-700 px-3 py-1 rounded-full text-xs font-medium"
                     >
                       {specialty}
                     </span>
@@ -123,28 +123,28 @@ export function Therapists() {
         </div>
 
         <div className="text-center mt-16 animate-appear delay-1000">
-          <div className="bg-white rounded-3xl p-8 shadow-lg max-w-4xl mx-auto">
+          <div className="bg-white rounded-3xl p-8 shadow-sm max-w-4xl mx-auto border border-gold-100">
             <h3 className="text-3xl font-bold text-gray-800 mb-6">チーム実績</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold text-amber-600 mb-2">1400名+</div>
+                <div className="text-3xl font-bold text-gold-600 mb-2">1400名+</div>
                 <div className="text-gray-600">施術実績</div>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold text-amber-600 mb-2">96.7%</div>
+                <div className="text-3xl font-bold text-gold-600 mb-2">96.7%</div>
                 <div className="text-gray-600">お客様満足度</div>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-amber-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Clock className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold text-amber-600 mb-2">平均27年</div>
+                <div className="text-3xl font-bold text-gold-600 mb-2">平均27年</div>
                 <div className="text-gray-600">総合経験年数</div>
               </div>
             </div>

@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-white via-pearl-100 to-gold-50 relative"
+      className="min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-white via-pearl-50 to-pearl-100 relative"
       style={{
         backgroundImage: `url('/images/374874116.jpg')`,
         backgroundSize: 'cover',
@@ -13,14 +13,14 @@ export function Hero() {
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="absolute inset-0 bg-white/90"></div>
+      <div className="absolute inset-0 bg-white/95"></div>
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-8 animate-appear">
             <div className="space-y-6">
               <h2 className="text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
                 美しさと健康を
-                <span className="block bg-gradient-to-r from-gold-600 to-gold-500 bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-r from-gold-500 to-gold-600 bg-clip-text text-transparent">
                   根本から整える
                 </span>
               </h2>
