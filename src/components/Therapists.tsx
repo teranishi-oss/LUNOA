@@ -103,7 +103,6 @@ export function Therapists() {
               </p>
 
               <div className="space-y-3">
-                <h4 className="text-sm font-semibold text-slate-400 flex items-center">
                 <h4 className="text-sm font-semibold text-gray-600 flex items-center">
                   <Star className="w-4 h-4 text-orange-300 mr-2" />
                   専門分野
