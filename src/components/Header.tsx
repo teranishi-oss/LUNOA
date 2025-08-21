@@ -20,9 +20,9 @@ export function Header() {
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="py-4 text-center">
-          {/* Logo Section */}
-          <div className="mb-6">
+        <div className="py-4">
+          {/* Logo Section - 中央配置 */}
+          <div className="text-center mb-6">
             <img 
               src="/images/rogo.png"
               alt="LUNOA Logo" 
@@ -30,7 +30,7 @@ export function Header() {
             />
           </div>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - 中央配置 */}
           <nav className="hidden lg:block">
             <div className="flex items-center justify-center space-x-12">
               <a href="#home" className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200 relative group">
