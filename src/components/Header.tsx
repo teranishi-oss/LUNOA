@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,12 +32,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-4">
         {/* ロゴセクション - 完全中央配置 */}
         <div className="flex justify-center items-center mb-4">
-          <img 
-            src="/images/rogo.png"
-            alt="LUNOA Logo" 
-            className="w-16 h-16 object-contain"
-          />
-          <h1 className="ml-3 text-2xl font-bold text-orange-300">
+          <h1 className="text-2xl font-bold text-orange-300">
             美容整体 LUNOA
           </h1>
         </div>
