@@ -196,6 +196,10 @@ export function Header() {
               </a>
             </nav>
           </div>
+        )
+        }
         </div>
       </div>
+    }
   );
+}
