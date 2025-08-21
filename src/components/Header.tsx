@@ -149,63 +149,63 @@ export function Header() {
             </div>
           </div>
         </div>
-      </header>
 
-      {/* モバイルナビゲーション */}
-      {isMenuOpen && (
-        <div className="fixed top-32 left-0 right-0 z-40 lg:hidden">
-          <div className="bg-white rounded-lg shadow-lg mx-4">
-            <nav className="flex flex-col items-center space-y-4 py-4">
-              <button 
-                onClick={() => handleNavClick('#home')}
-                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
-              >
-                ホーム
-              </button>
-              <button 
-                onClick={() => handleNavClick('#about')}
-                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
-              >
-                サロンについて
-              </button>
-              <button 
-                onClick={() => handleNavClick('#services')}
-                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
-              >
-                サービス
-              </button>
-              <button 
-                onClick={() => handleNavClick('#therapists')}
-                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
-              >
-                セラピスト
-              </button>
-              <button 
-                onClick={() => handleNavClick('#testimonials')}
-                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
-              >
-                お客様の声
-              </button>
-              <button 
-                onClick={() => handleNavClick('#contact')}
-                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
-              >
-                お問い合わせ
-              </button>
-              <a 
-                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
-                target="_blank" 
-                rel="noopener noreferrer"
-                onClick={() => setIsMenuOpen(false)}
-                className="text-white px-6 py-3 rounded-full font-medium transition-all duration-200 hover:shadow-lg"
-                style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)' }}
-              >
-                ご予約
-              </a>
-            </nav>
+        {/* モバイルナビゲーション */}
+        {isMenuOpen && (
+          <div className="lg:hidden">
+            <div className="bg-white rounded-lg shadow-lg mx-4 mt-4">
+              <nav className="flex flex-col items-center space-y-4 py-4">
+                <button 
+                  onClick={() => handleNavClick('#home')}
+                  className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+                >
+                  ホーム
+                </button>
+                <button 
+                  onClick={() => handleNavClick('#about')}
+                  className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+                >
+                  サロンについて
+                </button>
+                <button 
+                  onClick={() => handleNavClick('#services')}
+                  className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+                >
+                  サービス
+                </button>
+                <button 
+                  onClick={() => handleNavClick('#therapists')}
+                  className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+                >
+                  セラピスト
+                </button>
+                <button 
+                  onClick={() => handleNavClick('#testimonials')}
+                  className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+                >
+                  お客様の声
+                </button>
+                <button 
+                  onClick={() => handleNavClick('#contact')}
+                  className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+                >
+                  お問い合わせ
+                </button>
+                <a 
+                  href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="text-white px-6 py-3 rounded-full font-medium transition-all duration-200 hover:shadow-lg"
+                  style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)' }}
+                >
+                  ご予約
+                </a>
+              </nav>
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </header>
     </>
   );
 }
