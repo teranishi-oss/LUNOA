@@ -74,17 +74,14 @@ export function Testimonials() {
             <h3 className="text-2xl font-bold text-gray-800 mb-4">お客様満足度</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2" style={{ color: '#d97706' }}>96.7%</div>
                 <div className="text-4xl font-bold mb-2" style={{ color: '#f59e0b' }}>96.7%</div>
                 <div className="text-gray-600">改善実感率</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2" style={{ color: '#d97706' }}>96.7%</div>
-                <div className="text-4xl font-bold mb-2" style={{ color: '#f59e0b' }}>96.7%</div>
-                <div className="text-gray-600">満足度</div>
+                <div className="text-4xl font-bold mb-2" style={{ color: '#f59e0b' }}>95.2%</div>
+                <div className="text-gray-600">お客様満足度</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2" style={{ color: '#d97706' }}>88%</div>
                 <div className="text-4xl font-bold mb-2" style={{ color: '#f59e0b' }}>88%</div>
                 <div className="text-gray-600">リピート率</div>
               </div>

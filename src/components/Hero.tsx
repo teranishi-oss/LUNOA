@@ -20,7 +20,7 @@ export function Hero() {
             <div className="space-y-6">
               <h2 className="text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
                 美しさと健康を
-                <span className="block text-amber-600" style={{ color: '#f59e0b' }}>
+                <span className="block text-amber-600">
                   根本から整える
                 </span>
               </h2>

@@ -133,7 +133,6 @@ export function Therapists() {
                 >
                   <Award className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold mb-2" style={{ color: '#d97706' }}>1400名+</div>
                 <div className="text-3xl font-bold mb-2" style={{ color: '#f59e0b' }}>1400名+</div>
                 <div className="text-gray-600">施術実績</div>
               </div>
@@ -144,7 +143,6 @@ export function Therapists() {
                 >
                   <Heart className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold mb-2" style={{ color: '#d97706' }}>96.7%</div>
                 <div className="text-3xl font-bold mb-2" style={{ color: '#f59e0b' }}>96.7%</div>
                 <div className="text-gray-600">お客様満足度</div>
               </div>
@@ -155,8 +153,7 @@ export function Therapists() {
                 >
                   <Clock className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold mb-2" style={{ color: '#d97706' }}>平均27年</div>
-                <div className="text-3xl font-bold mb-2" style={{ color: '#f59e0b' }}>平均27年</div>
+                <div className="text-3xl font-bold mb-2" style={{ color: '#f59e0b' }}>総合31年</div>
                 <div className="text-gray-600">総合経験年数</div>
               </div>
             </div>
