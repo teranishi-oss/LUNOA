@@ -98,6 +98,7 @@ export function About() {
               <p className="text-gray-600 leading-relaxed">{feature.description}</p>
             </div>
           ))}
+        </div>
       </div>
     </section>
   );
