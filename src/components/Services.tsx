@@ -105,7 +105,11 @@ export function Services() {
                 href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+                className="inline-block w-full text-white font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+                style={{ 
+                  background: 'linear-gradient(135deg, #f59e0b, #eab308)',
+                  color: 'white'
+                }}
               >
                 予約する
               </a>

@@ -57,7 +57,10 @@ export function About() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-16 relative z-10">
           {stats.map((stat, index) => (
             <div key={index} className="text-center p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow animate-appear border border-gold-200">
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-gold-500 to-gold-600 text-white rounded-xl mb-3">
+              <div 
+                className="inline-flex items-center justify-center w-12 h-12 text-white rounded-xl mb-3"
+                style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
+              ></div>
                 {stat.icon}
               </div>
               <div className="text-3xl font-bold text-gray-800 mb-1">{stat.value}</div>
@@ -85,7 +88,10 @@ export function About() {
               className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transform hover:-translate-y-2 transition-all duration-300 animate-appear border border-gold-200"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="w-16 h-16 bg-gradient-to-r from-gold-500 to-gold-600 rounded-2xl flex items-center justify-center text-white mb-6">
+              <div 
+                className="w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6"
+                style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
+              ></div>
                 {feature.icon}
               </div>
               

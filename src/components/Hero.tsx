@@ -48,7 +48,11 @@ export function Hero() {
                 href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center no-underline"
+                className="inline-block px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center no-underline text-white"
+                style={{ 
+                  background: 'linear-gradient(135deg, #f59e0b, #eab308)',
+                  color: 'white'
+                }}
               >
                 <Calendar className="w-5 h-5 inline mr-2" />
                 ご予約はこちら

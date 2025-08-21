@@ -59,7 +59,11 @@ export function Contact() {
                 href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 no-underline"
+                className="inline-block text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 no-underline"
+                style={{ 
+                  background: 'linear-gradient(135deg, #f59e0b, #eab308)',
+                  color: 'white'
+                }}
               >
                 <Phone className="w-5 h-5 inline mr-2" />
                 オンライン予約システム
@@ -118,7 +122,11 @@ export function Contact() {
 
               <button 
                 type="submit"
-                className="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 flex items-center justify-center space-x-2"
+                className="w-full text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 flex items-center justify-center space-x-2"
+                style={{ 
+                  background: 'linear-gradient(135deg, #f59e0b, #eab308)',
+                  color: 'white'
+                }}
               >
                 <Send className="w-5 h-5" />
                 <span>送信する</span>

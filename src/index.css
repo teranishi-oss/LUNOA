@@ -85,13 +85,37 @@
     background: linear-gradient(135deg, #ffffff 0%, #ffffff 50%, #fffef8 100%);
   }
   
-  /* 確実にゴールドカラーを表示 */
-  .text-gold-600 {
+  /* 確実にゴールドカラーを表示 - 本番環境対応 */
+  .text-gold-600,
+  .text-amber-600,
+  .bg-gradient-to-r.from-gold-500.to-gold-600,
+  .bg-gradient-to-r.from-amber-500.to-yellow-600,
+  .bg-gradient-to-r.from-gold-600.to-gold-700 {
     color: #d97706 !important;
   }
   
-  .text-amber-600 {
-    color: #d97706 !important;
+  /* ボタンの背景色強制適用 */
+  .bg-gradient-to-r.from-gold-500.to-gold-600,
+  .bg-gradient-to-r.from-amber-500.to-yellow-600 {
+    background: linear-gradient(135deg, #f59e0b, #eab308) !important;
+    color: white !important;
+  }
+  
+  .bg-gradient-to-r.from-gold-600.to-gold-700:hover {
+    background: linear-gradient(135deg, #d97706, #ca8a04) !important;
+  }
+  
+  /* 統計カードの背景色 */
+  .bg-gradient-to-r.from-gold-500.to-gold-600 {
+    background: linear-gradient(135deg, #f59e0b, #eab308) !important;
+  }
+  
+  /* テキストグラデーション強制適用 */
+  .bg-gradient-to-r.from-amber-600.to-yellow-600.bg-clip-text.text-transparent {
+    background: linear-gradient(135deg, #d97706, #eab308) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
   }
   
   /* ゴシック体フォント強制適用 */
