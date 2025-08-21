@@ -36,9 +36,6 @@ export function Header() {
               alt="LUNOA Logo" 
               className="w-16 h-16 object-contain"
             />
-            <h1 className="text-2xl font-bold text-amber-600" style={{ color: '#d97706' }}>
-              美容整体 LUNOA
-            </h1>
           </div>
 
           {/* Desktop Navigation */}
