@@ -14,7 +14,10 @@ export function Hero() {
       }}
     >
       {/* 背景オーバーレイ */}
-      <div className="absolute inset-0 bg-white/80"></div>
+      <div 
+        className="absolute inset-0" 
+        style={{ backgroundColor: 'rgba(248, 244, 233, 0.85)' }}
+      ></div>
       
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
