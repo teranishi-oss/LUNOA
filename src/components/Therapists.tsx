@@ -153,8 +153,6 @@ export function Therapists() {
                 >
                   <Clock className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold mb-2 text-orange-300">総合31年</div>
-                <div className="text-gray-400">総合経験年数</div>
                 <div className="text-3xl font-bold mb-2 text-orange-300">27年</div>
                 <div className="text-gray-400">総合経験年数</div>
               </div>

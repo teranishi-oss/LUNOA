@@ -83,7 +83,6 @@ export function Services() {
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-amber-600 text-white px-4 py-1 rounded-full text-sm font-medium">
                 おすすめ
               </div>
-              <h4 className="text-2xl font-bold text-slate-400 mb-4">6回券</h4>
               <h4 className="text-2xl font-bold text-gray-600 mb-4">6回券</h4>
               <div className="text-4xl font-bold mb-2 text-orange-300">¥92,400</div>
               <div className="text-gray-400 mb-2">税込</div>
@@ -161,7 +160,6 @@ export function Services() {
                 >
                   <span className="text-white font-bold text-lg">無料</span>
                 </div>
-                <h5 className="font-bold text-slate-400 mb-2">入会金無料</h5>
                 <h5 className="font-bold text-gray-600 mb-2">入会金無料</h5>
                 <p className="text-gray-400 text-sm">初期費用なしで始められます</p>
               </div>
@@ -172,7 +170,6 @@ export function Services() {
                 >
                   <span className="text-white font-bold text-lg">🎂</span>
                 </div>
-                <h5 className="font-bold text-slate-400 mb-2">誕生日月＋1回無料</h5>
                 <h5 className="font-bold text-gray-600 mb-2">誕生日月＋1回無料</h5>
                 <p className="text-gray-400 text-sm">お誕生日月は追加施術1回プレゼント</p>
               </div>
@@ -183,7 +180,6 @@ export function Services() {
                 >
                   <span className="text-white font-bold text-lg">✨</span>
                 </div>
-                <h5 className="font-bold text-slate-400 mb-2">4ヶ月毎オプション無料</h5>
                 <h5 className="font-bold text-gray-600 mb-2">4ヶ月毎オプション無料</h5>
                 <p className="text-gray-400 text-sm">継続特典でオプション施術が無料</p>
               </div>
@@ -204,7 +200,6 @@ export function Services() {
               <div className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
                 COURSE 01
               </div>
-              <h4 className="text-2xl font-bold text-slate-400 mb-4">月1回（月々払い）</h4>
               <h4 className="text-2xl font-bold text-gray-600 mb-4">月1回（月々払い）</h4>
               <div className="space-y-3 mb-6">
                 <div className="text-lg font-semibold text-gray-600">1メニュー通常価格</div>
@@ -248,7 +243,6 @@ export function Services() {
               <div className="bg-gold-100 text-gold-700 px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
                 COURSE 02
               </div>
-              <h4 className="text-2xl font-bold text-slate-400 mb-4">月2回（月々払い）</h4>
               <h4 className="text-2xl font-bold text-gray-600 mb-4">月2回（月々払い）</h4>
               <div className="space-y-3 mb-6">
                 <div className="text-lg font-semibold text-gray-600">1メニュー通常価格</div>
@@ -290,7 +284,6 @@ export function Services() {
               <div className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
                 COURSE 03
               </div>
-              <h4 className="text-2xl font-bold text-slate-400 mb-4">月4回（月々払い）</h4>
               <h4 className="text-2xl font-bold text-gray-600 mb-4">月4回（月々払い）</h4>
               <div className="space-y-3 mb-6">
                 <div className="text-lg font-semibold text-gray-600">1メニュー通常価格</div>
