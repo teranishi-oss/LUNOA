@@ -149,6 +149,8 @@ export function Header() {
 
         {/* モバイルナビゲーション */}
         {isMenuOpen && (
+            )
+            }
           <div className="lg:hidden mt-4 pb-4 bg-white rounded-lg shadow-lg">
             <nav className="flex flex-col items-center space-y-4">
               <button 
@@ -210,5 +212,6 @@ export function Header() {
         </div>
       )}
     </header>
+  )
   );
 }
