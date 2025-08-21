@@ -27,7 +27,7 @@ export function Header() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
         ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gold-100' 
-        : 'bg-white/90 backdrop-blur-md'
+        : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-col space-y-3">
@@ -52,15 +52,15 @@ export function Header() {
             
             {/* 連絡先情報 */}
             <div className="hidden lg:flex flex-col text-right flex-1 ml-6 justify-center pr-20">
-              <div className="text-base text-gray-600 mb-1 font-medium">
+              <div className={`text-base mb-1 font-medium ${isScrolled ? 'text-gray-600' : 'text-white drop-shadow-lg'}`}>
                 <span className="font-semibold">所在地：</span>
                 〒150-0043 東京都渋谷区道玄坂１丁目１９−１３ トップヒル並木 5階
               </div>
-              <div className="text-base text-gray-600 font-medium mb-1">
+              <div className={`text-base font-medium mb-1 ${isScrolled ? 'text-gray-600' : 'text-white drop-shadow-lg'}`}>
                 <span className="font-semibold">電話番号：</span>
                 090-3543-0588
               </div>
-              <div className="text-base text-gray-600 font-medium">
+              <div className={`text-base font-medium ${isScrolled ? 'text-gray-600' : 'text-white drop-shadow-lg'}`}>
                 <span className="font-semibold">営業時間：</span>
                 月〜金: 10:00-21:00 / 土日: 10:00-19:00
               </div>
@@ -71,37 +71,37 @@ export function Header() {
           <nav className="hidden lg:flex items-center justify-center space-x-8">
             <button 
               onClick={() => handleNavClick('#home')}
-              className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+              className={`font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-600 hover:text-orange-300' : 'text-white hover:text-orange-200 drop-shadow-lg'}`}
             >
               ホーム
             </button>
             <button 
               onClick={() => handleNavClick('#about')}
-              className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+              className={`font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-600 hover:text-orange-300' : 'text-white hover:text-orange-200 drop-shadow-lg'}`}
             >
               サロンについて
             </button>
             <button 
               onClick={() => handleNavClick('#services')}
-              className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+              className={`font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-600 hover:text-orange-300' : 'text-white hover:text-orange-200 drop-shadow-lg'}`}
             >
               サービス
             </button>
             <button 
               onClick={() => handleNavClick('#therapists')}
-              className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+              className={`font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-600 hover:text-orange-300' : 'text-white hover:text-orange-200 drop-shadow-lg'}`}
             >
               セラピスト
             </button>
             <button 
               onClick={() => handleNavClick('#testimonials')}
-              className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+              className={`font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-600 hover:text-orange-300' : 'text-white hover:text-orange-200 drop-shadow-lg'}`}
             >
               お客様の声
             </button>
             <button 
               onClick={() => handleNavClick('#contact')}
-              className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+              className={`font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-600 hover:text-orange-300' : 'text-white hover:text-orange-200 drop-shadow-lg'}`}
             >
               お問い合わせ
             </button>
@@ -120,7 +120,7 @@ export function Header() {
           <div className="lg:hidden flex justify-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 text-gray-600 hover:text-orange-300 transition-colors"
+              className={`p-2 transition-colors ${isScrolled ? 'text-gray-600 hover:text-orange-300' : 'text-white hover:text-orange-200 drop-shadow-lg'}`}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -129,7 +129,7 @@ export function Header() {
 
         {/* モバイルナビゲーション */}
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4">
+          <div className="lg:hidden mt-4 pb-4 bg-white/95 backdrop-blur-md rounded-lg shadow-lg">
             <nav className="flex flex-col items-center space-y-4">
               <button 
                 onClick={() => handleNavClick('#home')}
