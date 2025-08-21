@@ -30,14 +30,14 @@ export function Header() {
         : 'bg-white/90 backdrop-blur-md'
     }`}>
       <div className="container mx-auto px-4 py-4">
-        <div className="flex flex-col space-y-4">
+        <div className="flex flex-col space-y-3">
           {/* ロゴと連絡先情報 */}
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3 flex-shrink-0">
               <img 
                 src="/images/rogo.png" 
                 alt="LUNOA ロゴ" 
-                className="h-20 w-auto"
+                className="h-16 w-auto"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.style.display = 'none';
@@ -45,18 +45,18 @@ export function Header() {
                   if (fallback) fallback.style.display = 'block';
                 }}
               />
-              <h1 className="text-6xl font-bold text-orange-300" style={{ display: 'none' }}>
+              <h1 className="text-4xl font-bold text-orange-300" style={{ display: 'none' }}>
                 美容整体 LUNOA
               </h1>
             </div>
             
             {/* 連絡先情報 */}
-            <div className="hidden md:block text-right flex-1 ml-8">
-              <div className="text-sm text-gray-600 mb-2">
+            <div className="hidden lg:block text-right flex-1 ml-6">
+              <div className="text-base text-gray-600 mb-1 font-medium">
                 <span className="font-medium">所在地：</span>
                 〒150-0043 東京都渋谷区道玄坂１丁目１９−１３ トップヒル並木 5階
               </div>
-              <div className="text-sm text-gray-600">
+              <div className="text-base text-gray-600 font-medium">
                 <span className="font-medium">電話番号：</span>
                 090-3543-0588
               </div>
