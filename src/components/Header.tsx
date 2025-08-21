@@ -13,98 +13,141 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleNavClick = (href: string) => {
+    setIsMenuOpen(false);
+    if (href.startsWith('#')) {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
         ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gold-100' 
-        : 'bg-transparent'
+        : 'bg-white/90 backdrop-blur-md'
     }`}>
-      <div className="container mx-auto px-4">
-        <div className="py-4 text-center">
-          {/* Logo Section - 完全中央配置 */}
-          <div className="flex justify-center items-center mb-6">
-            <img 
-              src="/images/rogo.png"
-              alt="LUNOA Logo" 
-              className="w-20 h-20 object-contain"
-            />
-          </div>
-
-          {/* Desktop Navigation - 完全中央配置 */}
-          <nav className="hidden lg:block">
-            <div className="flex items-center justify-center space-x-12">
-              <a href="#home" className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200 relative group">
-                ホーム
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
-              </a>
-              <a href="#about" className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200 relative group">
-                サロンについて
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
-              </a>
-              <a href="#services" className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200 relative group">
-                サービス
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
-              </a>
-              <a href="#therapists" className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200 relative group">
-                セラピスト
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
-              </a>
-              <a href="#testimonials" className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200 relative group">
-                お客様の声
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
-              </a>
-              <a href="#contact" className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200 relative group">
-                お問い合わせ
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
-              </a>
-              <a 
-                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-gradient-to-r from-amber-500 to-yellow-600 text-white px-6 py-2 rounded-full hover:from-amber-600 hover:to-yellow-700 transition-all duration-200 font-medium"
-              >
-                ご予約
-              </a>
-            </div>
-          </nav>
-
-          {/* Mobile Menu Button - 右上固定 */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 text-gray-700 hover:text-amber-600 transition-colors absolute top-6 right-4"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+      <div className="container mx-auto px-4 py-4">
+        {/* ロゴセクション - 完全中央配置 */}
+        <div className="flex justify-center items-center mb-4">
+          <img 
+            src="/images/rogo.png"
+            alt="LUNOA Logo" 
+            className="w-16 h-16 object-contain"
+          />
+          <h1 className="ml-3 text-2xl font-bold text-orange-300">
+            美容整体 LUNOA
+          </h1>
         </div>
 
-        {/* Mobile Navigation - 中央寄せ */}
+        {/* デスクトップナビゲーション */}
+        <div className="hidden lg:block">
+          <nav className="flex justify-center items-center space-x-8">
+            <button 
+              onClick={() => handleNavClick('#home')}
+              className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+            >
+              ホーム
+            </button>
+            <button 
+              onClick={() => handleNavClick('#about')}
+              className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+            >
+              サロンについて
+            </button>
+            <button 
+              onClick={() => handleNavClick('#services')}
+              className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+            >
+              サービス
+            </button>
+            <button 
+              onClick={() => handleNavClick('#therapists')}
+              className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+            >
+              セラピスト
+            </button>
+            <button 
+              onClick={() => handleNavClick('#testimonials')}
+              className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+            >
+              お客様の声
+            </button>
+            <button 
+              onClick={() => handleNavClick('#contact')}
+              className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+            >
+              お問い合わせ
+            </button>
+            <a 
+              href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white px-6 py-2 rounded-full font-medium transition-all duration-200 hover:shadow-lg"
+              style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)' }}
+            >
+              ご予約
+            </a>
+          </nav>
+        </div>
+
+        {/* モバイルメニューボタン */}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="lg:hidden absolute top-4 right-4 p-2 text-gray-600 hover:text-orange-300 transition-colors"
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
+        {/* モバイルナビゲーション */}
         {isMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md border-b border-gold-100 shadow-lg">
-            <nav className="py-4 text-center">
-              <a href="#home" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition-colors duration-200">
+          <div className="lg:hidden mt-4 pb-4">
+            <nav className="flex flex-col items-center space-y-4">
+              <button 
+                onClick={() => handleNavClick('#home')}
+                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+              >
                 ホーム
-              </a>
-              <a href="#about" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition-colors duration-200">
+              </button>
+              <button 
+                onClick={() => handleNavClick('#about')}
+                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+              >
                 サロンについて
-              </a>
-              <a href="#services" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition-colors duration-200">
+              </button>
+              <button 
+                onClick={() => handleNavClick('#services')}
+                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+              >
                 サービス
-              </a>
-              <a href="#therapists" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition-colors duration-200">
+              </button>
+              <button 
+                onClick={() => handleNavClick('#therapists')}
+                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+              >
                 セラピスト
-              </a>
-              <a href="#testimonials" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition-colors duration-200">
+              </button>
+              <button 
+                onClick={() => handleNavClick('#testimonials')}
+                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+              >
                 お客様の声
-              </a>
-              <a href="#contact" onClick={() => setIsMenuOpen(false)} className="block px-4 py-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 transition-colors duration-200">
+              </button>
+              <button 
+                onClick={() => handleNavClick('#contact')}
+                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+              >
                 お問い合わせ
-              </a>
+              </button>
               <a 
                 href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
                 target="_blank" 
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
-                className="block mx-4 my-3 bg-gradient-to-r from-amber-500 to-yellow-600 text-white px-6 py-3 rounded-full hover:from-amber-600 hover:to-yellow-700 transition-all duration-200 font-medium text-center"
+                className="text-white px-6 py-3 rounded-full font-medium transition-all duration-200 hover:shadow-lg"
+                style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)' }}
               >
                 ご予約
               </a>
