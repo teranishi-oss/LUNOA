@@ -20,20 +20,19 @@ export function Header() {
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="py-4">
+        <div className="py-4 text-center">
           {/* Logo Section */}
-          <div className="flex items-center justify-center mb-6">
+          <div className="mb-6">
             <img 
               src="/images/rogo.png"
               alt="LUNOA Logo" 
-              className="w-20 h-20 object-contain"
+              className="w-20 h-20 object-contain mx-auto"
             />
           </div>
 
-          {/* Navigation Section */}
-          <div className="flex items-center justify-center w-full">
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center justify-center space-x-12 w-full max-w-4xl mx-auto">
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:block">
+            <div className="flex items-center justify-center space-x-12">
               <a href="#home" className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200 relative group">
                 ホーム
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
@@ -58,15 +57,16 @@ export function Header() {
                 お問い合わせ
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
               </a>
-            </nav>
+            </div>
+          </nav>
 
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden p-2 text-gray-700 hover:text-amber-600 transition-colors absolute top-6 right-4"
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="lg:hidden p-2 text-gray-700 hover:text-amber-600 transition-colors absolute top-6 right-4"
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
 
         {/* Mobile Navigation */}
