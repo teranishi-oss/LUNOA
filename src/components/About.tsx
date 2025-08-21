@@ -91,10 +91,9 @@ export function About() {
               <div 
                 className="w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6"
                 style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
-              ></div>
+              >
                 {feature.icon}
               </div>
-              
               <h3 className="text-2xl font-bold text-gray-800 mb-4">{feature.title}</h3>
               <p className="text-gray-600 leading-relaxed">{feature.description}</p>
             </div>
