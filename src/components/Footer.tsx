@@ -18,7 +18,7 @@ export function Footer() {
               <img 
                 src="/images/rogo.png" 
                 alt="LUNOA Logo" 
-                className="w-8 h-8 object-contain"
+                className="w-12 h-12 object-contain"
               />
               <h3 className="text-xl font-bold text-amber-600" style={{ color: '#d97706' }}>美容整体 LUNOA</h3>
             </div>
