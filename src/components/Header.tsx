@@ -30,8 +30,8 @@ export function Header() {
         : 'bg-white/90 backdrop-blur-md'
     }`}>
       <div className="container mx-auto px-4 py-4">
-        {/* ロゴセクション - 完全中央配置 */}
-        <div className="flex justify-center items-center mb-4">
+        <div className="flex justify-between items-center">
+          {/* ロゴ */}
           <div className="flex items-center space-x-3">
             <img 
               src="/images/rogo.png" 
@@ -48,11 +48,9 @@ export function Header() {
               美容整体 LUNOA
             </h1>
           </div>
-        </div>
 
-        {/* デスクトップナビゲーション */}
-        <div className="hidden lg:block">
-          <nav className="flex justify-center items-center space-x-8">
+          {/* デスクトップナビゲーション */}
+          <nav className="hidden lg:flex items-center space-x-8">
             <button 
               onClick={() => handleNavClick('#home')}
               className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
@@ -99,15 +97,15 @@ export function Header() {
               ご予約
             </a>
           </nav>
-        </div>
 
-        {/* モバイルメニューボタン */}
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="lg:hidden absolute top-4 right-4 p-2 text-gray-600 hover:text-orange-300 transition-colors"
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+          {/* モバイルメニューボタン */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="lg:hidden p-2 text-gray-600 hover:text-orange-300 transition-colors"
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
 
         {/* モバイルナビゲーション */}
         {isMenuOpen && (
