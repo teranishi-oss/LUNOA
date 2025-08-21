@@ -23,19 +23,6 @@ export function Hero() {
               </p>
             </div>
 
-            <div className="flex items-center space-x-6">
-              <div className="flex items-center space-x-2">
-                <div className="flex -space-x-1">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <span className="text-gray-500 font-medium">5.0評価</span>
-              </div>
-              <div className="text-gray-400">•</div>
-              <span className="text-gray-400 font-medium">500名以上のお客様</span>
-            </div>
-
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
