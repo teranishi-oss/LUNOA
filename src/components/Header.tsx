@@ -31,7 +31,7 @@ export function Header() {
     }`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-col space-y-4">
-          {/* ロゴ */}
+          {/* ロゴと連絡先情報 */}
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <img 
@@ -48,6 +48,18 @@ export function Header() {
               <h1 className="text-6xl font-bold text-orange-300" style={{ display: 'none' }}>
                 美容整体 LUNOA
               </h1>
+            </div>
+            
+            {/* 連絡先情報 */}
+            <div className="hidden md:block text-right">
+              <div className="text-sm text-gray-600 mb-1">
+                <span className="font-medium">所在地：</span>
+                〒150-0043 東京都渋谷区道玄坂１丁目１９−１３ トップヒル並木 5階
+              </div>
+              <div className="text-sm text-gray-600">
+                <span className="font-medium">電話番号：</span>
+                090-3543-0588
+              </div>
             </div>
             
             {/* 連絡先情報 */}
