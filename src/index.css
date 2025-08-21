@@ -85,6 +85,15 @@
     background: linear-gradient(135deg, #ffffff 0%, #ffffff 50%, #fffef8 100%);
   }
   
+  /* 確実にゴールドカラーを表示 */
+  .text-gold-600 {
+    color: #d97706 !important;
+  }
+  
+  .text-amber-600 {
+    color: #d97706 !important;
+  }
+  
   /* ゴシック体フォント強制適用 */
   body, * {
     font-family: 'Inter', sans-serif !important;
