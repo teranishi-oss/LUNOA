@@ -371,5 +371,4 @@ export function Services() {
     </section>
   );
 }
-  )
 }
