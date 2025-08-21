@@ -26,7 +26,7 @@ export function Header() {
             <img 
               src="/images/rogo.png"
               alt="LUNOA Logo" 
-              className="w-24 h-24 object-contain"
+              className="w-16 h-16 object-contain"
             />
           </div>
 

@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center pt-20 relative"
+      className="min-h-screen flex items-center justify-center pt-32 relative"
     >
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
