@@ -4,14 +4,35 @@ import { Menu, X, Phone } from 'lucide-react';
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
+  const [scrollTimeout, setScrollTimeout] = useState<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+      setIsScrolling(true);
+      
+      // 既存のタイムアウトをクリア
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+      
+      // 150ms後にスクロール停止とみなす
+      const timeout = setTimeout(() => {
+        setIsScrolling(false);
+      }, 150);
+      
+      setScrollTimeout(timeout);
     };
+    
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+    };
+  }, [scrollTimeout]);
 
   const handleNavClick = (href: string) => {
     setIsMenuOpen(false);
@@ -25,7 +46,7 @@ export function Header() {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
+      isScrolled && isScrolling
         ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-gold-100' 
         : 'bg-transparent'
     }`}>
