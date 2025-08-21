@@ -30,9 +30,9 @@ export function Header() {
         : 'bg-white/90 backdrop-blur-md'
     }`}>
       <div className="container mx-auto px-4 py-4">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col space-y-4">
           {/* ロゴ */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center justify-center space-x-3">
             <img 
               src="/images/rogo.png" 
               alt="LUNOA ロゴ" 
@@ -50,7 +50,7 @@ export function Header() {
           </div>
 
           {/* デスクトップナビゲーション */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center justify-center space-x-8">
             <button 
               onClick={() => handleNavClick('#home')}
               className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
@@ -99,12 +99,14 @@ export function Header() {
           </nav>
 
           {/* モバイルメニューボタン */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 text-gray-600 hover:text-orange-300 transition-colors"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="lg:hidden flex justify-center">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 text-gray-600 hover:text-orange-300 transition-colors"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* モバイルナビゲーション */}
