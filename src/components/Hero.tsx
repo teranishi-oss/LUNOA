@@ -5,15 +5,16 @@ export function Hero() {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-white via-pearl-50 to-pearl-100 relative"
+      className="min-h-screen flex items-center justify-center pt-20 relative"
       style={{
         backgroundImage: `url('/images/374874116.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        backgroundColor: '#F8F4E9'
       }}
     >
-      <div className="absolute inset-0 bg-white/95"></div>
+      <div className="absolute inset-0" style={{ backgroundColor: 'rgba(248, 244, 233, 0.95)' }}></div>
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-8 animate-appear">

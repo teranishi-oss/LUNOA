@@ -82,7 +82,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #ffffff 0%, #ffffff 50%, #fffef8 100%);
+    background: #F8F4E9;
   }
   
   /* 確実にゴールドカラーを表示 - 本番環境対応 */
