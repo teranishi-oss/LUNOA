@@ -21,7 +21,7 @@ export function Footer() {
                 className="w-12 h-12 object-contain"
               />
               <h3 className="text-xl font-bold text-amber-600" style={{ color: '#d97706' }}>美容整体 LUNOA</h3>
-              <h3 className="text-xl font-bold" style={{ color: '#d97706' }}>美容整体 LUNOA</h3>
+              <h3 className="text-xl font-bold" style={{ color: '#f59e0b' }}>美容整体 LUNOA</h3>
             </div>
             <p className="text-gray-400 leading-relaxed">
               骨格・筋肉・内臓の歪みを根本から改善し、美しさと健康を同時に実現する整体サロンです。
