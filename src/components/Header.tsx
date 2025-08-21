@@ -151,6 +151,8 @@ export function Header() {
             <nav className="flex flex-col items-center space-y-4">
               <button 
                 onClick={() => handleNavClick('#home')}
+        )
+        }
       {/* モバイルナビゲーション */}
       {isMenuOpen && (
         <div className="lg:hidden mt-4 pb-4 bg-white rounded-lg shadow-lg mx-4">
@@ -204,6 +206,8 @@ export function Header() {
           </nav>
         </div>
       )}
+    }
     </header>
+  )
   );
 }
