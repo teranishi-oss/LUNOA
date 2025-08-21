@@ -6,7 +6,16 @@ export function Hero() {
     <section 
       id="home" 
       className="min-h-screen flex items-center justify-center pt-32 relative"
+      style={{
+        backgroundImage: 'url(/images/374874116.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
+      {/* 背景オーバーレイ */}
+      <div className="absolute inset-0 bg-white/80"></div>
+      
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
           <div className="space-y-8 animate-appear">
