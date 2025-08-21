@@ -14,7 +14,14 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           <div className="space-y-4 animate-appear">
-            <h3 className="text-xl font-bold font-handwriting">美容整体 LUNOA</h3>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src="/images/rogo.png" 
+                alt="LUNOA Logo" 
+                className="w-8 h-8 object-contain"
+              />
+              <h3 className="text-xl font-bold font-handwriting">美容整体 LUNOA</h3>
+            </div>
             <p className="text-gray-400 leading-relaxed">
               骨格・筋肉・内臓の歪みを根本から改善し、美しさと健康を同時に実現する整体サロンです。
             </p>
