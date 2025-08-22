@@ -43,12 +43,12 @@ const therapists = [
     specialties: ["肩こり改善", "自律神経調整", "筋膜リリース"]
   },
   {
-    name: "kyo",
-    nameKana: "きょう",
+    name: "鈴木 俊貴",
+    nameKana: "すずき としたか",
     role: "マネージャー",
     experience: "4年（5年目）",
     description: "美容と癒しを融合した施術で、お客様の内面から輝く美しさを引き出します。",
-    initial: "K",
+    initial: "鈴",
     image: "/images/rogo.png",
     specialties: ["美容整体", "小顔矯正", "リラクゼーション"]
   },
