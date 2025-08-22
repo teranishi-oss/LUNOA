@@ -22,8 +22,16 @@ export function Services() {
             {/* 通常価格 */}
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-300 text-center border border-gold-200">
               <h4 className="text-2xl font-bold text-gray-600 mb-4">通常価格</h4>
-              <div className="text-4xl font-bold mb-2 text-orange-300">¥15,400</div>
-              <div className="text-gray-400 mb-6">税込（約50分）</div>
+              <div className="space-y-3 mb-6">
+                <div className="text-lg font-semibold text-gray-600">1メニュー通常価格</div>
+                <div className="text-3xl font-bold text-orange-300">¥15,400</div>
+                <div className="text-sm text-gray-400">税込（約50分）</div>
+                <div className="border-t border-gray-200 pt-3 mt-3">
+                  <div className="text-lg font-semibold text-gray-600">オプション付き価格</div>
+                  <div className="text-3xl font-bold text-orange-300">¥19,800</div>
+                  <div className="text-sm text-gray-400">税込（約50分）</div>
+                </div>
+              </div>
               <ul className="text-left space-y-2 text-gray-400 mb-6">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
@@ -51,9 +59,16 @@ export function Services() {
             {/* 3回券 */}
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-300 text-center border border-gold-100">
               <h4 className="text-2xl font-bold text-gray-600 mb-4">3回券</h4>
-              <div className="text-4xl font-bold mb-2 text-orange-300">¥46,200</div>
-              <div className="text-gray-400 mb-2">税込</div>
-              <div className="text-sm text-gray-400 mb-6">¥15,400 × 3回</div>
+              <div className="space-y-3 mb-6">
+                <div className="text-lg font-semibold text-gray-600">1メニュー通常価格</div>
+                <div className="text-3xl font-bold text-orange-300">¥33,000</div>
+                <div className="text-sm text-gray-400">¥11,000×3回</div>
+                <div className="border-t border-gray-200 pt-3 mt-3">
+                  <div className="text-lg font-semibold text-gray-600">オプション付き価格</div>
+                  <div className="text-3xl font-bold text-orange-300">¥46,200</div>
+                  <div className="text-sm text-gray-400">¥15,400×3回</div>
+                </div>
+              </div>
               <ul className="text-left space-y-2 text-gray-400 mb-6">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
@@ -84,9 +99,16 @@ export function Services() {
                 おすすめ
               </div>
               <h4 className="text-2xl font-bold text-gray-600 mb-4">6回券</h4>
-              <div className="text-4xl font-bold mb-2 text-orange-300">¥92,400</div>
-              <div className="text-gray-400 mb-2">税込</div>
-              <div className="text-sm text-gray-400 mb-6">¥15,400 × 6回</div>
+              <div className="space-y-3 mb-6">
+                <div className="text-lg font-semibold text-gray-600">1メニュー通常価格</div>
+                <div className="text-3xl font-bold text-orange-300">¥62,700</div>
+                <div className="text-sm text-gray-400">¥10,450×6回</div>
+                <div className="border-t border-gray-200 pt-3 mt-3">
+                  <div className="text-lg font-semibold text-gray-600">オプション付き価格</div>
+                  <div className="text-3xl font-bold text-orange-300">¥87,780</div>
+                  <div className="text-sm text-gray-400">¥14,630×6回</div>
+                </div>
+              </div>
               <ul className="text-left space-y-2 text-gray-400 mb-6">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
@@ -115,9 +137,16 @@ export function Services() {
             {/* 9回券 */}
             <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-300 text-center border border-gold-100">
               <h4 className="text-2xl font-bold text-gray-600 mb-4">9回券</h4>
-              <div className="text-4xl font-bold mb-2 text-orange-300">¥138,600</div>
-              <div className="text-gray-400 mb-2">税込</div>
-              <div className="text-sm text-gray-400 mb-6">¥15,400 × 9回</div>
+              <div className="space-y-3 mb-6">
+                <div className="text-lg font-semibold text-gray-600">1メニュー通常価格</div>
+                <div className="text-3xl font-bold text-orange-300">¥89,100</div>
+                <div className="text-sm text-gray-400">¥9,900×9回</div>
+                <div className="border-t border-gray-200 pt-3 mt-3">
+                  <div className="text-lg font-semibold text-gray-600">オプション付き価格</div>
+                  <div className="text-3xl font-bold text-orange-300">¥124,740</div>
+                  <div className="text-sm text-gray-400">¥13,860×9回</div>
+                </div>
+              </div>
               <ul className="text-left space-y-2 text-gray-400 mb-6">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
