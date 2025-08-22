@@ -19,7 +19,7 @@ const therapists = [
     experience: "11年",
     description: "長年の経験を活かし、現代人に多い巻き肩の問題を根本から改善します。",
     initial: "佐",
-    image: "",
+    image: "/images/rogo.png",
     specialties: ["巻き肩改善", "肩こり治療", "姿勢矯正"]
   },
   {
@@ -29,7 +29,7 @@ const therapists = [
     experience: "3年（4年目）",
     description: "自律神経の乱れや内臓の不調にアプローチし、体の内側から健康をサポートします。",
     initial: "高",
-    image: "",
+    image: "/images/rogo.png",
     specialties: ["自律神経整体", "内臓調整", "ホルモンバランス"]
   },
   {
@@ -49,7 +49,7 @@ const therapists = [
     experience: "4年（5年目）",
     description: "美容と癒しを融合した施術で、お客様の内面から輝く美しさを引き出します。",
     initial: "K",
-    image: "",
+    image: "/images/rogo.png",
     specialties: ["美容整体", "小顔矯正", "リラクゼーション"]
   }
 ];
