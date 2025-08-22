@@ -51,7 +51,7 @@ const therapists = [
     initial: "K",
     image: "/images/rogo.png",
     specialties: ["美容整体", "小顔矯正", "リラクゼーション"]
-  }
+  },
   {
     name: "兵藤 明日伽",
     nameKana: "ひょうとう あすか",
