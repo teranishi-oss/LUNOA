@@ -52,6 +52,16 @@ const therapists = [
     image: "/images/rogo.png",
     specialties: ["美容整体", "小顔矯正", "リラクゼーション"]
   }
+  {
+    name: "兵藤 明日伽",
+    nameKana: "ひょうとう あすか",
+    role: "スタッフ",
+    experience: "2年（3年目）",
+    description: "姿勢改善から頭痛改善まで幅広い症状に対応し、お客様の健康をトータルサポートします。",
+    initial: "兵",
+    image: "/images/rogo.png",
+    specialties: ["姿勢改善", "肩こり改善", "腰痛改善", "頭痛改善", "パワースポット"]
+  }
 ];
 
 export function Therapists() {
