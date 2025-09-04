@@ -47,7 +47,7 @@ export function Services() {
                 </li>
               </ul>
               <a 
-                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                href="https://duplicated-imdj.bolt.host/"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block w-full bg-gray-100 hover:bg-gradient-to-r hover:from-orange-300 hover:to-orange-400 hover:text-white text-gray-400 font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
@@ -84,7 +84,7 @@ export function Services() {
                 </li>
               </ul>
               <a 
-                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                href="https://duplicated-imdj.bolt.host/"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block w-full bg-gray-100 hover:bg-gradient-to-r hover:from-orange-300 hover:to-orange-400 hover:text-white text-gray-400 font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
@@ -124,7 +124,7 @@ export function Services() {
                 </li>
               </ul>
               <a 
-                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                href="https://duplicated-imdj.bolt.host/"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block w-full font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
@@ -162,7 +162,7 @@ export function Services() {
                 </li>
               </ul>
               <a 
-                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                href="https://duplicated-imdj.bolt.host/"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block w-full bg-gray-100 hover:bg-gradient-to-r hover:from-orange-300 hover:to-orange-400 hover:text-white text-gray-400 font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
