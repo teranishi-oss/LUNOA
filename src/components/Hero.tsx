@@ -37,7 +37,7 @@ export function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                href="https://duplicated-imdj.bolt.host/"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center no-underline text-white"

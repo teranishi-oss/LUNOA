@@ -56,7 +56,7 @@ export function Contact() {
 
             <div className="text-center">
               <a 
-                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                href="https://duplicated-imdj.bolt.host/"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 no-underline"

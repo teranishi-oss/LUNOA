@@ -106,7 +106,7 @@ export function Header() {
               お問い合わせ
             </button>
             <a 
-              href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+              href="https://duplicated-imdj.bolt.host/"
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white px-6 py-2 rounded-full font-medium transition-all duration-200 hover:shadow-lg"
@@ -168,7 +168,7 @@ export function Header() {
                 お問い合わせ
               </button>
               <a 
-                href="https://bookom.jp/reservation?company=69&course=1339&defaultLang=ja&shop=238"
+                href="https://duplicated-imdj.bolt.host/"
                 target="_blank" 
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
