@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center justify-center pt-32 relative"
+      className="min-h-screen flex items-center justify-center pt-24 relative"
       style={{
         backgroundImage: 'url(/images/374874116.jpg)',
         backgroundSize: 'cover',
