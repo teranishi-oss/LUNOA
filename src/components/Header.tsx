@@ -106,6 +106,14 @@ export function Header() {
               お問い合わせ
             </button>
             <a 
+              href="https://website-recreation-f-3nce.bolt.host/"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-600 hover:text-orange-300' : 'text-white hover:text-orange-200 drop-shadow-lg'}`}
+            >
+              求人情報
+            </a>
+            <a 
               href="https://duplicated-imdj.bolt.host/"
               target="_blank" 
               rel="noopener noreferrer"
@@ -167,6 +175,15 @@ export function Header() {
               >
                 お問い合わせ
               </button>
+              <a 
+                href="https://website-recreation-f-3nce.bolt.host/"
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+              >
+                求人情報
+              </a>
               <a 
                 href="https://duplicated-imdj.bolt.host/"
                 target="_blank" 

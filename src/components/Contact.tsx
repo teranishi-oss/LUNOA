@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, Users } from 'lucide-react';
 
 const contactInfo = [
   {
@@ -64,6 +64,18 @@ export function Contact() {
               >
                 <Phone className="w-5 h-5 inline mr-2" />
                 オンライン予約システム
+              </a>
+            </div>
+
+            <div className="text-center">
+              <a 
+                href="https://website-recreation-f-3nce.bolt.host/"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 no-underline"
+              >
+                <Users className="w-5 h-5 inline mr-2" />
+                求人情報はこちら
               </a>
             </div>
           </div>
