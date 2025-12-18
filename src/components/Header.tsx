@@ -69,6 +69,15 @@ export function Header() {
 
           {/* デスクトップナビゲーション */}
           <nav className="hidden lg:flex items-center justify-center space-x-6">
+            <a 
+              href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white px-6 py-3 rounded-full text-sm font-bold transition-all duration-200 hover:shadow-lg hover:scale-105"
+              style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)' }}
+            >
+              ご予約
+            </a>
             <button 
               onClick={() => handleNavClick('#services')}
               className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-600 hover:text-orange-300' : 'text-white hover:text-orange-200 drop-shadow-lg'}`}
@@ -95,15 +104,6 @@ export function Header() {
             >
               求人情報
             </a>
-            <a 
-              href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:shadow-lg order-first"
-              style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)' }}
-            >
-              ご予約
-            </a>
           </nav>
 
           {/* モバイルメニューボタン */}
@@ -126,7 +126,7 @@ export function Header() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
-                className="text-white px-4 py-2 rounded-full font-medium transition-all duration-200 hover:shadow-lg"
+                className="text-white px-6 py-3 rounded-full font-bold transition-all duration-200 hover:shadow-lg hover:scale-105"
                 style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)' }}
               >
                 ご予約

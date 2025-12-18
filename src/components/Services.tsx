@@ -1,348 +1,198 @@
 import React from 'react';
+import { Calendar, Clock, MapPin, Phone, Star, ArrowRight } from 'lucide-react';
+
+const services = [
+  {
+    name: "姿勢矯正・骨格矯正",
+    description: "猫背、巻き肩、反り腰を根本から改善",
+    image: "/images/111.jpg",
+    price: "¥15,400",
+    duration: "約50分",
+    features: ["姿勢分析", "骨格調整", "筋肉バランス改善"],
+    steps: ["1. 姿勢チェック", "2. 施術プラン作成", "3. 骨格矯正施術"]
+  },
+  {
+    name: "内臓調整・自律神経整体",
+    description: "体の内側から健康をサポート",
+    image: "/images/222.jpg",
+    price: "¥15,400",
+    duration: "約50分",
+    features: ["内臓機能改善", "自律神経調整", "ホルモンバランス"],
+    steps: ["1. 体調ヒアリング", "2. 内臓の状態確認", "3. 調整施術"]
+  },
+  {
+    name: "小顔矯正・美容整体",
+    description: "美しさを引き出す専門施術",
+    image: "/images/333.jpg",
+    price: "¥15,400",
+    duration: "約50分",
+    features: ["小顔効果", "リフトアップ", "血行促進"],
+    steps: ["1. フェイスライン分析", "2. 美容施術", "3. アフターケア"]
+  }
+];
 
 export function Services() {
   return (
-    <section id="services" className="py-16 md:py-24">
+    <section id="services" className="py-16 md:py-24 bg-gradient-to-br from-orange-50 to-amber-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-600 mb-6 font-handwriting">
-            施術メニュー・料金
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 font-handwriting">
+            予約サービス
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            姿勢矯正(猫背、巻き肩、反り腰)、骨格矯正、内臓調整、足首矯正、自律神経整体、小顔矯正。
-            お客様の状態に合わせた最適な施術をご提供いたします。
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            あなたの美と健康をサポートする専門サービス。
+            お客様一人ひとりに最適な施術をご提供いたします。
           </p>
         </div>
 
-        {/* 都度払い料金 */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold text-gray-600 text-center mb-12 font-heading">都度払い料金</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            
-            {/* 通常価格 */}
-            <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-300 text-center border border-gold-200">
-              <h4 className="text-2xl font-bold text-gray-600 mb-4">通常価格</h4>
-              <div className="space-y-3 mb-6">
-                <div className="text-lg font-semibold text-gray-600">1メニュー通常価格</div>
-                <div className="text-3xl font-bold text-orange-300">¥15,400</div>
-                <div className="text-sm text-gray-400">税込（約50分）</div>
-                <div className="border-t border-gray-200 pt-3 mt-3">
-                  <div className="text-lg font-semibold text-gray-600">オプション付き価格</div>
-                  <div className="text-3xl font-bold text-orange-300">¥19,800</div>
-                  <div className="text-sm text-gray-400">税込（約50分）</div>
+        {/* サービス一覧 */}
+        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden animate-appear"
+              style={{ animationDelay: `${index * 200}ms` }}
+            >
+              {/* サービス画像 */}
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.name}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = '/images/rogo.png';
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <div className="flex items-center space-x-2 text-sm">
+                    <Clock className="w-4 h-4" />
+                    <span>{service.duration}</span>
+                  </div>
                 </div>
               </div>
-              <ul className="text-left space-y-2 text-gray-400 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  初回カウンセリング込み
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  全メニュー対応
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  完全個室対応
-                </li>
-              </ul>
-              <a 
-                href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block w-full bg-gray-100 hover:bg-gradient-to-r hover:from-orange-300 hover:to-orange-400 hover:text-white text-gray-400 font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
-              >
-                予約する
-              </a>
-            </div>
 
-            {/* 3回券 */}
-            <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-300 text-center border border-gold-100">
-              <h4 className="text-2xl font-bold text-gray-600 mb-4">3回券</h4>
-              <div className="space-y-3 mb-6">
-                <div className="text-lg font-semibold text-gray-600">1メニュー通常価格</div>
-                <div className="text-3xl font-bold text-orange-300">¥33,000</div>
-                <div className="text-sm text-gray-400">¥11,000×3回</div>
-                <div className="border-t border-gray-200 pt-3 mt-3">
-                  <div className="text-lg font-semibold text-gray-600">オプション付き価格</div>
-                  <div className="text-3xl font-bold text-orange-300">¥46,200</div>
-                  <div className="text-sm text-gray-400">¥15,400×3回</div>
+              {/* サービス内容 */}
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3">{service.name}</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">{service.description}</p>
+                
+                {/* 特徴 */}
+                <div className="mb-6">
+                  <h4 className="text-sm font-semibold text-gray-700 mb-3 flex items-center">
+                    <Star className="w-4 h-4 text-orange-400 mr-2" />
+                    特徴
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {service.features.map((feature, idx) => (
+                      <span
+                        key={idx}
+                        className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium"
+                      >
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-              <ul className="text-left space-y-2 text-gray-400 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  短期集中コース
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  有効期限6ヶ月
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  初期改善に最適
-                </li>
-              </ul>
-              <a 
-                href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block w-full bg-gray-100 hover:bg-gradient-to-r hover:from-orange-300 hover:to-orange-400 hover:text-white text-gray-400 font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
-              >
-                予約する
-              </a>
-            </div>
 
-            {/* 6回券 - おすすめ */}
-            <div className="bg-gradient-to-br from-amber-50 to-white rounded-3xl p-8 shadow-md hover:shadow-lg transition-all duration-300 text-center border-2 border-amber-200 relative">
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-amber-600 text-white px-4 py-1 rounded-full text-sm font-medium">
-                おすすめ
-              </div>
-              <h4 className="text-2xl font-bold text-gray-600 mb-4">6回券</h4>
-              <div className="space-y-3 mb-6">
-                <div className="text-lg font-semibold text-gray-600">1メニュー通常価格</div>
-                <div className="text-3xl font-bold text-orange-300">¥62,700</div>
-                <div className="text-sm text-gray-400">¥10,450×6回</div>
-                <div className="border-t border-gray-200 pt-3 mt-3">
-                  <div className="text-lg font-semibold text-gray-600">オプション付き価格</div>
-                  <div className="text-3xl font-bold text-orange-300">¥87,780</div>
-                  <div className="text-sm text-gray-400">¥14,630×6回</div>
+                {/* 予約の流れ */}
+                <div className="mb-6">
+                  <h4 className="text-sm font-semibold text-gray-700 mb-3">予約の流れ</h4>
+                  <div className="space-y-2">
+                    {service.steps.map((step, idx) => (
+                      <div key={idx} className="flex items-center text-sm text-gray-600">
+                        <div className="w-6 h-6 bg-orange-100 text-orange-600 rounded-full flex items-center justify-center text-xs font-bold mr-3">
+                          {idx + 1}
+                        </div>
+                        {step}
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-              <ul className="text-left space-y-2 text-gray-400 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  継続改善コース
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  有効期限6ヶ月
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  根本改善に最適
-                </li>
-              </ul>
-              <a 
-                href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block w-full font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
-                style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)', color: 'white' }}
-              >
-                予約する
-              </a>
-            </div>
 
-            {/* 9回券 */}
-            <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-300 text-center border border-gold-100">
-              <h4 className="text-2xl font-bold text-gray-600 mb-4">9回券</h4>
-              <div className="space-y-3 mb-6">
-                <div className="text-lg font-semibold text-gray-600">1メニュー通常価格</div>
-                <div className="text-3xl font-bold text-orange-300">¥89,100</div>
-                <div className="text-sm text-gray-400">¥9,900×9回</div>
-                <div className="border-t border-gray-200 pt-3 mt-3">
-                  <div className="text-lg font-semibold text-gray-600">オプション付き価格</div>
-                  <div className="text-3xl font-bold text-orange-300">¥124,740</div>
-                  <div className="text-sm text-gray-400">¥13,860×9回</div>
+                {/* 料金と予約ボタン */}
+                <div className="border-t border-gray-100 pt-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="text-3xl font-bold text-orange-500">{service.price}</div>
+                    <div className="text-sm text-gray-500">税込</div>
+                  </div>
+                  
+                  <a 
+                    href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="group w-full bg-gradient-to-r from-orange-400 to-amber-500 hover:from-orange-500 hover:to-amber-600 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
+                  >
+                    <Calendar className="w-5 h-5 group-hover:animate-bounce" />
+                    <span>予約する</span>
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  </a>
                 </div>
               </div>
-              <ul className="text-left space-y-2 text-gray-400 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  長期改善コース
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  有効期限6ヶ月
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  完全改善に最適
-                </li>
-              </ul>
-              <a 
-                href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block w-full bg-gray-100 hover:bg-gradient-to-r hover:from-orange-300 hover:to-orange-400 hover:text-white text-gray-400 font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
-              >
-                予約する
-              </a>
             </div>
-          </div>
+          ))}
         </div>
 
-        {/* 定期プラン */}
-        <div className="mb-16">
-          <h3 className="text-3xl font-bold text-gray-600 text-center mb-6 font-heading">会員 月々払い</h3>
-          <h4 className="text-xl font-bold text-gray-600 text-center mb-8 font-handwriting">MONTHLY COURSE PRICE LIST</h4>
+        {/* 料金プラン */}
+        <div className="bg-white rounded-3xl shadow-lg p-8 mb-16 animate-appear delay-1000">
+          <h3 className="text-3xl font-bold text-gray-800 text-center mb-8 font-handwriting">料金プラン</h3>
           
-          {/* 特典セクション */}
-          <div className="bg-gradient-to-br from-white to-gold-50 rounded-3xl p-8 shadow-lg max-w-4xl mx-auto mb-8 border border-gold-200">
-            <h4 className="text-2xl font-bold text-gray-600 text-center mb-6 font-heading">特典</h4>
-            <div className="grid md:grid-cols-3 gap-6 text-center">
-              <div className="bg-white rounded-2xl p-6 shadow-md">
-                <div 
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                  style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
-                >
-                  <span className="text-white font-bold text-lg">無料</span>
-                </div>
-                <h5 className="font-bold text-gray-600 mb-2">入会金無料</h5>
-                <p className="text-gray-400 text-sm">初期費用なしで始められます</p>
-              </div>
-              <div className="bg-white rounded-2xl p-6 shadow-md">
-                <div 
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                  style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
-                >
-                  <span className="text-white font-bold text-lg">🎂</span>
-                </div>
-                <h5 className="font-bold text-gray-600 mb-2">誕生日月＋1回無料</h5>
-                <p className="text-gray-400 text-sm">お誕生日月は追加施術1回プレゼント</p>
-              </div>
-              <div className="bg-white rounded-2xl p-6 shadow-md">
-                <div 
-                  className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                  style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
-                >
-                  <span className="text-white font-bold text-lg">✨</span>
-                </div>
-                <h5 className="font-bold text-gray-600 mb-2">4ヶ月毎オプション無料</h5>
-                <p className="text-gray-400 text-sm">継続特典でオプション施術が無料</p>
-              </div>
-            </div>
-          </div>
-
-          {/* 案内文 */}
-          <div className="text-center mb-8">
-            <p className="text-lg text-gray-400 bg-white rounded-2xl p-6 shadow-md max-w-2xl mx-auto">
-              会員の方は都度コースと同額で受けられます。
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            
-            {/* COURSE 01 */}
-            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
-              <div className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
-                COURSE 01
-              </div>
-              <h4 className="text-2xl font-bold text-gray-600 mb-4">月1回（月々払い）</h4>
-              <div className="space-y-3 mb-6">
-                <div className="text-lg font-semibold text-gray-600">1メニュー通常価格</div>
-                <div className="text-3xl font-bold text-orange-300">¥11,000</div>
-                <div className="text-sm text-gray-400">¥11,000×1回</div>
-                <div className="border-t border-gray-200 pt-3 mt-3">
-                <div className="text-lg font-semibold text-gray-600">オプション付き価格</div>
-                <div className="text-3xl font-bold text-orange-300">¥15,400</div>
-                <div className="text-sm text-gray-400">¥15,400×1回</div>
-                </div>
-              </div>
-              <ul className="text-left space-y-2 text-gray-400 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  月1回の定期施術
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  会員特典適用
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  予約優先権
-                </li>
-              </ul>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="text-center p-6 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200">
+              <h4 className="text-xl font-bold text-gray-700 mb-4">都度払い</h4>
+              <div className="text-3xl font-bold text-orange-500 mb-2">¥15,400</div>
+              <div className="text-sm text-gray-500 mb-4">1回あたり</div>
               <a 
                 href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block w-full bg-gray-100 hover:bg-gradient-to-r hover:from-orange-300 hover:to-orange-400 hover:text-white text-gray-400 font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+                className="inline-block w-full bg-gray-100 hover:bg-orange-400 hover:text-white text-gray-600 font-semibold px-4 py-3 rounded-xl transition-all duration-300"
               >
                 予約する
               </a>
             </div>
 
-            {/* COURSE 02 - おすすめ */}
-            <div className="bg-gradient-to-br from-amber-50 to-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border-2 border-amber-200 relative">
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-amber-600 text-white px-4 py-1 rounded-full text-sm font-medium">
+            <div className="text-center p-6 bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl border border-orange-200">
+              <h4 className="text-xl font-bold text-gray-700 mb-4">3回券</h4>
+              <div className="text-3xl font-bold text-orange-500 mb-2">¥33,000</div>
+              <div className="text-sm text-gray-500 mb-4">¥11,000×3回</div>
+              <a 
+                href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block w-full bg-orange-100 hover:bg-orange-400 hover:text-white text-orange-600 font-semibold px-4 py-3 rounded-xl transition-all duration-300"
+              >
+                予約する
+              </a>
+            </div>
+
+            <div className="text-center p-6 bg-gradient-to-br from-amber-100 to-yellow-100 rounded-2xl border-2 border-amber-300 relative">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-amber-500 text-white px-4 py-1 rounded-full text-sm font-medium">
                 おすすめ
               </div>
-              <div className="bg-gold-100 text-gold-700 px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
-                COURSE 02
-              </div>
-              <h4 className="text-2xl font-bold text-gray-600 mb-4">月2回（月々払い）</h4>
-              <div className="space-y-3 mb-6">
-                <div className="text-lg font-semibold text-gray-600">1メニュー通常価格</div>
-                <div className="text-3xl font-bold text-orange-300">¥20,900</div>
-                <div className="text-sm text-gray-400">¥10,450×2回</div>
-                <div className="border-t border-gray-200 pt-3 mt-3">
-                <div className="text-lg font-semibold text-gray-600">オプション付き価格</div>
-                <div className="text-3xl font-bold text-orange-300">¥29,260</div>
-                <div className="text-sm text-gray-400">¥14,630×2回</div>
-                </div>
-              </div>
-              <ul className="text-left space-y-2 text-gray-400 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  月2回の定期施術
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  会員特典適用
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  予約優先権
-                </li>
-              </ul>
+              <h4 className="text-xl font-bold text-gray-700 mb-4">6回券</h4>
+              <div className="text-3xl font-bold text-orange-500 mb-2">¥62,700</div>
+              <div className="text-sm text-gray-500 mb-4">¥10,450×6回</div>
               <a 
                 href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block w-full font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
-                style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)', color: 'white' }}
+                className="inline-block w-full bg-amber-400 hover:bg-amber-500 text-white font-semibold px-4 py-3 rounded-xl transition-all duration-300 transform hover:scale-105"
               >
                 予約する
               </a>
             </div>
 
-            {/* COURSE 03 */}
-            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
-              <div className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
-                COURSE 03
-              </div>
-              <h4 className="text-2xl font-bold text-gray-600 mb-4">月4回（月々払い）</h4>
-              <div className="space-y-3 mb-6">
-                <div className="text-lg font-semibold text-gray-600">1メニュー通常価格</div>
-                <div className="text-3xl font-bold text-orange-300">¥37,400</div>
-                <div className="text-sm text-gray-400">¥9,350×4回</div>
-                <div className="border-t border-gray-200 pt-3 mt-3">
-                <div className="text-lg font-semibold text-gray-600">オプション付き価格</div>
-                <div className="text-3xl font-bold text-orange-300">¥52,360</div>
-                <div className="text-sm text-gray-400">¥13,090×4回</div>
-                </div>
-              </div>
-              <ul className="text-left space-y-2 text-gray-400 mb-6">
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  月4回の定期施術
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  会員特典適用
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-orange-300 rounded-full mr-3"></div>
-                  予約優先権
-                </li>
-              </ul>
+            <div className="text-center p-6 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200">
+              <h4 className="text-xl font-bold text-gray-700 mb-4">9回券</h4>
+              <div className="text-3xl font-bold text-orange-500 mb-2">¥89,100</div>
+              <div className="text-sm text-gray-500 mb-4">¥9,900×9回</div>
               <a 
                 href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block w-full bg-gray-100 hover:bg-gradient-to-r hover:from-orange-300 hover:to-orange-400 hover:text-white text-gray-400 font-semibold px-6 py-3 rounded-full transition-all duration-300 text-center no-underline"
+                className="inline-block w-full bg-gray-100 hover:bg-orange-400 hover:text-white text-gray-600 font-semibold px-4 py-3 rounded-xl transition-all duration-300"
               >
                 予約する
               </a>
@@ -350,29 +200,73 @@ export function Services() {
           </div>
         </div>
 
-        {/* 期待できる効果 */}
-        <div className="text-center mt-16 animate-appear delay-1000">
-          <div className="bg-white rounded-3xl p-8 shadow-lg max-w-4xl mx-auto">
-            <h3 className="text-3xl font-bold text-gray-600 mb-6">期待できる効果</h3>
-            <div className="grid md:grid-cols-2 gap-6 text-left">
-              <div>
-                <h4 className="text-xl font-semibold mb-3 text-orange-300">美容効果</h4>
-                <ul className="space-y-2 text-gray-400">
-                  <li>• くびれ・下っ腹改善</li>
-                  <li>• 肩の盛り上がり改善</li>
-                  <li>• 太もも痩せ・ダイエット</li>
-                  <li>• 二の腕痩せ・代謝UP</li>
-                </ul>
+        {/* 店舗情報 */}
+        <div className="bg-white rounded-3xl shadow-lg p-8 animate-appear delay-1500">
+          <h3 className="text-3xl font-bold text-gray-800 text-center mb-8 font-handwriting">店舗情報</h3>
+          
+          <div className="grid lg:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <MapPin className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-gray-700 mb-2">アクセス</h4>
+                  <p className="text-gray-600">
+                    〒150-0043<br />
+                    東京都渋谷区道玄坂１丁目１９−１３<br />
+                    トップヒル並木 5階
+                  </p>
+                </div>
               </div>
-              <div>
-                <h4 className="text-xl font-semibold mb-3 text-orange-300">健康効果</h4>
-                <ul className="space-y-2 text-gray-400">
-                  <li>• 首肩こり・腰痛の改善</li>
-                  <li>• 頭痛の改善</li>
-                  <li>• 痺れ・眼精疲労の改善</li>
-                  <li>• 睡眠の質向上</li>
-                </ul>
+
+              <div className="flex items-start space-x-4">
+                <Phone className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-gray-700 mb-2">電話番号</h4>
+                  <p className="text-gray-600">090-3543-0588</p>
+                </div>
               </div>
+
+              <div className="flex items-start space-x-4">
+                <Clock className="w-6 h-6 text-orange-500 mt-1 flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-gray-700 mb-2">営業時間</h4>
+                  <p className="text-gray-600">
+                    平日: 10:00-21:00<br />
+                    土日: 10:00-19:00<br />
+                    定休日なし
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              <img 
+                src="/images/444.jpg" 
+                alt="店舗外観" 
+                className="w-full h-32 object-cover rounded-xl"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = '/images/rogo.png';
+                }}
+              />
+              <img 
+                src="/images/555.jpg" 
+                alt="施術室" 
+                className="w-full h-32 object-cover rounded-xl"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = '/images/rogo.png';
+                }}
+              />
+              <img 
+                src="/images/888.jpg" 
+                alt="施術風景" 
+                className="w-full h-32 object-cover rounded-xl col-span-2"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = '/images/rogo.png';
+                }}
+              />
             </div>
           </div>
         </div>
