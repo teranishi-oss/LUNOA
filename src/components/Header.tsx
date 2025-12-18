@@ -73,8 +73,7 @@ export function Header() {
               href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-white px-6 py-3 rounded-full text-sm font-bold transition-all duration-200 hover:shadow-lg hover:scale-105"
-              style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)' }}
+              className="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-6 py-3 rounded-full text-sm font-bold transition-all duration-200 hover:shadow-lg hover:scale-105"
             >
               ご予約
             </a>
@@ -126,8 +125,7 @@ export function Header() {
                 target="_blank" 
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
-                className="text-white px-6 py-3 rounded-full font-bold transition-all duration-200 hover:shadow-lg hover:scale-105"
-                style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)' }}
+                className="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-6 py-3 rounded-full font-bold transition-all duration-200 hover:shadow-lg hover:scale-105"
               >
                 ご予約
               </a>

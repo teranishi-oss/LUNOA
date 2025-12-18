@@ -1,24 +1,24 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Clock, Send, Users } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, Users, Calendar } from 'lucide-react';
 
 const contactInfo = [
   {
     icon: <MapPin className="w-6 h-6" />,
     title: "所在地",
     content: "〒150-0043 東京都渋谷区道玄坂１丁目１９−１３ トップヒル並木 5階",
-    gradient: "from-amber-500 to-yellow-600"
+    gradient: "from-pink-500 to-rose-600"
   },
   {
     icon: <Phone className="w-6 h-6" />,
     title: "電話番号",
     content: "090-3543-0588",
-    gradient: "from-yellow-500 to-orange-600"
+    gradient: "from-rose-500 to-pink-600"
   },
   {
     icon: <Clock className="w-6 h-6" />,
     title: "営業時間",
     content: "平日: 10:00-21:00 / 土日: 10:00-19:00（定休日なし）",
-    gradient: "from-green-500 to-emerald-600"
+    gradient: "from-pink-500 to-purple-600"
   }
 ];
 
@@ -28,10 +28,10 @@ export function Contact() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-600 mb-6 font-handwriting">
-            ご予約・お問い合わせ
+            予約フォーム・お問い合わせ
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            美と健康の第一歩を、私たちと一緒に始めませんか？お気軽にお問い合わせください。
+            美容整体で理想の体を手に入れませんか？お気軽にご予約・お問い合わせください。
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export function Contact() {
                   key={index}
                   className="flex items-center space-x-4 p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gold-100"
                 >
-                  <div className="w-12 h-12 bg-gradient-to-r from-gold-500 to-gold-600 rounded-xl flex items-center justify-center text-white">
+                  <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-rose-600 rounded-xl flex items-center justify-center text-white">
                     {info.icon}
                   </div>
                   <div>
@@ -59,10 +59,9 @@ export function Contact() {
                 href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-block text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 no-underline"
-                style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)', color: 'white' }}
+                className="inline-block bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 no-underline"
               >
-                <Phone className="w-5 h-5 inline mr-2" />
+                <Calendar className="w-5 h-5 inline mr-2" />
                 ホットペッパービューティーで予約
               </a>
             </div>
@@ -131,8 +130,7 @@ export function Contact() {
 
               <button 
                 type="submit"
-                className="w-full text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 flex items-center justify-center space-x-2"
-                style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)', color: 'white' }}
+                className="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 flex items-center justify-center space-x-2"
               >
                 <Send className="w-5 h-5" />
                 <span>送信する</span>
