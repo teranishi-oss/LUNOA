@@ -70,28 +70,10 @@ export function Header() {
           {/* デスクトップナビゲーション */}
           <nav className="hidden lg:flex items-center justify-center space-x-6">
             <button 
-              onClick={() => handleNavClick('#home')}
-              className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-600 hover:text-orange-300' : 'text-white hover:text-orange-200 drop-shadow-lg'}`}
-            >
-              ホーム
-            </button>
-            <button 
-              onClick={() => handleNavClick('#about')}
-              className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-600 hover:text-orange-300' : 'text-white hover:text-orange-200 drop-shadow-lg'}`}
-            >
-              サロンについて
-            </button>
-            <button 
               onClick={() => handleNavClick('#services')}
               className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-600 hover:text-orange-300' : 'text-white hover:text-orange-200 drop-shadow-lg'}`}
             >
-              サービス
-            </button>
-            <button 
-              onClick={() => handleNavClick('#therapists')}
-              className={`text-sm font-medium transition-colors duration-200 ${isScrolled ? 'text-gray-600 hover:text-orange-300' : 'text-white hover:text-orange-200 drop-shadow-lg'}`}
-            >
-              セラピスト
+              メニュー
             </button>
             <button 
               onClick={() => handleNavClick('#testimonials')}
@@ -117,7 +99,7 @@ export function Header() {
               href="https://duplicated-imdj.bolt.host/"
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:shadow-lg"
+              className="text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:shadow-lg order-first"
               style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)' }}
             >
               ご予約
@@ -139,29 +121,21 @@ export function Header() {
         {isMenuOpen && (
           <div className="lg:hidden mt-2 pb-4 bg-white/95 backdrop-blur-md rounded-lg shadow-lg">
             <nav className="flex flex-col items-center space-y-4">
-              <button 
-                onClick={() => handleNavClick('#home')}
-                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
+              <a 
+                href="https://duplicated-imdj.bolt.host/"
+                target="_blank" 
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-white px-4 py-2 rounded-full font-medium transition-all duration-200 hover:shadow-lg"
+                style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)' }}
               >
-                ホーム
-              </button>
-              <button 
-                onClick={() => handleNavClick('#about')}
-                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
-              >
-                サロンについて
-              </button>
+                ご予約
+              </a>
               <button 
                 onClick={() => handleNavClick('#services')}
                 className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
               >
-                サービス
-              </button>
-              <button 
-                onClick={() => handleNavClick('#therapists')}
-                className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
-              >
-                セラピスト
+                メニュー
               </button>
               <button 
                 onClick={() => handleNavClick('#testimonials')}
@@ -183,16 +157,6 @@ export function Header() {
                 className="text-gray-600 hover:text-orange-300 font-medium transition-colors duration-200"
               >
                 求人情報
-              </a>
-              <a 
-                href="https://duplicated-imdj.bolt.host/"
-                target="_blank" 
-                rel="noopener noreferrer"
-                onClick={() => setIsMenuOpen(false)}
-                className="text-white px-4 py-2 rounded-full font-medium transition-all duration-200 hover:shadow-lg"
-                style={{ background: 'linear-gradient(135deg, #d2b48c, #deb887)' }}
-              >
-                ご予約
               </a>
             </nav>
           </div>
