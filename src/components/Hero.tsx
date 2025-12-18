@@ -79,7 +79,7 @@ export function Hero() {
                 href="#line"
                 className="inline-block bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#2C2C2C] font-bold px-8 py-4 rounded-full transition-all duration-300"
               >
-                <MessageCircle className="w-5 h-5 inline mr-2" />
+            backgroundImage: 'url("/images/hero-reception.jpg")',
                 LINEで相談する
               </a>
             </div>

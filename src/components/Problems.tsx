@@ -26,12 +26,12 @@ export function Problems() {
           {/* 左側：画像 */}
           <div className="order-2 lg:order-1">
             <img 
-              src="/images/treatment-scene.jpg" 
+              src="/images/staff-02.jpg" 
               alt="LUNOA施術シーン" 
               className="w-full h-96 object-cover rounded-2xl shadow-lg"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
-                target.src = 'https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg';
+                target.src = '/images/logo.png';
               }}
             />
           </div>

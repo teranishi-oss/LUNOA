@@ -34,9 +34,9 @@ export function Header() {
           {/* ロゴ */}
           <div className="flex items-center">
             <img 
-              src="/images/logo.svg" 
+              src="/images/logo.png" 
               alt="LUNOA 美容整体ロゴ" 
-              className="h-10 w-auto"
+              className="h-12 w-auto"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.style.display = 'none';
@@ -44,7 +44,7 @@ export function Header() {
                 if (fallback) fallback.style.display = 'block';
               }}
             />
-            <h1 className="text-2xl font-bold text-[#2C2C2C]" style={{ display: 'none' }}>
+            <h1 className="text-2xl font-bold text-[#2C2C2C] ml-3" style={{ display: 'none' }}>
               LUNOA
             </h1>
           </div>

@@ -13,7 +13,7 @@ const features = [
     icon: <Zap className="w-12 h-12" />,
     title: '深層部アプローチ技術',
     description: '筋膜やマッサージでは届かない筋肉の深層部に直接アプローチ。短時間で圧倒的な変化を実現。',
-    image: '/images/deep-treatment.jpg',
+    image: '/images/treatment-room.jpg',
     imageAlt: '深層部アプローチ施術シーン'
   },
   {

@@ -66,12 +66,12 @@ export function Access() {
             {/* 受付画像 */}
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img 
-                src="/images/reception-area.jpg" 
+                src="/images/hero-reception.jpg" 
                 alt="LUNOA受付エリア" 
                 className="w-full h-64 object-cover"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
-                  target.src = 'https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg';
+                  target.src = '/images/logo.png';
                 }}
               />
             </div>

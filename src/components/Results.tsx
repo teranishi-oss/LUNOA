@@ -5,22 +5,22 @@ const beforeAfterData = [
   {
     id: 1,
     title: '姿勢改善①',
-    beforeImage: '/images/before-after-1-before.jpg',
-    afterImage: '/images/before-after-1-after.jpg',
+    beforeImage: '/images/staff-01.jpg',
+    afterImage: '/images/staff-02.jpg',
     description: '猫背が改善され、背筋がまっすぐに'
   },
   {
     id: 2,
     title: '姿勢改善②',
-    beforeImage: '/images/before-after-2-before.jpg',
-    afterImage: '/images/before-after-2-after.jpg',
+    beforeImage: '/images/staff-01.jpg',
+    afterImage: '/images/staff-02.jpg',
     description: '肩の位置が正常に戻り、首の負担が軽減'
   },
   {
     id: 3,
     title: '姿勢改善③',
-    beforeImage: '/images/before-after-3-before.jpg',
-    afterImage: '/images/before-after-3-after.jpg',
+    beforeImage: '/images/staff-01.jpg',
+    afterImage: '/images/staff-02.jpg',
     description: '骨盤の歪みが整い、全体のバランスが向上'
   }
 ];
