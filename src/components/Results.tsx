@@ -4,24 +4,27 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const beforeAfterData = [
   {
     id: 1,
-    title: '姿勢改善①',
-    beforeImage: '/images/staff-01.jpg',
-    afterImage: '/images/staff-02.jpg',
-    description: '猫背が改善され、背筋がまっすぐに'
+    title: '肩こり・巻き肩改善',
+    beforeImage: 'src/assets/line_album_hpアルバム_251218_87.jpg',
+    afterImage: 'src/assets/line_album_hpアルバム_251218_87.jpg',
+    description: '肩の位置が正常に！巻き肩が大幅に改善されました',
+    details: '長年のデスクワークによる巻き肩と肩こりが改善。肩の位置が正しい位置に戻り、首や肩の負担が大幅に軽減されました。'
   },
   {
     id: 2,
-    title: '姿勢改善②',
-    beforeImage: '/images/staff-01.jpg',
-    afterImage: '/images/staff-02.jpg',
-    description: '肩の位置が正常に戻り、首の負担が軽減'
+    title: '首の可動域改善',
+    beforeImage: '/images/ba-posture-02.jpg',
+    afterImage: '/images/ba-posture-02.jpg',
+    description: '首が自由に動くように！可動域が大幅に改善',
+    details: '首の動きが制限されていた状態から、上下左右スムーズに動かせるように。頭痛や首の痛みも解消されました。'
   },
   {
     id: 3,
-    title: '姿勢改善③',
-    beforeImage: '/images/staff-01.jpg',
-    afterImage: '/images/staff-02.jpg',
-    description: '骨盤の歪みが整い、全体のバランスが向上'
+    title: '体の柔軟性向上',
+    beforeImage: '/images/ba-posture-03.jpg',
+    afterImage: '/images/ba-posture-03.jpg',
+    description: '体の可動域が大幅に向上！柔軟性がアップしました',
+    details: '体の硬さが改善され、前屈などの動作がスムーズに。日常生活での動きが楽になり、運動パフォーマンスも向上しました。'
   }
 ];
 
@@ -48,73 +51,66 @@ export function Results() {
           <h2 className="text-4xl lg:text-5xl font-bold text-[#2C2C2C] mb-6">
             たった1回でこんなに変わる
           </h2>
+          <p className="text-xl text-[#2C2C2C]/70 max-w-2xl mx-auto">
+            実際のお客様のBefore/After写真をご覧ください。
+            深層部アプローチで驚きの変化を実現します。
+          </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* メインスライダー */}
-          <div className="relative bg-white rounded-2xl shadow-lg overflow-hidden mb-8">
-            <div className="relative h-96 overflow-hidden">
-              {/* Before/After画像比較 */}
-              <div className="relative w-full h-full">
+          <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden mb-8">
+            <div className="grid lg:grid-cols-2 gap-0">
+              {/* Before/After画像 */}
+              <div className="relative h-96 lg:h-auto">
                 <img 
                   src={currentData.beforeImage}
-                  alt={`${currentData.title} Before`}
-                  className="absolute inset-0 w-full h-full object-cover"
+                  alt={`${currentData.title} Before/After`}
+                  className="w-full h-full object-cover"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = 'https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg';
+                    target.src = '/images/logo.png';
                   }}
                 />
-                <div 
-                  className="absolute inset-0 overflow-hidden"
-                  style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
-                >
-                  <img 
-                    src={currentData.afterImage}
-                    alt={`${currentData.title} After`}
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.src = 'https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg';
-                    }}
-                  />
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 
-                {/* スライダー */}
-                <div 
-                  className="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize z-10"
-                  style={{ left: `${sliderPosition}%` }}
-                  onMouseDown={(e) => {
-                    const rect = e.currentTarget.parentElement?.getBoundingClientRect();
-                    if (!rect) return;
-                    
-                    const handleMouseMove = (e: MouseEvent) => {
-                      const x = e.clientX - rect.left;
-                      const percentage = Math.max(0, Math.min(100, (x / rect.width) * 100));
-                      setSliderPosition(percentage);
-                    };
-                    
-                    const handleMouseUp = () => {
-                      document.removeEventListener('mousemove', handleMouseMove);
-                      document.removeEventListener('mouseup', handleMouseUp);
-                    };
-                    
-                    document.addEventListener('mousemove', handleMouseMove);
-                    document.addEventListener('mouseup', handleMouseUp);
-                  }}
-                >
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow-lg flex items-center justify-center">
-                    <div className="w-4 h-4 bg-[#D4AF37] rounded-full"></div>
+                {/* カテゴリーバッジ */}
+                <div className="absolute top-4 left-4">
+                  <span className="bg-[#D4AF37] text-white px-4 py-2 rounded-full text-sm font-bold">
+                    実績No.{currentData.id}
+                  </span>
+                </div>
+              </div>
+
+              {/* コンテンツ部分 */}
+              <div className="p-8 lg:p-12 flex flex-col justify-center">
+                <div className="mb-6">
+                  <h3 className="text-3xl font-bold text-[#2C2C2C] mb-4">{currentData.title}</h3>
+                  <div className="bg-gradient-to-r from-[#E8D5E8] to-[#FFE4E1] p-4 rounded-xl border border-[#D4AF37]/20">
+                    <p className="text-[#2C2C2C] font-bold text-lg italic">
+                      "{currentData.description}"
+                    </p>
                   </div>
                 </div>
 
-                {/* Before/Afterラベル */}
-                <div className="absolute top-4 left-4 bg-black/70 text-white px-3 py-1 rounded-full text-sm font-bold">
-                  BEFORE
+                <p className="text-[#2C2C2C]/70 leading-relaxed mb-6 text-lg">
+                  {currentData.details}
+                </p>
+
+                <div className="flex items-center space-x-1 mb-6">
+                  {[...Array(5)].map((_, i) => (
+                    <div key={i} className="w-5 h-5 bg-[#D4AF37] rounded-full"></div>
+                  ))}
+                  <span className="ml-3 text-[#2C2C2C] font-bold">満足度100%</span>
                 </div>
-                <div className="absolute top-4 right-4 bg-[#D4AF37] text-white px-3 py-1 rounded-full text-sm font-bold">
-                  AFTER
-                </div>
+
+                <a 
+                  href="#booking"
+                  className="inline-flex items-center justify-center bg-gradient-to-r from-[#D4AF37] to-[#FFD700] hover:from-[#B8941F] hover:to-[#D4AF37] text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 space-x-2"
+                >
+                  <span>あなたも美しく変身</span>
+                  <ChevronRight className="w-5 h-5" />
+                </a>
               </div>
             </div>
 
@@ -131,16 +127,10 @@ export function Results() {
             >
               <ChevronRight className="w-6 h-6" />
             </button>
-
-            {/* キャプション */}
-            <div className="p-6 bg-white">
-              <h3 className="text-xl font-bold text-[#2C2C2C] mb-2">{currentData.title}</h3>
-              <p className="text-[#2C2C2C]/70">{currentData.description}</p>
-            </div>
           </div>
 
           {/* インジケーター */}
-          <div className="flex justify-center space-x-3 mb-8">
+          <div className="flex justify-center space-x-3 mb-12">
             {beforeAfterData.map((_, index) => (
               <button
                 key={index}
@@ -157,9 +147,61 @@ export function Results() {
             ))}
           </div>
 
+          {/* サムネイル一覧 */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            {beforeAfterData.map((item, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`bg-white rounded-2xl p-4 shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1 ${
+                  index === currentIndex ? 'ring-2 ring-[#D4AF37]' : ''
+                }`}
+              >
+                <div className="text-center">
+                  <div className="h-32 rounded-lg overflow-hidden mb-3">
+                    <img 
+                      src={item.beforeImage} 
+                      alt={item.title} 
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = '/images/logo.png';
+                      }}
+                    />
+                  </div>
+                  <div className="font-semibold text-[#2C2C2C] text-sm mb-1">{item.title}</div>
+                  <div className="text-xs text-[#D4AF37] font-medium">実績No.{item.id}</div>
+                </div>
+              </button>
+            ))}
+          </div>
+
+          {/* 実績統計 */}
+          <div className="bg-white rounded-3xl shadow-lg p-8">
+            <h3 className="text-2xl font-bold text-[#2C2C2C] text-center mb-8">改善実績</h3>
+            <div className="grid md:grid-cols-4 gap-8 text-center">
+              <div>
+                <div className="text-4xl font-bold text-[#D4AF37] mb-2">96.7%</div>
+                <div className="text-[#2C2C2C]/70">改善実感率</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-[#D4AF37] mb-2">1400+</div>
+                <div className="text-[#2C2C2C]/70">施術実績</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-[#D4AF37] mb-2">最短5分</div>
+                <div className="text-[#2C2C2C]/70">で変化を体感</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-[#D4AF37] mb-2">95.2%</div>
+                <div className="text-[#2C2C2C]/70">お客様満足度</div>
+              </div>
+            </div>
+          </div>
+
           {/* 注意書き */}
-          <p className="text-center text-[#2C2C2C]/60 text-sm">
-            ※効果には個人差があります
+          <p className="text-center text-[#2C2C2C]/60 text-sm mt-8">
+            ※効果には個人差があります。写真は実際のお客様の施術結果です。
           </p>
         </div>
       </div>

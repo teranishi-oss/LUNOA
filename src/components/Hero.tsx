@@ -11,7 +11,7 @@ export function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url("/images/hero-reception.jpg")',
+          backgroundImage: 'url("src/assets/hero-reception.jpg")',
           filter: 'brightness(0.7) blur(1px)'
         }}
       >

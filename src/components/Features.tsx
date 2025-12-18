@@ -13,14 +13,14 @@ const features = [
     icon: <Zap className="w-12 h-12" />,
     title: '深層部アプローチ技術',
     description: '筋膜やマッサージでは届かない筋肉の深層部に直接アプローチ。短時間で圧倒的な変化を実現。',
-    image: '/images/treatment-room.jpg',
+    image: '/images/treatment-01.jpg',
     imageAlt: '深層部アプローチ施術シーン'
   },
   {
     icon: <Users className="w-12 h-12" />,
     title: '経験豊富なセラピスト',
     description: '解剖学に精通した6名の専門スタッフが、あなたの体の根本原因から整えます。',
-    image: '/images/staff-01.jpg',
+    image: '/images/treatment-02.jpg',
     imageAlt: 'LUNOA専門スタッフ'
   }
 ];

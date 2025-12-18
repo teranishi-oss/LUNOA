@@ -34,7 +34,7 @@ export function Header() {
           {/* ロゴ */}
           <div className="flex items-center">
             <img 
-              src="/images/logo.png" 
+              src="src/assets/logo.png" 
               alt="LUNOA 美容整体ロゴ" 
               className="h-12 w-auto"
               onError={(e) => {

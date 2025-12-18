@@ -8,7 +8,7 @@ const menuItems = [
     duration: '60分',
     originalPrice: '¥12,000',
     price: '初回¥1,100',
-    image: "/images/treatment-room.jpg",
+    image: "/images/treatment-01.jpg",
     popular: true,
     description: '全身のバランスを整える総合的な美容整体'
   },
@@ -17,7 +17,7 @@ const menuItems = [
     name: '首肩コリ改善',
     duration: '60分',
     price: '¥3,300',
-    image: "/images/treatment-room.jpg",
+    image: "/images/treatment-02.jpg",
     description: 'デスクワークによる首肩の疲れを根本改善'
   },
   {
@@ -25,7 +25,7 @@ const menuItems = [
     name: '小顔矯正',
     duration: '60分',
     price: '¥3,850',
-    image: "/images/treatment-room.jpg",
+    image: "/images/treatment-01.jpg",
     description: 'フェイスラインを整えて理想の小顔へ'
   },
   {
@@ -33,7 +33,7 @@ const menuItems = [
     name: 'ブライダル整体',
     duration: '60分',
     price: '¥15,000',
-    image: "/images/treatment-room.jpg",
+    image: "/images/treatment-02.jpg",
     special: true,
     description: '結婚式に向けた特別な美容整体コース'
   },
@@ -42,7 +42,7 @@ const menuItems = [
     name: '肩甲骨はがし',
     duration: '60分',
     price: '¥3,300',
-    image: "/images/treatment-room.jpg",
+    image: "/images/treatment-01.jpg",
     description: '肩甲骨周りの筋肉を徹底的にほぐす'
   },
   {
@@ -50,7 +50,7 @@ const menuItems = [
     name: 'カスタムオーダー',
     duration: '応相談',
     price: '応相談',
-    image: "/images/treatment-room.jpg",
+    image: "/images/treatment-02.jpg",
     description: 'お客様のご要望に合わせたオーダーメイド施術'
   }
 ];
