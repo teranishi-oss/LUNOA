@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Clock, Phone, Train } from 'lucide-react';
+import { MapPin, Clock, Phone, Brain as Train } from 'lucide-react';
 
 export function Access() {
   return (
