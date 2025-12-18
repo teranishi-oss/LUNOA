@@ -35,7 +35,7 @@ export function Header() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3 flex-shrink-0">
               <img 
-                src="/images/rogo.png" 
+                src="/images/line_album_hpアルバム_251218_84.jpg" 
                 alt="LUNOA ロゴ" 
                 className="h-12 w-auto"
                 onError={(e) => {

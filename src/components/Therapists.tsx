@@ -98,7 +98,7 @@ export function Therapists() {
                       if (fallback) fallback.style.display = 'flex';
                     }}
                   />
-                  <div className="w-full h-full bg-gradient-to-br from-orange-300 to-orange-400 flex items-center justify-center" style={{ display: 'none' }}>
+                  <div className="w-full h-full bg-gradient-to-br from-amber-400 to-yellow-500 flex items-center justify-center" style={{ display: 'none' }}>
                     <span className="text-2xl font-bold text-white">{therapist.initial}</span>
                   </div>
                 </div>
