@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'handwriting': ['"Roboto"', 'sans-serif'],
-        'heading': ['"Open Sans"', 'sans-serif'],
-        'sans': ['"Inter"', 'sans-serif'],
+        'handwriting': ['"Noto Serif JP"', 'serif'],
+        'heading': ['"Zen Kaku Gothic New"', 'sans-serif'],
+        'sans': ['"Noto Sans JP"', 'sans-serif'],
       },
       colors: {
         'gold': {

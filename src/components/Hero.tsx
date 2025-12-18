@@ -37,7 +37,7 @@ export function Hero() {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="https://duplicated-imdj.bolt.host/"
+                href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-center no-underline text-white"
