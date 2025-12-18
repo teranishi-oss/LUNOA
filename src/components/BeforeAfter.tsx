@@ -4,43 +4,58 @@ import { ChevronLeft, ChevronRight, Star, ArrowRight } from 'lucide-react';
 const beforeAfterData = [
   {
     id: 1,
-    title: "小顔効果",
-    beforeImage: "/images/111.jpg",
-    afterImage: "/images/333.jpg",
-    effect: "フェイスラインがすっきり！小顔効果を実感",
-    description: "顔の歪みを整えることで、自然な小顔効果を実現。むくみも解消され、表情も明るくなりました。",
+    title: "肩こり・巻き肩改善",
+    beforeImage: "/images/line_album_hpアルバム_251218_50.jpg",
+    afterImage: "/images/line_album_hpアルバム_251218_50.jpg",
+    effect: "肩の位置が正常に！巻き肩が大幅に改善されました",
+    description: "長年のデスクワークによる巻き肩と肩こりが改善。肩の位置が正しい位置に戻り、首や肩の負担が大幅に軽減されました。",
     customerName: "M.T様（30代）",
-    period: "3回の施術後"
+    period: "3回の施術後",
+    category: "姿勢改善"
   },
   {
     id: 2,
-    title: "姿勢改善",
-    beforeImage: "/images/222.jpg",
-    afterImage: "/images/444.jpg",
-    effect: "猫背が改善！美しい姿勢を手に入れました",
-    description: "長年の猫背が改善され、背筋が伸びて美しいシルエットに。肩こりも解消されました。",
+    title: "姿勢改善・猫背矯正",
+    beforeImage: "/images/line_album_hpアルバム_251218_49.jpg",
+    afterImage: "/images/line_album_hpアルバム_251218_49.jpg",
+    effect: "背筋がまっすぐに！美しい姿勢を手に入れました",
+    description: "猫背が改善され、背筋が自然にまっすぐ伸びるように。座り姿勢も美しくなり、自信を持って過ごせるようになりました。",
     customerName: "Y.S様（40代）",
-    period: "6回の施術後"
+    period: "4回の施術後",
+    category: "姿勢改善"
   },
   {
     id: 3,
-    title: "美脚効果",
-    beforeImage: "/images/555.jpg",
-    afterImage: "/images/888.jpg",
-    effect: "O脚改善で美しい脚のラインに",
-    description: "骨盤矯正により脚のラインが整い、O脚も改善。ヒップアップ効果も実感できました。",
+    title: "体の柔軟性向上",
+    beforeImage: "/images/line_album_hpアルバム_251218_51.jpg",
+    afterImage: "/images/line_album_hpアルバム_251218_51.jpg",
+    effect: "体の可動域が大幅に向上！柔軟性がアップしました",
+    description: "体の硬さが改善され、前屈などの動作がスムーズに。日常生活での動きが楽になり、運動パフォーマンスも向上しました。",
     customerName: "H.K様（20代）",
-    period: "4回の施術後"
+    period: "5回の施術後",
+    category: "柔軟性向上"
   },
   {
     id: 4,
-    title: "肩こり解消",
-    beforeImage: "/images/111.jpg",
-    afterImage: "/images/222.jpg",
-    effect: "慢性的な肩こりが解消！",
-    description: "デスクワークによる慢性的な肩こりが改善。首の可動域も広がり、日常生活が楽になりました。",
+    title: "首の可動域改善",
+    beforeImage: "/images/line_album_hpアルバム_251218_55.jpg",
+    afterImage: "/images/line_album_hpアルバム_251218_55.jpg",
+    effect: "首が自由に動くように！可動域が大幅に改善",
+    description: "首の動きが制限されていた状態から、上下左右スムーズに動かせるように。頭痛や首の痛みも解消されました。",
     customerName: "A.N様（30代）",
-    period: "5回の施術後"
+    period: "3回の施術後",
+    category: "首・肩改善"
+  },
+  {
+    id: 5,
+    title: "全身バランス調整",
+    beforeImage: "/images/line_album_hpアルバム_251218_28.jpg",
+    afterImage: "/images/line_album_hpアルバム_251218_28.jpg",
+    effect: "全身のバランスが整い、美しい座り姿勢に",
+    description: "骨盤から背骨まで全身のバランスを調整。座り姿勢が美しくなり、長時間座っていても疲れにくくなりました。",
+    customerName: "K.M様（50代）",
+    period: "6回の施術後",
+    category: "全身調整"
   }
 ];
 
@@ -81,11 +96,11 @@ export function BeforeAfter() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 font-handwriting">
-            ビフォーアフター
+            実際のビフォーアフター
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            実際の美容整体の効果をご覧ください。
-            お客様の美しい変化をビフォーアフター写真でご紹介します。
+            美容整体LUNOAで実際に施術を受けられたお客様の変化をご覧ください。
+            確かな技術で理想の体を実現します。
           </p>
         </div>
 
@@ -95,50 +110,23 @@ export function BeforeAfter() {
             <div className="grid lg:grid-cols-2 gap-0">
               {/* ビフォーアフター画像 */}
               <div className="relative">
-                <div className="grid grid-cols-2 h-96">
-                  {/* Before画像 */}
-                  <div className="relative overflow-hidden">
-                    <img 
-                      src={currentData.beforeImage}
-                      alt="Before"
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.src = '/images/rogo.png';
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4">
-                      <span className="bg-red-500 text-white px-4 py-2 rounded-full text-sm font-bold">
-                        BEFORE
-                      </span>
-                    </div>
-                  </div>
+                <div className="h-96 lg:h-auto">
+                  <img 
+                    src={currentData.beforeImage}
+                    alt={`${currentData.title}のビフォーアフター`}
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = '/images/rogo.png';
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   
-                  {/* After画像 */}
-                  <div className="relative overflow-hidden">
-                    <img 
-                      src={currentData.afterImage}
-                      alt="After"
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.src = '/images/rogo.png';
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                    <div className="absolute bottom-4 right-4">
-                      <span className="bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold">
-                        AFTER
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* 中央の矢印 */}
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                  <div className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center">
-                    <ArrowRight className="w-6 h-6 text-pink-500" />
+                  {/* カテゴリーバッジ */}
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-bold">
+                      {currentData.category}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -213,7 +201,7 @@ export function BeforeAfter() {
         </div>
 
         {/* サムネイル一覧 */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
           {beforeAfterData.map((item, index) => (
             <button
               key={index}
@@ -223,19 +211,10 @@ export function BeforeAfter() {
               }`}
             >
               <div className="text-center">
-                <div className="grid grid-cols-2 gap-1 mb-3 h-20 rounded-lg overflow-hidden">
+                <div className="h-20 rounded-lg overflow-hidden mb-3">
                   <img 
                     src={item.beforeImage} 
-                    alt="Before" 
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.src = '/images/rogo.png';
-                    }}
-                  />
-                  <img 
-                    src={item.afterImage} 
-                    alt="After" 
+                    alt={item.title} 
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
@@ -245,9 +224,33 @@ export function BeforeAfter() {
                 </div>
                 <div className="font-semibold text-gray-800 text-sm">{item.title}</div>
                 <div className="text-xs text-gray-500">{item.customerName}</div>
+                <div className="text-xs text-pink-600 font-medium mt-1">{item.category}</div>
               </div>
             </button>
           ))}
+        </div>
+
+        {/* 実績統計 */}
+        <div className="bg-white rounded-3xl shadow-lg p-8 animate-appear delay-1000">
+          <h3 className="text-2xl font-bold text-gray-800 text-center mb-8">改善実績</h3>
+          <div className="grid md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold text-pink-500 mb-2">96.7%</div>
+              <div className="text-gray-600">改善実感率</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-pink-500 mb-2">1400+</div>
+              <div className="text-gray-600">施術実績</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-pink-500 mb-2">最短5分</div>
+              <div className="text-gray-600">で変化を体感</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold text-pink-500 mb-2">95.2%</div>
+              <div className="text-gray-600">お客様満足度</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

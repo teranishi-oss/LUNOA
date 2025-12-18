@@ -26,7 +26,7 @@ export function Hero() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(/images/374874116.jpg)',
+            backgroundImage: 'url(/images/line_album_hpアルバム_251218_50.jpg)',
           }}
         >
           {/* 動的オーバーレイ */}

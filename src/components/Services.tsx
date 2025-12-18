@@ -5,7 +5,7 @@ const beautyServices = [
   {
     name: "小顔美容整体",
     description: "顔の歪みを整え、リフトアップ効果で小顔を実現",
-    image: "/images/333.jpg",
+    image: "/images/line_album_hpアルバム_251218_28.jpg",
     price: "¥15,400",
     duration: "約50分",
     features: ["小顔効果", "リフトアップ", "血行促進", "むくみ解消"],
@@ -15,7 +15,7 @@ const beautyServices = [
   {
     name: "姿勢美容整体",
     description: "猫背・巻き肩を改善し、美しい姿勢を作る",
-    image: "/images/111.jpg",
+    image: "/images/line_album_hpアルバム_251218_49.jpg",
     price: "¥15,400",
     duration: "約50分",
     features: ["姿勢改善", "猫背矯正", "肩こり解消", "美しいライン"],
@@ -25,7 +25,7 @@ const beautyServices = [
   {
     name: "美脚・骨盤整体",
     description: "骨盤の歪みを整え、美しい脚のラインを作る",
-    image: "/images/222.jpg",
+    image: "/images/line_album_hpアルバム_251218_51.jpg",
     price: "¥15,400",
     duration: "約50分",
     features: ["骨盤矯正", "美脚効果", "O脚改善", "ヒップアップ"],
