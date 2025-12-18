@@ -33,14 +33,14 @@ export function About() {
   return (
     <section 
       id="about" 
-      className="py-16 md:py-24"
+      className="py-16 md:py-24 bg-gradient-to-br from-amber-50 to-orange-50"
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear relative z-10">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-600 mb-6 font-handwriting">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6 font-handwriting">
             LUNOAが選ばれる理由
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             当院では、ただ症状を改善するだけでなく、根本的な原因にアプローチします。
             豊富な経験と確かな技術で、お客様一人ひとりに最適な施術をご提供。
             美しさと健康を同時に手に入れることができます。
@@ -49,25 +49,25 @@ export function About() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-16 relative z-10">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow animate-appear border border-gold-200">
+            <div key={index} className="text-center p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow animate-appear border border-amber-200">
               <div 
                 className="inline-flex items-center justify-center w-12 h-12 text-white rounded-xl mb-3"
-                style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
+                style={{ backgroundColor: '#C9A03D' }}
               >
                 {stat.icon}
               </div>
-              <div className="text-3xl font-bold text-gray-400 mb-1">{stat.value}</div>
-              <div className="text-sm text-gray-400 font-medium">{stat.label}</div>
+              <div className="text-3xl font-bold mb-1" style={{ color: '#C9A03D' }}>{stat.value}</div>
+              <div className="text-sm text-gray-700 font-medium">{stat.label}</div>
             </div>
           ))}
         </div>
 
         <div className="text-center mb-16 animate-appear delay-300">
-          <div className="bg-white rounded-3xl p-8 shadow-sm max-w-2xl mx-auto border border-gold-200">
-            <h3 className="text-3xl font-bold mb-4 font-handwriting text-orange-300">
+          <div className="bg-white rounded-3xl p-8 shadow-sm max-w-2xl mx-auto border border-amber-200">
+            <h3 className="text-3xl font-bold mb-4 font-handwriting" style={{ color: '#C9A03D' }}>
               最短5分で変化を体感！
             </h3>
-            <p className="text-lg text-gray-400 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               初回施術から体の変化を実感していただけます。
               多くのお客様が施術直後に「軽くなった」「楽になった」と驚かれます。
             </p>
@@ -78,17 +78,17 @@ export function About() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transform hover:-translate-y-2 transition-all duration-300 animate-appear border border-gold-200"
+              className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-md transform hover:-translate-y-2 transition-all duration-300 animate-appear border border-amber-200"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div 
                 className="w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6"
-                style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
+                style={{ backgroundColor: '#C9A03D' }}
               >
                 {feature.icon}
               </div>
-              <h3 className="text-2xl font-bold text-gray-600 mb-4">{feature.title}</h3>
-              <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">{feature.title}</h3>
+              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

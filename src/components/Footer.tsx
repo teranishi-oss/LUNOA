@@ -10,7 +10,7 @@ export function Footer() {
           <div className="space-y-6 animate-appear">
             <div className="flex items-center space-x-3">
               <img 
-                src="/images/line_album_hpアルバム_251218_84.jpg" 
+                src="/images/lunoa-logo.png" 
                 alt="LUNOA ロゴ" 
                 className="h-12 w-auto"
                 onError={(e) => {
@@ -20,7 +20,7 @@ export function Footer() {
                   if (fallback) fallback.style.display = 'block';
                 }}
               />
-              <h3 className="text-2xl font-bold text-orange-300" style={{ display: 'none' }}>
+              <h3 className="text-2xl font-bold" style={{ display: 'none', color: '#C9A03D' }}>
                 美容整体 LUNOA
               </h3>
             </div>

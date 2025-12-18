@@ -35,7 +35,7 @@ export function Header() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3 flex-shrink-0">
               <img 
-                src="/images/line_album_hpアルバム_251218_84.jpg" 
+                src="/images/lunoa-logo.png" 
                 alt="LUNOA ロゴ" 
                 className="h-12 w-auto"
                 onError={(e) => {
@@ -45,7 +45,7 @@ export function Header() {
                   if (fallback) fallback.style.display = 'block';
                 }}
               />
-              <h1 className="text-3xl font-bold text-orange-300" style={{ display: 'none' }}>
+              <h1 className="text-3xl font-bold" style={{ display: 'none', color: '#C9A03D' }}>
                 美容整体 LUNOA
               </h1>
             </div>
