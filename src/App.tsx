@@ -1,28 +1,32 @@
 import React from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
+import { Problems } from './components/Problems';
+import { Features } from './components/Features';
 import { Menu } from './components/Menu';
-import { Services } from './components/Services';
-import { BeforeAfter } from './components/BeforeAfter';
-import { Therapists } from './components/Therapists';
-import { About } from './components/About';
+import { Results } from './components/Results';
 import { Testimonials } from './components/Testimonials';
-import { Contact } from './components/Contact';
+import { Flow } from './components/Flow';
+import { Access } from './components/Access';
+import { FAQ } from './components/FAQ';
+import { FinalCTA } from './components/FinalCTA';
 import { Footer } from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       <Header />
       <main>
         <Hero />
+        <Problems />
+        <Features />
         <Menu />
-        <About />
-        <Services />
-        <BeforeAfter />
-        <Therapists />
+        <Results />
         <Testimonials />
-        <Contact />
+        <Flow />
+        <Access />
+        <FAQ />
+        <FinalCTA />
       </main>
       <Footer />
     </div>

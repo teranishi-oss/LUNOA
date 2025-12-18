@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&display=swap');
+
 @layer utilities {
   .animate-appear {
     animation: appear 0.6s ease-out forwards;
@@ -31,131 +33,28 @@
 }
 
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 45 100% 60%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 99%;
-    --secondary-foreground: 222.2 84% 4.9%;
-    --muted: 0 0% 98%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 45 100% 98%;
-    --accent-foreground: 222.2 84% 4.9%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 45 20% 95%;
-    --input: 45 20% 98%;
-    --ring: 45 100% 60%;
-    --radius: 0.5rem;
-    --brand: 45 100% 60%;
-    --brand-foreground: 0 0% 100%;
-  }
- 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 47.9 95.8% 53.1%;
-    --primary-foreground: 26 83.3% 14.1%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 47.9 95.8% 53.1%;
-    --brand: 35.5 91.7% 32.9%;
-    --brand-foreground: 47.9 95.8% 53.1%;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  
   html {
-    background-color: #F8F4E9 !important;
-    min-height: 100vh !important;
+    scroll-behavior: smooth;
   }
   
   body {
-    @apply bg-background text-foreground;
-    font-family: 'Noto Sans JP', 'Zen Kaku Gothic New', sans-serif !important;
-    background-color: #F8F4E9 !important;
-    min-height: 100vh !important;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #FFFFFF;
+    color: #2C2C2C;
   }
   
-  #root {
-    background-color: #F8F4E9 !important;
-    min-height: 100vh !important;
+  * {
+    font-family: 'Noto Sans JP', sans-serif;
   }
-  
-  /* フォント強制適用 */
-  body, * {
-    font-family: 'Noto Sans JP', 'Zen Kaku Gothic New', sans-serif !important;
+}
+
+@keyframes appear {
+  "0%" { 
+    opacity: 0; 
+    transform: translateY(20px); 
   }
-  
-  .font-handwriting {
-    font-family: 'Noto Serif JP', 'Zen Kaku Gothic New', serif !important;
-  }
-  
-  .font-heading {
-    font-family: 'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif !important;
-  }
-  
-  .font-sans {
-    font-family: 'Noto Sans JP', 'Zen Kaku Gothic New', sans-serif !important;
-  }
-  
-  /* 色の強制適用 */
-  .text-orange-300 {
-    color: #fdba74 !important;
-  }
-  
-  .text-gray-400 {
-    color: #9ca3af !important;
-  }
-  
-  .text-gray-600 {
-    color: #4b5563 !important;
-  }
-  
-  .bg-gradient-to-r.from-amber-500.to-yellow-600,
-  .bg-gradient-to-r.from-amber-600.to-yellow-700 {
-    background: linear-gradient(135deg, #d2b48c, #deb887) !important;
-    color: white !important;
-  }
-  
-  /* ボタンスタイル強制適用 */
-  .btn-primary {
-    background: linear-gradient(135deg, #d2b48c, #deb887) !important;
-    color: white !important;
-  }
-  
-  /* 背景色強制適用 */
-  section {
-    background-color: transparent !important;
-  }
-  
-  .bg-white {
-    background-color: white !important;
-  }
-  
-  /* 特定要素への強制適用 */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: inherit !important;
+  "100%" { 
+    opacity: 1; 
+    transform: translateY(0); 
   }
 }
