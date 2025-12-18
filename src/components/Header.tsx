@@ -96,7 +96,7 @@ export function Header() {
               求人情報
             </a>
             <a 
-              href="https://duplicated-imdj.bolt.host/"
+              href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
               target="_blank" 
               rel="noopener noreferrer"
               className="text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:shadow-lg order-first"
@@ -122,7 +122,7 @@ export function Header() {
           <div className="lg:hidden mt-2 pb-4 bg-white/95 backdrop-blur-md rounded-lg shadow-lg">
             <nav className="flex flex-col items-center space-y-4">
               <a 
-                href="https://duplicated-imdj.bolt.host/"
+                href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
                 target="_blank" 
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
