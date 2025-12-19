@@ -37,8 +37,6 @@ export function Problems() {
                 target.src = 'https://placehold.co/800x400/E8D5E8/2C2C2C?text=お悩み改善';
               }}
             />
-            {/* オーバーレイ */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
           </div>
         </div>
 
