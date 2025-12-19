@@ -25,40 +25,25 @@ export function Problems() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          {/* 左側：お悩み画像 */}
-          <div className="order-2 lg:order-1">
-            <div className="relative">
-              <img 
-                src="src/assets/unnamed.jpg" 
-                alt="美容整体のお悩み" 
-                className="w-full h-auto rounded-2xl shadow-lg"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.src = 'https://placehold.co/600x400/E8D5E8/2C2C2C?text=お悩み改善';
-                }}
-              />
-              {/* オーバーレイ */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
-            </div>
+        <div className="max-w-4xl mx-auto mb-12">
+          {/* お悩み画像 */}
+          <div className="relative">
+            <img 
+              src="src/assets/unnamed.jpg" 
+              alt="美容整体のお悩み" 
+              className="w-full h-auto rounded-2xl shadow-lg"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.src = 'https://placehold.co/800x400/E8D5E8/2C2C2C?text=お悩み改善';
+              }}
+            />
+            {/* オーバーレイ */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
           </div>
+        </div>
 
-          {/* 右側：チェックリスト */}
-          <div className="order-1 lg:order-2">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-              {problems.map((problem, index) => (
-                <div 
-                  key={index}
-                  className="flex items-center space-x-3 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-1"
-                >
-                  <div className="w-6 h-6 bg-[#E8D5E8] rounded-full flex items-center justify-center flex-shrink-0">
-                    <Check className="w-4 h-4 text-[#2C2C2C]" />
-                  </div>
-                  <span className="text-[#2C2C2C] font-medium">{problem}</span>
-                </div>
-              ))}
-            </div>
-
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center">
             {/* 解決メッセージ */}
             <div className="bg-gradient-to-r from-[#E8D5E8] to-[#FFE4E1] rounded-2xl p-6 text-center">
               <h3 className="text-xl font-bold text-[#2C2C2C] mb-3">
