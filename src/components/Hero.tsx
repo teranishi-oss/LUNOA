@@ -19,15 +19,17 @@ export function Hero() {
             filter: 'brightness(0.7) blur(1px)'
           }}
         >
+          <source src="/src/assets/video.webm" type="video/webm" />
           <source src="/src/assets/video.mp4" type="video/mp4" />
-          {/* 動画が読み込めない場合のフォールバック画像 */}
-          <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: 'url("src/assets/hero-reception.jpg")'
-            }}
-          />
+          お使いのブラウザは動画タグをサポートしていません。
         </video>
+        {/* 動画が読み込めない場合のフォールバック画像 */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-0 [video:not([src])_+_&]:opacity-100"
+          style={{
+            backgroundImage: 'url("src/assets/hero-reception.jpg")'
+          }}
+        />
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
       
