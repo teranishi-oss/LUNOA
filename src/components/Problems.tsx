@@ -1,9 +1,10 @@
 import React from 'react';
 import { Check } from 'lucide-react';
+import problemsImg from '../assets/374874116.jpg';
 
 const problems = [
   '姿勢が悪い',
-  '肩こりがつらい', 
+  '肩こりがつらい',
   '小顔になりたい',
   '冷えやすい',
   '疲れが取れない',
@@ -28,14 +29,10 @@ export function Problems() {
         <div className="max-w-4xl mx-auto mb-12">
           {/* お悩み画像 */}
           <div className="relative">
-            <img 
-              src="src/assets/problems-image.jpg" 
-              alt="美容整体のお悩み" 
+            <img
+              src={problemsImg}
+              alt="美容整体のお悩み"
               className="w-full h-auto rounded-2xl shadow-lg"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = 'https://placehold.co/800x400/E8D5E8/2C2C2C?text=お悩み改善';
-              }}
             />
           </div>
         </div>
