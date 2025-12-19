@@ -27,7 +27,7 @@ export function Hero() {
         <div
           className="absolute inset-0 bg-cover bg-center opacity-0 [video:not([src])_+_&]:opacity-100"
           style={{
-            backgroundImage: 'url("src/assets/hero-reception.jpg")'
+            backgroundImage: 'url("src/assets/iyaf6ed5 copy.png")'
           }}
         />
         <div className="absolute inset-0 bg-black/30"></div>
