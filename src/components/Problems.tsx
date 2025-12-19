@@ -29,7 +29,7 @@ export function Problems() {
           {/* お悩み画像 */}
           <div className="relative">
             <img 
-              src="src/assets/unnamed.jpg" 
+              src="src/assets/problems-image.jpg" 
               alt="美容整体のお悩み" 
               className="w-full h-auto rounded-2xl shadow-lg"
               onError={(e) => {
