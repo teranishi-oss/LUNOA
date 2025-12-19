@@ -3,18 +3,31 @@ import { Star, MapPin, Shield, Zap, Calendar, MessageCircle } from 'lucide-react
 
 export function Hero() {
   return (
-    <section 
-      id="home" 
+    <section
+      id="home"
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
-      {/* 背景画像 */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url("src/assets/hero-reception.jpg")',
-          filter: 'brightness(0.7) blur(1px)'
-        }}
-      >
+      {/* 背景動画 */}
+      <div className="absolute inset-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{
+            filter: 'brightness(0.7) blur(1px)'
+          }}
+        >
+          <source src="/src/assets/video.mp4" type="video/mp4" />
+          {/* 動画が読み込めない場合のフォールバック画像 */}
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: 'url("src/assets/hero-reception.jpg")'
+            }}
+          />
+        </video>
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
       
