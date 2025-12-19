@@ -31,19 +31,15 @@ export function Problems() {
             <div className="relative">
               <img 
                 src="src/assets/unnamed.jpg" 
-                alt="美容整体のお悩み - 姿勢が悪い、小顔になりたい、疲れが取れない、骨盤の歪み" 
+                alt="美容整体のお悩み" 
                 className="w-full h-auto rounded-2xl shadow-lg"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.src = 'https://placehold.co/600x400/E8D5E8/2C2C2C?text=お悩み改善';
                 }}
               />
-              {/* オーバーレイテキスト */}
+              {/* オーバーレイ */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl"></div>
-              <div className="absolute bottom-6 left-6 text-white">
-                <p className="text-lg font-bold mb-2">これらのお悩み、ありませんか？</p>
-                <p className="text-sm opacity-90">✓ 姿勢が悪い ✓ 小顔になりたい ✓ 疲れが取れない ✓ 骨盤の歪み</p>
-              </div>
             </div>
           </div>
 
