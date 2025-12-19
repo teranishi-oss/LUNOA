@@ -67,7 +67,9 @@ export function Hero() {
           {/* CTAボタン */}
           <div className="mt-16 space-y-4 animate-appear delay-700">
             <a 
-              href="#booking"
+              href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#D4AF37] hover:bg-[#B8941F] text-white font-bold px-12 py-6 rounded-full text-xl shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-3xl"
             >
               <Calendar className="w-6 h-6 inline mr-3" />

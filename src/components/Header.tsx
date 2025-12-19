@@ -96,7 +96,9 @@ export function Header() {
           {/* CTAボタン */}
           <div className="hidden lg:block">
             <a 
-              href="#booking"
+              href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#D4AF37] hover:bg-[#B8941F] text-white font-bold px-6 py-3 rounded-full transition-all duration-200 hover:shadow-lg hover:scale-105 flex items-center space-x-2"
             >
               <Calendar className="w-5 h-5" />
@@ -150,7 +152,9 @@ export function Header() {
                 FAQ
               </button>
               <a 
-                href="#booking"
+                href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-[#D4AF37] hover:bg-[#B8941F] text-white font-bold px-6 py-3 rounded-full transition-all duration-200 text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
