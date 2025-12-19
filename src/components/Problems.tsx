@@ -1,6 +1,6 @@
 import React from 'react';
 import { Check } from 'lucide-react';
-import problemsImg from '../assets/374874116.jpg';
+import problemsImg from '../assets/problems-image.jpg';
 
 const problems = [
   '姿勢が悪い',
