@@ -25,7 +25,7 @@ export function Hero() {
         </video>
         {/* 動画が読み込めない場合のフォールバック画像 */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-0 [video:not([src])_+_&]:opacity-100"
+          className="absolute inset-0 bg-contain bg-center bg-no-repeat opacity-0 [video:not([src])_+_&]:opacity-100"
           style={{
             backgroundImage: 'url("src/assets/iyaf6ed5 copy.png")'
           }}
@@ -92,11 +92,10 @@ export function Hero() {
             </a>
             
             <div className="block">
-              <a 
+              <a
                 href="#line"
                 className="inline-block bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#2C2C2C] font-bold px-8 py-4 rounded-full transition-all duration-300"
               >
-            backgroundImage: 'url("/images/hero-reception.jpg")',
                 LINEで相談する
               </a>
             </div>
