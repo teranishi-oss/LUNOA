@@ -1,50 +1,29 @@
 import React from 'react';
-import { Calendar, MapPin, MessageSquare, Zap, Heart } from 'lucide-react';
 import step1Image from '../assets/5ss05lf4.jpeg';
 import step2Image from '../assets/uixw7rjj.jpeg';
 import step3Image from '../assets/ppfjscwj copy.jpeg';
 import step4Image from '../assets/6f9mcamu.jpeg';
 
-const flowSteps: Array<{
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-  detail: string;
-  image?: string;
-}> = [
+const flowSteps = [
   {
-    icon: <Calendar className="w-8 h-8" />,
     title: 'WEB予約',
     description: '24時間オンライン予約可能',
-    detail: 'お好きな時間にWEBから簡単予約',
     image: step1Image
   },
   {
-    icon: <MapPin className="w-8 h-8" />,
     title: 'ご来店',
     description: '渋谷駅から徒歩4分',
-    detail: 'アクセス抜群の立地でお待ちしております',
     image: step2Image
   },
   {
-    icon: <MessageSquare className="w-8 h-8" />,
     title: 'カウンセリング',
     description: 'お悩みを丁寧にヒアリング',
-    detail: 'お体の状態を詳しくお聞きします',
     image: step3Image
   },
   {
-    icon: <Zap className="w-8 h-8" />,
     title: '施術',
     description: '完全個室で深層部アプローチ',
-    detail: 'プライベート空間で集中的にケア',
     image: step4Image
-  },
-  {
-    icon: <Heart className="w-8 h-8" />,
-    title: 'アフターケア',
-    description: '自宅でできるケア方法をアドバイス',
-    detail: '効果を持続させるためのサポート'
   }
 ];
 
@@ -58,54 +37,39 @@ export function Flow() {
           </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          {/* タイムライン */}
-          <div className="relative">
-            {/* 縦線 */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-[#E8D5E8] hidden md:block"></div>
-
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {flowSteps.map((step, index) => (
-              <div key={index} className="relative flex items-start mb-12 last:mb-0">
-                {/* アイコン */}
-                <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center text-white flex-shrink-0 relative z-10">
-                  {step.icon}
-                </div>
+              <div key={index} className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
+                <div className="aspect-[4/3] relative">
+                  <img
+                    src={step.image}
+                    alt={step.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
 
-                {/* コンテンツ */}
-                <div className="ml-8 flex-1">
-                  <div className="bg-white rounded-2xl p-6 shadow-lg border border-[#E8D5E8]">
-                    <div className="flex items-center mb-3">
-                      <span className="bg-[#E8D5E8] text-[#2C2C2C] px-3 py-1 rounded-full text-sm font-bold mr-4">
-                        STEP {index + 1}
-                      </span>
-                    </div>
-                    <h3 className="text-xl font-bold text-[#2C2C2C] mb-2">
+                  <div className="absolute top-6 left-6">
+                    <span className="inline-block bg-[#D4AF37] text-white px-6 py-2 rounded-full text-lg font-bold shadow-lg">
+                      STEP {index + 1}
+                    </span>
+                  </div>
+
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 className="text-2xl lg:text-3xl font-bold mb-2">
                       {step.title}
                     </h3>
-                    <p className="text-[#D4AF37] font-medium mb-2">
+                    <p className="text-base lg:text-lg opacity-90">
                       {step.description}
                     </p>
-                    <p className="text-[#2C2C2C]/70 mb-4">
-                      {step.detail}
-                    </p>
-                    {step.image && (
-                      <div className="mt-4 rounded-xl overflow-hidden">
-                        <img
-                          src={step.image}
-                          alt={step.title}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
-                    )}
                   </div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* 注記 */}
           <div className="mt-12 text-center">
-            <p className="text-[#2C2C2C]/70 text-sm bg-[#FAF9F6] p-4 rounded-xl">
+            <p className="text-[#2C2C2C]/70 text-sm bg-[#FAF9F6] p-4 rounded-xl inline-block">
               ※無理な勧誘は一切ありません
             </p>
           </div>
