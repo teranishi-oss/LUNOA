@@ -4,14 +4,6 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const beforeAfterData = [
   {
     id: 1,
-    title: '姿勢改善・美容整体',
-    beforeImage: 'src/assets/xff4mzxo.jpeg',
-    afterImage: 'src/assets/xff4mzxo.jpeg',
-    description: '1回の施術で驚きの変化！理想の姿勢に',
-    details: '骨格から整える美容整体で、姿勢が劇的に改善。施術後すぐに違いを実感していただけます。'
-  },
-  {
-    id: 2,
     title: '首の可動域改善',
     beforeImage: '/images/ba-posture-02.jpg',
     afterImage: '/images/ba-posture-02.jpg',
@@ -19,7 +11,7 @@ const beforeAfterData = [
     details: '首の動きが制限されていた状態から、上下左右スムーズに動かせるように。頭痛や首の痛みも解消されました。'
   },
   {
-    id: 3,
+    id: 2,
     title: '体の柔軟性向上',
     beforeImage: '/images/ba-posture-03.jpg',
     afterImage: '/images/ba-posture-03.jpg',
