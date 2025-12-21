@@ -6,8 +6,8 @@ const beforeAfterData = [
   {
     id: 1,
     title: "肩こり・巻き肩改善",
-    beforeImage: kubikataImage,
-    afterImage: kubikataImage,
+    beforeImage: "https://www.genspark.ai/api/files/s/bntY4hzc3",
+    afterImage: "https://www.genspark.ai/api/files/s/bntY4hzc3",
     effect: "肩の位置が正常に！巻き肩が大幅に改善されました",
     description: "長年のデスクワークによる巻き肩と肩こりが改善。肩の位置が正しい位置に戻り、首や肩の負担が大幅に軽減されました。",
     customerName: "M.T様（30代）",
@@ -116,13 +116,31 @@ export function BeforeAfter() {
                     src={currentData.beforeImage}
                     alt={`${currentData.title}のビフォーアフター`}
                     className="w-full object-contain"
+                    crossOrigin="anonymous"
+                    loading="lazy"
+                    referrerPolicy="no-referrer"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.src = '/images/rogo.png';
                     }}
                   />
+                  {/* 実績No.1バッジ */}
+                  <div className="absolute" style={{ top: '16px', left: '16px', zIndex: 10 }}>
+                    <span style={{
+                      backgroundColor: '#c9a961',
+                      color: 'white',
+                      padding: '8px 16px',
+                      borderRadius: '20px',
+                      fontSize: '0.875rem',
+                      fontWeight: 700,
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
+                      display: 'inline-block'
+                    }}>
+                      実績No.1
+                    </span>
+                  </div>
                   {/* カテゴリーバッジ */}
-                  <div className="absolute top-4 left-4">
+                  <div className="absolute top-4 right-4">
                     <span className="bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-bold">
                       {currentData.category}
                     </span>
