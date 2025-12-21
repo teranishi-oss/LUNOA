@@ -56,7 +56,7 @@ export function Access() {
                   <div>
                     <h4 className="font-bold text-[#2C2C2C] mb-1">電話番号</h4>
                     <p className="text-[#2C2C2C]/70">
-                      03-XXXX-XXXX
+                      03-6455-3271
                     </p>
                   </div>
                 </div>
