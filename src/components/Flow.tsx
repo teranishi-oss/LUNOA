@@ -2,6 +2,7 @@ import React from 'react';
 import { Calendar, MapPin, MessageSquare, Zap, Heart } from 'lucide-react';
 import step1Image from '../assets/5ss05lf4.jpeg';
 import step2Image from '../assets/uixw7rjj.jpeg';
+import step3Image from '../assets/ppfjscwj copy.jpeg';
 
 const flowSteps: Array<{
   icon: React.ReactNode;
@@ -28,7 +29,8 @@ const flowSteps: Array<{
     icon: <MessageSquare className="w-8 h-8" />,
     title: 'カウンセリング',
     description: 'お悩みを丁寧にヒアリング',
-    detail: 'お体の状態を詳しくお聞きします'
+    detail: 'お体の状態を詳しくお聞きします',
+    image: step3Image
   },
   {
     icon: <Zap className="w-8 h-8" />,
