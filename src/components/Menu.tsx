@@ -45,7 +45,7 @@ export function Menu() {
           {menuItems.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 p-8"
+              className="bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 p-8"
             >
               <h3 className="text-2xl font-bold text-gray-900 mb-4">{item.name}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">{item.description}</p>
@@ -54,7 +54,7 @@ export function Menu() {
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 group"
+                className="inline-flex items-center space-x-2 bg-gradient-to-r from-pink-400 to-rose-400 hover:from-pink-500 hover:to-rose-500 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 group shadow-md"
               >
                 <span>詳しく見る</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
