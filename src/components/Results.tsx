@@ -4,11 +4,11 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const beforeAfterData = [
   {
     id: 1,
-    title: '肩こり・巻き肩改善',
-    beforeImage: 'src/assets/line_album_hpアルバム_251218_87.jpg',
-    afterImage: 'src/assets/line_album_hpアルバム_251218_87.jpg',
-    description: '肩の位置が正常に！巻き肩が大幅に改善されました',
-    details: '長年のデスクワークによる巻き肩と肩こりが改善。肩の位置が正しい位置に戻り、首や肩の負担が大幅に軽減されました。'
+    title: '姿勢改善・美容整体',
+    beforeImage: 'src/assets/xff4mzxo.jpeg',
+    afterImage: 'src/assets/xff4mzxo.jpeg',
+    description: '1回の施術で驚きの変化！理想の姿勢に',
+    details: '骨格から整える美容整体で、姿勢が劇的に改善。施術後すぐに違いを実感していただけます。'
   },
   {
     id: 2,
@@ -101,7 +101,6 @@ export function Results() {
                   {[...Array(5)].map((_, i) => (
                     <div key={i} className="w-5 h-5 bg-[#D4AF37] rounded-full"></div>
                   ))}
-                  <span className="ml-3 text-[#2C2C2C] font-bold">満足度100%</span>
                 </div>
 
                 <a 
