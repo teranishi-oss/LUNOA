@@ -108,21 +108,19 @@ export function BeforeAfter() {
         {/* メインスライドショー */}
         <div className="relative max-w-6xl mx-auto mb-12">
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
-            <div className="grid lg:grid-cols-2 gap-0">
-              {/* ビフォーアフター画像 */}
-              <div className="relative">
-                <div className="h-96 lg:h-auto">
-                  <img 
+            {currentData.id === 1 ? (
+              // 肩こり・巻き肩改善（Before/After画像が1枚に含まれている場合）
+              <div>
+                <div className="relative">
+                  <img
                     src={currentData.beforeImage}
                     alt={`${currentData.title}のビフォーアフター`}
-                    className="w-full h-full object-cover"
+                    className="w-full object-contain"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.src = '/images/rogo.png';
                     }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  
                   {/* カテゴリーバッジ */}
                   <div className="absolute top-4 left-4">
                     <span className="bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-bold">
@@ -130,45 +128,110 @@ export function BeforeAfter() {
                     </span>
                   </div>
                 </div>
-              </div>
 
-              {/* コンテンツ部分 */}
-              <div className="p-8 lg:p-12 flex flex-col justify-center">
-                <div className="mb-6">
-                  <h3 className="text-3xl font-bold text-gray-800 mb-4">{currentData.title}</h3>
-                  <div className="bg-gradient-to-r from-pink-100 to-rose-100 p-4 rounded-xl border border-pink-200">
-                    <p className="text-pink-700 font-bold text-lg italic">
-                      "{currentData.effect}"
-                    </p>
+                {/* コンテンツ部分 */}
+                <div className="p-8 lg:p-12">
+                  <div className="mb-6">
+                    <h3 className="text-3xl font-bold text-gray-800 mb-4">{currentData.title}</h3>
+                    <div className="bg-gradient-to-r from-pink-100 to-rose-100 p-4 rounded-xl border border-pink-200">
+                      <p className="text-pink-700 font-bold text-lg italic">
+                        "{currentData.effect}"
+                      </p>
+                    </div>
+                  </div>
+
+                  <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                    {currentData.description}
+                  </p>
+
+                  <div className="flex items-center space-x-1 mb-6">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <div className="space-y-2">
+                      <div className="font-bold text-gray-800">{currentData.customerName}</div>
+                      <div className="text-pink-600 font-medium">{currentData.period}</div>
+                    </div>
+
+                    <a
+                      href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 space-x-2"
+                    >
+                      <span>あなたも美しく変身</span>
+                      <ArrowRight className="w-5 h-5" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              // その他のビフォーアフター（従来のレイアウト）
+              <div className="grid lg:grid-cols-2 gap-0">
+                {/* ビフォーアフター画像 */}
+                <div className="relative">
+                  <div className="h-96 lg:h-auto">
+                    <img
+                      src={currentData.beforeImage}
+                      alt={`${currentData.title}のビフォーアフター`}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = '/images/rogo.png';
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+
+                    {/* カテゴリーバッジ */}
+                    <div className="absolute top-4 left-4">
+                      <span className="bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-bold">
+                        {currentData.category}
+                      </span>
+                    </div>
                   </div>
                 </div>
 
-                <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                  {currentData.description}
-                </p>
+                {/* コンテンツ部分 */}
+                <div className="p-8 lg:p-12 flex flex-col justify-center">
+                  <div className="mb-6">
+                    <h3 className="text-3xl font-bold text-gray-800 mb-4">{currentData.title}</h3>
+                    <div className="bg-gradient-to-r from-pink-100 to-rose-100 p-4 rounded-xl border border-pink-200">
+                      <p className="text-pink-700 font-bold text-lg italic">
+                        "{currentData.effect}"
+                      </p>
+                    </div>
+                  </div>
 
-                <div className="flex items-center space-x-1 mb-6">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
+                  <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                    {currentData.description}
+                  </p>
+
+                  <div className="flex items-center space-x-1 mb-6">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+
+                  <div className="space-y-2 mb-6">
+                    <div className="font-bold text-gray-800">{currentData.customerName}</div>
+                    <div className="text-pink-600 font-medium">{currentData.period}</div>
+                  </div>
+
+                  <a
+                    href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 space-x-2"
+                  >
+                    <span>あなたも美しく変身</span>
+                    <ArrowRight className="w-5 h-5" />
+                  </a>
                 </div>
-
-                <div className="space-y-2 mb-6">
-                  <div className="font-bold text-gray-800">{currentData.customerName}</div>
-                  <div className="text-pink-600 font-medium">{currentData.period}</div>
-                </div>
-
-                <a 
-                  href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 space-x-2"
-                >
-                  <span>あなたも美しく変身</span>
-                  <ArrowRight className="w-5 h-5" />
-                </a>
               </div>
-            </div>
+            )}
           </div>
 
           {/* ナビゲーションボタン */}
