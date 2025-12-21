@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import logoImage from '../assets/logo.png';
-import result1 from '../assets/111.jpg';
-import result2 from '../assets/222.jpg';
-import result3 from '../assets/333.jpg';
 
 const beforeAfterData = [
   {
@@ -11,21 +7,21 @@ const beforeAfterData = [
     title: '肩こり・巻き肩改善',
     description: '肩の位置が正常に！巻き肩が大幅に改善されました',
     details: '長年のデスクワークによる巻き肩と肩こりが改善。肩の位置が正しい位置に戻り、首や肩の負担が大幅に軽減されました。',
-    image: result1
+    placeholder: '🌸'
   },
   {
     id: 2,
     title: '首の可動域改善',
     description: '首が自由に動くように！可動域が大幅に改善',
     details: '首の動きが制限されていた状態から、上下左右スムーズに動かせるように。頭痛や首の痛みも解消されました。',
-    image: result2
+    placeholder: '✨'
   },
   {
     id: 3,
     title: '体の柔軟性向上',
     description: '体の可動域が大幅に向上！柔軟性がアップしました',
     details: '体の硬さが改善され、前屈などの動作がスムーズに。日常生活での動きが楽になり、運動パフォーマンスも向上しました。',
-    image: result3
+    placeholder: '💫'
   }
 ];
 
@@ -62,18 +58,13 @@ export function Results() {
           {/* メインコンテンツ */}
           <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden mb-8">
             <div className="grid lg:grid-cols-2 gap-0">
-              {/* Before/After画像 */}
-              <div className="relative h-96 lg:h-auto">
-                <img
-                  src={currentData.image}
-                  alt={`${currentData.title} Before/After`}
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src = logoImage;
-                  }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              {/* Before/After画像プレースホルダー */}
+              <div className="relative h-96 lg:h-auto bg-gradient-to-br from-[#E8D5E8] to-[#FFE4E1] flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-9xl mb-4">{currentData.placeholder}</div>
+                  <p className="text-[#2C2C2C]/50 font-medium">施術結果写真</p>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
 
                 {/* カテゴリーバッジ */}
                 <div className="absolute top-4 left-4">
@@ -154,16 +145,8 @@ export function Results() {
                 }`}
               >
                 <div className="text-center">
-                  <div className="h-32 rounded-lg overflow-hidden mb-3">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.src = logoImage;
-                      }}
-                    />
+                  <div className="h-32 rounded-lg overflow-hidden mb-3 bg-gradient-to-br from-[#E8D5E8] to-[#FFE4E1] flex items-center justify-center">
+                    <div className="text-5xl">{item.placeholder}</div>
                   </div>
                   <div className="font-semibold text-[#2C2C2C] text-sm mb-1">{item.title}</div>
                   <div className="text-xs text-[#D4AF37] font-medium">実績No.{item.id}</div>
