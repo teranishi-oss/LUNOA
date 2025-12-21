@@ -40,29 +40,18 @@ export function Flow() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {flowSteps.map((step, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
+              <div
+                key={index}
+                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500"
+              >
                 <div className="aspect-[4/3] relative">
                   <img
                     src={step.image}
                     alt={step.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-
-                  <div className="absolute top-6 left-6">
-                    <span className="inline-block bg-[#D4AF37] text-white px-6 py-2 rounded-full text-lg font-bold shadow-lg">
-                      STEP {index + 1}
-                    </span>
-                  </div>
-
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-2xl lg:text-3xl font-bold mb-2">
-                      {step.title}
-                    </h3>
-                    <p className="text-base lg:text-lg opacity-90">
-                      {step.description}
-                    </p>
-                  </div>
+                  <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-2xl pointer-events-none"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                 </div>
               </div>
             ))}
