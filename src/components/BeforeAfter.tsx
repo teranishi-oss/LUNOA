@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Star, ArrowRight } from 'lucide-react';
+import kubikataImage from '../assets/kubikata.jpg';
 
 const beforeAfterData = [
   {
     id: 1,
     title: "肩こり・巻き肩改善",
-    beforeImage: "/images/line_album_hpアルバム_251218_50.jpg",
-    afterImage: "/images/line_album_hpアルバム_251218_50.jpg",
+    beforeImage: kubikataImage,
+    afterImage: kubikataImage,
     effect: "肩の位置が正常に！巻き肩が大幅に改善されました",
     description: "長年のデスクワークによる巻き肩と肩こりが改善。肩の位置が正しい位置に戻り、首や肩の負担が大幅に軽減されました。",
     customerName: "M.T様（30代）",
