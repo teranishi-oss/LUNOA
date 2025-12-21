@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Star, ArrowRight } from 'lucide-react';
-import kubikataImage from '../assets/kubikata.jpg';
+import kubikataImage from '../assets/kubikata copy.jpg';
 
 const beforeAfterData = [
   {
