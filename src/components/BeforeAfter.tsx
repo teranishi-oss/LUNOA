@@ -28,8 +28,8 @@ const beforeAfterData = [
   {
     id: 3,
     title: "体の柔軟性向上",
-    beforeImage: "/images/line_album_hpアルバム_251218_51.jpg",
-    afterImage: "/images/line_album_hpアルバム_251218_51.jpg",
+    beforeImage: "https://www.genspark.ai/api/files/s/bdtp6Xj6",
+    afterImage: "https://www.genspark.ai/api/files/s/bdtp6Xj6",
     effect: "体の可動域が大幅に向上！柔軟性がアップしました",
     description: "体の硬さが改善され、前屈などの動作がスムーズに。日常生活での動きが楽になり、運動パフォーマンスも向上しました。",
     customerName: "H.K様（20代）",
