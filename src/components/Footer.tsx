@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Clock, Phone, Instagram, Twitter, Facebook } from 'lucide-react';
+import { MapPin, Clock, Phone, Instagram, Twitter } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -50,7 +50,7 @@ export function Footer() {
           <div className="space-y-6">
             <h4 className="text-xl font-bold">ご予約・お問い合わせ</h4>
             <div className="space-y-4">
-              <a 
+              <a
                 href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -58,35 +58,23 @@ export function Footer() {
               >
                 WEB予約
               </a>
-              <a 
-                href="#line"
-                className="block bg-white/10 hover:bg-white/20 text-white font-bold py-3 px-6 rounded-xl text-center transition-all duration-200"
-              >
-                LINE相談
-              </a>
             </div>
 
             {/* SNSリンク */}
             <div>
               <h5 className="font-bold mb-3">SNS</h5>
               <div className="flex space-x-4">
-                <a 
-                  href="#instagram" 
+                <a
+                  href="#instagram"
                   className="w-10 h-10 bg-white/10 hover:bg-[#D4AF37] rounded-full flex items-center justify-center transition-all duration-200"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a 
-                  href="#twitter" 
+                <a
+                  href="#twitter"
                   className="w-10 h-10 bg-white/10 hover:bg-[#D4AF37] rounded-full flex items-center justify-center transition-all duration-200"
                 >
                   <Twitter className="w-5 h-5" />
-                </a>
-                <a 
-                  href="#facebook" 
-                  className="w-10 h-10 bg-white/10 hover:bg-[#D4AF37] rounded-full flex items-center justify-center transition-all duration-200"
-                >
-                  <Facebook className="w-5 h-5" />
                 </a>
               </div>
             </div>
