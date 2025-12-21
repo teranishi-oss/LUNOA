@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="h-screen flex items-center justify-center relative overflow-hidden"
+      className="h-screen flex items-center justify-center relative overflow-hidden bg-[#f8f4ed]"
       style={{ minHeight: '100svh' }}
     >
       {/* 背景画像 */}
@@ -13,7 +13,7 @@ export function Hero() {
         <img
           src={heroImage}
           alt="美容整体LUNOA"
-          className="absolute inset-0 w-full h-full object-cover object-center md:object-[center_20%] brightness-110"
+          className="absolute inset-0 w-full h-full object-contain md:object-cover md:object-[center_20%] brightness-110"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-transparent" />
       </div>
