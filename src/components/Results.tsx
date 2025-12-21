@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import logoImage from '../assets/logo.png';
-import result1 from '../assets/111.jpg';
-import result2 from '../assets/kubikata copy.jpeg';
+import result1 from '../assets/kubikata copy.jpeg';
+import result2 from '../assets/222.jpg';
 import result3 from '../assets/333.jpg';
 
 const beforeAfterData = [
@@ -63,17 +63,17 @@ export function Results() {
           <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden mb-8">
             <div className="grid lg:grid-cols-2 gap-0">
               {/* Before/After画像 */}
-              <div className="relative h-96 lg:h-auto">
+              <div className="relative h-96 lg:h-auto bg-[#FAF9F6]">
                 <img
                   src={currentData.image}
                   alt={`${currentData.title} Before/After`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = logoImage;
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none"></div>
 
                 {/* カテゴリーバッジ */}
                 <div className="absolute top-4 left-4">
@@ -154,11 +154,11 @@ export function Results() {
                 }`}
               >
                 <div className="text-center">
-                  <div className="h-32 rounded-lg overflow-hidden mb-3">
+                  <div className="h-32 rounded-lg overflow-hidden mb-3 bg-[#FAF9F6]">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.src = logoImage;
