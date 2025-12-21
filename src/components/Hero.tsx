@@ -12,7 +12,7 @@ export function Hero() {
         <img
           src={heroImage}
           alt="美容整体LUNOA"
-          className="absolute inset-0 w-full h-full object-cover brightness-110"
+          className="absolute inset-0 w-full h-full object-cover object-[center_20%] brightness-110"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-transparent" />
       </div>

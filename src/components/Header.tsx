@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Calendar } from 'lucide-react';
+import logoImage from '../assets/logo.jpg';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,20 +34,11 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* ロゴ */}
           <div className="flex items-center">
-            <img 
-              src="src/assets/logo.png" 
-              alt="LUNOA 美容整体ロゴ" 
+            <img
+              src={logoImage}
+              alt="LUNOA 美容整体ロゴ"
               className="h-12 w-auto"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.style.display = 'none';
-                const fallback = target.nextElementSibling as HTMLElement;
-                if (fallback) fallback.style.display = 'block';
-              }}
             />
-            <h1 className="text-2xl font-bold text-[#2C2C2C] ml-3" style={{ display: 'none' }}>
-              LUNOA
-            </h1>
           </div>
 
           {/* デスクトップナビゲーション */}
