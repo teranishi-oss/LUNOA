@@ -1,6 +1,5 @@
 import React from 'react';
 import { Check } from 'lucide-react';
-import problemsImg from '../assets/yawvtqbt copy copy copy.png';
 
 const problems = [
   '姿勢が悪い',
@@ -30,7 +29,7 @@ export function Problems() {
           {/* お悩み画像 */}
           <div className="relative">
             <img
-              src={problemsImg}
+              src="/images/problems-section.png"
               alt="美容整体のお悩み"
               className="w-full h-auto rounded-2xl shadow-lg"
             />
