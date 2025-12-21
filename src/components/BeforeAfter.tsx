@@ -39,8 +39,8 @@ const beforeAfterData = [
   {
     id: 4,
     title: "首の可動域改善",
-    beforeImage: "/images/line_album_hpアルバム_251218_55.jpg",
-    afterImage: "/images/line_album_hpアルバム_251218_55.jpg",
+    beforeImage: "https://www.genspark.ai/api/files/s/tw1ad1Z8",
+    afterImage: "https://www.genspark.ai/api/files/s/tw1ad1Z8",
     effect: "首が自由に動くように！可動域が大幅に改善",
     description: "首の動きが制限されていた状態から、上下左右スムーズに動かせるように。頭痛や首の痛みも解消されました。",
     customerName: "A.N様（30代）",
@@ -196,6 +196,9 @@ export function BeforeAfter() {
                       src={currentData.beforeImage}
                       alt={`${currentData.title}のビフォーアフター`}
                       className="w-full h-full object-cover"
+                      crossOrigin="anonymous"
+                      loading="lazy"
+                      referrerPolicy="no-referrer"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.src = '/images/rogo.png';
@@ -294,10 +297,13 @@ export function BeforeAfter() {
             >
               <div className="text-center">
                 <div className="h-20 rounded-lg overflow-hidden mb-3">
-                  <img 
-                    src={item.beforeImage} 
-                    alt={item.title} 
+                  <img
+                    src={item.beforeImage}
+                    alt={item.title}
                     className="w-full h-full object-cover"
+                    crossOrigin="anonymous"
+                    loading="lazy"
+                    referrerPolicy="no-referrer"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.src = '/images/rogo.png';
