@@ -67,9 +67,9 @@ export function Contact() {
             </div>
 
             <div className="text-center">
-              <a 
-                href="https://website-recreation-f-3nce.bolt.host/"
-                target="_blank" 
+              <a
+                href="https://relax-job.com/shop/829053"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 no-underline"
               >
