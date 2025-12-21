@@ -9,7 +9,6 @@ import { Testimonials } from './components/Testimonials';
 import { Flow } from './components/Flow';
 import { Access } from './components/Access';
 import { FAQ } from './components/FAQ';
-import { FinalCTA } from './components/FinalCTA';
 import { Footer } from './components/Footer';
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
         <Flow />
         <Access />
         <FAQ />
-        <FinalCTA />
       </main>
       <Footer />
     </div>
