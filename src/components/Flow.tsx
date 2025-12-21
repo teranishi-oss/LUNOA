@@ -51,14 +51,14 @@ export function Flow() {
             {flowSteps.map((step, index) => (
               <div
                 key={index}
-                className="overflow-hidden rounded-2xl shadow-lg"
+                className="overflow-hidden rounded-2xl shadow-lg bg-white"
               >
                 <ImageUpload
                   defaultImage={step.image}
                   alt={step.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                   onImageChange={(newImage) => handleImageChange(index, newImage)}
-                  height="400px"
+                  height="500px"
                 />
               </div>
             ))}
