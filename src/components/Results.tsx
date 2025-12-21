@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import logoImage from '../assets/logo.png';
 import result1 from '../assets/kubikata copy.jpeg';
-import result2 from '../assets/222.jpg';
+import result2 from '../assets/kubikadouiki.jpg';
 import result3 from '../assets/333.jpg';
 
 const beforeAfterData = [
