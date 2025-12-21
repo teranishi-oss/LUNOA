@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import logoImage from '../assets/logo.png';
 import result1 from '../assets/kubikata copy.jpeg';
 import result2 from '../assets/kubikadouiki.jpg';
-import result3 from '../assets/333.jpg';
+import result3 from '../assets/shisei.jpg';
 
 const beforeAfterData = [
   {
