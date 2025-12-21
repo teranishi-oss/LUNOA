@@ -4,6 +4,17 @@ import { ChevronLeft, ChevronRight, Star, ArrowRight } from 'lucide-react';
 const beforeAfterData = [
   {
     id: 1,
+    title: "肩こり・巻き肩改善",
+    beforeImage: "/images/line_album_hpアルバム_251218_50.jpg",
+    afterImage: "/images/line_album_hpアルバム_251218_50.jpg",
+    effect: "肩の位置が正常に！巻き肩が大幅に改善されました",
+    description: "長年のデスクワークによる巻き肩と肩こりが改善。肩の位置が正しい位置に戻り、首や肩の負担が大幅に軽減されました。",
+    customerName: "M.T様（30代）",
+    period: "3回の施術後",
+    category: "姿勢改善"
+  },
+  {
+    id: 2,
     title: "姿勢改善・猫背矯正",
     beforeImage: "/images/line_album_hpアルバム_251218_49.jpg",
     afterImage: "/images/line_album_hpアルバム_251218_49.jpg",
@@ -14,7 +25,7 @@ const beforeAfterData = [
     category: "姿勢改善"
   },
   {
-    id: 2,
+    id: 3,
     title: "体の柔軟性向上",
     beforeImage: "/images/line_album_hpアルバム_251218_51.jpg",
     afterImage: "/images/line_album_hpアルバム_251218_51.jpg",
@@ -25,7 +36,7 @@ const beforeAfterData = [
     category: "柔軟性向上"
   },
   {
-    id: 3,
+    id: 4,
     title: "首の可動域改善",
     beforeImage: "/images/line_album_hpアルバム_251218_55.jpg",
     afterImage: "/images/line_album_hpアルバム_251218_55.jpg",
@@ -36,7 +47,7 @@ const beforeAfterData = [
     category: "首・肩改善"
   },
   {
-    id: 4,
+    id: 5,
     title: "全身バランス調整",
     beforeImage: "/images/line_album_hpアルバム_251218_28.jpg",
     afterImage: "/images/line_album_hpアルバム_251218_28.jpg",
