@@ -6,7 +6,6 @@ const beautyServices = [
     name: "小顔美容整体",
     description: "顔の歪みを整え、リフトアップ効果で小顔を実現",
     image: "/images/line_album_hpアルバム_251218_28.jpg",
-    price: "¥15,400",
     duration: "約50分",
     features: ["小顔効果", "リフトアップ", "血行促進", "むくみ解消"],
     effects: "この整体で小顔効果を実感！フェイスラインがすっきり",
@@ -16,7 +15,6 @@ const beautyServices = [
     name: "姿勢美容整体",
     description: "猫背・巻き肩を改善し、美しい姿勢を作る",
     image: "/images/line_album_hpアルバム_251218_49.jpg",
-    price: "¥15,400",
     duration: "約50分",
     features: ["姿勢改善", "猫背矯正", "肩こり解消", "美しいライン"],
     effects: "この整体で姿勢が改善！背筋が伸びて美しいシルエットに",
@@ -26,7 +24,6 @@ const beautyServices = [
     name: "美脚・骨盤整体",
     description: "骨盤の歪みを整え、美しい脚のラインを作る",
     image: "/images/line_album_hpアルバム_251218_51.jpg",
-    price: "¥15,400",
     duration: "約50分",
     features: ["骨盤矯正", "美脚効果", "O脚改善", "ヒップアップ"],
     effects: "この整体で美脚を実現！脚のラインが美しく変化",
@@ -111,17 +108,12 @@ export function Services() {
                   </div>
                 </div>
 
-                {/* 料金と予約ボタン */}
+                {/* 予約ボタン */}
                 <div className="border-t border-gray-100 pt-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="text-3xl font-bold text-pink-500">{service.price}</div>
-                    <div className="text-sm text-gray-500">税込</div>
-                  </div>
-                  
                   <div className="space-y-3">
-                    <a 
+                    <a
                       href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
-                      target="_blank" 
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="group w-full bg-gradient-to-r from-pink-400 to-rose-500 hover:from-pink-500 hover:to-rose-600 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"
                     >
@@ -129,7 +121,7 @@ export function Services() {
                       <span>今すぐ予約</span>
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                     </a>
-                    
+
                     <button className="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-3 px-6 rounded-2xl transition-all duration-300">
                       詳細を見る
                     </button>
@@ -138,72 +130,6 @@ export function Services() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* 料金プラン */}
-        <div className="bg-white rounded-3xl shadow-lg p-8 mb-16 animate-appear delay-1000">
-          <h3 className="text-3xl font-bold text-gray-800 text-center mb-8 font-handwriting">美容整体料金プラン</h3>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="text-center p-6 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200">
-              <h4 className="text-xl font-bold text-gray-700 mb-4">都度払い</h4>
-              <div className="text-3xl font-bold text-pink-500 mb-2">¥15,400</div>
-              <div className="text-sm text-gray-500 mb-4">1回あたり</div>
-              <a 
-                href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block w-full bg-gray-100 hover:bg-pink-400 hover:text-white text-gray-600 font-semibold px-4 py-3 rounded-xl transition-all duration-300"
-              >
-                予約する
-              </a>
-            </div>
-
-            <div className="text-center p-6 bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl border border-pink-200">
-              <h4 className="text-xl font-bold text-gray-700 mb-4">3回券</h4>
-              <div className="text-3xl font-bold text-pink-500 mb-2">¥33,000</div>
-              <div className="text-sm text-gray-500 mb-4">¥11,000×3回</div>
-              <a 
-                href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block w-full bg-pink-100 hover:bg-pink-400 hover:text-white text-pink-600 font-semibold px-4 py-3 rounded-xl transition-all duration-300"
-              >
-                予約する
-              </a>
-            </div>
-
-            <div className="text-center p-6 bg-gradient-to-br from-rose-100 to-pink-100 rounded-2xl border-2 border-rose-300 relative">
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-rose-500 text-white px-4 py-1 rounded-full text-sm font-medium">
-                人気
-              </div>
-              <h4 className="text-xl font-bold text-gray-700 mb-4">6回券</h4>
-              <div className="text-3xl font-bold text-pink-500 mb-2">¥62,700</div>
-              <div className="text-sm text-gray-500 mb-4">¥10,450×6回</div>
-              <a 
-                href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block w-full bg-rose-400 hover:bg-rose-500 text-white font-semibold px-4 py-3 rounded-xl transition-all duration-300 transform hover:scale-105"
-              >
-                予約する
-              </a>
-            </div>
-
-            <div className="text-center p-6 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200">
-              <h4 className="text-xl font-bold text-gray-700 mb-4">9回券</h4>
-              <div className="text-3xl font-bold text-pink-500 mb-2">¥89,100</div>
-              <div className="text-sm text-gray-500 mb-4">¥9,900×9回</div>
-              <a 
-                href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block w-full bg-gray-100 hover:bg-pink-400 hover:text-white text-gray-600 font-semibold px-4 py-3 rounded-xl transition-all duration-300"
-              >
-                予約する
-              </a>
-            </div>
-          </div>
         </div>
 
         {/* 店舗情報 */}
