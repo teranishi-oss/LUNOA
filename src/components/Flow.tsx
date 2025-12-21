@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import step1Image from '../assets/gb6dqnat copy copy.png';
 import step2Image from '../assets/uixw7rjj copy.jpeg';
 import step3Image from '../assets/ppfjscwj copy copy.jpeg';
 import step4Image from '../assets/6f9mcamu copy.jpeg';
-import { ImageUpload } from './ImageUpload';
 
-const initialFlowSteps = [
+const flowSteps = [
   {
     title: 'WEB予約',
     description: '24時間オンライン予約可能',
@@ -29,13 +28,6 @@ const initialFlowSteps = [
 ];
 
 export function Flow() {
-  const [flowSteps, setFlowSteps] = useState(initialFlowSteps);
-
-  const handleImageChange = (index: number, newImage: string) => {
-    const updatedSteps = [...flowSteps];
-    updatedSteps[index] = { ...updatedSteps[index], image: newImage };
-    setFlowSteps(updatedSteps);
-  };
 
   return (
     <section id="flow" className="py-16 md:py-24 bg-white">
@@ -53,12 +45,11 @@ export function Flow() {
                 key={index}
                 className="overflow-hidden rounded-2xl shadow-lg bg-white"
               >
-                <ImageUpload
-                  defaultImage={step.image}
+                <img
+                  src={step.image}
                   alt={step.title}
-                  className="w-full h-full object-contain"
-                  onImageChange={(newImage) => handleImageChange(index, newImage)}
-                  height="500px"
+                  draggable={false}
+                  className="w-full h-[500px] object-contain select-none"
                 />
               </div>
             ))}
