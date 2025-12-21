@@ -19,13 +19,6 @@ const reasons = [
   }
 ];
 
-const recommendations = [
-  'フェイスラインや顔の印象を整えたい方',
-  '姿勢や身体の歪みを根本から見直したい方',
-  '肩こり・腰痛・むくみ・冷えを丁寧にケアしたい方',
-  '美容と健康、どちらも妥協したくない方'
-];
-
 export function Features() {
   return (
     <section id="features" className="py-16 md:py-24 bg-gradient-to-b from-white to-[#F8F6F3]">
@@ -54,7 +47,7 @@ export function Features() {
         </div>
 
         {/* LUNOAが選ばれる理由 */}
-        <div className="max-w-6xl mx-auto mb-20">
+        <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl lg:text-4xl font-bold text-center text-[#2C2C2C] mb-12">
             LUNOAが選ばれる理由
           </h3>
@@ -72,26 +65,6 @@ export function Features() {
                 </h4>
                 <p className="text-[#2C2C2C]/70 leading-relaxed">
                   {reason.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* こんな方におすすめ */}
-        <div className="max-w-4xl mx-auto bg-white p-10 md:p-12 rounded-2xl shadow-lg">
-          <h3 className="text-3xl font-bold text-center text-[#2C2C2C] mb-10">
-            こんな方におすすめ
-          </h3>
-          <div className="space-y-4">
-            {recommendations.map((item, index) => (
-              <div
-                key={index}
-                className="flex items-start gap-4 p-4 rounded-xl hover:bg-[#F8F6F3] transition-colors duration-200"
-              >
-                <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#D4AF37] mt-2" />
-                <p className="text-lg text-[#2C2C2C]/80 leading-relaxed">
-                  {item}
                 </p>
               </div>
             ))}
