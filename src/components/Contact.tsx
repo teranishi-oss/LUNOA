@@ -11,7 +11,7 @@ const contactInfo = [
   {
     icon: <Phone className="w-6 h-6" />,
     title: "電話番号",
-    content: "090-3543-0588",
+    content: "03-6455-3271",
     gradient: "from-rose-500 to-pink-600"
   },
   {

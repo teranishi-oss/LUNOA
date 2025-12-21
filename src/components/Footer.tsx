@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Clock, Phone, Instagram, Twitter } from 'lucide-react';
+import { MapPin, Clock, Phone, Instagram } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -20,7 +20,7 @@ export function Footer() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 flex-shrink-0" />
-                  <p>03-XXXX-XXXX</p>
+                  <p>03-6455-3271</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <Clock className="w-5 h-5 mt-1 flex-shrink-0" />
@@ -65,16 +65,12 @@ export function Footer() {
               <h5 className="font-bold mb-3">SNS</h5>
               <div className="flex space-x-4">
                 <a
-                  href="#instagram"
+                  href="https://www.instagram.com/lunoa_shibuya/?hl=ja"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 hover:bg-[#D4AF37] rounded-full flex items-center justify-center transition-all duration-200"
                 >
                   <Instagram className="w-5 h-5" />
-                </a>
-                <a
-                  href="#twitter"
-                  className="w-10 h-10 bg-white/10 hover:bg-[#D4AF37] rounded-full flex items-center justify-center transition-all duration-200"
-                >
-                  <Twitter className="w-5 h-5" />
                 </a>
               </div>
             </div>
