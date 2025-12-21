@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import step1Image from '../assets/step1.jpeg';
-import step2Image from '../assets/step2.jpeg';
-import step3Image from '../assets/step3.jpeg';
-import step4Image from '../assets/step4.jpeg';
+import step1Image from '../assets/gb6dqnat copy copy.png';
+import step2Image from '../assets/uixw7rjj copy.jpeg';
+import step3Image from '../assets/ppfjscwj copy copy.jpeg';
+import step4Image from '../assets/6f9mcamu copy.jpeg';
 import { ImageUpload } from './ImageUpload';
 
 const initialFlowSteps = [
