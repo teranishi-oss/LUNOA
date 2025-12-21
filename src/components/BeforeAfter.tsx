@@ -6,8 +6,8 @@ const beforeAfterData = [
   {
     id: 1,
     title: "肩こり・巻き肩改善",
-    beforeImage: "https://www.genspark.ai/api/files/s/bntY4hzc3",
-    afterImage: "https://www.genspark.ai/api/files/s/bntY4hzc3",
+    beforeImage: "https://www.genspark.ai/api/files/s/bntY4hzc",
+    afterImage: "https://www.genspark.ai/api/files/s/bntY4hzc",
     effect: "肩の位置が正常に！巻き肩が大幅に改善されました",
     description: "長年のデスクワークによる巻き肩と肩こりが改善。肩の位置が正しい位置に戻り、首や肩の負担が大幅に軽減されました。",
     customerName: "M.T様（30代）",
@@ -121,6 +121,7 @@ export function BeforeAfter() {
                     referrerPolicy="no-referrer"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
+                      console.error('Failed to load:', target.src);
                       target.src = '/images/rogo.png';
                     }}
                   />
@@ -201,6 +202,7 @@ export function BeforeAfter() {
                       referrerPolicy="no-referrer"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
+                        console.error('Failed to load:', target.src);
                         target.src = '/images/rogo.png';
                       }}
                     />
@@ -306,6 +308,7 @@ export function BeforeAfter() {
                     referrerPolicy="no-referrer"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
+                      console.error('Failed to load:', target.src);
                       target.src = '/images/rogo.png';
                     }}
                   />
