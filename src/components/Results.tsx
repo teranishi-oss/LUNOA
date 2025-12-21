@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import logoImage from '../assets/logo.png';
+import result1 from '../assets/111.jpg';
+import result2 from '../assets/222.jpg';
+import result3 from '../assets/333.jpg';
 
 const beforeAfterData = [
   {
@@ -8,21 +11,21 @@ const beforeAfterData = [
     title: '肩こり・巻き肩改善',
     description: '肩の位置が正常に！巻き肩が大幅に改善されました',
     details: '長年のデスクワークによる巻き肩と肩こりが改善。肩の位置が正しい位置に戻り、首や肩の負担が大幅に軽減されました。',
-    image: '/src/assets/line_album_hpアルバム_251221_2 copy copy.jpg'
+    image: result1
   },
   {
     id: 2,
     title: '首の可動域改善',
     description: '首が自由に動くように！可動域が大幅に改善',
     details: '首の動きが制限されていた状態から、上下左右スムーズに動かせるように。頭痛や首の痛みも解消されました。',
-    image: '/src/assets/line_album_hpアルバム_251218_118.jpg'
+    image: result2
   },
   {
     id: 3,
     title: '体の柔軟性向上',
     description: '体の可動域が大幅に向上！柔軟性がアップしました',
     details: '体の硬さが改善され、前屈などの動作がスムーズに。日常生活での動きが楽になり、運動パフォーマンスも向上しました。',
-    image: '/src/assets/line_album_hpアルバム_251218_109.jpg'
+    image: result3
   }
 ];
 
