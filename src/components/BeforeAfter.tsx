@@ -127,7 +127,7 @@ export function BeforeAfter() {
                   <ImageUpload
                     defaultImage={currentData.beforeImage}
                     alt={`${currentData.title}のビフォーアフター`}
-                    className="w-full object-contain brightness-110 contrast-105"
+                    className="w-full object-contain brightness-125 contrast-110 saturate-105"
                     onImageChange={(newImage) => handleImageChange(currentData.id, newImage)}
                     height="auto"
                   />
@@ -202,7 +202,7 @@ export function BeforeAfter() {
                     <ImageUpload
                       defaultImage={currentData.beforeImage}
                       alt={`${currentData.title}のビフォーアフター`}
-                      className="w-full h-full object-cover brightness-110 contrast-105"
+                      className="w-full h-full object-cover brightness-125 contrast-110 saturate-105"
                       onImageChange={(newImage) => handleImageChange(currentData.id, newImage)}
                       height="400px"
                     />
@@ -304,7 +304,7 @@ export function BeforeAfter() {
                   <ImageUpload
                     defaultImage={item.beforeImage}
                     alt={item.title}
-                    className="w-full h-full object-cover brightness-110 contrast-105"
+                    className="w-full h-full object-cover brightness-125 contrast-110 saturate-105"
                     onImageChange={(newImage) => handleImageChange(item.id, newImage)}
                     height="80px"
                   />
