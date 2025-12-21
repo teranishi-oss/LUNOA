@@ -42,28 +42,13 @@ export function Flow() {
             {flowSteps.map((step, index) => (
               <div
                 key={index}
-                className="group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 bg-white"
+                className="overflow-hidden rounded-2xl shadow-lg"
               >
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
-                    src={step.image}
-                    alt={step.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute top-6 left-6">
-                    <div className="w-16 h-16 rounded-full bg-[#D4AF37] flex items-center justify-center text-white text-2xl font-bold shadow-lg">
-                      {index + 1}
-                    </div>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-[#2C2C2C] mb-2">
-                    {step.title}
-                  </h3>
-                  <p className="text-[#2C2C2C]/70">
-                    {step.description}
-                  </p>
-                </div>
+                <img
+                  src={step.image}
+                  alt={step.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
             ))}
           </div>
