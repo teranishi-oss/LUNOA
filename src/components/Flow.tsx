@@ -1,12 +1,20 @@
 import React from 'react';
 import { Calendar, MapPin, MessageSquare, Zap, Heart } from 'lucide-react';
+import step1Image from '../assets/5ss05lf4.jpeg';
 
-const flowSteps = [
+const flowSteps: Array<{
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  detail: string;
+  image?: string;
+}> = [
   {
     icon: <Calendar className="w-8 h-8" />,
     title: 'WEB予約',
     description: '24時間オンライン予約可能',
-    detail: 'お好きな時間にWEBから簡単予約'
+    detail: 'お好きな時間にWEBから簡単予約',
+    image: step1Image
   },
   {
     icon: <MapPin className="w-8 h-8" />,
@@ -71,9 +79,18 @@ export function Flow() {
                     <p className="text-[#D4AF37] font-medium mb-2">
                       {step.description}
                     </p>
-                    <p className="text-[#2C2C2C]/70">
+                    <p className="text-[#2C2C2C]/70 mb-4">
                       {step.detail}
                     </p>
+                    {step.image && (
+                      <div className="mt-4 rounded-xl overflow-hidden">
+                        <img
+                          src={step.image}
+                          alt={step.title}
+                          className="w-full h-auto object-cover"
+                        />
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
