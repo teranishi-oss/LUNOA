@@ -1,30 +1,29 @@
 import React from 'react';
-import { Calendar, MapPin, MessageCircle, Sparkles } from 'lucide-react';
+import step1Image from '../assets/step1.jpeg';
+import step2Image from '../assets/step2.jpeg';
+import step3Image from '../assets/step3.jpeg';
+import step4Image from '../assets/step4.jpeg';
 
 const flowSteps = [
   {
-    number: '01',
     title: 'WEB予約',
     description: '24時間オンライン予約可能',
-    icon: Calendar
+    image: step1Image
   },
   {
-    number: '02',
     title: 'ご来店',
     description: '渋谷駅から徒歩4分',
-    icon: MapPin
+    image: step2Image
   },
   {
-    number: '03',
     title: 'カウンセリング',
     description: 'お悩みを丁寧にヒアリング',
-    icon: MessageCircle
+    image: step3Image
   },
   {
-    number: '04',
     title: '施術',
     description: '完全個室で深層部アプローチ',
-    icon: Sparkles
+    image: step4Image
   }
 ];
 
@@ -40,28 +39,18 @@ export function Flow() {
 
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {flowSteps.map((step, index) => {
-              const Icon = step.icon;
-              return (
-                <div
-                  key={index}
-                  className="bg-gradient-to-br from-[#E8D5E8] to-[#FFE4E1] rounded-2xl shadow-lg p-8 hover:shadow-xl transition-all"
-                >
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold text-xl">
-                        {step.number}
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <Icon className="w-12 h-12 text-[#D4AF37] mb-4" />
-                      <h3 className="text-2xl font-bold text-[#2C2C2C] mb-2">{step.title}</h3>
-                      <p className="text-[#2C2C2C]/70">{step.description}</p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+            {flowSteps.map((step, index) => (
+              <div
+                key={index}
+                className="overflow-hidden rounded-2xl shadow-lg"
+              >
+                <img
+                  src={step.image}
+                  alt={step.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
           </div>
 
           <div className="mt-12 text-center">

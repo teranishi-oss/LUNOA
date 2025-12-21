@@ -1,6 +1,6 @@
 import React from 'react';
 import { Check } from 'lucide-react';
-import problemsImage from '../assets/problems-image.jpg';
+import problemsImg from '../assets/yawvtqbt copy copy copy.png';
 
 const problems = [
   '姿勢が悪い',
@@ -26,26 +26,14 @@ export function Problems() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto mb-12">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            {/* 画像 */}
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img
-                src={problemsImage}
-                alt="お悩み相談"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* お悩みリスト */}
-            <div className="grid grid-cols-2 gap-4">
-              {problems.map((problem, index) => (
-                <div key={index} className="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-all">
-                  <Check className="w-8 h-8 text-[#D4AF37] mx-auto mb-3" />
-                  <p className="text-[#2C2C2C] font-semibold">{problem}</p>
-                </div>
-              ))}
-            </div>
+        <div className="max-w-4xl mx-auto mb-12">
+          {/* お悩み画像 */}
+          <div className="relative">
+            <img
+              src={problemsImg}
+              alt="美容整体のお悩み"
+              className="w-full h-auto rounded-2xl shadow-lg"
+            />
           </div>
         </div>
 
