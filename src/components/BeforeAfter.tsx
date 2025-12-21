@@ -127,10 +127,12 @@ export function BeforeAfter() {
                   <ImageUpload
                     defaultImage={currentData.beforeImage}
                     alt={`${currentData.title}のビフォーアフター`}
-                    className="w-full object-contain brightness-125 contrast-110 saturate-105"
+                    className="w-full object-contain brightness-[1.4] contrast-[1.15] saturate-110"
                     onImageChange={(newImage) => handleImageChange(currentData.id, newImage)}
                     height="auto"
                   />
+                  {/* ハイライトオーバーレイ */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-transparent pointer-events-none" style={{ zIndex: 20 }}></div>
                   {/* 実績No.1バッジ */}
                   <div className="absolute pointer-events-none" style={{ top: '16px', left: '16px', zIndex: 30 }}>
                     <span style={{
@@ -202,10 +204,12 @@ export function BeforeAfter() {
                     <ImageUpload
                       defaultImage={currentData.beforeImage}
                       alt={`${currentData.title}のビフォーアフター`}
-                      className="w-full h-full object-cover brightness-125 contrast-110 saturate-105"
+                      className="w-full h-full object-cover brightness-[1.4] contrast-[1.15] saturate-110"
                       onImageChange={(newImage) => handleImageChange(currentData.id, newImage)}
                       height="400px"
                     />
+                    {/* ハイライトオーバーレイ */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/15 via-transparent to-transparent pointer-events-none" style={{ zIndex: 5 }}></div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" style={{ zIndex: 10 }}></div>
 
                     {/* カテゴリーバッジ */}
@@ -304,7 +308,7 @@ export function BeforeAfter() {
                   <ImageUpload
                     defaultImage={item.beforeImage}
                     alt={item.title}
-                    className="w-full h-full object-cover brightness-125 contrast-110 saturate-105"
+                    className="w-full h-full object-cover brightness-[1.4] contrast-[1.15] saturate-110"
                     onImageChange={(newImage) => handleImageChange(item.id, newImage)}
                     height="80px"
                   />
