@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Star, ArrowRight } from 'lucide-react';
+import image1 from '../assets/line_album_hpアルバム_251218_109.jpg';
+import image2 from '../assets/line_album_hpアルバム_251218_118.jpg';
+import image3 from '../assets/line_album_hpアルバム_251218_87.jpg';
+import image4 from '../assets/line_album_hpアルバム_251221_2 copy copy copy.jpg';
+import image5 from '../assets/line_album_hpアルバム_251221_2.jpg';
 
 const beforeAfterData = [
   {
     id: 1,
     title: "肩こり・巻き肩改善",
-    placeholder: "🌸",
+    image: image1,
     effect: "肩の位置が正常に！巻き肩が大幅に改善されました",
     description: "長年のデスクワークによる巻き肩と肩こりが改善。肩の位置が正しい位置に戻り、首や肩の負担が大幅に軽減されました。",
     customerName: "M.T様（30代）",
@@ -15,7 +20,7 @@ const beforeAfterData = [
   {
     id: 2,
     title: "姿勢改善・猫背矯正",
-    placeholder: "✨",
+    image: image2,
     effect: "背筋がまっすぐに！美しい姿勢を手に入れました",
     description: "猫背が改善され、背筋が自然にまっすぐ伸びるように。座り姿勢も美しくなり、自信を持って過ごせるようになりました。",
     customerName: "Y.S様（40代）",
@@ -25,7 +30,7 @@ const beforeAfterData = [
   {
     id: 3,
     title: "体の柔軟性向上",
-    placeholder: "💫",
+    image: image3,
     effect: "体の可動域が大幅に向上！柔軟性がアップしました",
     description: "体の硬さが改善され、前屈などの動作がスムーズに。日常生活での動きが楽になり、運動パフォーマンスも向上しました。",
     customerName: "H.K様（20代）",
@@ -35,7 +40,7 @@ const beforeAfterData = [
   {
     id: 4,
     title: "首の可動域改善",
-    placeholder: "🌟",
+    image: image4,
     effect: "首が自由に動くように！可動域が大幅に改善",
     description: "首の動きが制限されていた状態から、上下左右スムーズに動かせるように。頭痛や首の痛みも解消されました。",
     customerName: "A.N様（30代）",
@@ -45,7 +50,7 @@ const beforeAfterData = [
   {
     id: 5,
     title: "全身バランス調整",
-    placeholder: "💖",
+    image: image5,
     effect: "全身のバランスが整い、美しい座り姿勢に",
     description: "骨盤から背骨まで全身のバランスを調整。座り姿勢が美しくなり、長時間座っていても疲れにくくなりました。",
     customerName: "K.M様（50代）",
@@ -103,13 +108,14 @@ export function BeforeAfter() {
         <div className="relative max-w-6xl mx-auto mb-12">
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
             <div className="grid lg:grid-cols-2 gap-0">
-              {/* ビフォーアフター画像プレースホルダー */}
+              {/* ビフォーアフター画像 */}
               <div className="relative">
-                <div className="h-96 lg:h-auto bg-gradient-to-br from-pink-100 to-rose-100 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-9xl mb-4">{currentData.placeholder}</div>
-                    <p className="text-gray-500 font-medium">施術結果写真</p>
-                  </div>
+                <div className="h-96 lg:h-auto">
+                  <img
+                    src={currentData.image}
+                    alt={currentData.title}
+                    className="w-full h-full object-cover"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
 
                   {/* カテゴリーバッジ */}
@@ -201,8 +207,12 @@ export function BeforeAfter() {
               }`}
             >
               <div className="text-center">
-                <div className="h-20 rounded-lg overflow-hidden mb-3 bg-gradient-to-br from-pink-100 to-rose-100 flex items-center justify-center">
-                  <div className="text-4xl">{item.placeholder}</div>
+                <div className="h-20 rounded-lg overflow-hidden mb-3">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="font-semibold text-gray-800 text-sm">{item.title}</div>
                 <div className="text-xs text-gray-500">{item.customerName}</div>
