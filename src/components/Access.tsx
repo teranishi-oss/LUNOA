@@ -13,11 +13,10 @@ export function Access() {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* 左側：サロン情報 */}
-          <div className="space-y-8">
-            {/* サロン情報カード */}
+          <div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-[#2C2C2C] mb-6">美容整体LUNOA</h3>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <MapPin className="w-6 h-6 text-[#D4AF37] mt-1 flex-shrink-0" />
@@ -62,31 +61,20 @@ export function Access() {
                 </div>
               </div>
             </div>
-
-            {/* 受付画像 */}
-            <div className="rounded-2xl overflow-hidden shadow-lg">
-              <img 
-                src="src/assets/hero-reception.jpg" 
-                alt="LUNOA受付エリア" 
-                className="w-full h-64 object-cover"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.src = 'src/assets/logo.png';
-                }}
-              />
-            </div>
           </div>
 
           {/* 右側：Googleマップ */}
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div className="h-96 lg:h-full min-h-[400px] bg-gray-200 flex items-center justify-center">
-              {/* Googleマップ埋め込み予定地 */}
-              <div className="text-center text-[#2C2C2C]/50">
-                <MapPin className="w-16 h-16 mx-auto mb-4" />
-                <p className="text-lg font-medium">Googleマップ</p>
-                <p className="text-sm">（後日埋め込み予定）</p>
-              </div>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5678901234567!2d139.6936093!3d35.657223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b71b35f360f%3A0x34bf3f05223d81b9!2z576O5a655pW05L2TTE5OT0GjgJDjg6vjg47jgqLjgJHmuIvos7fpmKg!5e0!3m2!1sja!2sjp!4v1234567890123!5m2!1sja!2sjp"
+              width="100%"
+              height="500"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="美容整体LUNOAの地図"
+            />
           </div>
         </div>
       </div>
