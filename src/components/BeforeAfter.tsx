@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Star, ArrowRight } from 'lucide-react';
 import kubikataImage from '../assets/kubikata.jpeg';
+import { ImageUpload } from './ImageUpload';
 
-const beforeAfterData = [
+const initialBeforeAfterData = [
   {
     id: 1,
     title: "肩こり・巻き肩改善",
@@ -61,8 +62,19 @@ const beforeAfterData = [
 ];
 
 export function BeforeAfter() {
+  const [beforeAfterData, setBeforeAfterData] = useState(initialBeforeAfterData);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  const handleImageChange = (id: number, newImage: string) => {
+    setBeforeAfterData(prevData =>
+      prevData.map(item =>
+        item.id === id
+          ? { ...item, beforeImage: newImage, afterImage: newImage }
+          : item
+      )
+    );
+  };
 
   // 自動スライド
   useEffect(() => {
@@ -112,21 +124,15 @@ export function BeforeAfter() {
               // 肩こり・巻き肩改善（Before/After画像が1枚に含まれている場合）
               <div>
                 <div className="relative">
-                  <img
-                    src={currentData.beforeImage}
+                  <ImageUpload
+                    defaultImage={currentData.beforeImage}
                     alt={`${currentData.title}のビフォーアフター`}
                     className="w-full object-contain"
-                    crossOrigin="anonymous"
-                    loading="lazy"
-                    referrerPolicy="no-referrer"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      console.error('Failed to load:', target.src);
-                      target.src = '/images/rogo.png';
-                    }}
+                    onImageChange={(newImage) => handleImageChange(currentData.id, newImage)}
+                    height="auto"
                   />
                   {/* 実績No.1バッジ */}
-                  <div className="absolute" style={{ top: '16px', left: '16px', zIndex: 10 }}>
+                  <div className="absolute pointer-events-none" style={{ top: '16px', left: '16px', zIndex: 30 }}>
                     <span style={{
                       backgroundColor: '#c9a961',
                       color: 'white',
@@ -141,7 +147,7 @@ export function BeforeAfter() {
                     </span>
                   </div>
                   {/* カテゴリーバッジ */}
-                  <div className="absolute top-4 right-4">
+                  <div className="absolute top-4 right-4 pointer-events-none" style={{ zIndex: 30 }}>
                     <span className="bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-bold">
                       {currentData.category}
                     </span>
@@ -193,23 +199,17 @@ export function BeforeAfter() {
                 {/* ビフォーアフター画像 */}
                 <div className="relative">
                   <div className="h-96 lg:h-auto">
-                    <img
-                      src={currentData.beforeImage}
+                    <ImageUpload
+                      defaultImage={currentData.beforeImage}
                       alt={`${currentData.title}のビフォーアフター`}
                       className="w-full h-full object-cover"
-                      crossOrigin="anonymous"
-                      loading="lazy"
-                      referrerPolicy="no-referrer"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        console.error('Failed to load:', target.src);
-                        target.src = '/images/rogo.png';
-                      }}
+                      onImageChange={(newImage) => handleImageChange(currentData.id, newImage)}
+                      height="400px"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" style={{ zIndex: 10 }}></div>
 
                     {/* カテゴリーバッジ */}
-                    <div className="absolute top-4 left-4">
+                    <div className="absolute top-4 left-4 pointer-events-none" style={{ zIndex: 30 }}>
                       <span className="bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-bold">
                         {currentData.category}
                       </span>
@@ -290,34 +290,30 @@ export function BeforeAfter() {
         {/* サムネイル一覧 */}
         <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
           {beforeAfterData.map((item, index) => (
-            <button
+            <div
               key={index}
-              onClick={() => goToSlide(index)}
-              className={`bg-white rounded-2xl p-4 shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1 ${
+              className={`bg-white rounded-2xl p-4 shadow-md hover:shadow-lg transition-all duration-200 ${
                 index === currentIndex ? 'ring-2 ring-pink-400' : ''
               }`}
             >
               <div className="text-center">
-                <div className="h-20 rounded-lg overflow-hidden mb-3">
-                  <img
-                    src={item.beforeImage}
+                <div
+                  className="h-20 rounded-lg overflow-hidden mb-3 cursor-pointer"
+                  onClick={() => goToSlide(index)}
+                >
+                  <ImageUpload
+                    defaultImage={item.beforeImage}
                     alt={item.title}
                     className="w-full h-full object-cover"
-                    crossOrigin="anonymous"
-                    loading="lazy"
-                    referrerPolicy="no-referrer"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      console.error('Failed to load:', target.src);
-                      target.src = '/images/rogo.png';
-                    }}
+                    onImageChange={(newImage) => handleImageChange(item.id, newImage)}
+                    height="80px"
                   />
                 </div>
                 <div className="font-semibold text-gray-800 text-sm">{item.title}</div>
                 <div className="text-xs text-gray-500">{item.customerName}</div>
                 <div className="text-xs text-pink-600 font-medium mt-1">{item.category}</div>
               </div>
-            </button>
+            </div>
           ))}
         </div>
 
