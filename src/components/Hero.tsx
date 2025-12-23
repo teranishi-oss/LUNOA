@@ -13,9 +13,12 @@ export function Hero() {
         <img
           src={heroImage}
           alt="美容整体LUNOA"
-          className="absolute inset-0 w-full h-full object-contain md:object-cover md:object-[center_20%] brightness-110"
+          className="absolute inset-0 w-full h-full object-contain md:object-cover md:object-[center_20%] brightness-[1.45] contrast-[1.15] saturate-110 md:brightness-[1.2] md:contrast-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-transparent" />
+        {/* モバイル用明るいオーバーレイ */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/10 to-transparent md:from-white/30 md:via-transparent" />
+        {/* 追加のハイライト効果（モバイルのみ） */}
+        <div className="absolute inset-0 bg-gradient-to-br from-white/25 via-transparent to-transparent md:hidden" />
       </div>
 
     </section>
