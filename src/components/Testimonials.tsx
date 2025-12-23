@@ -148,14 +148,14 @@ export function Testimonials() {
                       />
                     ))}
                   </div>
-                  <div className="flex items-center text-sm text-[#2C2C2C]/70">
+                  <div className="flex flex-wrap items-center text-sm md:text-base text-[#2C2C2C]/80 gap-2">
                     <span>雰囲気{testimonial.ratings.atmosphere}</span>
-                    <span className="mx-2">|</span>
-                    <span>接客サービス{testimonial.ratings.service}</span>
-                    <span className="mx-2">|</span>
-                    <span>技術・仕上がり{testimonial.ratings.technique}</span>
-                    <span className="mx-2">|</span>
-                    <span>メニュー・料金{testimonial.ratings.price}</span>
+                    <span className="hidden md:inline">|</span>
+                    <span>接客{testimonial.ratings.service}</span>
+                    <span className="hidden md:inline">|</span>
+                    <span>技術{testimonial.ratings.technique}</span>
+                    <span className="hidden md:inline">|</span>
+                    <span>料金{testimonial.ratings.price}</span>
                   </div>
                 </div>
 

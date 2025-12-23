@@ -49,7 +49,7 @@ export function Flow() {
                   src={step.image}
                   alt={step.title}
                   draggable={false}
-                  className="w-full h-[500px] object-contain select-none"
+                  className="w-full h-[300px] md:h-[500px] object-contain select-none brightness-110"
                 />
               </div>
             ))}

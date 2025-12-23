@@ -69,10 +69,10 @@ export function Therapists() {
     <section id="therapists" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-600 mb-6 font-handwriting">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-700 mb-6 font-handwriting">
             施術者紹介
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             豊富な経験と確かな技術を持つ施術者が、お客様の美と健康をサポートいたします。
             一人ひとりが専門性を活かし、最高の施術をご提供します。
           </p>
@@ -105,32 +105,32 @@ export function Therapists() {
                 <h3 className="text-2xl font-bold text-gray-800 mb-1">
                   {therapist.name}
                 </h3>
-                <p className="text-gray-300 text-sm mb-2">（{therapist.nameKana}）</p>
+                <p className="text-gray-500 text-sm mb-2">（{therapist.nameKana}）</p>
                 <div className="flex items-center justify-center space-x-4 mb-4">
-                  <span className="bg-orange-100 text-orange-400 px-3 py-1 rounded-full text-sm font-medium">
+                  <span className="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-sm font-medium">
                     {therapist.role}
                   </span>
-                  <div className="flex items-center space-x-1 text-gray-400">
+                  <div className="flex items-center space-x-1 text-gray-600">
                     <Clock className="w-4 h-4" />
                     <span className="text-sm">経験{therapist.experience}</span>
                   </div>
                 </div>
               </div>
 
-              <p className="text-gray-400 leading-relaxed mb-6 text-center">
+              <p className="text-gray-600 leading-relaxed mb-6 text-center">
                 {therapist.description}
               </p>
 
               <div className="space-y-3">
-                <h4 className="text-sm font-semibold text-gray-600 flex items-center">
-                  <Star className="w-4 h-4 text-orange-300 mr-2" />
+                <h4 className="text-sm font-semibold text-gray-700 flex items-center">
+                  <Star className="w-4 h-4 text-orange-500 mr-2" />
                   専門分野
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {therapist.specialties.map((specialty, idx) => (
                     <span
                       key={idx}
-                      className="bg-gradient-to-r from-orange-100 to-orange-200 text-orange-400 px-3 py-1 rounded-full text-xs font-medium"
+                      className="bg-gradient-to-r from-orange-100 to-orange-200 text-orange-600 px-3 py-1 rounded-full text-xs font-medium"
                     >
                       {specialty}
                     </span>
@@ -143,37 +143,37 @@ export function Therapists() {
 
         <div className="text-center mt-16 animate-appear delay-1000">
           <div className="bg-white rounded-3xl p-8 shadow-sm max-w-4xl mx-auto border border-gold-100">
-            <h3 className="text-3xl font-bold text-gray-600 mb-6">チーム実績</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-700 mb-6">チーム実績</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div 
+                <div
                   className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
                   style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
                 >
                   <Award className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold mb-2 text-orange-300">1400名+</div>
-                <div className="text-gray-400">施術実績</div>
+                <div className="text-3xl font-bold mb-2 text-orange-500">1400名+</div>
+                <div className="text-gray-600 font-medium">施術実績</div>
               </div>
               <div className="text-center">
-                <div 
+                <div
                   className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
                   style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
                 >
                   <Heart className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold mb-2 text-orange-300">96.7%</div>
-                <div className="text-gray-400">お客様満足度</div>
+                <div className="text-3xl font-bold mb-2 text-orange-500">96.7%</div>
+                <div className="text-gray-600 font-medium">お客様満足度</div>
               </div>
               <div className="text-center">
-                <div 
+                <div
                   className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
                   style={{ background: 'linear-gradient(135deg, #f59e0b, #eab308)' }}
                 >
                   <Clock className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold mb-2 text-orange-300">27年</div>
-                <div className="text-gray-400">総合経験年数</div>
+                <div className="text-3xl font-bold mb-2 text-orange-500">27年</div>
+                <div className="text-gray-600 font-medium">総合経験年数</div>
               </div>
             </div>
           </div>

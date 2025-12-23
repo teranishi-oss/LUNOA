@@ -27,10 +27,10 @@ export function Contact() {
     <section id="contact" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-appear">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-600 mb-6 font-handwriting">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-700 mb-6 font-handwriting">
             予約フォーム・お問い合わせ
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
             美容整体で理想の体を手に入れませんか？お気軽にご予約・お問い合わせください。
           </p>
         </div>
@@ -47,8 +47,8 @@ export function Contact() {
                     {info.icon}
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-600 mb-1">{info.title}</h4>
-                    <p className="text-gray-400">{info.content}</p>
+                    <h4 className="font-semibold text-gray-700 mb-1 text-base">{info.title}</h4>
+                    <p className="text-gray-600 text-sm md:text-base">{info.content}</p>
                   </div>
                 </div>
               ))}
@@ -80,50 +80,50 @@ export function Contact() {
           </div>
 
           <div className="bg-white rounded-3xl shadow-sm p-8 animate-appear delay-300 border border-gold-100">
-            <h3 className="text-2xl font-bold text-gray-600 mb-6 font-heading">お問い合わせフォーム</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-gray-700 mb-6 font-heading">お問い合わせフォーム</h3>
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-600 mb-2">お名前</label>
-                  <input 
+                  <label className="block text-sm md:text-base font-medium text-gray-700 mb-2">お名前</label>
+                  <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
+                    className="w-full px-4 py-3 text-base border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
                     placeholder="山田 太郎"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-600 mb-2">フリガナ</label>
-                  <input 
+                  <label className="block text-sm md:text-base font-medium text-gray-700 mb-2">フリガナ</label>
+                  <input
                     type="text"
-                    className="w-full px-4 py-3 border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
+                    className="w-full px-4 py-3 text-base border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
                     placeholder="ヤマダ タロウ"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-600 mb-2">メールアドレス</label>
-                <input 
+                <label className="block text-sm md:text-base font-medium text-gray-700 mb-2">メールアドレス</label>
+                <input
                   type="email"
-                  className="w-full px-4 py-3 border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
+                  className="w-full px-4 py-3 text-base border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
                   placeholder="example@email.com"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-600 mb-2">電話番号</label>
-                <input 
+                <label className="block text-sm md:text-base font-medium text-gray-700 mb-2">電話番号</label>
+                <input
                   type="tel"
-                  className="w-full px-4 py-3 border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
+                  className="w-full px-4 py-3 text-base border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors"
                   placeholder="090-1234-5678"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-600 mb-2">メッセージ</label>
-                <textarea 
+                <label className="block text-sm md:text-base font-medium text-gray-700 mb-2">メッセージ</label>
+                <textarea
                   rows={4}
-                  className="w-full px-4 py-3 border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors resize-none"
+                  className="w-full px-4 py-3 text-base border border-gold-200 rounded-xl focus:ring-2 focus:ring-gold-500 focus:border-gold-500 transition-colors resize-none"
                   placeholder="お体の状態やお悩み、ご希望などをお聞かせください。"
                 ></textarea>
               </div>
