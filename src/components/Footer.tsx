@@ -65,7 +65,7 @@ export function Footer() {
               <h5 className="font-bold mb-3">SNS</h5>
               <div className="flex space-x-4">
                 <a
-                  href="https://www.instagram.com/lunoa_shibuya/?hl=ja"
+                  href="https://www.instagram.com/lunoa_biyouseitai/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 hover:bg-[#D4AF37] rounded-full flex items-center justify-center transition-all duration-200"
