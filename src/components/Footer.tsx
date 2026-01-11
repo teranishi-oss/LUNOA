@@ -51,7 +51,7 @@ export function Footer() {
             <h4 className="text-xl font-bold">ご予約・お問い合わせ</h4>
             <div className="space-y-4">
               <a
-                href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
+                href="https://duplicated-imdj.bolt.host/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block bg-[#D4AF37] hover:bg-[#B8941F] text-white font-bold py-3 px-6 rounded-xl text-center transition-all duration-200"

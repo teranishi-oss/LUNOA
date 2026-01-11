@@ -112,7 +112,7 @@ export function Services() {
                 <div className="border-t border-gray-100 pt-6">
                   <div className="space-y-3">
                     <a
-                      href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
+                      href="https://duplicated-imdj.bolt.host/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group w-full bg-gradient-to-r from-pink-400 to-rose-500 hover:from-pink-500 hover:to-rose-600 text-white font-bold py-4 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center space-x-2"

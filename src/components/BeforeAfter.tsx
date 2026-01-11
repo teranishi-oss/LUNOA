@@ -184,7 +184,7 @@ export function BeforeAfter() {
                     </div>
 
                     <a
-                      href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
+                      href="https://duplicated-imdj.bolt.host/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 space-x-2"
@@ -248,7 +248,7 @@ export function BeforeAfter() {
                   </div>
 
                   <a
-                    href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
+                    href="https://duplicated-imdj.bolt.host/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 space-x-2"

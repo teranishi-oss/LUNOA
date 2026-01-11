@@ -99,7 +99,7 @@ export function Results() {
                 </p>
 
                 <a
-                  href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
+                  href="https://duplicated-imdj.bolt.host/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center bg-gradient-to-r from-[#D4AF37] to-[#FFD700] hover:from-[#B8941F] hover:to-[#D4AF37] text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 space-x-2"

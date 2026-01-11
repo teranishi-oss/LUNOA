@@ -55,14 +55,14 @@ export function Contact() {
             </div>
 
             <div className="text-center">
-              <a 
-                href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
-                target="_blank" 
+              <a
+                href="https://duplicated-imdj.bolt.host/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-md hover:shadow-lg transform hover:scale-[1.02] transition-all duration-200 no-underline"
               >
                 <Calendar className="w-5 h-5 inline mr-2" />
-                ホットペッパービューティーで予約
+                WEB予約
               </a>
             </div>
 

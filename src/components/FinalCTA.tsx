@@ -25,8 +25,8 @@ export function FinalCTA() {
 
           {/* CTAボタン */}
           <div className="space-y-6">
-            <a 
-              href="https://beauty.hotpepper.jp/CSP/kr/reserve/?storeId=H000777760"
+            <a
+              href="https://duplicated-imdj.bolt.host/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#D4AF37] hover:bg-[#B8941F] text-white font-bold px-16 py-6 rounded-full text-2xl shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-3xl"
