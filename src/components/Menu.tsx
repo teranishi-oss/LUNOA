@@ -56,7 +56,7 @@ export function Menu() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 bg-gradient-to-r from-pink-400 to-rose-400 hover:from-pink-500 hover:to-rose-500 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 group shadow-md"
               >
-                <span>詳しく見る</span>
+                <span>店舗予約</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </a>
             </div>
