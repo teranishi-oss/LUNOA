@@ -46,13 +46,13 @@ export function Results() {
   const currentData = beforeAfterData[currentIndex];
 
   return (
-    <section id="results" className="py-16 md:py-24 bg-[#FAF9F6]">
+    <section id="results" className="py-24 md:py-32 bg-[#FAFAF8]">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#2C2C2C] mb-6">
+        <div className="text-center mb-20">
+          <h2 className="mb-8">
             たった1回でこんなに変わる
           </h2>
-          <p className="text-xl text-[#2C2C2C]/70 max-w-2xl mx-auto">
+          <p className="text-[#6A6A6A] max-w-2xl mx-auto">
             実際のお客様のBefore/After写真をご覧ください。
             深層部アプローチで驚きの変化を実現します。
           </p>
@@ -60,41 +60,40 @@ export function Results() {
 
         <div className="max-w-5xl mx-auto">
           {/* メインコンテンツ */}
-          <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden mb-8">
+          <div className="relative bg-[#F3F2EE] overflow-hidden mb-12">
             <div className="grid lg:grid-cols-2 gap-0">
               {/* Before/After画像 */}
-              <div className="relative h-96 lg:h-auto bg-[#FAF9F6]">
+              <div className="relative h-96 lg:h-auto bg-[#F3F2EE]">
                 <img
                   src={currentData.image}
                   alt={`${currentData.title} Before/After`}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain opacity-95"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = logoImage;
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none"></div>
 
                 {/* カテゴリーバッジ */}
                 <div className="absolute top-4 left-4">
-                  <span className="bg-[#D4AF37] text-white px-4 py-2 rounded-full text-sm font-bold">
+                  <span className="bg-[#8F846B] text-[#FAFAF8] px-4 py-2 text-sm">
                     実績No.{currentData.id}
                   </span>
                 </div>
               </div>
 
               {/* コンテンツ部分 */}
-              <div className="p-8 lg:p-12 flex flex-col justify-center">
-                <div className="mb-6">
-                  <h3 className="text-3xl font-bold text-[#2C2C2C] mb-4">{currentData.title}</h3>
-                  <div className="bg-gradient-to-r from-[#E8D5E8] to-[#FFE4E1] p-4 rounded-xl border border-[#D4AF37]/20">
-                    <p className="text-[#2C2C2C] font-bold text-lg italic">
-                      "{currentData.description}"
+              <div className="p-10 lg:p-12 flex flex-col justify-center">
+                <div className="mb-8">
+                  <h3 className="mb-6">{currentData.title}</h3>
+                  <div className="bg-[#FAFAF8] p-6">
+                    <p className="text-[#2E2E2E]">
+                      {currentData.description}
                     </p>
                   </div>
                 </div>
 
-                <p className="text-[#2C2C2C]/70 leading-relaxed mb-6 text-lg">
+                <p className="text-[#6A6A6A] mb-8">
                   {currentData.details}
                 </p>
 
@@ -102,10 +101,10 @@ export function Results() {
                   href="https://duplicated-imdj.bolt.host/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center bg-gradient-to-r from-[#D4AF37] to-[#FFD700] hover:from-[#B8941F] hover:to-[#D4AF37] text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 space-x-2"
+                  className="cta inline-flex items-center space-x-2 justify-center"
                 >
                   <span>あなたも美しく変身</span>
-                  <ChevronRight className="w-5 h-5" />
+                  <ChevronRight className="w-4 h-4" />
                 </a>
               </div>
             </div>
@@ -113,20 +112,20 @@ export function Results() {
             {/* ナビゲーションボタン */}
             <button
               onClick={prevSlide}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-[#2C2C2C] p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-[#FAFAF8]/90 hover:bg-[#FAFAF8] text-[#2E2E2E] p-3 transition-opacity duration-200 hover:opacity-70"
             >
-              <ChevronLeft className="w-6 h-6" />
+              <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={nextSlide}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-[#2C2C2C] p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-[#FAFAF8]/90 hover:bg-[#FAFAF8] text-[#2E2E2E] p-3 transition-opacity duration-200 hover:opacity-70"
             >
-              <ChevronRight className="w-6 h-6" />
+              <ChevronRight className="w-5 h-5" />
             </button>
           </div>
 
           {/* インジケーター */}
-          <div className="flex justify-center space-x-3 mb-12">
+          <div className="flex justify-center space-x-3 mb-16">
             {beforeAfterData.map((_, index) => (
               <button
                 key={index}
@@ -134,69 +133,69 @@ export function Results() {
                   setCurrentIndex(index);
                   setSliderPosition(50);
                 }}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                className={`h-1 transition-all duration-200 ${
                   index === currentIndex
-                    ? 'bg-[#D4AF37] w-8'
-                    : 'bg-[#2C2C2C]/30 hover:bg-[#2C2C2C]/50'
+                    ? 'bg-[#8F846B] w-8'
+                    : 'bg-[#B9A98A]/30 hover:bg-[#B9A98A]/50 w-6'
                 }`}
               />
             ))}
           </div>
 
           {/* サムネイル一覧 */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
             {beforeAfterData.map((item, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`bg-white rounded-2xl p-4 shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1 ${
-                  index === currentIndex ? 'ring-2 ring-[#D4AF37]' : ''
+                className={`bg-[#F3F2EE] p-6 transition-opacity duration-200 hover:opacity-90 ${
+                  index === currentIndex ? 'border border-[#B9A98A]' : ''
                 }`}
               >
                 <div className="text-center">
-                  <div className="h-32 rounded-lg overflow-hidden mb-3 bg-[#FAF9F6]">
+                  <div className="h-32 overflow-hidden mb-4 bg-[#FAFAF8]">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-contain opacity-95"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.src = logoImage;
                       }}
                     />
                   </div>
-                  <div className="font-semibold text-[#2C2C2C] text-sm mb-1">{item.title}</div>
-                  <div className="text-xs text-[#D4AF37] font-medium">実績No.{item.id}</div>
+                  <div className="text-[#2E2E2E] text-sm mb-1">{item.title}</div>
+                  <div className="text-xs text-[#8F846B]">実績No.{item.id}</div>
                 </div>
               </button>
             ))}
           </div>
 
           {/* 実績統計 */}
-          <div className="bg-white rounded-3xl shadow-lg p-8">
-            <h3 className="text-2xl font-bold text-[#2C2C2C] text-center mb-8">改善実績</h3>
+          <div className="bg-[#F3F2EE] p-10">
+            <h3 className="text-center mb-12">改善実績</h3>
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold text-[#D4AF37] mb-2">96.7%</div>
-                <div className="text-[#2C2C2C]/70">改善実感率</div>
+                <div className="text-3xl text-[#8F846B] mb-2">96.7%</div>
+                <div className="text-[#6A6A6A]">改善実感率</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-[#D4AF37] mb-2">3500+</div>
-                <div className="text-[#2C2C2C]/70">施術実績</div>
+                <div className="text-3xl text-[#8F846B] mb-2">3500+</div>
+                <div className="text-[#6A6A6A]">施術実績</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-[#D4AF37] mb-2">最短5分</div>
-                <div className="text-[#2C2C2C]/70">で変化を体感</div>
+                <div className="text-3xl text-[#8F846B] mb-2">最短5分</div>
+                <div className="text-[#6A6A6A]">で変化を体感</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-[#D4AF37] mb-2">95.2%</div>
-                <div className="text-[#2C2C2C]/70">お客様満足度</div>
+                <div className="text-3xl text-[#8F846B] mb-2">95.2%</div>
+                <div className="text-[#6A6A6A]">お客様満足度</div>
               </div>
             </div>
           </div>
 
           {/* 注意書き */}
-          <p className="text-center text-[#2C2C2C]/60 text-sm mt-8">
+          <p className="text-center text-[#6A6A6A] text-sm mt-8">
             ※効果には個人差があります。写真は実際のお客様の施術結果です。
           </p>
         </div>
