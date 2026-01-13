@@ -2,7 +2,7 @@ import React from 'react';
 import step1Image from '../assets/step1-1.jpeg';
 import step2Image from '../assets/step2-1.jpeg';
 import step3Image from '../assets/step3-1.jpeg';
-import step4Image from '../assets/6f9mcamu copy.jpeg';
+import step4Image from '../assets/step4-1.jpeg';
 
 const flowSteps = [
   {
