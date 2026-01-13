@@ -44,39 +44,39 @@ export function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-16 md:py-24 bg-white">
+    <section id="faq" className="py-24 md:py-32 bg-[#F3F2EE]">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#2C2C2C] mb-6">
+        <div className="text-center mb-20">
+          <h2 className="mb-6">
             よくあるご質問
           </h2>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="space-y-4">
+          <div className="space-y-6">
             {faqData.map((faq, index) => (
-              <div 
+              <div
                 key={index}
-                className="bg-white border border-[#E8D5E8] rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200"
+                className="bg-[#FAFAF8] border border-[#B9A98A]/20 transition-opacity duration-200 hover:opacity-90"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full p-6 text-left flex items-center justify-between hover:bg-[#FAF9F6] transition-colors duration-200 rounded-2xl"
+                  className="w-full p-8 text-left flex items-center justify-between transition-opacity duration-200"
                 >
-                  <span className="font-bold text-[#2C2C2C] pr-4">
+                  <span className="pr-4 text-[#2E2E2E]">
                     Q. {faq.question}
                   </span>
                   {openIndex === index ? (
-                    <ChevronUp className="w-6 h-6 text-[#D4AF37] flex-shrink-0" />
+                    <ChevronUp className="w-5 h-5 text-[#8F846B] flex-shrink-0" />
                   ) : (
-                    <ChevronDown className="w-6 h-6 text-[#D4AF37] flex-shrink-0" />
+                    <ChevronDown className="w-5 h-5 text-[#8F846B] flex-shrink-0" />
                   )}
                 </button>
-                
+
                 {openIndex === index && (
-                  <div className="px-6 pb-6">
-                    <div className="bg-[#FAF9F6] p-4 rounded-xl">
-                      <p className="text-[#2C2C2C]/70 leading-relaxed">
+                  <div className="px-8 pb-8">
+                    <div className="bg-[#F3F2EE] p-6">
+                      <p className="text-[#6A6A6A]">
                         A. {faq.answer}
                       </p>
                     </div>

@@ -25,60 +25,60 @@ export function Header() {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-white shadow-lg' 
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
+      isScrolled
+        ? 'bg-[#FAFAF8]/95 backdrop-blur-sm'
         : 'bg-transparent'
     }`}>
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           {/* ロゴ */}
           <div className="flex items-center">
             <img
               src={logoImage}
               alt="LUNOA 美容整体ロゴ"
-              className="h-12 w-auto"
+              className="h-11 w-auto opacity-90"
             />
           </div>
 
           {/* デスクトップナビゲーション */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            <button 
+          <nav className="hidden lg:flex items-center space-x-10">
+            <button
               onClick={() => handleNavClick('#features')}
-              className={`font-medium transition-colors duration-200 ${
-                isScrolled ? 'text-[#2C2C2C] hover:text-[#D4AF37]' : 'text-white hover:text-[#D4AF37]'
+              className={`transition-opacity duration-200 ${
+                isScrolled ? 'text-[#2E2E2E] hover:opacity-70' : 'text-white/90 hover:opacity-70'
               }`}
             >
               特長
             </button>
-            <button 
+            <button
               onClick={() => handleNavClick('#menu')}
-              className={`font-medium transition-colors duration-200 ${
-                isScrolled ? 'text-[#2C2C2C] hover:text-[#D4AF37]' : 'text-white hover:text-[#D4AF37]'
+              className={`transition-opacity duration-200 ${
+                isScrolled ? 'text-[#2E2E2E] hover:opacity-70' : 'text-white/90 hover:opacity-70'
               }`}
             >
               施術メニュー
             </button>
-            <button 
+            <button
               onClick={() => handleNavClick('#results')}
-              className={`font-medium transition-colors duration-200 ${
-                isScrolled ? 'text-[#2C2C2C] hover:text-[#D4AF37]' : 'text-white hover:text-[#D4AF37]'
+              className={`transition-opacity duration-200 ${
+                isScrolled ? 'text-[#2E2E2E] hover:opacity-70' : 'text-white/90 hover:opacity-70'
               }`}
             >
               実績
             </button>
-            <button 
+            <button
               onClick={() => handleNavClick('#access')}
-              className={`font-medium transition-colors duration-200 ${
-                isScrolled ? 'text-[#2C2C2C] hover:text-[#D4AF37]' : 'text-white hover:text-[#D4AF37]'
+              className={`transition-opacity duration-200 ${
+                isScrolled ? 'text-[#2E2E2E] hover:opacity-70' : 'text-white/90 hover:opacity-70'
               }`}
             >
               アクセス
             </button>
-            <button 
+            <button
               onClick={() => handleNavClick('#faq')}
-              className={`font-medium transition-colors duration-200 ${
-                isScrolled ? 'text-[#2C2C2C] hover:text-[#D4AF37]' : 'text-white hover:text-[#D4AF37]'
+              className={`transition-opacity duration-200 ${
+                isScrolled ? 'text-[#2E2E2E] hover:opacity-70' : 'text-white/90 hover:opacity-70'
               }`}
             >
               FAQ
@@ -91,9 +91,9 @@ export function Header() {
               href="https://duplicated-imdj.bolt.host/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#D4AF37] hover:bg-[#B8941F] text-white font-bold px-6 py-3 rounded-full transition-all duration-200 hover:shadow-lg hover:scale-105 flex items-center space-x-2"
+              className="cta inline-flex items-center space-x-2"
             >
-              <Calendar className="w-5 h-5" />
+              <Calendar className="w-4 h-4" />
               <span>WEB予約</span>
             </a>
           </div>
@@ -101,45 +101,45 @@ export function Header() {
           {/* モバイルメニューボタン */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`lg:hidden p-2 transition-colors ${
-              isScrolled ? 'text-[#2C2C2C]' : 'text-white'
+            className={`lg:hidden p-2 transition-opacity ${
+              isScrolled ? 'text-[#2E2E2E]' : 'text-white/90'
             }`}
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
 
         {/* モバイルナビゲーション */}
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 bg-white rounded-lg shadow-lg">
-            <nav className="flex flex-col space-y-4 p-4">
-              <button 
+          <div className="lg:hidden mt-6 pb-4 bg-[#F3F2EE]">
+            <nav className="flex flex-col space-y-5 p-6">
+              <button
                 onClick={() => handleNavClick('#features')}
-                className="text-[#2C2C2C] hover:text-[#D4AF37] font-medium text-left transition-colors duration-200"
+                className="text-[#2E2E2E] hover:opacity-70 text-left transition-opacity duration-200"
               >
                 特長
               </button>
-              <button 
+              <button
                 onClick={() => handleNavClick('#menu')}
-                className="text-[#2C2C2C] hover:text-[#D4AF37] font-medium text-left transition-colors duration-200"
+                className="text-[#2E2E2E] hover:opacity-70 text-left transition-opacity duration-200"
               >
                 施術メニュー
               </button>
-              <button 
+              <button
                 onClick={() => handleNavClick('#results')}
-                className="text-[#2C2C2C] hover:text-[#D4AF37] font-medium text-left transition-colors duration-200"
+                className="text-[#2E2E2E] hover:opacity-70 text-left transition-opacity duration-200"
               >
                 実績
               </button>
-              <button 
+              <button
                 onClick={() => handleNavClick('#access')}
-                className="text-[#2C2C2C] hover:text-[#D4AF37] font-medium text-left transition-colors duration-200"
+                className="text-[#2E2E2E] hover:opacity-70 text-left transition-opacity duration-200"
               >
                 アクセス
               </button>
-              <button 
+              <button
                 onClick={() => handleNavClick('#faq')}
-                className="text-[#2C2C2C] hover:text-[#D4AF37] font-medium text-left transition-colors duration-200"
+                className="text-[#2E2E2E] hover:opacity-70 text-left transition-opacity duration-200"
               >
                 FAQ
               </button>
@@ -147,7 +147,7 @@ export function Header() {
                 href="https://duplicated-imdj.bolt.host/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#D4AF37] hover:bg-[#B8941F] text-white font-bold px-6 py-3 rounded-full transition-all duration-200 text-center"
+                className="cta text-center inline-block"
                 onClick={() => setIsMenuOpen(false)}
               >
                 WEB予約

@@ -3,24 +3,24 @@ import { MapPin, Clock, Phone, Brain as Train } from 'lucide-react';
 
 export function Access() {
   return (
-    <section id="access" className="py-16 md:py-24 bg-gradient-to-br from-[#FAF9F6] to-[#F5F5F5]">
+    <section id="access" className="py-24 md:py-32 bg-[#FAFAF8]">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#2C2C2C] mb-6">
+        <div className="text-center mb-20">
+          <h2 className="mb-6">
             アクセス
           </h2>
         </div>
 
         {/* 渋谷院 */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <h3 className="text-3xl font-bold text-[#2C2C2C] mb-8 text-center">渋谷院</h3>
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <div className="space-y-6">
+        <div className="max-w-4xl mx-auto mb-16">
+          <h3 className="text-center mb-10">渋谷院</h3>
+          <div className="bg-[#F3F2EE] p-10">
+            <div className="space-y-8">
               <div className="flex items-start space-x-4">
-                <MapPin className="w-6 h-6 text-[#D4AF37] mt-1 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-[#8F846B] mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-bold text-[#2C2C2C] mb-1">住所</h4>
-                  <p className="text-[#2C2C2C]/70">
+                  <h4 className="mb-2">住所</h4>
+                  <p className="text-[#6A6A6A]">
                     東京都渋谷区道玄坂1-19-13<br />
                     トップヒル並木5F
                   </p>
@@ -28,20 +28,20 @@ export function Access() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <Train className="w-6 h-6 text-[#D4AF37] mt-1 flex-shrink-0" />
+                <Train className="w-5 h-5 text-[#8F846B] mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-bold text-[#2C2C2C] mb-1">アクセス</h4>
-                  <p className="text-[#2C2C2C]/70">
+                  <h4 className="mb-2">アクセス</h4>
+                  <p className="text-[#6A6A6A]">
                     渋谷駅ハチ公口から徒歩3分
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
-                <Clock className="w-6 h-6 text-[#D4AF37] mt-1 flex-shrink-0" />
+                <Clock className="w-5 h-5 text-[#8F846B] mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-bold text-[#2C2C2C] mb-1">営業時間</h4>
-                  <p className="text-[#2C2C2C]/70">
+                  <h4 className="mb-2">営業時間</h4>
+                  <p className="text-[#6A6A6A]">
                     10:00～21:00<br />
                     定休日：不定休
                   </p>
@@ -49,10 +49,10 @@ export function Access() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <Phone className="w-6 h-6 text-[#D4AF37] mt-1 flex-shrink-0" />
+                <Phone className="w-5 h-5 text-[#8F846B] mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-bold text-[#2C2C2C] mb-1">電話番号</h4>
-                  <p className="text-[#2C2C2C]/70">
+                  <h4 className="mb-2">電話番号</h4>
+                  <p className="text-[#6A6A6A]">
                     03-6455-3271
                   </p>
                 </div>
@@ -62,15 +62,15 @@ export function Access() {
         </div>
 
         {/* 梅田院 */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <h3 className="text-3xl font-bold text-[#2C2C2C] mb-8 text-center">梅田院</h3>
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <div className="space-y-6">
+        <div className="max-w-4xl mx-auto mb-16">
+          <h3 className="text-center mb-10">梅田院</h3>
+          <div className="bg-[#F3F2EE] p-10">
+            <div className="space-y-8">
               <div className="flex items-start space-x-4">
-                <MapPin className="w-6 h-6 text-[#D4AF37] mt-1 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-[#8F846B] mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-bold text-[#2C2C2C] mb-1">住所</h4>
-                  <p className="text-[#2C2C2C]/70">
+                  <h4 className="mb-2">住所</h4>
+                  <p className="text-[#6A6A6A]">
                     大阪府大阪市北区太融寺町8-2<br />
                     梅田エーワンビル9階　902
                   </p>
@@ -78,20 +78,20 @@ export function Access() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <Train className="w-6 h-6 text-[#D4AF37] mt-1 flex-shrink-0" />
+                <Train className="w-5 h-5 text-[#8F846B] mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-bold text-[#2C2C2C] mb-1">アクセス</h4>
-                  <p className="text-[#2C2C2C]/70">
+                  <h4 className="mb-2">アクセス</h4>
+                  <p className="text-[#6A6A6A]">
                     梅田駅から徒歩圏内
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
-                <Clock className="w-6 h-6 text-[#D4AF37] mt-1 flex-shrink-0" />
+                <Clock className="w-5 h-5 text-[#8F846B] mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-bold text-[#2C2C2C] mb-1">営業時間</h4>
-                  <p className="text-[#2C2C2C]/70">
+                  <h4 className="mb-2">営業時間</h4>
+                  <p className="text-[#6A6A6A]">
                     10:00～21:00<br />
                     定休日：不定休
                   </p>
@@ -99,10 +99,10 @@ export function Access() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <Phone className="w-6 h-6 text-[#D4AF37] mt-1 flex-shrink-0" />
+                <Phone className="w-5 h-5 text-[#8F846B] mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-bold text-[#2C2C2C] mb-1">電話番号</h4>
-                  <p className="text-[#2C2C2C]/70">
+                  <h4 className="mb-2">電話番号</h4>
+                  <p className="text-[#6A6A6A]">
                     090-4331-6914
                   </p>
                 </div>
@@ -116,9 +116,9 @@ export function Access() {
             href="https://duplicated-imdj.bolt.host/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#D4AF37] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#C4A037] transition-colors duration-300 shadow-lg"
+            className="cta inline-flex items-center space-x-2"
           >
-            詳しい地図を見る
+            <span>詳しい地図を見る</span>
           </a>
         </div>
       </div>

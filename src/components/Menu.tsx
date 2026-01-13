@@ -30,34 +30,35 @@ const menuItems = [
 
 export function Menu() {
   return (
-    <section id="menu" className="py-16 md:py-24 bg-gray-50">
+    <section id="menu" className="py-24 md:py-32 bg-[#F3F2EE]">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-20">
+          <h2 className="mb-6">
             施術メニュー
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-[#6A6A6A]">
             お客様のお悩みに合わせた最適な施術をご提供
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {menuItems.map((item) => (
+        <div className="grid md:grid-cols-2 gap-12 md:gap-x-16 md:gap-y-20 max-w-5xl mx-auto">
+          {menuItems.map((item, index) => (
             <div
               key={item.id}
-              className="bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 p-8"
+              className="bg-[#FAFAF8] transition-opacity duration-200 hover:opacity-90 p-10"
+              style={{ marginTop: index % 2 === 1 ? '40px' : '0' }}
             >
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">{item.name}</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">{item.description}</p>
+              <h3 className="mb-6">{item.name}</h3>
+              <p className="text-[#6A6A6A] mb-8">{item.description}</p>
 
               <a
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 bg-gradient-to-r from-pink-400 to-rose-400 hover:from-pink-500 hover:to-rose-500 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 group shadow-md"
+                className="cta inline-flex items-center space-x-2"
               >
                 <span>店舗予約</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+                <ArrowRight className="w-4 h-4" />
               </a>
             </div>
           ))}
