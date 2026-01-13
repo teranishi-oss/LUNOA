@@ -1,5 +1,5 @@
 import React from 'react';
-import step1Image from '../assets/gb6dqnat copy copy.png';
+import step1Image from '../assets/step1-1.jpeg';
 import step2Image from '../assets/uixw7rjj copy.jpeg';
 import step3Image from '../assets/ppfjscwj copy copy.jpeg';
 import step4Image from '../assets/6f9mcamu copy.jpeg';
