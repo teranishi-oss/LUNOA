@@ -152,7 +152,7 @@ export function Therapists() {
                 >
                   <Award className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-3xl font-bold mb-2 text-orange-500">1400名+</div>
+                <div className="text-3xl font-bold mb-2 text-orange-500">3500名+</div>
                 <div className="text-gray-600 font-medium">施術実績</div>
               </div>
               <div className="text-center">

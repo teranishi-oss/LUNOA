@@ -181,7 +181,7 @@ export function Results() {
                 <div className="text-[#2C2C2C]/70">改善実感率</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-[#D4AF37] mb-2">1400+</div>
+                <div className="text-4xl font-bold text-[#D4AF37] mb-2">3500+</div>
                 <div className="text-[#2C2C2C]/70">施術実績</div>
               </div>
               <div>

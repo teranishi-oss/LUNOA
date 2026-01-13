@@ -3,7 +3,7 @@ import { Target, Heart, Shield, Award, Users, Clock } from 'lucide-react';
 
 const stats = [
   { icon: <Award className="w-6 h-6" />, value: "1年3ヶ月", label: "の実績" },
-  { icon: <Users className="w-6 h-6" />, value: "1400名", label: "以上の実績" },
+  { icon: <Users className="w-6 h-6" />, value: "3500名", label: "以上の実績" },
   { icon: <Clock className="w-6 h-6" />, value: "96.7%", label: "の改善実感率" },
   { icon: <Shield className="w-6 h-6" />, value: "完全", label: "個室対応" }
 ];

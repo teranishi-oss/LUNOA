@@ -330,7 +330,7 @@ export function BeforeAfter() {
               <div className="text-gray-600">改善実感率</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-pink-500 mb-2">1400+</div>
+              <div className="text-4xl font-bold text-pink-500 mb-2">3500+</div>
               <div className="text-gray-600">施術実績</div>
             </div>
             <div>
