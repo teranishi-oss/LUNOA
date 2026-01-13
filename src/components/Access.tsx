@@ -97,16 +97,6 @@ export function Access() {
                   </p>
                 </div>
               </div>
-
-              <div className="flex items-start space-x-4">
-                <Phone className="w-5 h-5 text-[#8F846B] mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="mb-2">電話番号</h4>
-                  <p className="text-[#6A6A6A]">
-                    090-4331-6914
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
