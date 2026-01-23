@@ -20,19 +20,19 @@ export function LuxuryHero() {
         <div className="text-center text-white px-6 max-w-4xl mx-auto">
           {/* Main Heading */}
           <h1
-            className="text-5xl md:text-7xl lg:text-8xl tracking-[0.2em] mb-8 font-light"
+            className="text-5xl md:text-7xl lg:text-8xl tracking-[0.2em] mb-8 font-light text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]"
             style={{ fontFamily: 'Cinzel, serif' }}
           >
             LUNOA
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl lg:text-2xl tracking-[0.15em] mb-4 font-light">
+          <p className="text-lg md:text-xl lg:text-2xl tracking-[0.15em] mb-4 font-light text-white drop-shadow-[0_3px_10px_rgba(0,0,0,0.8)]">
             高級美容整体サロン
           </p>
 
           {/* Tagline */}
-          <p className="text-sm md:text-base tracking-wider mb-12 opacity-90 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-base tracking-wider mb-12 text-white max-w-2xl mx-auto leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
             あなたの美しさを、内側から引き出す
             <br className="hidden md:block" />
             究極のリラクゼーション体験
