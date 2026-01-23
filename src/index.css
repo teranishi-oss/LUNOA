@@ -45,6 +45,10 @@
     font-size: 15px;
   }
 
+  .font-serif {
+    font-family: 'Cinzel', serif;
+  }
+
   * {
     font-family: 'Noto Sans JP', sans-serif;
   }
