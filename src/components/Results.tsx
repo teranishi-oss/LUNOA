@@ -52,7 +52,7 @@ export function Results() {
           <h2 className="mb-8">
             たった1回でこんなに変わる
           </h2>
-          <p className="text-[#6A6A6A] max-w-2xl mx-auto">
+          <p className="text-[#555555] max-w-2xl mx-auto">
             実際のお客様のBefore/After写真をご覧ください。
             深層部アプローチで驚きの変化を実現します。
           </p>
@@ -93,7 +93,7 @@ export function Results() {
                   </div>
                 </div>
 
-                <p className="text-[#6A6A6A] mb-8">
+                <p className="text-[#555555] mb-8">
                   {currentData.details}
                 </p>
 
@@ -177,25 +177,25 @@ export function Results() {
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
                 <div className="text-3xl text-[#8F846B] mb-2">96.7%</div>
-                <div className="text-[#6A6A6A]">改善実感率</div>
+                <div className="text-[#555555]">改善実感率</div>
               </div>
               <div>
                 <div className="text-3xl text-[#8F846B] mb-2">3500+</div>
-                <div className="text-[#6A6A6A]">施術実績</div>
+                <div className="text-[#555555]">施術実績</div>
               </div>
               <div>
                 <div className="text-3xl text-[#8F846B] mb-2">最短5分</div>
-                <div className="text-[#6A6A6A]">で変化を体感</div>
+                <div className="text-[#555555]">で変化を体感</div>
               </div>
               <div>
                 <div className="text-3xl text-[#8F846B] mb-2">95.2%</div>
-                <div className="text-[#6A6A6A]">お客様満足度</div>
+                <div className="text-[#555555]">お客様満足度</div>
               </div>
             </div>
           </div>
 
           {/* 注意書き */}
-          <p className="text-center text-[#6A6A6A] text-sm mt-8">
+          <p className="text-center text-[#555555] text-sm mt-8">
             ※効果には個人差があります。写真は実際のお客様の施術結果です。
           </p>
         </div>

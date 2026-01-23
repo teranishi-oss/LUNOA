@@ -38,6 +38,7 @@ export function Header() {
               src={logoImage}
               alt="LUNOA 美容整体ロゴ"
               className="h-11 w-auto opacity-90"
+              style={!isScrolled ? { filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3)) drop-shadow(0 1px 2px rgba(0,0,0,0.5))' } : {}}
             />
           </div>
 
@@ -46,40 +47,45 @@ export function Header() {
             <button
               onClick={() => handleNavClick('#features')}
               className={`transition-opacity duration-200 ${
-                isScrolled ? 'text-[#2E2E2E] hover:opacity-70' : 'text-white/90 hover:opacity-70'
+                isScrolled ? 'text-[#2E2E2E] hover:opacity-70' : 'text-white hover:opacity-70'
               }`}
+              style={!isScrolled ? { textShadow: '0 2px 4px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.5)' } : {}}
             >
               特長
             </button>
             <button
               onClick={() => handleNavClick('#menu')}
               className={`transition-opacity duration-200 ${
-                isScrolled ? 'text-[#2E2E2E] hover:opacity-70' : 'text-white/90 hover:opacity-70'
+                isScrolled ? 'text-[#2E2E2E] hover:opacity-70' : 'text-white hover:opacity-70'
               }`}
+              style={!isScrolled ? { textShadow: '0 2px 4px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.5)' } : {}}
             >
               施術メニュー
             </button>
             <button
               onClick={() => handleNavClick('#results')}
               className={`transition-opacity duration-200 ${
-                isScrolled ? 'text-[#2E2E2E] hover:opacity-70' : 'text-white/90 hover:opacity-70'
+                isScrolled ? 'text-[#2E2E2E] hover:opacity-70' : 'text-white hover:opacity-70'
               }`}
+              style={!isScrolled ? { textShadow: '0 2px 4px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.5)' } : {}}
             >
               実績
             </button>
             <button
               onClick={() => handleNavClick('#access')}
               className={`transition-opacity duration-200 ${
-                isScrolled ? 'text-[#2E2E2E] hover:opacity-70' : 'text-white/90 hover:opacity-70'
+                isScrolled ? 'text-[#2E2E2E] hover:opacity-70' : 'text-white hover:opacity-70'
               }`}
+              style={!isScrolled ? { textShadow: '0 2px 4px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.5)' } : {}}
             >
               アクセス
             </button>
             <button
               onClick={() => handleNavClick('#faq')}
               className={`transition-opacity duration-200 ${
-                isScrolled ? 'text-[#2E2E2E] hover:opacity-70' : 'text-white/90 hover:opacity-70'
+                isScrolled ? 'text-[#2E2E2E] hover:opacity-70' : 'text-white hover:opacity-70'
               }`}
+              style={!isScrolled ? { textShadow: '0 2px 4px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.5)' } : {}}
             >
               FAQ
             </button>
@@ -102,8 +108,9 @@ export function Header() {
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className={`lg:hidden p-2 transition-opacity ${
-              isScrolled ? 'text-[#2E2E2E]' : 'text-white/90'
+              isScrolled ? 'text-[#2E2E2E]' : 'text-white'
             }`}
+            style={!isScrolled ? { filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3)) drop-shadow(0 1px 2px rgba(0,0,0,0.5))' } : {}}
           >
             {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>

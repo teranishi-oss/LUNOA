@@ -31,15 +31,15 @@ export function Features() {
           <div className="text-[#2E2E2E] mb-8">
             「小顔矯正」「姿勢矯正」「骨盤調整」「肩こり・腰痛ケア」
           </div>
-          <p className="text-[#6A6A6A] mb-6">
+          <p className="text-[#555555] mb-6">
             LUNOAは、美容と健康の両面から、身体と向き合う整体サロンです。
           </p>
-          <p className="text-[#6A6A6A] mb-6">
+          <p className="text-[#555555] mb-6">
             表面的な変化や一時的な心地よさではなく、<br className="hidden md:inline" />
             骨格・筋膜・筋肉のバランスに丁寧に働きかけ、<br className="hidden md:inline" />
             本来あるべき美しさと、軽やかな身体へ導きます。
           </p>
-          <p className="text-[#6A6A6A]">
+          <p className="text-[#555555]">
             落ち着いた空間、確かな技術、細部まで行き届いたサービス。<br className="hidden md:inline" />
             日常から少し距離を置き、<br className="hidden md:inline" />
             ご自身の身体と静かに向き合う時間をお過ごしください。
@@ -63,7 +63,7 @@ export function Features() {
                 <h4 className="mb-5">
                   {reason.title}
                 </h4>
-                <p className="text-[#6A6A6A]">
+                <p className="text-[#555555]">
                   {reason.description}
                 </p>
               </div>

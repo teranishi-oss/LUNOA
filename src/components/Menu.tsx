@@ -36,7 +36,7 @@ export function Menu() {
           <h2 className="mb-6">
             施術メニュー
           </h2>
-          <p className="text-[#6A6A6A]">
+          <p className="text-[#555555]">
             お客様のお悩みに合わせた最適な施術をご提供
           </p>
         </div>
@@ -49,7 +49,7 @@ export function Menu() {
               style={{ marginTop: index % 2 === 1 ? '40px' : '0' }}
             >
               <h3 className="mb-6">{item.name}</h3>
-              <p className="text-[#6A6A6A] mb-8">{item.description}</p>
+              <p className="text-[#555555] mb-8">{item.description}</p>
 
               <a
                 href={item.link}

@@ -10,16 +10,16 @@ export function FinalCTA() {
             今すぐ体感してください
           </h2>
 
-          <p className="text-[#6A6A6A] mb-12">
+          <p className="text-[#555555] mb-12">
             初回限定キャンペーン実施中
           </p>
 
           {/* 価格強調 */}
           <div className="mb-16">
             <div className="inline-block bg-[#FAFAF8] p-12">
-              <div className="text-[#6A6A6A] line-through text-xl mb-3">¥12,000</div>
+              <div className="text-[#555555] line-through text-xl mb-3">¥12,000</div>
               <div className="price mb-3">¥1,100</div>
-              <div className="text-[#6A6A6A]">初回限定価格</div>
+              <div className="text-[#555555]">初回限定価格</div>
             </div>
           </div>
 
@@ -47,7 +47,7 @@ export function FinalCTA() {
           </div>
 
           {/* 追加情報 */}
-          <div className="mt-16 grid md:grid-cols-3 gap-8 text-[#6A6A6A]">
+          <div className="mt-16 grid md:grid-cols-3 gap-8 text-[#555555]">
             <div className="bg-[#FAFAF8] p-6">
               <div className="mb-2">完全個室</div>
               <div className="text-sm">プライベート空間</div>

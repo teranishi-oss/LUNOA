@@ -76,7 +76,7 @@ export function FAQ() {
                 {openIndex === index && (
                   <div className="px-8 pb-8">
                     <div className="bg-[#F3F2EE] p-6">
-                      <p className="text-[#6A6A6A]">
+                      <p className="text-[#555555]">
                         A. {faq.answer}
                       </p>
                     </div>
