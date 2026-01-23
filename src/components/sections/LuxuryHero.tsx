@@ -41,7 +41,9 @@ export function LuxuryHero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="#reservation"
+              href="https://duplicated-imdj.bolt.host"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-white text-[#2C2C2C] px-10 py-4 text-sm tracking-widest hover:bg-opacity-90 transition-all duration-300 min-w-[200px]"
             >
               ご予約はこちら
