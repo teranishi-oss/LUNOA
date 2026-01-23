@@ -16,7 +16,6 @@ export function LuxuryHeader() {
 
   const menuItems = [
     { label: 'メニュー', href: '#menu' },
-    { label: 'お問合せ', href: '#contact' },
     { label: 'ご予約', href: '#reservation', isPrimary: true }
   ];
 
