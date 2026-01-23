@@ -16,7 +16,7 @@ export function LuxuryHeader() {
 
   const menuItems = [
     { label: 'メニュー', href: '#menu' },
-    { label: 'ご予約', href: '#reservation', isPrimary: true }
+    { label: 'ご予約', href: 'https://duplicated-imdj.bolt.host/', isPrimary: true, external: true }
   ];
 
   return (
@@ -46,6 +46,8 @@ export function LuxuryHeader() {
             <a
               key={item.href}
               href={item.href}
+              target={item.external ? '_blank' : undefined}
+              rel={item.external ? 'noopener noreferrer' : undefined}
               className={`text-sm tracking-wider transition-all duration-300 hover:opacity-70 ${
                 scrolled ? 'text-[#2C2C2C]' : 'text-white'
               } ${
@@ -99,6 +101,8 @@ export function LuxuryHeader() {
               <a
                 key={item.href}
                 href={item.href}
+                target={item.external ? '_blank' : undefined}
+                rel={item.external ? 'noopener noreferrer' : undefined}
                 onClick={() => setMobileMenuOpen(false)}
                 className={`text-lg tracking-wider text-[#2C2C2C] hover:opacity-70 transition-opacity py-3 border-b border-gray-200 ${
                   item.isPrimary ? 'font-medium' : ''
