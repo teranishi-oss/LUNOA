@@ -12,7 +12,7 @@ export function LuxuryHero() {
           className="w-full h-full object-cover"
         />
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/45 to-black/70" />
       </div>
 
       {/* Content */}
@@ -20,19 +20,28 @@ export function LuxuryHero() {
         <div className="text-center text-white px-6 max-w-4xl mx-auto">
           {/* Main Heading */}
           <h1
-            className="text-5xl md:text-7xl lg:text-8xl tracking-[0.2em] mb-8 font-light"
-            style={{ fontFamily: 'Cinzel, serif' }}
+            className="text-5xl md:text-7xl lg:text-8xl tracking-[0.2em] mb-8 font-medium"
+            style={{
+              fontFamily: 'Cinzel, serif',
+              textShadow: '0 4px 20px rgba(0, 0, 0, 0.8), 0 2px 8px rgba(0, 0, 0, 0.6)'
+            }}
           >
             LUNOA
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl lg:text-2xl tracking-[0.15em] mb-4 font-light">
+          <p
+            className="text-lg md:text-xl lg:text-2xl tracking-[0.15em] mb-4 font-normal"
+            style={{ textShadow: '0 2px 12px rgba(0, 0, 0, 0.8), 0 1px 4px rgba(0, 0, 0, 0.6)' }}
+          >
             高級美容整体サロン
           </p>
 
           {/* Tagline */}
-          <p className="text-sm md:text-base tracking-wider mb-12 opacity-90 max-w-2xl mx-auto leading-relaxed">
+          <p
+            className="text-sm md:text-base tracking-wider mb-12 max-w-2xl mx-auto leading-relaxed"
+            style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.8), 0 1px 4px rgba(0, 0, 0, 0.6)' }}
+          >
             あなたの美しさを、内側から引き出す
             <br className="hidden md:block" />
             究極のリラクゼーション体験
@@ -42,13 +51,14 @@ export function LuxuryHero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#reservation"
-              className="inline-block bg-white text-[#2C2C2C] px-10 py-4 text-sm tracking-widest hover:bg-opacity-90 transition-all duration-300 min-w-[200px]"
+              className="inline-block bg-white text-[#2C2C2C] px-10 py-4 text-sm tracking-widest hover:bg-opacity-90 transition-all duration-300 min-w-[200px] font-medium shadow-2xl"
             >
               ご予約はこちら
             </a>
             <a
               href="#menu"
-              className="inline-block border-2 border-white text-white px-10 py-4 text-sm tracking-widest hover:bg-white hover:text-[#2C2C2C] transition-all duration-300 min-w-[200px]"
+              className="inline-block border-2 border-white text-white px-10 py-4 text-sm tracking-widest hover:bg-white hover:text-[#2C2C2C] transition-all duration-300 min-w-[200px] font-medium shadow-2xl backdrop-blur-sm"
+              style={{ textShadow: '0 2px 8px rgba(0, 0, 0, 0.6)' }}
             >
               メニューを見る
             </a>
