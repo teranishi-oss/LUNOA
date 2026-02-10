@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Clock, Phone, Brain as Train } from 'lucide-react';
+import { MapPin, Clock, Phone, Mail, Brain as Train } from 'lucide-react';
 
 export function Access() {
   return (
@@ -57,6 +57,16 @@ export function Access() {
                   </p>
                 </div>
               </div>
+
+              <div className="flex items-start space-x-4">
+                <Mail className="w-5 h-5 text-[#8F846B] mt-1 flex-shrink-0" />
+                <div>
+                  <h4 className="mb-2">メールアドレス</h4>
+                  <p className="text-[#555555]">
+                    seitai.lunoa@gmail.com
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -94,6 +104,16 @@ export function Access() {
                   <p className="text-[#555555]">
                     10:00～21:00<br />
                     定休日：不定休
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <Mail className="w-5 h-5 text-[#8F846B] mt-1 flex-shrink-0" />
+                <div>
+                  <h4 className="mb-2">メールアドレス</h4>
+                  <p className="text-[#555555]">
+                    seitai.lunoa.umeda@gmail.com
                   </p>
                 </div>
               </div>
