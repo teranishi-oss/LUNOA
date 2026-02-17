@@ -109,6 +109,16 @@ export function Access() {
               </div>
 
               <div className="flex items-start space-x-4">
+                <Phone className="w-5 h-5 text-[#8F846B] mt-1 flex-shrink-0" />
+                <div>
+                  <h4 className="mb-2">電話番号</h4>
+                  <p className="text-[#555555]">
+                    06-6450-5004
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
                 <Mail className="w-5 h-5 text-[#8F846B] mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="mb-2">メールアドレス</h4>
