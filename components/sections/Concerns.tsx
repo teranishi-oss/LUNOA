@@ -99,7 +99,7 @@ export function Concerns() {
               <br />
               抱えていませんか。
             </h2>
-            <p className="text-[14px] text-ink-500 leading-relaxed">
+            <p className="inline-block text-[15px] font-bold text-gold-600 bg-gold-500/10 border border-gold-500/30 rounded-pill px-6 py-2.5 leading-relaxed">
               もし一つでも当てはまるなら、ぜひ渋谷院にご相談ください。
             </p>
           </div>
