@@ -49,7 +49,7 @@ export function Concerns() {
 
         <div className="grid md:grid-cols-[0.8fr_1.2fr] gap-10 md:gap-16 items-start">
           <FadeIn>
-            <div className="relative rounded-card overflow-hidden shadow-card border border-gold-500/30 md:sticky md:top-28">
+            <div className="relative rounded-card overflow-hidden md:sticky md:top-28">
               <img
                 src={centerImage}
                 alt="お悩みを抱える女性のイメージ"
