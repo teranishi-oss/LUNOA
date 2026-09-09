@@ -31,11 +31,40 @@ const concerns = [
   },
 ];
 
+const blobShapes = [
+  '58% 42% 45% 55% / 55% 48% 52% 45%',
+  '42% 58% 55% 45% / 45% 55% 45% 55%',
+  '50% 50% 40% 60% / 60% 40% 60% 40%',
+  '55% 45% 60% 40% / 45% 60% 40% 55%',
+  '45% 55% 50% 50% / 50% 45% 55% 50%',
+  '60% 40% 55% 45% / 40% 55% 45% 60%',
+];
+
+function CloudBubble({ text, solution, shape, delay }: { text: string; solution: string; shape: string; delay: number }) {
+  return (
+    <FadeIn delay={delay}>
+      <div className="flex flex-col items-center">
+        <div
+          className="bg-cream-50/95 border border-gold-500/30 shadow-card px-6 py-6 text-center w-full"
+          style={{ borderRadius: shape }}
+        >
+          <p className="text-[14.5px] leading-relaxed text-ink-900 mb-1.5">{text}</p>
+          <p className="text-[11.5px] leading-relaxed text-gold-600">{solution}</p>
+        </div>
+        <div className="flex flex-col items-center gap-1 mt-1.5" aria-hidden="true">
+          <span className="w-2.5 h-2.5 rounded-full bg-cream-50/90 border border-gold-500/30" />
+          <span className="w-1.5 h-1.5 rounded-full bg-cream-50/80 border border-gold-500/25" />
+        </div>
+      </div>
+    </FadeIn>
+  );
+}
+
 export function Concerns() {
   return (
     <section className="relative py-28 md:py-40 bg-cream-50 overflow-hidden">
       <SectionPhotoBg image={bgImage} alt="LUNOA渋谷院の施術ルーム" opacity={0.72} />
-      <div className="max-w-5xl mx-auto px-6 relative">
+      <div className="max-w-4xl mx-auto px-6 relative">
         <FadeIn>
           <div className="mb-16 md:mb-20 text-center">
             <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">Concerns</p>
@@ -50,33 +79,21 @@ export function Concerns() {
           </div>
         </FadeIn>
 
-        <div className="grid md:grid-cols-[0.8fr_1.2fr] gap-10 md:gap-16 items-start">
-          <FadeIn>
-            <div className="md:sticky md:top-28">
-              <img
-                src={centerImage}
-                alt="お悩みを抱える女性のイメージ"
-                className="w-full h-auto object-contain"
-              />
-            </div>
-          </FadeIn>
-
-          <div className="bg-cream-50/85 backdrop-blur-sm rounded-card border border-gold-500/20 shadow-card px-7 py-2 md:px-10">
-            {concerns.map((item, i) => (
-              <FadeIn key={item.text} delay={i * 0.08}>
-                <div className="flex items-start gap-5 py-6 border-b border-gold-500/20 last:border-0">
-                  <span className="font-mincho text-[26px] md:text-[30px] text-gold-500/60 flex-shrink-0 w-11 leading-none pt-1">
-                    {String(i + 1).padStart(2, '0')}
-                  </span>
-                  <div>
-                    <p className="text-[17px] leading-relaxed text-ink-900 mb-2">{item.text}</p>
-                    <p className="text-[13px] leading-relaxed text-gold-600">{item.solution}</p>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 md:gap-x-6">
+          {concerns.map((item, i) => (
+            <CloudBubble key={item.text} {...item} shape={blobShapes[i]} delay={i * 0.08} />
+          ))}
         </div>
+
+        <FadeIn delay={0.4}>
+          <div className="flex justify-center -mt-2 md:-mt-4">
+            <img
+              src={centerImage}
+              alt="お悩みを抱える女性のイメージ"
+              className="w-full max-w-md h-auto object-contain"
+            />
+          </div>
+        </FadeIn>
       </div>
     </section>
   );
