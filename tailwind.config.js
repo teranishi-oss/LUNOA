@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         mincho: ['"Noto Serif JP"', 'serif'],
         sans: ['"Zen Maru Gothic"', '"Hiragino Kaku Gothic ProN"', 'sans-serif'],
+        cute: ['"Mochiy Pop One"', '"Zen Maru Gothic"', 'sans-serif'],
       },
       colors: {
         cream: {

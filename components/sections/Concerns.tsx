@@ -44,18 +44,18 @@ const concerns = [
 ];
 
 const blobShapes = [
-  '58% 42% 45% 55% / 55% 48% 52% 45%',
-  '42% 58% 55% 45% / 45% 55% 45% 55%',
-  '50% 50% 40% 60% / 60% 40% 60% 40%',
-  '55% 45% 60% 40% / 45% 60% 40% 55%',
-  '45% 55% 50% 50% / 50% 45% 55% 50%',
-  '60% 40% 55% 45% / 40% 55% 45% 60%',
+  '46% 54% 48% 52% / 52% 46% 54% 48%',
+  '50% 50% 44% 56% / 48% 52% 48% 52%',
+  '44% 56% 50% 50% / 50% 44% 56% 50%',
+  '52% 48% 46% 54% / 46% 54% 46% 54%',
+  '48% 52% 52% 48% / 54% 48% 52% 46%',
+  '54% 46% 48% 52% / 48% 50% 50% 52%',
 ];
 
 const sizeStyles: Record<string, { pad: string; text: string; sub: string; dot: string }> = {
-  sm: { pad: 'px-5 py-5', text: 'text-[13.5px]', sub: 'text-[11px]', dot: 'w-2 h-2' },
-  md: { pad: 'px-6 py-6', text: 'text-[14.5px]', sub: 'text-[11.5px]', dot: 'w-2.5 h-2.5' },
-  lg: { pad: 'px-7 py-7', text: 'text-[15.5px]', sub: 'text-[12px]', dot: 'w-3 h-3' },
+  sm: { pad: 'px-7 py-8', text: 'text-[14px]', sub: 'text-[11px]', dot: 'w-2 h-2' },
+  md: { pad: 'px-8 py-9', text: 'text-[15px]', sub: 'text-[11.5px]', dot: 'w-2.5 h-2.5' },
+  lg: { pad: 'px-9 py-10', text: 'text-[16px]', sub: 'text-[12px]', dot: 'w-3 h-3' },
 };
 
 interface ConcernItem {
@@ -74,7 +74,7 @@ function CloudBubble({ item, shape, delay }: { item: ConcernItem; shape: string;
           className={`bg-cream-50/95 border border-gold-500/30 shadow-card text-center w-full ${s.pad}`}
           style={{ borderRadius: shape }}
         >
-          <p className={`${s.text} leading-relaxed text-ink-900 mb-1.5`}>{item.text}</p>
+          <p className={`font-cute ${s.text} leading-[1.7] text-ink-900 mb-2`}>{item.text}</p>
           <p className={`${s.sub} leading-relaxed text-gold-600`}>{item.solution}</p>
         </div>
         <div className="flex flex-col items-center gap-1 mt-1.5" aria-hidden="true">
