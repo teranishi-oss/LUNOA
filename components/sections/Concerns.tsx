@@ -1,6 +1,6 @@
 import React from 'react';
 import { FadeIn } from '../FadeIn';
-import centerImage from '../../assets/concerns-portrait.jpg';
+import centerImage from '../../assets/concerns-portrait-cutout.png';
 
 const concerns = [
   {
@@ -49,13 +49,12 @@ export function Concerns() {
 
         <div className="grid md:grid-cols-[0.8fr_1.2fr] gap-10 md:gap-16 items-start">
           <FadeIn>
-            <div className="relative rounded-card overflow-hidden md:sticky md:top-28">
+            <div className="flex justify-center md:justify-start md:sticky md:top-28">
               <img
                 src={centerImage}
                 alt="お悩みを抱える女性のイメージ"
-                className="w-full h-[320px] md:h-[560px] object-cover"
+                className="w-auto h-[340px] md:h-[520px] object-contain"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink-900/25 via-transparent to-transparent" />
             </div>
           </FadeIn>
 
