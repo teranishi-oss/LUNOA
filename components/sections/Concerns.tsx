@@ -6,28 +6,40 @@ import bgImage from '../../assets/concerns-bg.jpg';
 
 const concerns = [
   {
-    text: '年々気になる、姿勢の崩れ。',
-    solution: '骨格から根本的に整え、美しい姿勢へ導きます。',
+    text: '肩や首のこりが気になり、毎日すっきりしない。',
+    solution: '首や肩だけでなく、姿勢や全身のバランスも確認。一人ひとりの体の状態に合わせたケアをご提案します。',
+    size: 'md',
+    shift: 'md:-mt-2',
   },
   {
-    text: 'いろんな整体にいったけど、改善されない。',
-    solution: '深層部への直接アプローチで、これまでと違う変化を。',
+    text: 'デスクワークや立ち仕事で、腰が重くてつらい。',
+    solution: '腰まわりの状態や体の使い方に合わせてケア。日常で負担をかけにくい姿勢や動き方もお伝えします。',
+    size: 'sm',
+    shift: 'md:mt-8',
   },
   {
-    text: '自分で頑張ってみたけど変わらない。',
-    solution: 'プロの手技とセルフケア指導で、着実な変化を実感。',
+    text: '猫背や巻き肩が気になり、写真に写る姿に自信が持てない。',
+    solution: '姿勢のクセに合わせた施術とセルフケアで、横からも後ろからも、美しい立ち姿を目指します。',
+    size: 'lg',
+    shift: 'md:-mt-4',
   },
   {
-    text: '大切なイベント（結婚式など）までに、間に合うか不安。',
-    solution: '逆算した施術計画で、当日までにしっかり結果を。',
+    text: 'マッサージを受けても、しばらくするとつらさが戻ってしまう。',
+    solution: '気になる部分のケアに加えて、日々の姿勢や生活習慣にも着目。無理なく続けられるセルフケアをご提案します。',
+    size: 'lg',
+    shift: 'md:mt-6',
   },
   {
-    text: 'マッサージやエステでは、その場しのぎにしかならなかった。',
-    solution: '表面的なケアでは届かない、筋肉の深層部から根本改善。',
+    text: '結婚式などの大切な日までに、姿勢を整えられるか不安。',
+    solution: '当日までの期間と体の状態に合わせて、理想の姿に近づくための施術プランをご提案します。',
+    size: 'sm',
+    shift: 'md:-mt-6',
   },
   {
-    text: '忙しくて、なかなか自分の体と向き合う時間がない。',
-    solution: '完全個室・渋谷駅徒歩7分だから、忙しい方でも通いやすい。',
+    text: '体を整えたいけれど、ずっと通い続けるのは不安。',
+    solution: '目指すのは、通い続けることではなく「卒業」。自分でもよい状態を保てる体づくりをサポートします。',
+    size: 'md',
+    shift: 'md:mt-4',
   },
 ];
 
@@ -40,19 +52,33 @@ const blobShapes = [
   '60% 40% 55% 45% / 40% 55% 45% 60%',
 ];
 
-function CloudBubble({ text, solution, shape, delay }: { text: string; solution: string; shape: string; delay: number }) {
+const sizeStyles: Record<string, { pad: string; text: string; sub: string; dot: string }> = {
+  sm: { pad: 'px-5 py-5', text: 'text-[13.5px]', sub: 'text-[11px]', dot: 'w-2 h-2' },
+  md: { pad: 'px-6 py-6', text: 'text-[14.5px]', sub: 'text-[11.5px]', dot: 'w-2.5 h-2.5' },
+  lg: { pad: 'px-7 py-7', text: 'text-[15.5px]', sub: 'text-[12px]', dot: 'w-3 h-3' },
+};
+
+interface ConcernItem {
+  text: string;
+  solution: string;
+  size: string;
+  shift: string;
+}
+
+function CloudBubble({ item, shape, delay }: { item: ConcernItem; shape: string; delay: number }) {
+  const s = sizeStyles[item.size];
   return (
-    <FadeIn delay={delay}>
+    <FadeIn delay={delay} className={item.shift}>
       <div className="flex flex-col items-center">
         <div
-          className="bg-cream-50/95 border border-gold-500/30 shadow-card px-6 py-6 text-center w-full"
+          className={`bg-cream-50/95 border border-gold-500/30 shadow-card text-center w-full ${s.pad}`}
           style={{ borderRadius: shape }}
         >
-          <p className="text-[14.5px] leading-relaxed text-ink-900 mb-1.5">{text}</p>
-          <p className="text-[11.5px] leading-relaxed text-gold-600">{solution}</p>
+          <p className={`${s.text} leading-relaxed text-ink-900 mb-1.5`}>{item.text}</p>
+          <p className={`${s.sub} leading-relaxed text-gold-600`}>{item.solution}</p>
         </div>
         <div className="flex flex-col items-center gap-1 mt-1.5" aria-hidden="true">
-          <span className="w-2.5 h-2.5 rounded-full bg-cream-50/90 border border-gold-500/30" />
+          <span className={`${s.dot} rounded-full bg-cream-50/90 border border-gold-500/30`} />
           <span className="w-1.5 h-1.5 rounded-full bg-cream-50/80 border border-gold-500/25" />
         </div>
       </div>
@@ -79,14 +105,14 @@ export function Concerns() {
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 md:gap-x-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-8 md:gap-x-6 md:items-start">
           {concerns.map((item, i) => (
-            <CloudBubble key={item.text} {...item} shape={blobShapes[i]} delay={i * 0.08} />
+            <CloudBubble key={item.text} item={item} shape={blobShapes[i]} delay={i * 0.08} />
           ))}
         </div>
 
         <FadeIn delay={0.4}>
-          <div className="flex justify-center -mt-2 md:-mt-4">
+          <div className="flex justify-center mt-4 md:mt-8">
             <img
               src={centerImage}
               alt="お悩みを抱える女性のイメージ"
