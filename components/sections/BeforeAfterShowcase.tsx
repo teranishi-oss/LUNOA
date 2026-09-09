@@ -2,10 +2,14 @@ import React from 'react';
 import { FadeIn } from '../FadeIn';
 import bridalImage from '../../assets/kubikata.jpeg';
 import postureImage from '../../assets/shisei.jpg';
+import shoulderImage from '../../assets/0581.jpg';
+import neckImage from '../../assets/0580.jpg';
 
 const categories = [
   { title: 'ブライダル整体', image: bridalImage },
   { title: '姿勢根本改善', image: postureImage },
+  { title: '肩こり根本改善整体', image: shoulderImage },
+  { title: '首こり、頭痛改善', image: neckImage },
 ];
 
 export function BeforeAfterShowcase() {

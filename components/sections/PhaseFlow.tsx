@@ -1,5 +1,7 @@
 import React from 'react';
 import { FadeIn } from '../FadeIn';
+import { SectionPhotoBg } from './SectionPhotoBg';
+import bgImage from '../../assets/journey.jpg';
 
 const phases = [
   {
@@ -24,8 +26,9 @@ const phases = [
 
 export function PhaseFlow() {
   return (
-    <section className="relative py-28 md:py-40 bg-gradient-to-b from-beige to-cream-50">
-      <div className="max-w-5xl mx-auto px-6">
+    <section className="relative py-28 md:py-40 bg-beige overflow-hidden">
+      <SectionPhotoBg image={bgImage} alt="LUNOA渋谷院の施術ルーム" />
+      <div className="max-w-5xl mx-auto px-6 relative">
         <FadeIn>
           <div className="text-center mb-6">
             <p className="text-[12px] tracking-[0.3em] text-gold-600 uppercase mb-5">Improvement Journey</p>

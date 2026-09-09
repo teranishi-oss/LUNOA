@@ -1,5 +1,7 @@
 import React from 'react';
 import { FadeIn } from '../FadeIn';
+import { SectionPhotoBg } from './SectionPhotoBg';
+import bgImage from '../../assets/hero.jpg';
 
 const stats = [
   { num: '250', unit: '人/月', label: '新規ご来店（うちブライダル100名）' },
@@ -9,7 +11,8 @@ const stats = [
 
 export function TrustSignal() {
   return (
-    <section className="relative py-24 md:py-32 bg-gradient-to-b from-beige to-cream-50 overflow-hidden">
+    <section className="relative py-24 md:py-32 bg-beige overflow-hidden">
+      <SectionPhotoBg image={bgImage} alt="LUNOA渋谷院の施術ルーム" />
       <div className="max-w-5xl mx-auto px-6 relative">
         <FadeIn>
           <div className="text-center mb-16">

@@ -1,6 +1,8 @@
 import React from 'react';
 import { shibuyaStore } from '../../data/stores';
 import { FadeIn } from '../FadeIn';
+import { SectionPhotoBg } from './SectionPhotoBg';
+import bgImage from '../../assets/cta-bg.jpg';
 
 const rows: [string, string][] = [
   ['店舗名', `LUNOA SHIBUYA（卒業型美容整体LUNOA 渋谷院）`],
@@ -13,8 +15,9 @@ const rows: [string, string][] = [
 
 export function ReservationCta() {
   return (
-    <section className="relative py-28 md:py-40 bg-gradient-to-b from-beige to-cream-50">
-      <div className="max-w-2xl mx-auto px-6 text-center">
+    <section className="relative py-28 md:py-40 bg-beige overflow-hidden">
+      <SectionPhotoBg image={bgImage} alt="LUNOA渋谷院のロゴプレート" opacity={0.72} />
+      <div className="max-w-2xl mx-auto px-6 text-center relative">
         <FadeIn>
           <p className="text-[12px] tracking-[0.3em] text-gold-600 uppercase mb-5">Reservation</p>
           <h2 className="font-mincho text-[28px] md:text-[34px] text-ink-900 leading-[1.6] mb-6">

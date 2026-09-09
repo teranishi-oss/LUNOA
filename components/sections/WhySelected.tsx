@@ -1,5 +1,7 @@
 import React from 'react';
 import { FadeIn } from '../FadeIn';
+import { SectionPhotoBg } from './SectionPhotoBg';
+import bgImage from '../../assets/concerns.jpg';
 
 const reasons = [
   {
@@ -22,6 +24,7 @@ const reasons = [
 export function WhySelected() {
   return (
     <section id="why-selected" className="relative py-28 md:py-40 bg-cream-50 overflow-hidden">
+      <SectionPhotoBg image={bgImage} alt="LUNOA渋谷院の施術ルーム" opacity={0.72} />
       <div
         className="absolute left-1/2 top-16 -translate-x-1/2 w-[420px] h-[420px] rounded-full border border-gold-400/30 pointer-events-none"
         aria-hidden="true"

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 import { FadeIn } from '../FadeIn';
+import logoImage from '../../assets/bridal-bg.jpg';
 
 const reasons = [
   '結婚式までの日数から逆算し、平均3ヶ月で結果を出す設計にしているから。',
@@ -12,20 +13,12 @@ const reasons = [
 export function BridalReasons() {
   return (
     <section className="relative py-28 md:py-40 bg-gradient-to-b from-beige to-cream-50 overflow-hidden">
-      <svg
-        className="absolute -right-24 -top-16 w-[520px] h-[520px] text-gold-500/15 pointer-events-none"
-        viewBox="0 0 200 200"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1"
+      <img
+        src={logoImage}
+        alt=""
         aria-hidden="true"
-      >
-        <path d="M100 10 C 60 40, 40 90, 100 190 C 160 90, 140 40, 100 10 Z" />
-        <path d="M100 10 C 100 60, 100 130, 100 190" />
-        <path d="M100 50 C 80 60, 70 75, 65 90" />
-        <path d="M100 90 C 120 100, 130 115, 135 130" />
-        <path d="M100 130 C 80 140, 72 150, 68 160" />
-      </svg>
+        className="absolute -right-16 -top-10 w-[260px] md:w-[320px] opacity-[0.14] pointer-events-none select-none mix-blend-multiply"
+      />
 
       <div className="max-w-4xl mx-auto px-6 relative">
         <FadeIn>
