@@ -1,15 +1,19 @@
 import React from 'react';
 import { FadeIn } from '../FadeIn';
-import bridalImage from '../../assets/kubikata.jpeg';
-import postureImage from '../../assets/shisei.jpg';
-import shoulderImage from '../../assets/0581.jpg';
-import neckImage from '../../assets/0580.jpg';
+import bridalImage1 from '../../assets/kubikata.jpeg';
+import bridalImage2 from '../../assets/0586.jpg';
+import postureImage1 from '../../assets/0583.jpg';
+import postureImage2 from '../../assets/0584.jpg';
+import shoulderImage1 from '../../assets/0587.jpg';
+import shoulderImage2 from '../../assets/0581.jpg';
+import neckImage1 from '../../assets/0579.jpg';
+import neckImage2 from '../../assets/0580.jpg';
 
 const categories = [
-  { title: 'ブライダル整体', image: bridalImage },
-  { title: '姿勢根本改善', image: postureImage },
-  { title: '肩こり根本改善整体', image: shoulderImage },
-  { title: '首こり、頭痛改善', image: neckImage },
+  { title: 'ブライダル整体', images: [bridalImage1, bridalImage2] },
+  { title: '姿勢根本改善', images: [postureImage1, postureImage2] },
+  { title: '肩こり根本改善整体', images: [shoulderImage1, shoulderImage2] },
+  { title: '首こり、頭痛改善', images: [neckImage1, neckImage2] },
 ];
 
 export function BeforeAfterShowcase() {
@@ -39,12 +43,17 @@ export function BeforeAfterShowcase() {
             <FadeIn key={cat.title} delay={i * 0.15}>
               <div>
                 <p className="text-center font-mincho text-[23px] text-gold-600 mb-6">{cat.title}</p>
-                <div className="bg-cream-50 rounded-card border border-gold-500/40 shadow-card p-4 md:p-6 max-w-lg mx-auto">
-                  <img
-                    src={cat.image}
-                    alt={`${cat.title}のビフォーアフター`}
-                    className="w-full h-auto rounded-2xl"
-                  />
+                <div className="bg-cream-50 rounded-card border border-gold-500/40 shadow-card p-4 md:p-6">
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    {cat.images.map((img, j) => (
+                      <img
+                        key={j}
+                        src={img}
+                        alt={`${cat.title}のビフォーアフター ${j + 1}`}
+                        className="w-full h-auto rounded-2xl"
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             </FadeIn>
