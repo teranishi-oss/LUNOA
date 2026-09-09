@@ -29,23 +29,12 @@ const concerns = [
   },
 ];
 
-function Bubble({ text, solution, delay }: { text: string; solution: string; delay: number }) {
-  return (
-    <FadeIn delay={delay}>
-      <div className="bg-cream-50/90 backdrop-blur-sm rounded-[2.25rem] border border-gold-500/30 shadow-card px-6 py-6 text-center h-full flex flex-col justify-center">
-        <p className="text-[15px] leading-relaxed text-ink-900 mb-2">{text}</p>
-        <p className="text-[12px] leading-relaxed text-gold-600">{solution}</p>
-      </div>
-    </FadeIn>
-  );
-}
-
 export function Concerns() {
   return (
-    <section className="relative py-28 md:py-40 bg-gradient-to-b from-beige to-cream-50 overflow-hidden">
-      <div className="max-w-4xl mx-auto px-6">
+    <section className="relative py-28 md:py-40 bg-cream-50 overflow-hidden">
+      <div className="max-w-5xl mx-auto px-6">
         <FadeIn>
-          <div className="mb-6 text-center">
+          <div className="mb-16 md:mb-20 text-center">
             <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">Concerns</p>
             <h2 className="font-mincho text-[36px] md:text-[46px] text-ink-900 leading-[1.6] mb-4">
               こんなお悩み、
@@ -58,33 +47,32 @@ export function Concerns() {
           </div>
         </FadeIn>
 
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-5 items-center">
-          <div className="md:col-start-1 md:row-start-1">
-            <Bubble {...concerns[0]} delay={0} />
-          </div>
-          <div className="md:col-start-1 md:row-start-2">
-            <Bubble {...concerns[2]} delay={0.08} />
-          </div>
-          <div className="md:col-start-1 md:row-start-3">
-            <Bubble {...concerns[4]} delay={0.16} />
-          </div>
-
-          <FadeIn delay={0.24}>
-            <div className="order-first md:order-none md:col-start-2 md:row-start-1 md:row-span-3 flex justify-center">
-              <div className="w-52 h-52 md:w-48 md:h-48 rounded-full overflow-hidden border-[6px] border-cream-50 shadow-card ring-1 ring-gold-500/40">
-                <img src={centerImage} alt="お悩みを抱える女性のイメージ" className="w-full h-full object-cover" />
-              </div>
+        <div className="grid md:grid-cols-[0.8fr_1.2fr] gap-10 md:gap-16 items-start">
+          <FadeIn>
+            <div className="relative rounded-card overflow-hidden shadow-card border border-gold-500/30 md:sticky md:top-28">
+              <img
+                src={centerImage}
+                alt="お悩みを抱える女性のイメージ"
+                className="w-full h-[320px] md:h-[560px] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink-900/25 via-transparent to-transparent" />
             </div>
           </FadeIn>
 
-          <div className="md:col-start-3 md:row-start-1">
-            <Bubble {...concerns[1]} delay={0.08} />
-          </div>
-          <div className="md:col-start-3 md:row-start-2">
-            <Bubble {...concerns[3]} delay={0.16} />
-          </div>
-          <div className="md:col-start-3 md:row-start-3">
-            <Bubble {...concerns[5]} delay={0.24} />
+          <div>
+            {concerns.map((item, i) => (
+              <FadeIn key={item.text} delay={i * 0.08}>
+                <div className="flex items-start gap-5 py-6 border-b border-gold-500/20 first:pt-0 last:border-0">
+                  <span className="font-mincho text-[26px] md:text-[30px] text-gold-500/45 flex-shrink-0 w-11 leading-none pt-1">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <div>
+                    <p className="text-[17px] leading-relaxed text-ink-900 mb-2">{item.text}</p>
+                    <p className="text-[13px] leading-relaxed text-gold-600">{item.solution}</p>
+                  </div>
+                </div>
+              </FadeIn>
+            ))}
           </div>
         </div>
       </div>
