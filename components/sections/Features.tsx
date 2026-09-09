@@ -10,35 +10,30 @@ import accessImage from '../../assets/IMG_0652.jpg';
 const features = [
   {
     num: '01',
-    flow: '施術で何ができるのかを理解していただく',
     title: '深層部への直接アプローチ',
     image: treatmentImage,
     desc: '筋膜やマッサージでは届かない筋肉の深層部に直接アプローチ。表面的なほぐしではなく、根本原因に働きかけるから、一度の施術でも確かな変化を実感いただけます。',
   },
   {
     num: '02',
-    flow: 'どんな環境で受けるのか、安心していただく',
     title: '完全個室のプライベート空間',
     image: counselingImage,
     desc: '人目を気にせず、じっくりと自分の体と向き合える完全個室。落ち着いた上質な空間で、心身ともにリラックスしながら施術を受けていただけます。',
   },
   {
     num: '03',
-    flow: '施術後、自分で改善できることを学んでいただく',
     title: '根本解決のための自宅でできるセルフケア',
     image: selfcareImage,
     desc: '施術で整えた状態を、ご自宅でも保てるように。カウンセリングで正しい姿勢の作り方や、日常でできる簡単なセルフケアを一人ひとりに合わせてお伝えします。「通い続ける」のではなく、自分の力で体を管理できるようになることが、卒業型美容整体LUNOAの目指すゴールです。',
   },
   {
     num: '04',
-    flow: '実際に効果が出た人たちの証拠を見ていただく',
     title: '圧倒的なブライダル実績と人気',
     image: bridalImage,
     desc: '毎月100名以上の花嫁様にお選びいただいているブライダル整体。結婚式までの日数から逆算した根本改善で、ドレス姿に自信が持てる身体へ。実際に施術を受けたお客様の確かな変化を、写真でご覧いただけます。',
   },
   {
     num: '05',
-    flow: '来院のしやすさで、最後の一歩を後押しする',
     title: '渋谷駅から徒歩7分の好立地',
     image: accessImage,
     desc: '渋谷駅から徒歩7分。お仕事帰りやお出かけの前後にも通いやすい、アクセス良好な立地でお待ちしております。',
@@ -82,8 +77,7 @@ export function Features() {
                     <h3 className="font-mincho text-[22px] md:text-[24px] text-ink-900 mb-3 leading-snug">
                       {feature.title}
                     </h3>
-                    <p className="text-[13px] tracking-[0.03em] text-gold-600 mb-4">{feature.flow}</p>
-                    <p className="text-[15.5px] leading-loose text-ink-500">{feature.desc}</p>
+                    <p className="text-[15.5px] leading-loose text-ink-500 mt-4">{feature.desc}</p>
                   </div>
                 </div>
               </FadeIn>
