@@ -4,6 +4,7 @@ import { ShibuyaHero } from '../components/sections/ShibuyaHero';
 import { Features } from '../components/sections/Features';
 import { TrustSignal } from '../components/sections/TrustSignal';
 import { WhySelected } from '../components/sections/WhySelected';
+import { ComparisonTable } from '../components/sections/ComparisonTable';
 import { Concerns } from '../components/sections/Concerns';
 import { PhaseFlow } from '../components/sections/PhaseFlow';
 import { NumbersShowcase } from '../components/sections/NumbersShowcase';
@@ -24,6 +25,7 @@ export function HomePage() {
       <Features />
       <TrustSignal />
       <WhySelected />
+      <ComparisonTable />
       <Concerns />
       <PhaseFlow />
       <NumbersShowcase />
