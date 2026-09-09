@@ -1,0 +1,33 @@
+import React, { useEffect } from 'react';
+import { shibuyaStore } from '../data/stores';
+import { ShibuyaHero } from '../components/sections/ShibuyaHero';
+import { TrustSignal } from '../components/sections/TrustSignal';
+import { WhySelected } from '../components/sections/WhySelected';
+import { Concerns } from '../components/sections/Concerns';
+import { PhaseFlow } from '../components/sections/PhaseFlow';
+import { NumbersShowcase } from '../components/sections/NumbersShowcase';
+import { BridalReasons } from '../components/sections/BridalReasons';
+import { BeforeAfterShowcase } from '../components/sections/BeforeAfterShowcase';
+import { ReservationCta } from '../components/sections/ReservationCta';
+
+export function HomePage() {
+  useEffect(() => {
+    document.title = shibuyaStore.meta.title;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', shibuyaStore.meta.description);
+  }, []);
+
+  return (
+    <>
+      <ShibuyaHero />
+      <TrustSignal />
+      <WhySelected />
+      <Concerns />
+      <PhaseFlow />
+      <NumbersShowcase />
+      <BridalReasons />
+      <BeforeAfterShowcase />
+      <ReservationCta />
+    </>
+  );
+}

@@ -1,0 +1,39 @@
+import React from 'react';
+import { FadeIn } from '../FadeIn';
+
+const concerns = [
+  { num: '01', text: '年々気になる、姿勢の崩れ。' },
+  { num: '02', text: 'いろんな整体にいったけど、改善されない。' },
+  { num: '03', text: '自分で頑張ってみたけど変わらない。' },
+  { num: '04', text: '大切なイベント（結婚式など）までに、間に合うか不安。' },
+];
+
+export function Concerns() {
+  return (
+    <section className="relative py-28 md:py-40 bg-cream-50">
+      <div className="max-w-4xl mx-auto px-6">
+        <FadeIn>
+          <div className="mb-16">
+            <p className="text-[12px] tracking-[0.3em] text-gold-600 uppercase mb-5">Concerns</p>
+            <h2 className="font-mincho text-[30px] md:text-[38px] text-ink-900 leading-[1.6]">
+              こんなお悩み、
+              <br />
+              抱えていませんか。
+            </h2>
+          </div>
+        </FadeIn>
+
+        <div className="grid sm:grid-cols-2 gap-5">
+          {concerns.map((item, i) => (
+            <FadeIn key={item.num} delay={i * 0.1}>
+              <div className="flex items-start gap-5 bg-beige/60 rounded-card px-7 py-7 h-full">
+                <span className="font-mincho text-[17px] text-gold-600 flex-shrink-0">{item.num}</span>
+                <p className="text-[15px] leading-relaxed text-ink-900">{item.text}</p>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
