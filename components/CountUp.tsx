@@ -29,5 +29,12 @@ export function CountUp({ value, decimals = 0, duration = 1.4, delay = 0 }: Coun
       ? display.toFixed(decimals)
       : Math.round(display).toLocaleString('ja-JP');
 
-  return <span ref={ref}>{formatted}</span>;
+  return (
+    <span
+      ref={ref}
+      style={{ fontSize: 'inherit', fontWeight: 'inherit', color: 'inherit', lineHeight: 'inherit' }}
+    >
+      {formatted}
+    </span>
+  );
 }
