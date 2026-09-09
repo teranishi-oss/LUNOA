@@ -57,7 +57,15 @@ export function Concerns() {
                 src={centerImage}
                 alt="お悩みを抱える女性のイメージ"
                 className="w-auto h-[340px] md:h-[520px] object-contain"
-                style={{ filter: 'drop-shadow(0 24px 20px rgba(42,38,32,0.22)) drop-shadow(0 8px 8px rgba(42,38,32,0.12))' }}
+                style={{
+                  filter: 'drop-shadow(0 20px 16px rgba(42,38,32,0.18))',
+                  WebkitMaskImage:
+                    'linear-gradient(to bottom, black 78%, transparent 96%), linear-gradient(to right, black 90%, transparent 99%)',
+                  maskImage:
+                    'linear-gradient(to bottom, black 78%, transparent 96%), linear-gradient(to right, black 90%, transparent 99%)',
+                  WebkitMaskComposite: 'source-in',
+                  maskComposite: 'intersect',
+                }}
               />
             </div>
           </FadeIn>
