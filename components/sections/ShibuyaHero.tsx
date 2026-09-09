@@ -62,7 +62,7 @@ export function ShibuyaHero() {
               >
                 無料カウンセリングを予約する
               </a>
-              <p className="text-[14px] tracking-[0.03em] text-ink-500">
+              <p className="text-[14px] tracking-[0.03em] text-ink-700">
                 毎月100名以上の花嫁からも選ばれています
               </p>
             </motion.div>

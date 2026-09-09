@@ -77,7 +77,7 @@ export function Features() {
                     <h3 className="font-mincho text-[22px] md:text-[24px] text-ink-900 mb-3 leading-snug">
                       {feature.title}
                     </h3>
-                    <p className="text-[15.5px] leading-loose text-ink-500 mt-4">{feature.desc}</p>
+                    <p className="text-[15.5px] leading-loose text-ink-700 mt-4">{feature.desc}</p>
                   </div>
                 </div>
               </FadeIn>

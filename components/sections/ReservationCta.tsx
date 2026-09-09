@@ -23,7 +23,7 @@ export function ReservationCta() {
           <h2 className="font-mincho text-[32px] md:text-[40px] text-ink-900 leading-[1.6] mb-6">
             まずは、<span className="text-gold-600 text-[44px] md:text-[56px]">渋谷院</span>へ。
           </h2>
-          <p className="text-[16px] text-ink-500 leading-relaxed mb-10">
+          <p className="text-[16px] text-ink-700 leading-relaxed mb-10">
             無料カウンセリングで、あなたの体の状態と、卒業までの道のりをお伝えします。
           </p>
         </FadeIn>

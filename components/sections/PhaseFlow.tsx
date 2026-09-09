@@ -37,7 +37,7 @@ export function PhaseFlow() {
               <br />
               3つのフェーズ
             </h2>
-            <p className="text-[16px] text-ink-500 max-w-lg mx-auto leading-relaxed">
+            <p className="text-[16px] text-ink-700 max-w-lg mx-auto leading-relaxed">
               平均3ヶ月。通い続けるためではなく、自分の体を自分で管理できるようになるための設計です。
             </p>
           </div>
@@ -53,7 +53,7 @@ export function PhaseFlow() {
                 </div>
                 <p className="text-[13px] tracking-[0.15em] text-gold-600 uppercase mb-2">{phase.month}</p>
                 <h3 className="font-mincho text-[22px] text-ink-900 mb-4">{phase.title}</h3>
-                <p className="text-[15.5px] leading-loose text-ink-500">{phase.desc}</p>
+                <p className="text-[15.5px] leading-loose text-ink-700">{phase.desc}</p>
               </div>
             </FadeIn>
           ))}

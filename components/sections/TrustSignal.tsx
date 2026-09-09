@@ -31,14 +31,14 @@ export function TrustSignal() {
                   {stat.num}
                   <span className="text-[24px] ml-1">{stat.unit}</span>
                 </div>
-                <p className="text-[15px] text-ink-500 leading-relaxed">{stat.label}</p>
+                <p className="text-[15px] text-ink-700 leading-relaxed">{stat.label}</p>
               </div>
             </FadeIn>
           ))}
         </div>
 
         <FadeIn delay={0.4}>
-          <p className="text-center text-[15px] text-ink-500 leading-loose mt-12 max-w-2xl mx-auto">
+          <p className="text-center text-[15px] text-ink-700 leading-loose mt-12 max-w-2xl mx-auto">
             母体である卒業型美容整体LUNOAが積み上げてきた7,000件超の施術実績を土台に、渋谷院はこの街のお客様と向き合っています。
           </p>
         </FadeIn>

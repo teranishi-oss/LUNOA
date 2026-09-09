@@ -75,7 +75,7 @@ function CloudBubble({ item, shape, delay }: { item: ConcernItem; shape: string;
           style={{ borderRadius: shape }}
         >
           <p className={`font-cute font-bold ${s.text} leading-[1.7] text-ink-900 mb-2`}>{item.text}</p>
-          <p className={`${s.sub} leading-relaxed text-gold-600`}>{item.solution}</p>
+          <p className={`${s.sub} leading-relaxed text-ink-700`}>{item.solution}</p>
         </div>
         <div className="flex flex-col items-center gap-1 mt-1.5" aria-hidden="true">
           <span className={`${s.dot} rounded-full bg-cream-50/90 border border-gold-500/30`} />
