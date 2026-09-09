@@ -47,7 +47,7 @@ export function PhaseFlow() {
           <div className="hidden md:block absolute top-8 left-[16.5%] right-[16.5%] h-px bg-gold-500/40" aria-hidden="true" />
           {phases.map((phase, i) => (
             <FadeIn key={phase.num} delay={i * 0.15}>
-              <div className="relative bg-cream-50 rounded-card border border-gold-500/40 shadow-card p-8 text-center h-full">
+              <div className="relative bg-cream-50 rounded-card border border-gold-500/40 shadow-card p-8 text-center h-full transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg">
                 <div className="w-16 h-16 rounded-full border-2 border-gold-500 bg-cream-50 flex items-center justify-center mx-auto mb-6 font-mincho text-[20px] text-gold-600 relative z-10">
                   {phase.num}
                 </div>

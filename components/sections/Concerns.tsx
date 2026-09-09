@@ -71,7 +71,7 @@ function CloudBubble({ item, shape, delay }: { item: ConcernItem; shape: string;
     <FadeIn delay={delay} className={item.shift}>
       <div className="flex flex-col items-center">
         <div
-          className={`bg-cream-50/95 border border-gold-500/30 shadow-card text-center w-full ${s.pad}`}
+          className={`bg-cream-50/95 border border-gold-500/30 shadow-card text-center w-full transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg ${s.pad}`}
           style={{ borderRadius: shape }}
         >
           <p className={`font-cute font-bold ${s.text} leading-[1.7] text-ink-900 mb-2`}>{item.text}</p>

@@ -39,7 +39,7 @@ export function BridalReasons() {
           <div className="grid gap-5">
             {reasons.map((text, i) => (
               <FadeIn key={text} delay={i * 0.1}>
-                <div className="flex items-start gap-4 bg-cream-50 rounded-card border border-gold-500/40 shadow-card px-7 py-6">
+                <div className="flex items-start gap-4 bg-cream-50 rounded-card border border-gold-500/40 shadow-card px-7 py-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                   <span className="flex-shrink-0 w-7 h-7 rounded-full bg-gold-500/15 flex items-center justify-center mt-0.5">
                     <Check className="w-4 h-4 text-gold-600" />
                   </span>

@@ -31,7 +31,7 @@ export function NumbersShowcase() {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
           {numbers.map((item, i) => (
             <FadeIn key={item.cap} delay={i * 0.08}>
-              <div className="bg-cream-50 rounded-card border border-gold-500/40 shadow-card px-7 py-9 text-center h-full">
+              <div className="bg-cream-50 rounded-card border border-gold-500/40 shadow-card px-7 py-9 text-center h-full transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg">
                 <p className="font-mincho text-[30px] text-gold-600 mb-3">{item.val}</p>
                 <p className="text-[14.5px] leading-relaxed text-ink-500">{item.cap}</p>
               </div>

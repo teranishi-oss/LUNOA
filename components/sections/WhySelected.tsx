@@ -44,7 +44,7 @@ export function WhySelected() {
         <div className="grid md:grid-cols-3 gap-6">
           {reasons.map((reason, i) => (
             <FadeIn key={reason.num} delay={i * 0.12}>
-              <div className="bg-cream-50 rounded-card border border-gold-500/40 shadow-card p-9 text-center h-full">
+              <div className="bg-cream-50 rounded-card border border-gold-500/40 shadow-card p-9 text-center h-full transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg">
                 <p className="font-mincho text-[26px] text-gold-600 mb-5">{reason.num}</p>
                 <h3 className="text-[20px] text-ink-900 mb-4">{reason.title}</h3>
                 <p className="text-[15.5px] leading-loose text-ink-500">{reason.desc}</p>
