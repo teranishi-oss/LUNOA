@@ -1,6 +1,6 @@
 import React from 'react';
 import { FadeIn } from '../FadeIn';
-import centerImage from '../../assets/concerns-bg.jpg';
+import centerImage from '../../assets/concerns-portrait.jpg';
 
 const concerns = [
   {
@@ -61,7 +61,7 @@ export function Concerns() {
           <FadeIn delay={0.2}>
             <div className="order-first md:order-none md:col-start-2 md:row-start-1 md:row-span-2 flex justify-center">
               <div className="w-52 h-52 md:w-60 md:h-60 rounded-full overflow-hidden border-[6px] border-cream-50 shadow-card ring-1 ring-gold-500/40">
-                <img src={centerImage} alt="LUNOA渋谷院の施術ルーム" className="w-full h-full object-cover" />
+                <img src={centerImage} alt="お悩みを抱える女性のイメージ" className="w-full h-full object-cover" />
               </div>
             </div>
           </FadeIn>
