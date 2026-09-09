@@ -4,7 +4,7 @@ import { shibuyaStore } from '../../data/stores';
 import treatmentImage from '../../assets/feature-treatment.jpg';
 import counselingImage from '../../assets/feature-counseling.jpg';
 import selfcareImage from '../../assets/concerns-bg.jpg';
-import bridalImage from '../../assets/IMG_0653.jpg';
+import bridalImage from '../../assets/IMG_0654.jpg';
 import accessImage from '../../assets/IMG_0652.jpg';
 
 const features = [
