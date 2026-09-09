@@ -5,7 +5,7 @@ import heroImage from '../../assets/lunoahero.jpg';
 
 export function ShibuyaHero() {
   return (
-    <section className="relative min-h-[100svh] w-full overflow-hidden bg-beige pt-16 lg:pt-0">
+    <section className="relative min-h-[100svh] w-full overflow-hidden bg-cream-50 pt-16 lg:pt-0">
       <div className="absolute inset-0">
         <img
           src={heroImage}

@@ -15,7 +15,7 @@ const rows: [string, string][] = [
 
 export function ReservationCta() {
   return (
-    <section className="relative py-28 md:py-40 bg-beige overflow-hidden">
+    <section className="relative py-28 md:py-40 bg-gradient-to-b from-cream-50 via-beige to-cream-50 overflow-hidden">
       <SectionPhotoBg image={bgImage} alt="LUNOA渋谷院のロゴプレート" opacity={0.72} />
       <div className="max-w-2xl mx-auto px-6 text-center relative">
         <FadeIn>

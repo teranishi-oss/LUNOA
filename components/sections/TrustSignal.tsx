@@ -11,7 +11,7 @@ const stats = [
 
 export function TrustSignal() {
   return (
-    <section className="relative py-24 md:py-32 bg-beige overflow-hidden">
+    <section className="relative py-24 md:py-32 bg-gradient-to-b from-cream-50 via-beige to-cream-50 overflow-hidden">
       <SectionPhotoBg image={bgImage} alt="LUNOA渋谷院の施術ルーム" />
       <div className="max-w-5xl mx-auto px-6 relative">
         <FadeIn>

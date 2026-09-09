@@ -12,7 +12,7 @@ const reasons = [
 
 export function BridalReasons() {
   return (
-    <section className="relative py-28 md:py-40 bg-gradient-to-b from-beige to-cream-50 overflow-hidden">
+    <section className="relative py-28 md:py-40 bg-gradient-to-b from-cream-50 via-beige to-cream-50 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
         <FadeIn>
           <div className="mb-16 text-center">
