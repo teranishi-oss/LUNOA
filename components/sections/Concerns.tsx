@@ -1,6 +1,8 @@
 import React from 'react';
 import { FadeIn } from '../FadeIn';
+import { SectionPhotoBg } from './SectionPhotoBg';
 import centerImage from '../../assets/concerns-portrait-cutout.png';
+import bgImage from '../../assets/concerns-bg.jpg';
 
 const concerns = [
   {
@@ -32,7 +34,8 @@ const concerns = [
 export function Concerns() {
   return (
     <section className="relative py-28 md:py-40 bg-cream-50 overflow-hidden">
-      <div className="max-w-5xl mx-auto px-6">
+      <SectionPhotoBg image={bgImage} alt="LUNOA渋谷院の施術ルーム" opacity={0.62} />
+      <div className="max-w-5xl mx-auto px-6 relative">
         <FadeIn>
           <div className="mb-16 md:mb-20 text-center">
             <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">Concerns</p>
