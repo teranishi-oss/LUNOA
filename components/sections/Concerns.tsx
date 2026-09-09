@@ -1,7 +1,7 @@
 import React from 'react';
 import { FadeIn } from '../FadeIn';
 import { SectionPhotoBg } from './SectionPhotoBg';
-import centerImage from '../../assets/concerns-portrait-cutout.png';
+import centerImage from '../../assets/concerns-portrait-vignette.png';
 import bgImage from '../../assets/concerns-bg.jpg';
 
 const concerns = [
@@ -52,20 +52,11 @@ export function Concerns() {
 
         <div className="grid md:grid-cols-[0.8fr_1.2fr] gap-10 md:gap-16 items-start">
           <FadeIn>
-            <div className="flex justify-center md:justify-start md:sticky md:top-28">
+            <div className="md:sticky md:top-28">
               <img
                 src={centerImage}
                 alt="お悩みを抱える女性のイメージ"
-                className="w-auto h-[340px] md:h-[520px] object-contain"
-                style={{
-                  filter: 'drop-shadow(0 20px 16px rgba(42,38,32,0.18))',
-                  WebkitMaskImage:
-                    'linear-gradient(to bottom, black 78%, transparent 96%), linear-gradient(to right, black 90%, transparent 99%)',
-                  maskImage:
-                    'linear-gradient(to bottom, black 78%, transparent 96%), linear-gradient(to right, black 90%, transparent 99%)',
-                  WebkitMaskComposite: 'source-in',
-                  maskComposite: 'intersect',
-                }}
+                className="w-full h-auto object-contain"
               />
             </div>
           </FadeIn>
