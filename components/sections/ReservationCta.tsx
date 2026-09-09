@@ -3,6 +3,7 @@ import { shibuyaStore } from '../../data/stores';
 import { FadeIn } from '../FadeIn';
 import { SectionPhotoBg } from './SectionPhotoBg';
 import bgImage from '../../assets/cta-bg.jpg';
+import mapImage from '../../assets/IMG_0652.jpg';
 
 const rows: [string, string][] = [
   ['店舗名', `LUNOA SHIBUYA（卒業型美容整体LUNOA 渋谷院）`],
@@ -47,6 +48,17 @@ export function ReservationCta() {
                 <dd className="text-[16px] text-ink-900">{value}</dd>
               </div>
             ))}
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.35}>
+          <div className="mt-6 bg-cream-50 rounded-card border border-gold-500/40 shadow-card overflow-hidden">
+            <img
+              src={mapImage}
+              alt="渋谷駅からLUNOA渋谷院までのアクセスマップ"
+              className="w-full h-auto"
+            />
+            <p className="text-[13px] text-ink-500 text-center py-4">渋谷駅から徒歩約5〜7分</p>
           </div>
         </FadeIn>
       </div>
