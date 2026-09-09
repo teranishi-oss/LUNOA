@@ -1,12 +1,13 @@
 import React from 'react';
 import { FadeIn } from '../FadeIn';
+import { CountUp } from '../CountUp';
 import { SectionPhotoBg } from './SectionPhotoBg';
 import bgImage from '../../assets/hero.jpg';
 
 const stats = [
-  { num: '250', unit: '人/月', label: '新規ご来店（うちブライダル100名）' },
-  { num: '96.7', unit: '%', label: '施術後の改善実感率' },
-  { num: '3', unit: 'ヶ月', label: '平均・自己管理までの期間' },
+  { value: 250, decimals: 0, unit: '人/月', label: '新規ご来店（うちブライダル100名）' },
+  { value: 96.7, decimals: 1, unit: '%', label: '施術後の改善実感率' },
+  { value: 3, decimals: 0, unit: 'ヶ月', label: '平均・自己管理までの期間' },
 ];
 
 export function TrustSignal() {
@@ -28,7 +29,7 @@ export function TrustSignal() {
             <FadeIn key={stat.label} delay={i * 0.12}>
               <div className="bg-cream-50 rounded-card border border-gold-500/40 shadow-card px-6 py-10 text-center h-full transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg">
                 <div className="font-mincho text-[46px] text-gold-600 mb-3">
-                  {stat.num}
+                  <CountUp value={stat.value} decimals={stat.decimals} delay={i * 0.12} />
                   <span className="text-[24px] ml-1">{stat.unit}</span>
                 </div>
                 <p className="text-[15px] text-ink-700 leading-relaxed">{stat.label}</p>

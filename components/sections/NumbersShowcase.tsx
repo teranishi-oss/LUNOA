@@ -1,15 +1,16 @@
 import React from 'react';
 import { FadeIn } from '../FadeIn';
+import { CountUp } from '../CountUp';
 import { SectionPhotoBg } from './SectionPhotoBg';
 import bgImage from '../../assets/ba-bg.jpg';
 
 const numbers = [
-  { val: '7,000+', cap: '母体・卒業型美容整体LUNOA累計施術数' },
-  { val: 'HPB全国3位', cap: 'ホットペッパービューティー全国上位表示' },
-  { val: '100人/月', cap: '渋谷院ブライダル新規来店' },
-  { val: '96.7%', cap: '渋谷院施術後の改善実感率' },
-  { val: '3ヶ月', cap: '渋谷院平均・自己管理までの期間' },
-  { val: '徒歩7分', cap: '渋谷駅から渋谷院までのアクセス' },
+  { prefix: '', value: 7000, decimals: 0, suffix: '+', cap: '母体・卒業型美容整体LUNOA累計施術数' },
+  { prefix: 'HPB全国', value: 3, decimals: 0, suffix: '位', cap: 'ホットペッパービューティー全国上位表示' },
+  { prefix: '', value: 100, decimals: 0, suffix: '人/月', cap: '渋谷院ブライダル新規来店' },
+  { prefix: '', value: 96.7, decimals: 1, suffix: '%', cap: '渋谷院施術後の改善実感率' },
+  { prefix: '', value: 3, decimals: 0, suffix: 'ヶ月', cap: '渋谷院平均・自己管理までの期間' },
+  { prefix: '徒歩', value: 7, decimals: 0, suffix: '分', cap: '渋谷駅から渋谷院までのアクセス' },
 ];
 
 export function NumbersShowcase() {
@@ -32,7 +33,11 @@ export function NumbersShowcase() {
           {numbers.map((item, i) => (
             <FadeIn key={item.cap} delay={i * 0.08}>
               <div className="bg-cream-50 rounded-card border border-gold-500/40 shadow-card px-7 py-9 text-center h-full transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg">
-                <p className="font-mincho text-[30px] text-gold-600 mb-3">{item.val}</p>
+                <p className="font-mincho text-[30px] text-gold-600 mb-3">
+                  {item.prefix}
+                  <CountUp value={item.value} decimals={item.decimals} delay={i * 0.08} />
+                  {item.suffix}
+                </p>
                 <p className="text-[14.5px] leading-relaxed text-ink-700">{item.cap}</p>
               </div>
             </FadeIn>
