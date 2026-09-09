@@ -31,13 +31,13 @@ export function PhaseFlow() {
       <div className="max-w-5xl mx-auto px-6 relative">
         <FadeIn>
           <div className="text-center mb-6">
-            <p className="text-[12px] tracking-[0.3em] text-gold-600 uppercase mb-5">Improvement Journey</p>
-            <h2 className="font-mincho text-[30px] md:text-[38px] text-ink-900 leading-[1.6] mb-6">
+            <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">Improvement Journey</p>
+            <h2 className="font-mincho text-[36px] md:text-[46px] text-ink-900 leading-[1.6] mb-6">
               卒業までの
               <br />
               3つのフェーズ
             </h2>
-            <p className="text-[14px] text-ink-500 max-w-lg mx-auto leading-relaxed">
+            <p className="text-[16px] text-ink-500 max-w-lg mx-auto leading-relaxed">
               平均3ヶ月。通い続けるためではなく、自分の体を自分で管理できるようになるための設計です。
             </p>
           </div>
@@ -48,12 +48,12 @@ export function PhaseFlow() {
           {phases.map((phase, i) => (
             <FadeIn key={phase.num} delay={i * 0.15}>
               <div className="relative bg-cream-50 rounded-card border border-gold-500/40 shadow-card p-8 text-center h-full">
-                <div className="w-16 h-16 rounded-full border-2 border-gold-500 bg-cream-50 flex items-center justify-center mx-auto mb-6 font-mincho text-[17px] text-gold-600 relative z-10">
+                <div className="w-16 h-16 rounded-full border-2 border-gold-500 bg-cream-50 flex items-center justify-center mx-auto mb-6 font-mincho text-[20px] text-gold-600 relative z-10">
                   {phase.num}
                 </div>
-                <p className="text-[11px] tracking-[0.15em] text-gold-600 uppercase mb-2">{phase.month}</p>
-                <h3 className="font-mincho text-[19px] text-ink-900 mb-4">{phase.title}</h3>
-                <p className="text-[13.5px] leading-loose text-ink-500">{phase.desc}</p>
+                <p className="text-[13px] tracking-[0.15em] text-gold-600 uppercase mb-2">{phase.month}</p>
+                <h3 className="font-mincho text-[22px] text-ink-900 mb-4">{phase.title}</h3>
+                <p className="text-[15.5px] leading-loose text-ink-500">{phase.desc}</p>
               </div>
             </FadeIn>
           ))}

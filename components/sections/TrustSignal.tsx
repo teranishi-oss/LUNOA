@@ -16,8 +16,8 @@ export function TrustSignal() {
       <div className="max-w-5xl mx-auto px-6 relative">
         <FadeIn>
           <div className="text-center mb-16">
-            <p className="text-[12px] tracking-[0.3em] text-gold-600 uppercase mb-5">Trust Signal</p>
-            <h2 className="font-mincho text-[30px] md:text-[36px] text-ink-900 leading-relaxed">
+            <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">Trust Signal</p>
+            <h2 className="font-mincho text-[36px] md:text-[44px] text-ink-900 leading-relaxed">
               選ばれる理由を、数字で。
             </h2>
           </div>
@@ -27,18 +27,18 @@ export function TrustSignal() {
           {stats.map((stat, i) => (
             <FadeIn key={stat.label} delay={i * 0.12}>
               <div className="bg-cream-50 rounded-card border border-gold-500/40 shadow-card px-6 py-10 text-center h-full">
-                <div className="font-mincho text-[38px] text-gold-600 mb-3">
+                <div className="font-mincho text-[46px] text-gold-600 mb-3">
                   {stat.num}
-                  <span className="text-[20px] ml-1">{stat.unit}</span>
+                  <span className="text-[24px] ml-1">{stat.unit}</span>
                 </div>
-                <p className="text-[13px] text-ink-500 leading-relaxed">{stat.label}</p>
+                <p className="text-[15px] text-ink-500 leading-relaxed">{stat.label}</p>
               </div>
             </FadeIn>
           ))}
         </div>
 
         <FadeIn delay={0.4}>
-          <p className="text-center text-[13px] text-ink-500 leading-loose mt-12 max-w-2xl mx-auto">
+          <p className="text-center text-[15px] text-ink-500 leading-loose mt-12 max-w-2xl mx-auto">
             母体である卒業型美容整体LUNOAが積み上げてきた7,000件超の施術実績を土台に、渋谷院はこの街のお客様と向き合っています。
           </p>
         </FadeIn>

@@ -32,8 +32,8 @@ export function WhySelected() {
       <div className="max-w-5xl mx-auto px-6 relative">
         <FadeIn>
           <div className="text-center mb-20">
-            <p className="text-[12px] tracking-[0.3em] text-gold-600 uppercase mb-5">What Is Graduation Beauty</p>
-            <h2 className="font-mincho text-[30px] md:text-[38px] text-ink-900 leading-[1.6]">
+            <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">What Is Graduation Beauty</p>
+            <h2 className="font-mincho text-[36px] md:text-[46px] text-ink-900 leading-[1.6]">
               卒業型美容整体が
               <br />
               選ばれる理由
@@ -45,9 +45,9 @@ export function WhySelected() {
           {reasons.map((reason, i) => (
             <FadeIn key={reason.num} delay={i * 0.12}>
               <div className="bg-cream-50 rounded-card border border-gold-500/40 shadow-card p-9 text-center h-full">
-                <p className="font-mincho text-[22px] text-gold-600 mb-5">{reason.num}</p>
-                <h3 className="text-[17px] text-ink-900 mb-4">{reason.title}</h3>
-                <p className="text-[13.5px] leading-loose text-ink-500">{reason.desc}</p>
+                <p className="font-mincho text-[26px] text-gold-600 mb-5">{reason.num}</p>
+                <h3 className="text-[20px] text-ink-900 mb-4">{reason.title}</h3>
+                <p className="text-[15.5px] leading-loose text-ink-500">{reason.desc}</p>
               </div>
             </FadeIn>
           ))}

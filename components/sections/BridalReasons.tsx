@@ -23,8 +23,8 @@ export function BridalReasons() {
       <div className="max-w-4xl mx-auto px-6 relative">
         <FadeIn>
           <div className="mb-16">
-            <p className="text-[12px] tracking-[0.3em] text-gold-600 uppercase mb-5">Bridal</p>
-            <h2 className="font-mincho text-[30px] md:text-[38px] text-ink-900 leading-[1.6]">
+            <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">Bridal</p>
+            <h2 className="font-mincho text-[36px] md:text-[46px] text-ink-900 leading-[1.6]">
               毎月100名の花嫁が、
               <br />
               渋谷院を選ぶ理由。
@@ -36,10 +36,10 @@ export function BridalReasons() {
           {reasons.map((text, i) => (
             <FadeIn key={text} delay={i * 0.1}>
               <div className="flex items-start gap-4 bg-cream-50 rounded-card border border-gold-500/40 shadow-card px-7 py-7 h-full">
-                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-gold-500/15 flex items-center justify-center mt-0.5">
-                  <Check className="w-3.5 h-3.5 text-gold-600" />
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-gold-500/15 flex items-center justify-center mt-0.5">
+                  <Check className="w-4 h-4 text-gold-600" />
                 </span>
-                <p className="text-[14.5px] leading-relaxed text-ink-900">{text}</p>
+                <p className="text-[16.5px] leading-relaxed text-ink-900">{text}</p>
               </div>
             </FadeIn>
           ))}

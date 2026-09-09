@@ -25,8 +25,8 @@ export function BeforeAfterShowcase() {
       <div className="max-w-4xl mx-auto px-6 relative">
         <FadeIn>
           <div className="text-center mb-20">
-            <p className="text-[12px] tracking-[0.3em] text-gold-600 uppercase mb-5">Before &amp; After</p>
-            <h2 className="font-mincho text-[30px] md:text-[38px] text-ink-900 leading-[1.6]">
+            <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">Before &amp; After</p>
+            <h2 className="font-mincho text-[36px] md:text-[46px] text-ink-900 leading-[1.6]">
               施術による
               <br />
               確かな変化
@@ -38,7 +38,7 @@ export function BeforeAfterShowcase() {
           {categories.map((cat, i) => (
             <FadeIn key={cat.title} delay={i * 0.15}>
               <div>
-                <p className="text-center font-mincho text-[19px] text-gold-600 mb-6">{cat.title}</p>
+                <p className="text-center font-mincho text-[23px] text-gold-600 mb-6">{cat.title}</p>
                 <div className="bg-cream-50 rounded-card border border-gold-500/40 shadow-card p-4 md:p-6 max-w-lg mx-auto">
                   <img
                     src={cat.image}

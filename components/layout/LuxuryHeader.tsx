@@ -32,8 +32,8 @@ export function LuxuryHeader() {
     >
       <nav className="hidden lg:flex items-center justify-between h-20 px-10 max-w-7xl mx-auto">
         <Link to="/" className="flex flex-col leading-tight">
-          <span className="font-mincho font-bold text-[18px] tracking-[0.04em] text-ink-900">LUNOA SHIBUYA</span>
-          <span className="text-[11px] tracking-[0.08em] text-gold-600">卒業型美容整体LUNOA 渋谷院</span>
+          <span className="font-mincho font-bold text-[22px] tracking-[0.04em] text-ink-900">LUNOA SHIBUYA</span>
+          <span className="text-[13px] tracking-[0.08em] text-gold-600">卒業型美容整体LUNOA 渋谷院</span>
         </Link>
 
         <div className="flex items-center gap-10">
@@ -41,7 +41,7 @@ export function LuxuryHeader() {
             <a
               key={link.href}
               href={link.href}
-              className="text-[13px] tracking-[0.08em] text-ink-700 hover:text-gold-600 transition-colors duration-300"
+              className="text-[15px] tracking-[0.08em] text-ink-700 hover:text-gold-600 transition-colors duration-300"
             >
               {link.label}
             </a>
@@ -50,7 +50,7 @@ export function LuxuryHeader() {
             href={shibuyaStore.bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-[14px] font-bold tracking-[0.03em] text-gold-600 border border-gold-500 bg-cream-50 rounded-pill px-7 py-2.5 shadow-soft hover:bg-gold-500 hover:text-white hover:-translate-y-0.5 transition-all duration-300"
+            className="inline-flex items-center text-[16px] font-bold tracking-[0.03em] text-gold-600 border border-gold-500 bg-cream-50 rounded-pill px-7 py-2.5 shadow-soft hover:bg-gold-500 hover:text-white hover:-translate-y-0.5 transition-all duration-300"
           >
             ご予約
           </a>
@@ -60,8 +60,8 @@ export function LuxuryHeader() {
       <nav className="lg:hidden">
         <div className="flex items-center justify-between h-16 px-5">
           <Link to="/" className="flex flex-col leading-tight">
-            <span className="font-mincho font-bold text-[16px] tracking-[0.04em] text-ink-900">LUNOA SHIBUYA</span>
-            <span className="text-[9px] tracking-[0.05em] text-gold-600">卒業型美容整体LUNOA 渋谷院</span>
+            <span className="font-mincho font-bold text-[19px] tracking-[0.04em] text-ink-900">LUNOA SHIBUYA</span>
+            <span className="text-[11px] tracking-[0.05em] text-gold-600">卒業型美容整体LUNOA 渋谷院</span>
           </Link>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -83,7 +83,7 @@ export function LuxuryHeader() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-[15px] tracking-[0.05em] text-ink-700 py-4 border-b border-ink-900/10"
+                className="text-[17px] tracking-[0.05em] text-ink-700 py-4 border-b border-ink-900/10"
               >
                 {link.label}
               </a>
@@ -93,7 +93,7 @@ export function LuxuryHeader() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
-              className="mt-6 text-center text-[14px] font-bold tracking-[0.03em] text-white bg-gradient-to-br from-gold-500 to-gold-600 rounded-pill py-3.5 shadow-soft"
+              className="mt-6 text-center text-[16px] font-bold tracking-[0.03em] text-white bg-gradient-to-br from-gold-500 to-gold-600 rounded-pill py-3.5 shadow-soft"
             >
               ご予約
             </a>
