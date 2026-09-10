@@ -33,12 +33,12 @@ export function NumbersShowcase() {
           {numbers.map((item, i) => (
             <FadeIn key={item.cap} delay={i * 0.08}>
               <div className="bg-cream-50 rounded-card border border-gold-500/40 shadow-card px-7 py-9 text-center h-full transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg">
-                <p className="flex items-baseline justify-center gap-1 mb-3 text-gold-600">
-                  {item.prefix && <span className="text-[15px]">{item.prefix}</span>}
-                  <span className="font-mincho text-[38px]">
+                <p className="flex items-baseline justify-center gap-1 mb-3">
+                  {item.prefix && <span className="text-[15px] text-gold-600">{item.prefix}</span>}
+                  <span className="font-mincho text-[38px] text-gold-600">
                     <CountUp value={item.value} decimals={item.decimals} delay={i * 0.08} />
                   </span>
-                  <span className="text-[16px]">{item.suffix}</span>
+                  <span className="text-[16px] text-gold-600">{item.suffix}</span>
                 </p>
                 <p className="text-[14.5px] leading-relaxed text-ink-700">{item.cap}</p>
               </div>

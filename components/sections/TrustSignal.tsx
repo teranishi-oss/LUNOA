@@ -30,7 +30,7 @@ export function TrustSignal() {
               <div className="bg-cream-50 rounded-card border border-gold-500/40 shadow-card px-6 py-10 text-center h-full transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg">
                 <div className="font-mincho text-[46px] text-gold-600 mb-3">
                   <CountUp value={stat.value} decimals={stat.decimals} delay={i * 0.12} />
-                  <span className="text-[24px] ml-1">{stat.unit}</span>
+                  <span className="text-[24px] ml-1 text-gold-600">{stat.unit}</span>
                 </div>
                 <p className="text-[15px] text-ink-700 leading-relaxed">{stat.label}</p>
               </div>
