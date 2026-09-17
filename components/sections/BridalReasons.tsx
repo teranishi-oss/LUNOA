@@ -17,7 +17,7 @@ export function BridalReasons() {
         <FadeIn>
           <div className="mb-16 text-center">
             <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">Bridal</p>
-            <h2 className="font-mincho text-[36px] md:text-[46px] text-ink-900 leading-[1.6]">
+            <h2 className="font-mincho text-[36px] md:text-[46px] text-ink-900 leading-[1.6] text-balance">
               毎月100名の花嫁が、
               <br />
               渋谷院を選ぶ理由。

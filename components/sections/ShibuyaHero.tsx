@@ -23,7 +23,7 @@ export function ShibuyaHero() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: [0.25, 0.1, 0.25, 1] }}
-              className="font-mincho text-[48px] sm:text-[58px] md:text-[68px] leading-[1.3] text-ink-900 mb-7"
+              className="font-mincho text-[48px] sm:text-[58px] md:text-[68px] leading-[1.3] text-ink-900 text-balance mb-7"
             >
               通わなくていい
               <br />

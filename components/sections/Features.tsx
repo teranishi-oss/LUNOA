@@ -3,8 +3,6 @@ import { FadeIn } from '../FadeIn';
 import { shibuyaStore } from '../../data/stores';
 import treatmentImage from '../../assets/feature-treatment.jpg';
 import counselingImage from '../../assets/feature-counseling.jpg';
-import selfcareImage from '../../assets/concerns-bg.jpg';
-import bridalImage from '../../assets/IMG_0654.jpg';
 import accessImage from '../../assets/IMG_0652.jpg';
 
 const features = [
@@ -16,24 +14,12 @@ const features = [
   },
   {
     num: '02',
-    title: '完全個室のプライベート空間',
+    title: '完全個室で、自分で整える力を身につける',
     image: counselingImage,
-    desc: '人目を気にせず、じっくりと自分の体と向き合える完全個室。落ち着いた上質な空間で、心身ともにリラックスしながら施術を受けていただけます。',
+    desc: '人目を気にせず、本気で自分の体と向き合える完全個室。カウンセリングで正しい姿勢やセルフケアもお伝えし、「施術→学ぶ→卒業」のサイクルで、通い続けなくても整えられる体を目指します。',
   },
   {
     num: '03',
-    title: '根本解決のための自宅でできるセルフケア',
-    image: selfcareImage,
-    desc: '施術で整えた状態を、ご自宅でも保てるように。カウンセリングで正しい姿勢の作り方や、日常でできる簡単なセルフケアを一人ひとりに合わせてお伝えします。「通い続ける」のではなく、自分の力で体を管理できるようになることが、卒業型美容整体LUNOAの目指すゴールです。',
-  },
-  {
-    num: '04',
-    title: '圧倒的なブライダル実績と人気',
-    image: bridalImage,
-    desc: '毎月100名以上の花嫁様にお選びいただいているブライダル整体。結婚式までの日数から逆算した根本改善で、ドレス姿に自信が持てる身体へ。実際に施術を受けたお客様の確かな変化を、写真でご覧いただけます。',
-  },
-  {
-    num: '05',
     title: '渋谷駅から徒歩7分の好立地',
     image: accessImage,
     desc: '渋谷駅から徒歩7分。お仕事帰りやお出かけの前後にも通いやすい、アクセス良好な立地でお待ちしております。',
@@ -47,7 +33,7 @@ export function Features() {
         <FadeIn>
           <div className="text-center mb-20">
             <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">Features of LUNOA SHIBUYA</p>
-            <h2 className="font-mincho text-[36px] md:text-[46px] text-ink-900 leading-[1.6]">
+            <h2 className="font-mincho text-[36px] md:text-[46px] text-ink-900 leading-[1.6] text-balance max-w-[90%] mx-auto">
               LUNOA渋谷院の特徴
             </h2>
           </div>
@@ -77,7 +63,7 @@ export function Features() {
                     <h3 className="font-mincho text-[22px] md:text-[24px] text-ink-900 mb-3 leading-snug">
                       {feature.title}
                     </h3>
-                    <p className="text-[15.5px] leading-loose text-ink-700 mt-4">{feature.desc}</p>
+                    <p className="text-[15.5px] leading-[1.7] text-ink-700 mt-4">{feature.desc}</p>
                   </div>
                 </div>
               </FadeIn>

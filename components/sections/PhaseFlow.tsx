@@ -32,7 +32,7 @@ export function PhaseFlow() {
         <FadeIn>
           <div className="text-center mb-6">
             <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">Improvement Journey</p>
-            <h2 className="font-mincho text-[36px] md:text-[46px] text-ink-900 leading-[1.6] mb-6">
+            <h2 className="font-mincho text-[36px] md:text-[46px] text-ink-900 leading-[1.6] text-balance mb-6">
               卒業までの
               <br />
               3つのフェーズ

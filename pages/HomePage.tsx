@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { shibuyaStore } from '../data/stores';
 import { ShibuyaHero } from '../components/sections/ShibuyaHero';
 import { Features } from '../components/sections/Features';
-import { TrustSignal } from '../components/sections/TrustSignal';
 import { WhySelected } from '../components/sections/WhySelected';
 import { ComparisonTable } from '../components/sections/ComparisonTable';
 import { Concerns } from '../components/sections/Concerns';
@@ -22,15 +21,14 @@ export function HomePage() {
   return (
     <>
       <ShibuyaHero />
-      <Features />
-      <TrustSignal />
-      <WhySelected />
-      <ComparisonTable />
       <Concerns />
-      <PhaseFlow />
+      <WhySelected />
       <NumbersShowcase />
-      <BridalReasons />
+      <ComparisonTable />
+      <PhaseFlow />
       <BeforeAfterShowcase />
+      <Features />
+      <BridalReasons />
       <ReservationCta />
     </>
   );

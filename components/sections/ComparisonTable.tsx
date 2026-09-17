@@ -57,7 +57,7 @@ export function ComparisonTable() {
           <div className="text-center mb-14 md:mb-16">
             <p className="text-[13px] tracking-[0.25em] text-gold-600 mb-3">WHY CHOOSE LUNOA？</p>
             <p className="text-[13px] tracking-[0.1em] text-ink-500 mb-6">卒業型美容整体</p>
-            <h2 className="font-mincho text-[28px] md:text-[36px] text-ink-900 leading-[1.6]">
+            <h2 className="font-mincho text-[28px] md:text-[36px] text-ink-900 leading-[1.6] text-balance">
               「卒業」を目指すからこそ、
               <br />
               あなたの本当の変身が実現できる。
