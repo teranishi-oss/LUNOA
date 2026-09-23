@@ -86,7 +86,7 @@ export function Concerns() {
         <FadeIn>
           <div className="mb-16 md:mb-20 text-center">
             <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">Concerns</p>
-            <h2 className="font-mincho text-[36px] md:text-[46px] text-ink-900 leading-[1.6] text-balance mb-4">
+            <h2 className="font-mincho text-[26px] sm:text-[36px] md:text-[46px] text-ink-900 leading-[1.6] text-balance mb-4">
               こんなお悩み、
               <br />
               抱えていませんか。

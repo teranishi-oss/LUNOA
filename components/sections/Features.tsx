@@ -33,7 +33,7 @@ export function Features() {
         <FadeIn>
           <div className="text-center mb-20">
             <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">Features of LUNOA SHIBUYA</p>
-            <h2 className="font-mincho text-[36px] md:text-[46px] text-ink-900 leading-[1.6] text-balance max-w-[90%] mx-auto">
+            <h2 className="font-mincho text-[26px] sm:text-[36px] md:text-[46px] text-ink-900 leading-[1.6] text-balance max-w-[90%] mx-auto">
               LUNOA渋谷院の特徴
             </h2>
           </div>

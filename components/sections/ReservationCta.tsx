@@ -20,7 +20,7 @@ export function ReservationCta() {
       <div className="max-w-2xl mx-auto px-6 text-center relative">
         <FadeIn>
           <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">Reservation</p>
-          <h2 className="font-mincho text-[32px] md:text-[40px] text-ink-900 leading-[1.6] text-balance mb-6">
+          <h2 className="font-mincho text-[24px] sm:text-[32px] md:text-[40px] text-ink-900 leading-[1.6] text-balance mb-6">
             まずは、<span className="text-gold-600 text-[44px] md:text-[56px]">渋谷院</span>へ。
           </h2>
           <p className="text-[16px] text-ink-700 leading-relaxed mb-10">

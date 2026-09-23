@@ -30,7 +30,7 @@ export function BeforeAfterShowcase() {
         <FadeIn>
           <div className="text-center mb-20">
             <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">Before &amp; After</p>
-            <h2 className="font-mincho text-[36px] md:text-[46px] text-ink-900 leading-[1.6] text-balance">
+            <h2 className="font-mincho text-[26px] sm:text-[36px] md:text-[46px] text-ink-900 leading-[1.6] text-balance">
               施術による
               <br />
               確かな変化

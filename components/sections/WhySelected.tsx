@@ -33,7 +33,7 @@ export function WhySelected() {
         <FadeIn>
           <div className="text-center mb-20">
             <p className="text-[14px] tracking-[0.3em] text-gold-600 uppercase mb-5">What Is Graduation Beauty</p>
-            <h2 className="font-mincho text-[36px] md:text-[46px] text-ink-900 leading-[1.6] text-balance">
+            <h2 className="font-mincho text-[26px] sm:text-[36px] md:text-[46px] text-ink-900 leading-[1.6] text-balance">
               卒業型美容整体が
               <br />
               選ばれる理由
