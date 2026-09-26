@@ -10,6 +10,8 @@ export function ShibuyaHero() {
         <img
           src={heroImage}
           alt="LUNOA渋谷院の店内"
+          loading="eager"
+          fetchPriority="high"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-cream-50 via-cream-50/75 to-cream-50/10" />

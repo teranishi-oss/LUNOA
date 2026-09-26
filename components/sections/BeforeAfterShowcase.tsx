@@ -50,6 +50,7 @@ export function BeforeAfterShowcase() {
                         key={j}
                         src={img}
                         alt={`${cat.title}のビフォーアフター ${j + 1}`}
+                        loading="lazy"
                         className="w-full h-auto rounded-2xl"
                       />
                     ))}

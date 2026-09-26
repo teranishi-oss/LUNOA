@@ -1,7 +1,7 @@
 import React from 'react';
 import { FadeIn } from '../FadeIn';
 import { SectionPhotoBg } from './SectionPhotoBg';
-import centerImage from '../../assets/concerns-portrait-vignette.png';
+import centerImage from '../../assets/concerns-portrait-vignette.webp';
 import bgImage from '../../assets/concerns-bg.jpg';
 
 const concerns = [
@@ -108,6 +108,7 @@ export function Concerns() {
             <img
               src={centerImage}
               alt="お悩みを抱える女性のイメージ"
+              loading="lazy"
               className="w-full max-w-md h-auto object-contain"
             />
           </div>

@@ -31,6 +31,7 @@ export function BridalReasons() {
               <img
                 src={weddingImage}
                 alt="LUNOAをご利用いただいた花嫁様の結婚式"
+                loading="lazy"
                 className="w-full h-[340px] md:h-[440px] object-cover"
               />
             </div>

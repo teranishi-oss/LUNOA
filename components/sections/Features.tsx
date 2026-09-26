@@ -53,6 +53,7 @@ export function Features() {
                       <img
                         src={feature.image}
                         alt={feature.title}
+                        loading="lazy"
                         className="w-full h-[240px] md:h-[280px] object-cover"
                       />
                     </div>

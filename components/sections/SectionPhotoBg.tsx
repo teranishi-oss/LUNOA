@@ -9,7 +9,7 @@ interface SectionPhotoBgProps {
 export function SectionPhotoBg({ image, alt, opacity = 0.6 }: SectionPhotoBgProps) {
   return (
     <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
-      <img src={image} alt={alt} className="w-full h-full object-cover" />
+      <img src={image} alt={alt} loading="lazy" className="w-full h-full object-cover" />
       <div className="absolute inset-0 bg-cream-50" style={{ opacity }} />
       <div
         className="absolute inset-0"
